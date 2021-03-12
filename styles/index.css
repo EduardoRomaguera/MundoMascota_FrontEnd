@@ -1,0 +1,78 @@
+
+.banner {
+    background-image: url('../images/index-banner.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-weight: 700;
+    background: #8EE5D850;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.registro {
+    display: flex;
+    min-height: 250px;
+    border: solid red;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-izquierda {
+    background-image: url('../images/imagen-comprar.png');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen-derecha {
+    background-image: url('../images/imagen-vender.png');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tienda {
+background-image: url('../images/index-tienda.png');
+/*Imagen de Free-Photos en Pixabay*/
+background-size: cover;
+background-position: center;
+min-height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 2px;
+}
+
+.tienda {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
