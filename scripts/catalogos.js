@@ -1,6 +1,6 @@
 'use strict';
 
-const tabla = () =>{
+const tabla = () => {
     listarRazas.forEach(raza => {
         let fila = tabla.insertRow();
         fila.insertCell().innerHTML = raza.titulo;
@@ -8,7 +8,7 @@ const tabla = () =>{
 
         let celdaAcciones = fila.insertCell();
 
-        let radioBSelect = document.createElement('radiobutton');
-        
+        let celdaSeleccionada;
+
     })
 }
