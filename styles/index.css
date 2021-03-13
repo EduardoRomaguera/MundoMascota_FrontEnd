@@ -11,11 +11,10 @@
     margin: 2px;
 }
 
-.banner h1 {
-    font-size: 48px;
+.banner a {
+    font-size: 40px;
     font-weight: 700;
-    background: #8EE5D850;
-    color: black;
+    color: white;
     text-align: center;
     width: 100%;
 }
@@ -23,7 +22,6 @@
 .registro {
     display: flex;
     min-height: 250px;
-    border: solid red;
     align-items: center;
     justify-content: center;
     margin: 2px;
@@ -36,7 +34,7 @@
     background-position: center;
     width: 50%;
     height: 250px;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     color: white;
     display: flex;
@@ -50,7 +48,7 @@
     background-position: center;
     width: 50%;
     height: 250px;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
     color: white;
     display: flex;
@@ -71,7 +69,7 @@ margin: 2px;
 }
 
 .tienda {
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 700;
     color: white;
     text-align: center;

@@ -7,8 +7,28 @@ a:hover {
     color: #8EE5E8;
 }
 
-.divisor :hover {
-    color: #f08700;
+.btn-sochi:hover {
+    color: #F08700;
+}
+
+a {
+text-decoration: none;
+}
+
+.h1 {
+    font-size: 45px;
+}
+
+.h2 {
+    font-size: 40 px;
+}
+
+.h3 {
+    font-size: 30px;
+}
+
+.italica {
+    font-style: italic;
 }
 
 .nav-madre {
@@ -49,10 +69,7 @@ a:hover {
     background-size: cover;
     width: 260px;
     height: 95%;
-    color: black;
-    font-weight: bold;
-
-}
+    }
 
 .btn {
 
@@ -75,7 +92,16 @@ a:hover {
 
 .divisor {
     height: 60px;
-    background-color: #8EE5E8;
+    background-color: #8EE5D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.divisor2 {
+    height: 30px;
+    background-color: #8EE5D8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,3 +115,86 @@ a:hover {
     text-align: center;
     width: 100%;
 }
+
+.btn-divisor2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.foot-madre {
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    background: #424D4B;
+    margin: 2px;
+    color: white;
+}
+
+.foot-A, .foot-C {
+    display: flex;
+    padding: 2px;
+    width: 35%;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot-B {
+    display: flex;
+    padding: 2px;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+
+.foot-C {
+    display: flex;
+    padding: 2px;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-sochi {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.sochi {
+    height: 400px;
+}
+
+#cr {
+    background-image: url('../images/cr.png');
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 75%;
+}
+
+.lista{
+    color: #fff;
+    text-align: center;
+}
+
+.lista li {
+    margin: 5px 0 5px 0;
+}
+
+#fb {
+    background-image: url('../images/facebook.png');
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 75%;
+}
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
