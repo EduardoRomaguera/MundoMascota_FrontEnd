@@ -1,21 +1,20 @@
-/*Formato geral para documento, font family y font size de texto general */
 html {
     font-family: Montserrat;
     font-size: 18px;
 }
-/*Color hover general */
+
 a:hover {
     color: #8EE5E8;
 }
-/*Color hover alternativo, usar la clase hover2 */
-.btn-sochi:hover, .hover2 {
+
+.btn-sochi:hover {
     color: #F08700;
 }
-/*Evitar que los links se autosubrayen */
+
 a {
 text-decoration: none;
 }
-/*Tamaños generales de letra para H1, H2, H3, H4,  */
+
 .h1 {
     font-size: 45px;
 }
@@ -28,22 +27,16 @@ text-decoration: none;
     font-size: 30px;
 }
 
-/*Clase para texto que ocupen en Itálica */
 .italica {
     font-style: italic;
 }
 
-/*Centrar los placeholders de cuadros de input <input> */
-.placeholder {
-    text-align: center;
-}
-
-/*Código vario para los contendores Flex del <nav> superior */
 .nav-madre {
     height: 65px;
     display: flex;
     justify-content: space-between;
     background: #424D4B;
+    /*background: #8EE5D8;*/
     margin: 2px;
 }
 
@@ -52,6 +45,8 @@ text-decoration: none;
     justify-content: flex-start;
     align-items: center;
     width: 250px;
+    /*background-image: url('../images/logo-nav.png');*/
+
 }
 
 .nav-B {
@@ -72,13 +67,10 @@ text-decoration: none;
 .logo {
     background-image: url('../images/logo-nav.png');
     background-size: cover;
-    background-position: center;
-    margin: 5px;
     width: 260px;
-    height: 90%;
+    height: 95%;
     }
 
-/*Esta clase se puede usar para botones */
 .btn {
 
     color: black;
@@ -87,17 +79,12 @@ text-decoration: none;
     padding: 10px;
     color: #D9D9D9;
 }
-/*Esta y las siguientes 3 clases dan formato a la barra de busqueda superior.*/
+
 .barra-busqueda {
     width: 100%;
     height: 85%;
     display: flex;
     justify-content: center;
-}
-
-.barra-busqueda input {
-    border-radius: 10px 10px 10px 10px;
-    border: solid black 2px;
 }
 
 .nav-B input[type=text] {
@@ -111,11 +98,8 @@ text-decoration: none;
     background: rgb(255, 255, 255);
     font-size: 20px;
     cursor: pointer;
-    border-radius: 10px 10px 10px 10px;
-    border: solid black 2px;
 }
 
-/*Clase genérica para los divisores de 60px*/
 .divisor {
     height: 60px;
     background-color: #8EE5D8;
@@ -125,7 +109,6 @@ text-decoration: none;
     margin: 2px;
 }
 
-/*Clase genérica para los divisores de 30px*/
 .divisor2 {
     height: 30px;
     background-color: #8EE5D8;
@@ -135,7 +118,6 @@ text-decoration: none;
     margin: 2px;
 }
 
-/*Clase genérica para el texto dentro de los divisores de 60px*/
 .btn-divisor {
     color: black;
     font-size: 30px;
@@ -144,7 +126,6 @@ text-decoration: none;
     width: 100%;
 }
 
-/*Clase genérica para el texto dentro de los divisores de 30px*/
 .btn-divisor2 {
     color: black;
     font-size: 18px;
@@ -152,7 +133,7 @@ text-decoration: none;
     text-align: center;
     width: 100%;
 }
-/*Código para dar formato al footer y sus cajas flex*/
+
 .foot-madre {
     height: 130px;
     display: flex;
@@ -199,7 +180,7 @@ text-decoration: none;
     width: 65%;
     height: 75%;
 }
-/*Esta y la siguiente clase se puede usar para listas no numeradas*/
+
 .lista{
     color: #fff;
     text-align: center;
