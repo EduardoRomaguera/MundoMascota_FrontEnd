@@ -7,12 +7,118 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/P13-registro-mascota.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Registro Mascotas</title>
 </head>
 
 <body>
-    SITIO EN CONSTRUCCIÓN
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <div class="nav-A">
+                    <a class="logo" href="P09-principal_cliente.html"></a>
+
+                </div>
+
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input type="text" placeholder="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="nav-C">
+                    <a class="btn" href="P10-perfil-cliente.html">Mi Perfil</a>
+                    <a class="btn" href="P01-homepage.html">Cerrar Sesión</a>
+                    <!-- pendiente agregar el cierre de sesión, que no quede abierta la sesión al regresar al index -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="contenedor1">
+                <div class="contenedor2 class=" h1 ">
+                    <h1>Registrar nueva mascota</h1>
+                    <input class="input-formularios " type="text " placeholder="Nombre ">
+                    <input class="input-formularios " type="text " placeholder="Especie ">
+                    <input class="input-formularios " type="text " placeholder="Raza ">
+                    <input class="input-formularios " type="text " placeholder="Teléfono de contacto ">
+                    <div class="info1 ">
+                         <!-- pendiente corregir desplegable para jalar información de catalogo -->
+                        <h1>Vacunas</h1>
+                            <select id="slt-vacuna ">
+                                <option value=" ">--Seleccione una opción</option>
+                                <option value="Vacuna1 ">Vacuna1</option>
+                                <option value="Vacuna2 ">Vacuna2</option>
+                                <option value="Otra vacuna ">Otra vacuna</option>
+                            </select>
+                    </div>
+                    <div class="info1 ">
+                        <!-- pendiente corregir desplegable para jalar información de catalogo -->
+                        <h1>Padecimiento</h1>
+                            <select id="slt-padecimiento ">
+                                <option value=" ">--Seleccione una opción</option>
+                                <option value="Padecimiento1 ">Padecimiento1</option>
+                                <option value="Padecimiento2 ">Padecimiento2</option>
+                                <option value="Otro padecimiento ">Otro padecimiento</option>
+                            </select>
+                    </div>
+                    <div class="info1 ">
+                        <h1>Fotografías</h1>
+                    </div>
+                    <button class="btn2 ">Completar registro </button>
+                    <button class="btn2 ">Cancelar </button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <section class="divisor2 ">
+            <h1 class="btn-divisor2 ">Contacto</h1>
+        </section>
+        <div class="foot-madre ">
+            <div class="foot-A ">
+                <h1>Una empresa 100% nacional</h1>
+                <div id="cr "></div>
+            </div>
+
+            <div class="foot-B ">
+                <ul class="lista ">
+                    <li>WhatsApp
+                        <li>
+                        </li class="italica ">8888-8888</li>
+                    <li>Teléfono
+                        <li>
+                        </li class="italica ">8888-8888</li>
+                    <li> </li>
+                    <li class="italica ">hola@mundomascota.com</li>
+                </ul>
+            </div>
+
+            <div class="foot-C ">
+                <h1>Siguenos</h1>
+                <a id="fb " href="https://www.facebook.com/ "></a>
+            </div>
+
+            <div>
+                </section>
+    </footer>
+
+    <script src="scripts/index.js "></script>
 </body>
+
+<section class="divisor2 ">
+    <a class="btn-sochi " href="https://example.com/ ">
+        Desarrollado por Sochi Software 2021. Derechos Reservados.
+    </a>
+</section>
+
+</html>
