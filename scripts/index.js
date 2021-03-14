@@ -1,19 +1,19 @@
+var slideIndex = [1,1];
+var slideId = ["mySlidesA", "mySlidesB"]
+showSlides(1, 0);
+showSlides(1, 1);
 
-// Control de SlideB Atras y Adelante
-var slideIndexB = 1;
-showSlidesB(slideIndexB);
-
-function plusSlidesB(n) {
-    showSlidesB(slideIndexB += n);
+function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
 }
 
-function showSlidesB(n) {
-    var ii;
-    var slidesB = document.getElementsByClassName("mySlidesB");
-    if (n > slidesB.length) {slideIndexB = 1}
-    if (n < 1) {slideIndexB = slidesB.length}
-    for (ii = 0; ii < slidesB.length; ii++) {
-    slidesB[ii].style.display = "none";
+function showSlides(n, no) {
+    var i;
+    var x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}    
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
 }
-    slidesB[slideIndexB-1].style.display = "block";
+    x[slideIndex[no]-1].style.display = "block";  
 }

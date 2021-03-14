@@ -136,5 +136,23 @@
     width: 100%;
     text-align: center;
     line-height: 140%;
-
+}
 /*Termina código para slideshow de casos de éxito*/
+
+.proveedores-destacados {
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
