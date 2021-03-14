@@ -12,7 +12,7 @@ a:hover {
 }
 
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .h1 {
@@ -46,7 +46,6 @@ text-decoration: none;
     align-items: center;
     width: 250px;
     /*background-image: url('../images/logo-nav.png');*/
-
 }
 
 .nav-B {
@@ -69,10 +68,9 @@ text-decoration: none;
     background-size: cover;
     width: 260px;
     height: 95%;
-    }
+}
 
 .btn {
-
     color: black;
     font-weight: bold;
     flex: 1 1 auto;
@@ -143,11 +141,12 @@ text-decoration: none;
     color: white;
 }
 
-.foot-A, .foot-C {
+.foot-A,
+.foot-C {
     display: flex;
     padding: 2px;
     width: 35%;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -181,7 +180,7 @@ text-decoration: none;
     height: 75%;
 }
 
-.lista{
+.lista {
     color: #fff;
     text-align: center;
 }
@@ -198,4 +197,5 @@ text-decoration: none;
     height: 75%;
 }
 
-    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+/*<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

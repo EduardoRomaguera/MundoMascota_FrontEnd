@@ -1,0 +1,122 @@
+        html {
+            font-family: Montserrat;
+            font-size: 18px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font: bold;
+            color: black;
+            align-items: center;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            background-color: #dcdde1;
+            width: 1024px;
+        }
+        
+        p {
+            font-size: 18px;
+            color: black;
+            align-items: center;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            background-color: #dcdde1;
+            width: 1024px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            font: bold;
+            color: black;
+            align-items: center;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            background-color: #dcdde1;
+            width: 1024px;
+        }
+        
+        .header-principal {
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            background: #424D4B;
+            /*background: #8EE5D8;*/
+            margin: 2px;
+            border: 3px;
+            align-items: center;
+        }
+        
+        .header-principal nav {
+            display: flow-root;
+            justify-content: space-between;
+        }
+        /*.nav-madre {
+                            height: 120px;
+                            display: flex;
+                            justify-content: space-between;
+                            background: #424D4B;
+                            /*background: #8EE5D8;*/
+        /*  margin: 2px;
+                        border: 3px;
+                        align-items: center;
+                    }
+*/
+        
+        .nav-madre {
+            height: 65px;
+            display: flex;
+            background: #424D4B;
+            /*background: #8EE5D8;*/
+        }
+        
+        .nav-A {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 250px;
+            border: solid, red;
+        }
+        
+        .header-principal .logo:hover {
+            color: #589fda;
+            transition: 2s;
+        }
+        
+        .logo {
+            background-image: url('../images/Sochi2.png');
+            background-size: cover;
+            width: 180px;
+            height: 100%;
+            border: solid, red;
+        }
+        
+        .integrantes {
+            font-size: 18px;
+            font: bold;
+            color: black;
+            align-items: center;
+            margin: auto;
+            padding: 30px;
+            display: flex;
+            background-color: #dcdde1;
+            width: 1024px;
+        }
+        
+        .btn {
+            background: #273c75;
+            border: #333 solid 2px;
+            border-radius: 10px;
+            font-size: 18px;
+            padding: 15px;
+            color: white;
+        }
+        
+        .separador {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
