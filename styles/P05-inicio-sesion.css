@@ -6,7 +6,6 @@
 }
 
 .contenedor2 {
-    margin: 50px;
     border: solid 2px #f08700;
     border-radius: 10px;
     display: flex;
@@ -18,12 +17,12 @@
 
 .contenedor2 input {
     height: 200%;
-    margin: 10px;
+    margin: 20px 40px 20px 40px;
 }
 
 .contenedor2 button {
     background-color: #8EE5D8;
-    margin: 10px;
+    margin: 40px 40px 40px 40px;
     padding: auto;
 }
 
@@ -31,14 +30,11 @@
     margin: 0px 0px 35px 0px;
 }
 
-.info1 {
-    height: 200%;
-    margin: 10px;
-    border: solid 2px black;
-    border-radius: 10px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 60px;
-    font-weight: 700;
+.test1 {
+    display: inline-grid;
+    grid-template-columns: 30px 30px;
+}
+
+.test3 {
+    font-size: 90px;
 }

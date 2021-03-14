@@ -8,9 +8,6 @@
     align-items: center;
     justify-content: center;
     margin: 2px;
-}
-
-.tienda {
     font-size: 45px;
     font-weight: 700;
     color: white;
@@ -18,7 +15,7 @@
     width: 100%;
 }
 
-.misMascotas {
+.mis-mascotas {
     background-image: url('../images/mis-mascotas.png');
     /*Imagen de Free-Photos en Pixabay*/
     background-size: cover;
@@ -28,9 +25,6 @@
     align-items: center;
     justify-content: center;
     margin: 2px;
-}
-
-.misMascotas {
     font-size: 45px;
     font-weight: 700;
     color: white;
@@ -38,7 +32,7 @@
     width: 100%;
 }
 
-.misOrdenes {
+.mis-ordenes {
     background-image: url('../images/mis-ordenes.jpg');
     /*Imagen de Free-Photos en Pixabay*/
     background-size: cover;
@@ -48,9 +42,6 @@
     align-items: center;
     justify-content: center;
     margin: 2px;
-}
-
-.misOrdenes {
     font-size: 45px;
     font-weight: 700;
     color: white;
@@ -58,7 +49,7 @@
     width: 100%;
 }
 
-.gestionPago {
+.gestion-pago {
     background-image: url('../images/gestion-pago.jpg');
     /*Imagen de Free-Photos en Pixabay*/
     background-size: cover;
@@ -68,9 +59,6 @@
     align-items: center;
     justify-content: center;
     margin: 2px;
-}
-
-.gestionPago {
     font-size: 45px;
     font-weight: 700;
     color: white;
@@ -78,22 +66,21 @@
     width: 100%;
 }
 
-.proveedoresDestacados {
+.proveedores-destacados {
     background-image: url('../images/proveedor-destacado.jpg');
-    /*Imagen de Free-Photos en Pixabay*/
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
+    border: solid red 2px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2px;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 600px;
 }
 
-.proveedoresDestacados {
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    width: 100%;
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
