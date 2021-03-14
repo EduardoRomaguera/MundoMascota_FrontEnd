@@ -11,7 +11,7 @@ a:hover {
 .btn-sochi:hover, .hover2 {
     color: #F08700;
 }
-.nav-madre:hover, .foot-madre:hover {
+.nav-madre:hover, .foot-madre:hover, .banner:hover {
     cursor: url(../images/cursor.png), auto;
 }
 
@@ -34,6 +34,10 @@ text-decoration: none;
     font-size: 30px;
 }
 
+.h4 {
+    font-size: 25px;
+}
+
 /*Clase para texto que ocupen en Itálica */
 .italica {
     font-style: italic;
@@ -42,6 +46,19 @@ text-decoration: none;
 /*Centrar los placeholders de cuadros de input <input> */
 .placeholder {
     text-align: center;
+    border-radius: 3px;
+}
+
+.input-formularios{
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.check{
+    background-color: #F08700;
+    margin: 200px;
 }
 
 /*Código vario para los contendores Flex del <nav> superior */
@@ -93,6 +110,17 @@ text-decoration: none;
     padding: 10px;
     color: #D9D9D9;
 }
+
+.btn2 {
+
+    color: black;
+    font-weight: bold;
+    flex: 1 1 auto;
+    padding: 10px 25px 10px 25px;
+    border: solid black 2px;
+    border-radius: 3px;
+}
+
 /*Esta y las siguientes 3 clases dan formato a la barra de busqueda superior.*/
 .barra-busqueda {
     width: 100%;
@@ -134,7 +162,7 @@ text-decoration: none;
 /*Clase genérica para los divisores de 30px*/
 .divisor2 {
     height: 30px;
-    background-color: #8EE5D8;
+    background-color: #D9D9D9;
     display: flex;
     align-items: center;
     justify-content: center;
