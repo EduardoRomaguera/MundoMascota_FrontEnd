@@ -1,11 +1,12 @@
-<html lang="esp">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/catalogos.css">
+    <link rel="stylesheet" href="styles/mantenimientoDeCatalogos.css">
 
     <title>Catálogos</title>
 </head>
@@ -23,17 +24,20 @@
         </div>
     </header>
     <main>
-        <table id="tbl-razas" class="tabla"></table>
-        <thead>
-            <tr>
-                <th>Titulo</th>
-                <th>Descripción</th>
+        <table id="tbl-razas" class="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Estado</th>
+                    <th></th>
 
-            </tr>
-        </thead>
-        <tbody>
+                </tr>
+            </thead>
+            <tbody>
 
-        </tbody>
+            </tbody>
+        </table>
     </main>
 
     <footer>
@@ -70,6 +74,8 @@
 
     </footer>
 
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/mantenimientoDeCatalogos.js"></script>
 </body>
 
 </html>
