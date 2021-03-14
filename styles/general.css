@@ -11,6 +11,12 @@ a:hover {
 .btn-sochi:hover, .hover2 {
     color: #F08700;
 }
+.nav-madre:hover, .foot-madre:hover {
+    cursor: url(../images/cursor.png), auto;
+}
+
+
+
 /*Evitar que los links se autosubrayen */
 a {
 text-decoration: none;
