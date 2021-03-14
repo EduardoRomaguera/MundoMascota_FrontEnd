@@ -1,0 +1,99 @@
+.tienda {
+    background-image: url('../images/index-tienda.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.tienda {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.misMascotas {
+    background-image: url('../images/mis-mascotas.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.misMascotas {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.misOrdenes {
+    background-image: url('../images/mis-ordenes.jpg');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.misOrdenes {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.gestionPago {
+    background-image: url('../images/gestion-pago.jpg');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.gestionPago {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.proveedoresDestacados {
+    background-image: url('../images/proveedor-destacado.jpg');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.proveedoresDestacados {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
