@@ -75,7 +75,6 @@
 
 .exito {
     display:flex;
-    min-height: 250px;
     align-items: center;
     justify-content: center;
     margin: 2px;
@@ -84,7 +83,6 @@
 
 .patrocinadores {
     display:flex;
-    min-height: 250px;
     align-items: center;
     justify-content: center;
     margin: 2px;
