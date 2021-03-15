@@ -1,0 +1,130 @@
+.nombre-negocio {
+    border: solid red 3px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 50px;
+}
+
+.perfil-proveedor {
+    background-image: url('../images/perfil-cliente.jpg');
+    background-size: cover;
+    background-position: center;
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.foto-proveedor {
+    border: solid rgb(235, 5, 224) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.info-proveedor {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 75%;
+}
+
+.info1 {
+    border: solid rgb(28, 5, 235) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.info2 {
+    border: solid rgb(28, 5, 235) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.info3 {
+    border: solid rgb(28, 5, 235) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.datos-servicios {
+    background-image: url('../images/perfil-cliente.jpg');
+    background-size: cover;
+    background-position: center;
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.info-servicios {
+    border: solid rgb(5, 235, 5) 0px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info4 {
+    border: solid rgb(28, 5, 235) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.info5 {
+    border: solid rgb(235, 5, 224) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.info6 {
+    border: solid rgb(28, 5, 235) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.info7 {
+    border: solid rgb(28, 5, 235) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.datos-representante {
+    background-image: url('../images/datos-representante.png');
+    background-size: cover;
+    background-position: center;
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 300px;
+}
