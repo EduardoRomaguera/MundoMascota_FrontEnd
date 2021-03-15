@@ -1,0 +1,86 @@
+.tienda {
+    background-image: url('../images/index-tienda.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.mis-mascotas {
+    background-image: url('../images/mis-mascotas.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.mis-ordenes {
+    background-image: url('../images/mis-ordenes.jpg');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.gestion-pago {
+    background-image: url('../images/gestion-pago.jpg');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.proveedores-destacados {
+    background-image: url('../images/proveedor-destacado.jpg');
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}

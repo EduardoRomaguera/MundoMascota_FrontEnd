@@ -57,18 +57,15 @@
 }
 
 .tienda {
-background-image: url('../images/index-tienda.png');
-/*Imagen de Free-Photos en Pixabay*/
-background-size: cover;
-background-position: center;
-min-height: 600px;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 2px;
-}
-
-.tienda {
+    background-image: url('../images/index-tienda.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
     font-size: 45px;
     font-weight: 700;
     color: white;
@@ -77,106 +74,83 @@ margin: 2px;
 }
 
 .exito {
-    min-height: 250px;
+    display:flex;
     align-items: center;
     justify-content: center;
     margin: 2px;
+    width: 100%;
 }
 
+.patrocinadores {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 100%;
+}
 
-/*CODIGO PARA PROBAR UN SLIDE SHOW*/
+/*Inicia código para slideshow de casos de éxito*/
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.slideshowA, .slideshowB, .slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
+/* Botones siguiente y atras */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 10px 10px 10px 10px;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.80);
 }
 
-/* Caption text */
+/* Descripciones */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    background-color: #00000090;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 140%;
+}
+/*Termina código para slideshow de casos de éxito*/
+
+.proveedores-destacados {
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    flex-direction: row;
+    height: 600px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
 }
