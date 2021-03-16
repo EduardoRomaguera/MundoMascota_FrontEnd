@@ -83,3 +83,25 @@ let listaEnfermedades = [{
     'especie': 'Gato',
     'estado': 'Áctivo'
 }]
+
+let listaVacunas = [{
+    'nombre': 'Parvovirus',
+    'especie': 'Perro',
+    'estado': 'Áctivo'
+}, {
+    'nombre': 'Leptospirosis',
+    'especie': 'Perro',
+    'estado': 'Áctivo'
+}, {
+    'nombre': 'Rabia',
+    'especie': 'Perro',
+    'estado': 'Áctivo'
+}, {
+    'nombre': 'Leucemia felina',
+    'especie': 'Gato',
+    'estado': 'Áctivo'
+}, {
+    'nombre': 'Leucemia felina',
+    'especie': 'Gato',
+    'estado': 'Áctivo'
+}]
