@@ -10,11 +10,53 @@ a:hover {
 .btn-sochi:hover {
     color: #F08700;
 }
+<<<<<<< Updated upstream
 
+=======
+.nav-madre:hover, .foot-madre:hover, .banner:hover {
+    cursor: url(../images/cursor.png), auto;
+}
+
+/*Evitar que los links se autosubrayen */
+>>>>>>> Stashed changes
 a {
     text-decoration: none;
 }
 
+<<<<<<< Updated upstream
+=======
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Tamaños generales de letra para H1, H2, H3, H4,  */
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 40 px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+>>>>>>> Stashed changes
 .h1 {
     font-size: 45px;
 }
@@ -31,6 +73,16 @@ a {
     font-size: 25px;
 }
 
+<<<<<<< Updated upstream
+=======
+.h5 {
+    font-size: 18px;
+}
+
+.h6 {
+    font-size: 15px;
+}
+>>>>>>> Stashed changes
 
 /*Clase para texto que ocupen en Itálica */
 
@@ -208,6 +260,10 @@ a {
     font-weight: 700;
     text-align: center;
     width: 100%;
+}
+
+.divisor2 a {
+    color:#000000;
 }
 
 .sochi {
