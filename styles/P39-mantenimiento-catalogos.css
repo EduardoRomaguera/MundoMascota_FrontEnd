@@ -25,3 +25,10 @@
     width: 200px;
     text-align: center;
 }
+
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700 px;
+}
