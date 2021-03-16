@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40 px;
+    font-size: 40px;
 }
 
 h3 {
@@ -293,6 +293,10 @@ h5 {
     background-position: center;
     width: 30%;
     height: 75%;
+}
+
+a:hover {
+    color: #8EE5E8;
 }
 
 

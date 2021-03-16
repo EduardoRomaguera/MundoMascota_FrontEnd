@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/P05-inicio-sesion.css">
+    <link rel="icon" href="images/icono.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Inicio sesión</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <div class="nav-A">
+                    <a class="logo" href=P01-homepage.html></a>
+                </div>
+
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="nav-C">
+                        <a class="btn"  href="https://example.com/">Cerrar Sesión</a>
+
+                        <a class="btn"  href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="contenedor1">
+                <div class="contenedor2">
+                    <h3>Acceder</h3>
+                    <h4>Mundo Mascota</h4>
+                    <p class="h6" >Introduce la información con la que te registraste.</p>
+                    <input class="input-formularios" type="email" placeholder="Correo electrónico">
+                    <input class="input-formularios" type="password" placeholder="Contraseña" id="myInput" >
+                    <a href="P06-olvide-datos.html">Olvidé mi contraseña</a>
+                    <div class="contenedor3">
+                        <div class="grid-item">
+                            <input type="checkbox" onclick="showPassword()">Mostrar contraseña
+                        </div>
+                    </div>
+                    <button class="btn2">Siguiente </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="divisor2">
+            <h5 class="btn-divisor2">Contacto</h5>
+        </section>
+
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Una empresa 100% nacional</h5>
+                <div id="cr"></div>
+            </div>
+            
+            <div class="foot-B">
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8888-8888</li>
+                    <li>Teléfono</li>
+                    <li class="italica">8888-8888</li>
+                    <li class="italica">hola@mundomascota.com</li>
+                </ul>
+            </div>
+            
+            <div class="foot-C">
+                <h5>Siguenos</h5>
+                <a id="fb" href="https://www.facebook.com/"></a>
+            </div>
+        </div>
+
+        <section class="divisor2">
+            <a class="btn-sochi" href="https://example.com/">
+                Desarrollado por Sochi Software 2021. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+
+    <script src="scripts/P05-inicio-sesion.js"></script>
+</body>
+
+</html>
