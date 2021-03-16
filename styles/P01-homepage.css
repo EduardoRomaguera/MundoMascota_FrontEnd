@@ -54,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .tienda {
@@ -93,7 +94,9 @@
 
 * {box-sizing:border-box}
 
-.slideshowA, .slideshowB, .slideshow {
+.slideshowA,
+.slideshowB,
+.slideshow {
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -153,4 +156,28 @@
     justify-content:space-around;
     align-items: center;
     flex-direction: column;
+}
+.lista-actividades {
+    display: flex;
+}
+.actividades {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+.quienes {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-derecha h4 {
+    margin: 0 0 20px 0;
+}
+
+a:hover {
+    color: #8EE5E8;
 }

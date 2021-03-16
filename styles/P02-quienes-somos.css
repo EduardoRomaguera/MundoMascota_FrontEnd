@@ -1,0 +1,253 @@
+
+.banner {
+    background-image: url('../images/abaa1.jpg');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.banner a {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #00000060;
+}
+
+.abaa {
+    display: flex;
+    background: #D9D9D940;
+}
+
+.info {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    borde
+}
+
+.texto-normal p a {
+    font-weight: bold;
+    color: #424D4B;
+}
+
+.imagen-izquierda1 {
+    background-image: url('../images/abaa2.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 280px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-derecha1 {
+    background-color: #FCFF6C15;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: auto;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-izquierda2 {
+    background-color: #8EE4D815;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-derecha2 {
+    background-image: url('../images/abaa3.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-izquierda3 {
+    background-image: url('../images/abaa4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 430px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-derecha3 {
+    background-color:#424D4B20;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    min-height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-normal {
+    margin: 5% 20% 5% 20%;
+    line-height: 150%;
+    color: black;
+}
+
+
+.tienda {
+    background-image: url('../images/index-tienda.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.exito {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 100%;
+}
+
+.patrocinadores {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 100%;
+}
+
+/*Inicia código para slideshow de casos de éxito*/
+
+* {box-sizing:border-box}
+
+.slideshowA,
+.slideshowB,
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Botones siguiente y atras */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.80);
+}
+
+/* Descripciones */
+.text {
+    color: #f2f2f2;
+    background-color: #00000090;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 140%;
+}
+/*Termina código para slideshow de casos de éxito*/
+
+.proveedores-destacados {
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.lista-actividades {
+    display: flex;
+}
+.actividades {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+.quienes {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-derecha h4 {
+    margin: 0 0 20px 0;
+}

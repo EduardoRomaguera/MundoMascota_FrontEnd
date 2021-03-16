@@ -1,6 +1,7 @@
 html {
     font-family: Montserrat;
     font-size: 18px;
+    font-weight: 300px;
 }
 
 a:hover {
@@ -10,21 +11,16 @@ a:hover {
 .btn-sochi:hover {
     color: #F08700;
 }
-<<<<<<< Updated upstream
 
-=======
 .nav-madre:hover, .foot-madre:hover, .banner:hover {
     cursor: url(../images/cursor.png), auto;
 }
 
 /*Evitar que los links se autosubrayen */
->>>>>>> Stashed changes
 a {
     text-decoration: none;
 }
 
-<<<<<<< Updated upstream
-=======
 a:link {
     color: #ffffff;
     text-decoration: none;
@@ -56,7 +52,6 @@ h5 {
     font-size: 18px;
 }
 
->>>>>>> Stashed changes
 .h1 {
     font-size: 45px;
 }
@@ -73,8 +68,6 @@ h5 {
     font-size: 25px;
 }
 
-<<<<<<< Updated upstream
-=======
 .h5 {
     font-size: 18px;
 }
@@ -82,14 +75,21 @@ h5 {
 .h6 {
     font-size: 15px;
 }
->>>>>>> Stashed changes
 
+.slim {
+    font-weight: 300px;
+}
 /*Clase para texto que ocupen en Itálica */
 
 .italica {
     font-style: italic;
 }
 
+.texto-normal {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
 
 /*Centrar los placeholders de cuadros de input <input> */
 
