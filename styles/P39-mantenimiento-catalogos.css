@@ -24,11 +24,12 @@
 .tabla tbody tr td {
     width: 200px;
     text-align: center;
+    border: 1px solid;
+    padding: 8px;
 }
 
 .contenedor-tabla {
-    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 700 px;
+    min-height: 400 px;
 }
