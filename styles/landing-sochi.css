@@ -80,8 +80,8 @@
             border: solid, red;
         }
         
-        .header-principal .logo:hover {
-            color: #589fda;
+        .header-principal nav a:hover {
+            color: #ffffff;
             transition: 2s;
         }
         
@@ -112,6 +112,9 @@
             font-size: 18px;
             padding: 15px;
             color: white;
+            width: 1024px;
+            align-items: center;
+            justify-content: center;
         }
         
         .separador {
@@ -119,4 +122,5 @@
             align-items: center;
             justify-content: center;
             height: 100px;
+            width: 1024px;
         }
