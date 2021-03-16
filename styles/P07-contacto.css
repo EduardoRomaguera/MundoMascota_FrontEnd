@@ -15,52 +15,29 @@
     font-weight: 700;
 }
 
-.contenedor2 input {
+.lista1 li {
     height: 200%;
-    margin: 25px 40px 20px 40px;
-}
-
-.contenedor2 button {
-    background-color: #8EE5D8;
-    margin: 40px 40px 40px 40px;
-    padding: auto;
-}
-
-.contenedor2 a {
-    color: #f08700;
-    font-size: 15px;
-
+    margin: 5px 0 5px 0;
+    color: #000000;
+    text-align: center;
 }
 
 .divisor2 a {
     color:#000000;
 }
 
-.contenedor2 h1 {
-    margin: 0px 0px 0px 0px;
+.lista1 li{
+    line-height: 150%;
 }
 
-.contenedor3 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding: 10px;
-    justify-content: center;
+.contenedor2 h4 {
+    margin: 0px 0 15px 0;
 }
 
-.grid-item {
-    padding: 10px;
-    
+.contenedor2 h5 {
+    margin: 0px 0 20px;
 }
 
-.item1 {
-    font-size: 98px;
-}
-
-.item2 {
-    font-size: 18px;
-}
-
-.grid-item input[type="checkbox"] {
-float: left;
+#fix1 {
+    margin-top: 20px;
 }
