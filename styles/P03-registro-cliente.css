@@ -1,0 +1,44 @@
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.contenedor2 {
+    margin: 50px;
+    border: solid 2px #f08700;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.contenedor2 input {
+    height: 200%;
+    margin: 10px;
+}
+
+.contenedor2 button {
+    background-color: #8EE5D8;
+    margin: 10px;
+    padding: auto;
+}
+
+.contenedor2 h1 {
+    margin: 0px 0px 35px 0px;
+}
+
+.info1 {
+    height: 200%;
+    margin: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
