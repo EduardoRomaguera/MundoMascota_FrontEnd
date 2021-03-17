@@ -1,5 +1,25 @@
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400 px;
+}
+
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
 .tabla {
     margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #D9D9D9;
+    border-style: solid;
 }
 
 .tabla tr {
@@ -17,19 +37,11 @@
 }
 
 .tabla tbody tr:nth-child(even) {
-    background: #424D4B;
+    background-color: #424D4B;
     color: #fff;
 }
 
 .tabla tbody tr td {
     width: 200px;
     text-align: center;
-    border: 1px solid;
-    padding: 8px;
-}
-
-.contenedor-tabla {
-    justify-content: center;
-    align-items: center;
-    min-height: 400 px;
 }
