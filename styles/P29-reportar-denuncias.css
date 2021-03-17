@@ -15,13 +15,16 @@
     font-weight: 700;
 }
 
-
-/*La la línea con la propiedad de with está afectando el chechbox, no debería...*/
-
-.contenedor2 input {
+contenedor2 input {
     height: 200%;
     margin: 25px 40px 20px 40px;
     width: auto;
+}
+
+.contenedor2 button {
+    background-color: #8EE5D8;
+    margin: 40px 40px 40px 40px;
+    padding: auto;
 }
 
 .contenedor2 a {
@@ -33,18 +36,30 @@
     color: #000000;
 }
 
-.contenedor2 h3 {
-    display: grid;
+.contenedor2 h1 {
+    margin: 0px 0px 0px 0px;
 }
 
 .contenedor3 {
-    display: flexbox;
+    display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     padding: 10px;
     justify-content: center;
 }
 
-.txt-denuncia-descripcion {
-    padding: 12px 20px;
+.grid-item {
+    padding: 10px;
+}
+
+.item1 {
+    font-size: 98px;
+}
+
+.item2 {
+    font-size: 18px;
+}
+
+.grid-item input[type="checkbox"] {
+    float: left;
 }
