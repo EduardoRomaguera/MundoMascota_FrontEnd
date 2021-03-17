@@ -37,6 +37,13 @@ function showPassword() {
           iniciarSesion(inputCorreo.value, inputContrasenna.value);
 
       } else {
+          Swal.fire({
+            imageUrl: "images/error.png",
+            title: "¡OOPS! Algo pasó aqui",
+            text: "Dejaste un espacio vacio",
+            confirmButtonText: "Intentar de nuevo"
+          });
+  
       }
   };
   btnSiguiente.addEventListener('click', validarInicioSesion);

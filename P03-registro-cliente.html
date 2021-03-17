@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P13-registro-mascota.css">
+    <link rel="stylesheet" href="styles/P03-registro-cliente.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
     <title>Registro cliente</title>
@@ -41,39 +41,56 @@
     <main>
         <section>
             <div class="contenedor1">
-                <div class="contenedor2 class=" h1 ">
-                    <h1>Registrar nueva mascota</h1>
-                    <input class="input-formularios " type="text " placeholder="Nombre ">
-                    <input class="input-formularios " type="text " placeholder="Especie ">
-                    <input class="input-formularios " type="text " placeholder="Raza ">
-                    <input class="input-formularios " type="text " placeholder="Teléfono de contacto ">
-                    <div class="info1 ">
-                         <!-- pendiente corregir desplegable para jalar información de catalogo -->
-                        <h1>Vacunas</h1>
-                            <select id="slt-vacuna ">
-                                <option value=" ">--Seleccione una opción</option>
-                                <option value="Vacuna1 ">Vacuna1</option>
-                                <option value="Vacuna2 ">Vacuna2</option>
-                                <option value="Otra vacuna ">Otra vacuna</option>
-                            </select>
+                <div class="contenedor2" class="h1">
+                    <h1>Registrarme para comprar </h1>
+                    <h3>Datos personales</h3>
+                    <h6 class="slim">Cuentanos más sobre ti</h6>
+                    <input class="input-formularios" id="txt-nombre" type="text" placeholder="Nombre">
+                    <input class="input-formularios" id="txt-apellido1" type="text" placeholder="Apellido1">
+                    <input class="input-formularios" type="text" placeholder="Apellido2">
+                    <select class="input-formularios">
+                        <option value="">Tipo de identificación</option>
+                        <option value="dimex">DIMEX</option>
+                        <option value="fisica">Física</option>
+                        <option value="juridica">Jurídica</option>
+                    </select>
+                    <input class="input-formularios" type="text" placeholder="Número de identificación">
+                    <input class="input-formularios" type="text" placeholder="Correo electrónico">
+                    <select class="input-formularios">
+                        <option value="">Provincia</option>
+                        <option value="sanjose">San José</option>
+                        <option value="alajuela">Alajuela</option>
+                        <option value="cartago">Cartago</option>
+                        <option value="heredia">Heredia</option>
+                        <option value="guanacaste">Guanacaste</option>
+                        <option value="puntarenas">Puntarenas</option>
+                        <option value="limon">Limón</option>
+                    </select>
+                    <!-- Falta hacer las listas para cantón y distrito -->
+                    <input class="input-formularios" type="text" placeholder="CANTÓN">
+                    <input class="input-formularios" type="text" placeholder="DISTRITO">
+                    <input class="input-formularios" type="text" placeholder="Otras señas">
+                    
+                    <h3>Mi mascota</h3>
+                    <h6 class="slim">Podrás registrar más mascotas cuando completes tu registro</h6>
+                    <input class="input-formularios" type="text" placeholder="Nombre">
+                    <input class="input-formularios" type="text" placeholder="ESPECIE">
+                    <input class="input-formularios" type="text" placeholder="RAZA">
+                    <input class="input-formularios" type="text" placeholder="Teléfono de contacto">
+                    <div class="contenedor3">
+                        VACUNAS
                     </div>
-                    <div class="info1 ">
-                        <!-- pendiente corregir desplegable para jalar información de catalogo -->
-                        <h1>Padecimiento</h1>
-                            <select id="slt-padecimiento ">
-                                <option value=" ">--Seleccione una opción</option>
-                                <option value="Padecimiento1 ">Padecimiento1</option>
-                                <option value="Padecimiento2 ">Padecimiento2</option>
-                                <option value="Otro padecimiento ">Otro padecimiento</option>
-                            </select>
+                    <div class="contenedor3">
+                        PADECIMIENTOS
                     </div>
-                    <div class="info1 ">
-                        <h1>Fotografías</h1>
+                    <div class="contenedor3">
+                        FOTOGRAFIAS
                     </div>
-                    <button class="btn2 ">Completar registro </button>
-                    <button class="btn2 ">Cancelar </button>
+
+                    <button class="btn2">Completar registro </button>
+                    <button class="btn2">Cancelar </button>
                 </div>
-            </div>
+                </div>
             </div>
         </section>
 
@@ -114,13 +131,8 @@
         </section>
     </footer>
 
-    <script src="scripts/index.js "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P03-registro-cliente.js"></script>
 </body>
-
-<section class="divisor2 ">
-    <a class="btn-sochi " href="https://example.com/ ">
-        Desarrollado por Sochi Software 2021. Derechos Reservados.
-    </a>
-</section>
-
 </html>

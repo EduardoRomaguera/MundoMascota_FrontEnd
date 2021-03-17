@@ -12,8 +12,6 @@ bntCerrarSesion.addEventListener('click', () => {
     cerrarSesion();
 });
 
-
-
 if (sessionStorage.getItem('usuarioConectado')) {
     usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
 } else {
