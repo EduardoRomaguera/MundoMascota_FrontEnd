@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40 px;
+    font-size: 40px;
 }
 
 h3 {
@@ -295,5 +295,17 @@ h5 {
     height: 75%;
 }
 
+a:hover {
+    color: #8EE5E8;
+}
+
+.error {
+    border: solid red 3px;
+    border-radius: 5px;
+}
+
+/* Tema para el Sweet Alert*/
+<link rel="stylesheet" href="@sweetalert2/themes/dark/dark.css">
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
 
 /*<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

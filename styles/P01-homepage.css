@@ -103,7 +103,8 @@
 }
 
 /* Botones siguiente y atras */
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -180,4 +181,78 @@
 
 a:hover {
     color: #8EE5E8;
+}
+
+.contenedor-responsive0 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.contenedor-responsive1 {
+    margin: 1%;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.contenedor-responsive2 {
+    margin: 1%;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.contenedor-responsive1, .contenedor-responsive2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-responsive1, .contenedor-responsive2 {
+    flex: 50%;
+    max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-responsive3 {
+        max-height: 0px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #ocultame1, #ocultame2 {
+        visibility: hidden;
+        max-height: 0px;
+    }
+}
+
+.contenedor-responsive3 {
+    height: 60px;
+    background-color: #8EE5D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+.contenedor-responsive3 a,
+#fix1 {
+    width: 100%;
+    color: black;
+}
+#ocultame1,
+#ocultame2 {
+    width: 100%;
+}
+
+.contenedor-responsive3 a:hover,
+#fix1 a:hover
+{
+    color: #F08700;
 }

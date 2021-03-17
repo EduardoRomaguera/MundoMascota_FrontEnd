@@ -1,0 +1,20 @@
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.fotos img {
+    margin: 1%;
+    vertical-align: middle;
+    width: 45%;
+}
+
+@media screen and (max-width: 1200px) {
+    .fotos img {
+    flex: 50%;
+    max-width: 100%;
+    }
+}

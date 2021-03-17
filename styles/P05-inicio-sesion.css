@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 900px;
 }
 
 .contenedor2 {
@@ -15,9 +15,11 @@
     font-weight: 700;
 }
 
+/*La la línea con la propiedad de with está afectando el chechbox, no debería...*/
 .contenedor2 input {
     height: 200%;
     margin: 25px 40px 20px 40px;
+    width: auto;
 }
 
 .contenedor2 button {

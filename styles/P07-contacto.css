@@ -1,0 +1,43 @@
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.lista1 li {
+    height: 200%;
+    margin: 5px 0 5px 0;
+    color: #000000;
+    text-align: center;
+}
+
+.divisor2 a {
+    color:#000000;
+}
+
+.lista1 li{
+    line-height: 150%;
+}
+
+.contenedor2 h4 {
+    margin: 0px 0 15px 0;
+}
+
+.contenedor2 h5 {
+    margin: 0px 0 20px;
+}
+
+#fix1 {
+    margin-top: 20px;
+}
