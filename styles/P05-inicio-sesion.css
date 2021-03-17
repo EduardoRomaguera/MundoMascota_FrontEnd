@@ -15,13 +15,7 @@
     font-weight: 700;
 }
 
-/*La la línea con la propiedad de with está afectando el chechbox, no debería...*/
-.contenedor2 input {
-    height: 200%;
-    margin: 25px 40px 20px 40px;
-    width: auto;
-}
-
+/*La línea con la propiedad de with está afectando el chechbox, no debería...*/
 .contenedor2 button {
     background-color: #8EE5D8;
     margin: 40px 40px 40px 40px;
@@ -35,6 +29,7 @@
 }
 
 .divisor2 a {
+    border: rgb(0, 210, 247) solid 3px;
     color:#000000;
 }
 
@@ -42,27 +37,29 @@
     margin: 0px 0px 0px 0px;
 }
 
-.contenedor3 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding: 10px;
+#fix2 {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.grid-item {
-    padding: 10px;
-    
+.input-formularios {
+    margin: 30px;
+    width: 90%;
 }
 
-.item1 {
-    font-size: 98px;
+#fix1 {
+    margin: 20px;
 }
 
-.item2 {
+#contenedor3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor2 p {
     font-size: 18px;
-}
+    line-height: 150%;
 
-.grid-item input[type="checkbox"] {
-float: left;
 }

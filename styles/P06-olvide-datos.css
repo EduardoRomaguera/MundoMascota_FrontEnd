@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 900px;
 }
 
 .contenedor2 {
@@ -32,5 +32,12 @@
 }
 
 .contenedor2 p {
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.input-formularios {
+    margin: 30px;
+    width: 90%;
 }
