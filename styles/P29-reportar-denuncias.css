@@ -5,30 +5,24 @@
     min-height: 900px;
 }
 
-.contenedor2 {
+.contenedor3 {
     border: solid 2px #f08700;
     border-radius: 10px;
-    display: inline-block;
+    display: flexbox;
+    flex-flow: column;
     align-items: center;
-    padding: 150px;
+    padding: 60px;
     font-weight: 700;
+    justify-content: center;
 }
 
-contenedor2 input {
+.contenedor3 input {
     height: 200%;
     margin: 50px;
     width: auto;
 }
 
-.contenedor2 a {
-    color: #f08700;
-    font-size: 15px;
-}
-
-.divisor2 a {
-    color: #000000;
-}
-
 .txt-denuncia-descripcion {
-    padding: 12px 20px;
+    margin: 50px;
+    width: 190%;
 }

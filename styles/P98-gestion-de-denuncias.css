@@ -1,0 +1,19 @@
+.contenedor-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.contenedor-denuncias {
+    display: flexbox;
+    width: 400px;
+    border: 7px solid green;
+    padding: auto;
+    margin: 10px;
+}
+
+.contenedor-info {
+    width: 300px;
+    border: 20px solid red;
+}
