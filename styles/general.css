@@ -34,22 +34,27 @@ a:visited {
 /*Tamaños generales de letra para H1, H2, H3, H4,  */
 h1 {
     font-size: 45px;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 40px;
+    font-weight: 500;
 }
 
 h3 {
     font-size: 30px;
+    font-weight: 400;
 }
 
 h4 {
     font-size: 25px;
+    font-weight: 400;
 }
 
 h5 {
     font-size: 18px;
+    font-weight: 300;
 }
 
 .h1 {

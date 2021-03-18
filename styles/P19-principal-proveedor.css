@@ -5,7 +5,7 @@
     min-height: 300px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 2px;
     font-size: 45px;
     font-weight: 700;
@@ -31,7 +31,7 @@
 }
 
 .mis-clientes {
-    background-image: url('../images/mis-clientes.png');
+    background-image: url('../images/mis-clientes.jpg');
     background-size: cover;
     background-position: center;
     min-height: 300px;
