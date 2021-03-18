@@ -8,23 +8,16 @@
 .contenedor2 {
     border: solid 2px #f08700;
     border-radius: 10px;
-    display: flex;
-    flex-flow: column;
+    display: inline-block;
     align-items: center;
-    padding: 60px;
+    padding: 150px;
     font-weight: 700;
 }
 
 contenedor2 input {
     height: 200%;
-    margin: 25px 40px 20px 40px;
+    margin: 50px;
     width: auto;
-}
-
-.contenedor2 button {
-    background-color: #8EE5D8;
-    margin: 40px 40px 40px 40px;
-    padding: auto;
 }
 
 .contenedor2 a {
@@ -36,30 +29,6 @@ contenedor2 input {
     color: #000000;
 }
 
-.contenedor2 h1 {
-    margin: 0px 0px 0px 0px;
-}
-
-.contenedor3 {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding: 10px;
-    justify-content: center;
-}
-
-.grid-item {
-    padding: 10px;
-}
-
-.item1 {
-    font-size: 98px;
-}
-
-.item2 {
-    font-size: 18px;
-}
-
-.grid-item input[type="checkbox"] {
-    float: left;
+.txt-denuncia-descripcion {
+    padding: 12px 20px;
 }
