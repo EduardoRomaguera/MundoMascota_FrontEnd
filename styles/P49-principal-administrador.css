@@ -1,0 +1,182 @@
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #424D4B;
+    ;
+    /*border: solid red;*/
+}
+
+.divisoradmin {
+    height: 60px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.barra {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.aprobados {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-izquierda {
+    background-image: url('../images/necesidad-aprobacion_1.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-centro {
+    background-image: url('../images/Cosas-pendientes-1-e1479501308387-800x560.jpg');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-derecha {
+    background-image: url('../images/rechazadas.jpg');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-cliente {
+    background-image: url('../images/clientes-admin.jpg');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a:hover {
+    color: black;
+}
+
+.imagen-izquierda2 {
+    background-image: url('../images/denuncias.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-derecha2 {
+    background-image: url('../images/mis-clientes.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-catalogo {
+    background-image: url('../images/catalogo001.jpg');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-patrocinador {
+    background-image: url('../images/patrocinadores001.jpg');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagen-acciones {
+    background-image: url('../images/reportes.jpg');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 320px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
