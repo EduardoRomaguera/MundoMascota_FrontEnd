@@ -47,6 +47,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .imagen-centro {
@@ -63,6 +64,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .imagen-derecha {
@@ -79,6 +81,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .imagen-cliente {

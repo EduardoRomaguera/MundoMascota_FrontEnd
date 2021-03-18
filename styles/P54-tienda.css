@@ -1,0 +1,98 @@
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #424D4B;
+    ;
+    /*border: solid red;*/
+}
+
+.proveedores-destacados {
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-proveedor {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor2 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor3 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor4 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor5 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor6 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor7 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor8 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor9 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor10 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor11 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
+
+.imagen-proveedor12 {
+    background-image: url('../images/exito1.png');
+    height: 400px;
+    width: 100%;
+}
