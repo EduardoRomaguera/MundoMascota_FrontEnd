@@ -30,7 +30,7 @@
 }
 
 #icono-pata {
-    font-size:90px;
+    font-size: 90px;
 }
 
 .info-mascota {
@@ -42,9 +42,17 @@
     width: 75%;
 }
 
+.info0 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100%;
+}
+
 .info1 {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -56,8 +64,13 @@
 
 #imagen {
     height: 100%;
+    max-width: 100%;
 }
 
 .info1 button {
+    background-color: #f08700;
+}
+
+.btn2 {
     background-color: #f08700;
 }

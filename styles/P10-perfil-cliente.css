@@ -1,54 +1,71 @@
-.perfil-cliente {
-    background-image: url('../images/perfil-cliente.jpg');
+.titulo {
     background-size: cover;
     background-position: center;
-    border: solid red 2px;
     display: flex;
-    padding: 2px;
+    padding: 50px;
     justify-content: space-around;
     flex-direction: row;
-    height: 600px;
+    height: 50px;
 }
 
-.foto-cliente {
-    border: solid rgb(235, 5, 224) 2px;
+.perfil-cliente {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 0% 10% 5% 10%;
+    padding: 0px 200px 100px 200px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 500px;
+}
+
+.imagen-cliente {
+    background-color: #f0870040;
     display: flex;
     padding: 2px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 25%;
 }
 
 .info-cliente {
-    border: solid rgb(5, 235, 5) 2px;
+    background-color: #f0870040;
     display: flex;
-    padding: 2px;
-    justify-content: space-around;
+    padding: 30px;
+    justify-content: space-between;
     flex-direction: column;
     width: 75%;
 }
 
-.info1 {
-    border: solid rgb(28, 5, 235) 2px;
+.info0 {
     display: flex;
-    padding: 2px;
-    justify-content: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+}
+
+.info1 {
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
 
 .info2 {
-    border: solid rgb(28, 5, 235) 2px;
     display: flex;
-    padding: 2px;
-    justify-content: space-around;
-    flex-direction: row;
+    padding: 8px;
+    flex-direction: column;
 }
 
-.info3 {
-    border: solid rgb(28, 5, 235) 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: center;
-    flex-direction: row;
+#imagen {
+    height: 100%;
+    max-width: 100%;
+}
+
+.info1 button {
+    background-color: #f08700;
+}
+
+.btn2 {
+    background-color: #f08700;
 }
