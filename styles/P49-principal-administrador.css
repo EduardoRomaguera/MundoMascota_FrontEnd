@@ -9,8 +9,8 @@
 }
 
 .divisoradmin {
-    height: 60px;
-    background-color: #D9D9D9;
+    height: 150px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +81,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .imagen-cliente {
