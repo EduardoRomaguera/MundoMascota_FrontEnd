@@ -7,26 +7,27 @@
 
 .contenedor3 {
     border: solid 2px #f08700;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 20px;
+    padding: 70px;
     content: normal;
-    font-weight: 1700;
+    font-weight: 1900;
 }
 
 .contenedor3 input {
     height: 200%;
-    margin: 50px;
+    margin: 60px;
     width: auto;
 }
 
 .cotenedor3 textarea {
+    margin: 50px;
     text-align: center;
     border: 5px solid black;
     border-radius: 13px;
-    padding: 10px;
+    padding: 30px;
     font-size: 18px;
     font-weight: 300;
 }
