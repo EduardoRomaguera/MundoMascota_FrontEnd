@@ -8,12 +8,12 @@
 .contenedor3 {
     border: solid 2px #f08700;
     border-radius: 10px;
-    display: flexbox;
+    display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 60px;
-    font-weight: 700;
-    justify-content: center;
+    padding: 20px;
+    content: normal;
+    font-weight: 1700;
 }
 
 .contenedor3 input {
@@ -22,7 +22,11 @@
     width: auto;
 }
 
-.txt-denuncia-descripcion {
-    margin: 50px;
-    width: 190%;
+.cotenedor3 textarea {
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 13px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
 }
