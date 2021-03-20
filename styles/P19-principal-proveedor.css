@@ -15,7 +15,7 @@
 }
 
 .mis-servicios {
-    background-image: url('../images/mis-mascotas.png');
+    background-image: url('../images/mis-servicios.jpg');
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -44,4 +44,13 @@
     color: white;
     text-align: center;
     width: 100%;
+}
+
+.divisor {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.btn-divisor {
+    margin-bottom: 10px;
 }

@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P19-principal-proveedor.css">
+    <link rel="stylesheet" href="styles/P13-registro-mascota.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Principal proveedor</title>
+    <title>Registro mascotas</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href="P19-principal-proveedor.html">
+                <a class="nav-A" href="P09.2-principal-cliente.html">
 
                     <img src="images/logo2-nav.png" id="logo">
                     <!--<a class="logo" href=P01-homepage.html></a>-->
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="nav-C">
-                    <a class="btn" href="P20-perfil-proveedor.html">Mi Perfil</a>
+                    <a class="btn" href="P10.2-perfil-cliente.html">Mi Perfil</a>
                     <a class="btn" href="P01-homepage.html">Cerrar Sesión</a>
                 </div>
             </div>
@@ -43,45 +43,50 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="titulo">
-                    <h1>Página principal proveedor</h1>
-                </section>
-                <section class="solicitudes-pendientes">
-                    <a href="P27-ordenes-pendientes.html">
-                 Solicitudes pendientes:
-            </a>
-                    <a href="P27-ordenes-pendientes.html">
-                02
-            </a>
 
-
-                </section>
-
-
-                <section class="divisor">
-                    <h1 class="btn-divisor"> </h1>
-                </section>
-
-                <section>
-                    <a class="mis-servicios" href="P22-mis-servicios.html">
-                Mis Servicios
-            </a>
-                </section>
-
-                <section class="divisor">
-                    <h1 class="btn-divisor"> </h1>
-                </section>
-
-                <section>
-                    <a class="mis-clientes" href="P46-mis-clientes.html">
-                        <!-- pendiente corregir href -->
-                        Mis Clientes
-                    </a>
-                </section>
+        <section>
+            <div class="contenedor1">
+                <div class="contenedor2 class=" h1 ">
+                    <h1>Registrar nueva mascota</h1>
+                    <input class="input-formularios"  type="text" id="txt-nombre" placeholder="Nombre">
+                    <input class="input-formularios" type="text" placeholder="Especie">
+                    <input class="input-formularios" type="text" placeholder="Raza">
+                    <input class="input-formularios" type="text" placeholder="Teléfono de contacto">
+                    <div class="info1">
+                         <!-- pendiente corregir desplegable para jalar información de catalogo -->
+                        <h1>Vacunas</h1>
+                            <select id="slt-vacuna">
+                                <option value=" ">--Seleccione una opción</option>
+                                <option value="Vacuna1">Vacuna1</option>
+                                <option value="Vacuna2">Vacuna2</option>
+                                <option value="Otra vacuna">Otra vacuna</option>
+                            </select>
+                    </div>
+                    <div class="info1">
+                        <!-- pendiente corregir desplegable para jalar información de catalogo -->
+                        <h1>Padecimiento</h1>
+                            <select id="slt-padecimiento">
+                                <option value=" ">--Seleccione una opción</option>
+                                <option value="Padecimiento1">Padecimiento1</option>
+                                <option value="Padecimiento2">Padecimiento2</option>
+                                <option value="Otro padecimiento">Otro padecimiento</option>
+                            </select>
+                    </div>
+                    <div class="info1">
+                        <h1>Fotografías</h1>
+                    </div>
+                    <a href="P47.2-mis-mascotas.html"><button class="btn2">Completar registro</button></a>
+                    <a href="P09.2-principal-cliente.html"><button class="btn2">Cancelar</button></a>
+                </div>
+            </div>
+            </div>
+        </section>
+        </div>
             </div>
             <div id="espaciador-der"></div>
-        </div>
+            </div>
     </main>
+
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
@@ -115,9 +120,10 @@
             </a>
         </section>
     </footer>
-
+    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="scripts/P13-registro-mascota.js"></script>
 </body>
 
 </html>
