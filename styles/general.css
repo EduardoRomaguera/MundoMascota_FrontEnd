@@ -18,6 +18,10 @@ html {
     width: 12.5%;
 }
 
+#contenedor-main {
+    width: 75%;
+}
+
 a:hover {
     color: #8EE5E8;
 }

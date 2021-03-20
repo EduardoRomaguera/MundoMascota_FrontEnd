@@ -95,6 +95,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #8EE5E850;
+    border-radius: 7px;
 }
 
 .patrocinadores {
@@ -102,14 +104,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #f0870020;
+    border-radius: 7px;
 }
 
 .slideshowA {
-    background-color: #F0870020;
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 250px;
+    height: 100%;
     font-size: 40px;
     font-weight: 700;
     color: white;
@@ -120,11 +123,10 @@
 }
 
 .slideshowB {
-    background-color: #8EE5E850;
     background-size: cover;
     background-position: center;
     width: 50%;
-    height: 250px;
+    height: 100%;
     font-size: 40px;
     font-weight: 700;
     color: white;
@@ -136,7 +138,6 @@
 
 .patrocinadores-derecha {
     background-position: center;
-    background-color: #f0870020;
     padding: 0 3% 0 3%;
     width: 60%;
     height: 300px;
@@ -156,7 +157,6 @@
 
 .exito-izquierda {
     background-position: center;
-    background-color: #8EE5E850;
     padding: 0 3% 0 3%;
     width: 60%;
     height: 300px;
@@ -166,14 +166,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 0 0 0%;
     border-radius: 7px 0 0 7px;
 }
+
+.exito-izquierda p {
+    padding: 0 3% 0 6%;
+    text-align: justify;
+    font-style: italic;
+}
+
+.exito-izquierda p {
+    padding: 0 3% 0 6%;
+    text-align: justify;
+    line-height: 130%;
+}
+
 .patrocinadores-derecha h4 {
     margin: 0 0 20px 0;
 }
 
+.patrocinadores-derecha p {
+    margin: 0 0 20px 0;
+    line-height: 130%;
+}
+
+#img-proveedor {
+    height: 70%;
+    border-radius: 50%;
+}
+
+#nombre-proveedor {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 10px;
+}
 
 /*Inicia código para slideshow de casos de éxito*/
 
@@ -195,13 +223,14 @@
     cursor: pointer;
     position: absolute;
     top: 30%;
-    width: auto;
+    width: 8%;
+    height: 30%;
     margin-top: -22px;
     padding: 10px;
     color: rgb(255, 255, 255);
     background: #80808050;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 80px;
     user-select: none;
 }
 
@@ -248,7 +277,6 @@
 /*Termina código para slideshow*/
 
 .proveedores-destacados {
-    border: solid red 2px;
     display: flex;
     padding: 2px;
     justify-content:space-around;
@@ -257,12 +285,28 @@
 }
 
 .prov {
-    border: solid rgb(5, 235, 5) 2px;
+    border: solid #F08700 2px;
+    border-radius: 7px;
+    width: 30%;
     display: flex;
     padding: 2px;
     justify-content:space-around;
     align-items: center;
     flex-direction: column;
+}
+
+.imagen-proveedor {
+    border: greenyellow 2px solid;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.info-proveedor {
+    border: greenyellow 2px solid;
+}
+
+.info-servicios {
+    border: greenyellow 2px solid;
 }
 
 .sobre-nosotros {
@@ -399,20 +443,6 @@ a:hover {
 #fix1 a:hover
 {
     color: #F08700;
-}
-
-#madre-espaciadores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#espaciador-izq {
-    width: 12.5%;
-}
-
-#espaciador-der {
-    width: 12.5%;
 }
 
 .img-slide-izq {
