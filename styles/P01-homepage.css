@@ -4,19 +4,30 @@
     /*Imagen de Free-Photos en Pixabay*/
     background-size: cover;
     background-position: center;
-    min-height: 600px;
+    min-height: 450px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2px;
+    margin: 1% 0 0.5% 0;
+    border-radius: 7px;
 }
 
-.banner a {
-    font-size: 40px;
-    font-weight: 700;
+.banner h2,
+.banner p {
     color: white;
     text-align: center;
     width: 100%;
+    user-select: none;
+    line-height: 190%;
+    background-color: #00000050;
+}
+
+.imagen-derecha2 h4 a {
+    font-weight: bold;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .registro {
@@ -38,8 +49,11 @@
     font-weight: 700;
     color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 3% 0 0%;
+    border-radius: 7px;
 }
 .imagen-derecha {
     background-image: url('../images/imagen-vender.png');
@@ -55,6 +69,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0 0 0 3%;
+    border-radius: 7px;
 }
 
 .tienda {
@@ -66,19 +82,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2px;
     font-size: 45px;
     font-weight: 700;
     color: white;
     text-align: center;
     width: 100%;
+    border-radius: 7px;
 }
 
 .exito {
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 2px;
     width: 100%;
 }
 
@@ -86,9 +101,79 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: 2px;
     width: 100%;
 }
+
+.slideshowA {
+    background-color: #F0870020;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px 0 0 7px;
+}
+
+.slideshowB {
+    background-color: #8EE5E850;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px 0 0 7px;
+}
+
+.patrocinadores-derecha {
+    background-position: center;
+    background-color: #f0870020;
+    padding: 0 3% 0 3%;
+    width: 60%;
+    height: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 0%;
+    border-radius: 0 7px 7px 0;
+}
+.patrocinadores-derecha h4 {
+    margin: 0 0 20px 0;
+}
+
+.exito-izquierda {
+    background-position: center;
+    background-color: #8EE5E850;
+    padding: 0 3% 0 3%;
+    width: 60%;
+    height: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 0%;
+    border-radius: 7px 0 0 7px;
+}
+.patrocinadores-derecha h4 {
+    margin: 0 0 20px 0;
+}
+
 
 /*Inicia código para slideshow de casos de éxito*/
 
@@ -97,30 +182,36 @@
 .slideshowA,
 .slideshowB,
 .slideshow {
-    max-width: 1000px;
+    max-width: 45%;
+    min-height: 300px;
     position: relative;
     margin: auto;
 }
+
 
 /* Botones siguiente y atras */
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 30%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: white;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background: #80808050;
     font-weight: bold;
     font-size: 100px;
-    border-radius: 0 3px 3px 0;
     user-select: none;
-    border-radius: 10px 10px 10px 10px;
+}
+
+.prev {
+    border-radius: 0 7px 7px 0;
 }
 
 .next {
     right: 0;
+    border-radius: 7px 0 0 7px;
 }
 
 .prev:hover, .next:hover {
@@ -128,18 +219,33 @@
 }
 
 /* Descripciones */
-.text {
+.text-der {
     color: #f2f2f2;
+    width: 100%;
     background-color: #00000090;
     font-size: 18px;
     padding: 10px;
     position: absolute;
-    bottom: 20px;
-    width: 100%;
+    bottom: 0px;
     text-align: center;
     line-height: 140%;
+    border-radius: 0 7px 7px 0;
 }
-/*Termina código para slideshow de casos de éxito*/
+
+.text-izq {
+    color: #f2f2f2;
+    width: 100%;
+    background-color: #00000090;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    line-height: 140%;
+    border-radius: 7px 0 0 7px;
+}
+
+/*Termina código para slideshow*/
 
 .proveedores-destacados {
     border: solid red 2px;
@@ -158,6 +264,50 @@
     align-items: center;
     flex-direction: column;
 }
+
+.sobre-nosotros {
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-izquierda2 {
+    background-image: url('../images/abaa0.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0%;
+    border-radius: 7px 0 0 7px;
+}
+.imagen-derecha2 {
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-position: center;
+    background-color: #8EE5E850;
+    padding: 0 3% 0 3%;
+    width: 60%;
+    height: 300px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 0%;
+    border-radius: 0 7px 7px 0;
+}
+
 .lista-actividades {
     display: flex;
 }
@@ -165,6 +315,7 @@
     font-weight: 300;
     font-size: 25px;
     line-height: 120%;
+    color: black;
 }
 
 .quienes {
@@ -175,7 +326,7 @@
     margin: 2px;
 }
 
-.imagen-derecha h4 {
+.imagen-derecha2 h4 {
     margin: 0 0 20px 0;
 }
 
@@ -185,30 +336,23 @@ a:hover {
 
 .contenedor-responsive0 {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0%;
+    justify-content: space-between;
 }
 
 .contenedor-responsive1 {
-    margin: 1%;
-    vertical-align: middle;
-    width: 45%;
+    width: 50%;
+    margin: 0 3% 0 0;
 }
 
 .contenedor-responsive2 {
-    margin: 1%;
-    vertical-align: middle;
-    width: 45%;
+    width: 50%;
+    margin: 0 0 0 3%;
 }
 
 .contenedor-responsive1, .contenedor-responsive2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin: 1%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -234,12 +378,12 @@ a:hover {
 }
 
 .contenedor-responsive3 {
-    height: 60px;
-    background-color: #8EE5D8;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2px;
+    height: 30px;
+    margin: 5% 0 0 0;
 }
 .contenedor-responsive3 a,
 #fix1 {
@@ -255,4 +399,41 @@ a:hover {
 #fix1 a:hover
 {
     color: #F08700;
+}
+
+#madre-espaciadores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#espaciador-izq {
+    width: 12.5%;
+}
+
+#espaciador-der {
+    width: 12.5%;
+}
+
+.img-slide-izq {
+    border-radius: 7px 0 0 7px;
+    width:100%
+}
+
+.img-slide-der {
+    border-radius: 0 7px 7px 0;
+    width:100%
+}
+
+.h6 {
+    text-align: center;
+    margin-top: 2%;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.imagen-derecha2 p {
+    padding: 0.5%;
+    line-height: 120%;
+    text-align: justify;
 }

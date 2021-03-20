@@ -4,20 +4,6 @@ html {
     font-weight: 300px;
 }
 
-#madre-espaciadores {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#espaciador-izq {
-    width: 12.5%;
-}
-
-#espaciador-der {
-    width: 12.5%;
-}
-
 a:hover {
     color: #8EE5E8;
 }
@@ -73,32 +59,26 @@ h5 {
 
 .h1 {
     font-size: 45px;
-    font-weight: 300;
 }
 
 .h2 {
     font-size: 40 px;
-    font-weight: 300;
 }
 
 .h3 {
     font-size: 30px;
-    font-weight: 300;
 }
 
 .h4 {
     font-size: 25px;
-    font-weight: 300;
 }
 
 .h5 {
     font-size: 18px;
-    font-weight: 300;
 }
 
 .h6 {
     font-size: 15px;
-    font-weight: 300;
 }
 
 .slim {
@@ -120,22 +100,13 @@ h5 {
 
 .placeholder {
     text-align: center;
-    border-radius: 7px;
-    border: #000000 solid 1px;
-}
-#btn-buscar {
-    text-align: center;
-    padding: 5px 10px 5px 10px;
-    color: #ffffff;
-
-    background-color: #ffffff00;
-    border: #00000090;
+    border-radius: 3px;
 }
 
 .input-formularios {
     text-align: center;
     border: solid black 2px;
-    border-radius: 7px;
+    border-radius: 3px;
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
@@ -162,7 +133,7 @@ h5 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 260px;
+    width: 250px;
     /*background-image: url('../images/logo-nav.png');*/
 }
 
@@ -185,17 +156,14 @@ h5 {
     background-image: url('../images/logo-nav.png');
     background-size: cover;
     width: 260px;
-    height: 70%;
+    height: 95%;
 }
 
-#logo {
-    max-height: 70%;
-    margin: 0 0 0 2%;
-}
 .btn {
     color: black;
     font-size: 18px;
     font-weight: bold;
+    flex: 1 1 auto;
     padding: 10px;
     color: #D9D9D9;
 }
@@ -204,9 +172,10 @@ h5 {
     color: black;
     font-size: 18px;
     font-weight: bold;
+    flex: 1 1 auto;
     padding: 10px 25px 10px 25px;
     border: solid black 2px;
-    border-radius: 7px;
+    border-radius: 3px;
 }
 
 
@@ -214,7 +183,7 @@ h5 {
 
 .barra-busqueda {
     width: 100%;
-    height: 50%;
+    height: 85%;
     display: flex;
     justify-content: center;
 }
@@ -222,7 +191,7 @@ h5 {
 .nav-B input[type=text] {
     margin-right: 5px;
     font-size: 18px;
-    width: 90%;
+    width: 80%;
 }
 
 .nav-B .barra-busqueda button {
@@ -233,12 +202,12 @@ h5 {
 }
 
 .divisor {
-    background-color: #ffffff;
+    height: 60px;
+    background-color: #8EE5D8;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90px;
-    margin: 2.5% 0 0 0;
+    margin: 2px;
 }
 
 .divisor2 {
@@ -247,7 +216,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 0 0;
+    margin: 2px;
 }
 
 .btn-divisor {
@@ -267,27 +236,26 @@ h5 {
 }
 
 .foot-madre {
-    height: 150px;
+    height: 130px;
     display: flex;
     justify-content: space-between;
     background: #424D4B;
+    margin: 2px;
     color: white;
-    margin: 2% 0 0 0;
 }
 
 .foot-A,
 .foot-C {
     display: flex;
-    padding: 10px;
+    padding: 2px;
     width: 35%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
 
 .foot-B {
     display: flex;
-    flex-direction: column;
     padding: 2px;
     width: 35%;
     justify-content: space-around;
@@ -312,8 +280,11 @@ h5 {
 }
 
 #cr {
-height: 150px;
-position: absolute;
+    background-image: url('../images/cr.png');
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 75%;
 }
 
 .lista {
@@ -326,19 +297,11 @@ position: absolute;
 }
 
 #fb {
-    font-size: 40px;
-    color: #FFFFFF;
-    position: relative;
-    top: -35px;
-    margin: 0 10px 0 20px;
-}
-
-#insta {
-    font-size: 40px;
-    color: #FFFFFF;
-    position: relative;
-    top: -35px;
-    margin: 0 20px 0 10px;
+    background-image: url('../images/facebook.png');
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 75%;
 }
 
 a:hover {
@@ -347,7 +310,7 @@ a:hover {
 
 .error {
     border: solid red 3px;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 /* Tema para el Sweet Alert*/

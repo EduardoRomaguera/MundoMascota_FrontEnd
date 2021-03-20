@@ -18,14 +18,17 @@
     <header>
         <nav>
             <div class="nav-madre">
-                <div class="nav-A">
-                    <a class="logo" href=P01-homepage.html></a>
-                </div>
+                <a class="nav-A" href=P01-homepage.html>
+                    
+                    <img src="images/logo2-nav.png" id="logo">
+                    <!--<a class="logo" href=P01-homepage.html></a>-->
+                </a>
 
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
                     </form>
                 </div>
 
@@ -39,113 +42,147 @@
     </header>
 
     <main>
+        <div id="madre-espaciadores">
+        <div id="espaciador-izq"></div>
+        <div id="contenedor-main">
         <section class="banner">
-            <a>Todo Para Su Mascota</a>
+            <h2>Cuidar a tu mascota nunca fue tan fácil</h2>
+            <p>Pasear tu perro, el grooming de tu gatito o alimentar tus mascotas mientras vas a la playa.</p>
         </section>
 
         <section class="divisor">
-            <h1 class="btn-divisor">Registrarse</h1>
+            <h1 class="btn-divisor"> </h1>
+        </section>
+
+        <section class="sobre-nosotros">
+            <a class="imagen-izquierda2" href="P02-quienes-somos.html">
+                <h2> Más sobre nosotros</h2>
+            </a>
+
+            <div class="imagen-derecha2">
+                <h4 class="h4"> En <a href="P02-quienes-somos.html">ABAA</a> creemos en el bienestar animal</h4>
+                    <p class="h5"> Creamos Mundo Mascota para poner en contacto dueños de mascotas con proveedores de servicios.
+                    </p>
+                    <p class="h5">Como cliente podrás contactar emprendedores y pequeñas empresas dedicadas a mejorar la vida de tu mascota.
+                    </p>
+                    <p class="h5">Si eres un emprendedor o tienes una pequeña empresa tambien puedes registrarte y ofrecer tus servicios para mascotas.
+                    </p>
+            </div>
+        </section>
+
+        <section class="divisor">
+            <h1 class="btn-divisor">Registrarse es muy facil</h1>
         </section>
 
         <section class="registro">
             <a class="imagen-izquierda" href="P03-registro-cliente.html">
-                <h2>Compra</h2>
+                <h2>Cliente</h2>
+                <p class="h6">Podrás buscar y adquirir servicios para tus mascotas.</p>
             </a>
 
             <a class="imagen-derecha" href="P04-registro-proveedor.html">
-                Vende
+                <h2>Proveedor</h2>
+                <p class="h6">Podrás registrar tus servicios para que los clientes los puedan adquirir.</p>
+                
             </a>
         </section>
-        <div class="contenedor-responsive3">
-            <a class="btn-divisor" href="P08-patrocinadores.html">Patrocinadores</a>
-            <p class="btn-divisor">Historias de Éxito</p>
-        </div>
-        <div class="contenedor-responsive0">
-            <div class="contenedor-responsive1">
+        
+        <section class="divisor">
+            <h1 class="btn-divisor">Patrocinadores</h1>
+        </section>
+        
+        <section class="patrocinadores">
+            <div class="slideshowA">
+                <div>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador1.jpg" class="img-slide-izq">
+                    <div class="text-izq">Taste of the Wild</div>
+                </div>
 
-                <section class="divisor" id="ocultame1">
-                    <a class="btn-divisor" id="fix1" href="P08-patrocinadores.html">Patrocinadores</a>
-                </section>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador2.jpg" class="img-slide-izq">
+                    <div class="text-izq">Royal Canin</div>
+                </div>
 
-                <section class="patrocinadores">
-                    <div class="slideshowA">
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador1.jpg" style="width:100%">
-                            <div class="text">Taste of the Wild</div>
-                        </div>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador3.jpg" class="img-slide-izq">
+                    <div class="text-izq">La Vete Veterinaria y Petshop</div>
+                </div>
 
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador2.jpg" style="width:100%">
-                            <div class="text">Royal Canin</div>
-                        </div>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador4.jpg" class="img-slide-izq">
+                    <div class="text-izq">MediPet Veterinaria</div>
+                </div>
 
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador3.jpg" style="width:100%">
-                            <div class="text">La Vete Veterinaria y Petshop</div>
-                        </div>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador5.jpg" class="img-slide-izq">
+                    <div class="text-izq">Alimentos Hills</div>
+                </div>
 
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador4.jpg" style="width:100%">
-                            <div class="text">MediPet Veterinaria</div>
-                        </div>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador6.jpg" class="img-slide-izq">
+                    <div class="text-izq">Purina Pro Plan, lo mejor para su mascota</div>
+                </div>
 
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador5.jpg" style="width:100%">
-                            <div class="text">Alimentos Hills</div>
-                        </div>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador7.jpg" class="img-slide-izq">
+                    <div class="text-izq">BestForPets, somos su veterinaria</div>
+                </div>
 
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador6.jpg" style="width:100%">
-                            <div class="text">Purina Pro Plan, lo mejor para su mascota</div>
-                        </div>
-
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador7.jpg" style="width:100%">
-                            <div class="text">BestForPets, somos su veterinaria</div>
-                        </div>
-
-                        <div class="mySlidesA">
-                            <img src="images/patrocinador8.jpg" style="width:100%">
-                            <div class="text">Cinepolis te espera</div>
-                        </div>
-                        
-                        <a class="prev" onclick="plusSlides(-1, 0)">&#10096;</a>
-                        <a class="next" onclick="plusSlides(1, 0)">&#10097;</a>
-                    </div>
-                </section>
+                <div class="mySlidesA">
+                    <img src="images/patrocinador8.jpg" class="img-slide-izq">
+                    <div class="text-izq">Cinepolis te espera</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10096;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10097;</a>
+                </div>
             </div>
-            <div class="contenedor-responsive2">
-                <section class="divisor" id="ocultame2">
-                    <h1 class="btn-divisor">Historias de Éxito</h1>
-                </section>
-
-                <section class="exito">
-                    <!-- Slideshow -->
-                    <div class="slideshowB">
-
-                        <!-- Espacio para colocar las imágenes -->
-                        <div class="mySlidesB">
-                            <img src="images/exito1.png" style="width:100%">
-                            <div class="text">"A Salchi y Manchas les encanta jugar en el patio, pero no tengo tiempo de estarlos bañando. En Mundo Mascota encontré un vecino que brinda ese servicio. Estoy muy contenta." Paola Bermudez</div>
-                        </div>
-
-                        <div class="mySlidesB">
-                            <img src="images/exito2.png" style="width:100%">
-                            <div class="text">"Por cuestiones de trabajo tengo que viajar al menos una vez al mes. No tengo quíen se encargue de Bolita. En Mundo Mascota encontré una niñera de mascotas. ¡Es un éxito!" Jorge Martinez</div>
-                        </div>
-
-                        <div class="mySlidesB">
-                            <img src="images/exito3.png" style="width:100%">
-                            <div class="text">"A Karen y Brayan les encanta pasear por el barrio en las mañanas pero a veces con los niños y el trabajo no lo logro. Por dicha en Mundo Mascotas encontré Servicios Kakaroto. Ellos se encargan de sacar a mis perritos y son super felices."
-                                Soledad Vargas</div>
-                        </div>
-
-                        <a class="prev" onclick="plusSlides(-1, 1)">&#10096;</a>
-                        <a class="next" onclick="plusSlides(1, 1)">&#10097;</a>
-                    </div>
-                </section>
+            <div class="patrocinadores-derecha">
+                <h4 class="h4"> En Mundo Mascota creemos en la colaboración</h4>
+                    <p class="h5"> Nuestros patrocinadores son excelentes marcas y empresas aliadas que también hacen esta plataforma posible.</p>
+                    <p class="h5">
+                    </p>
+                    <p class="h5">
+                    </p>
             </div>
-        </div>
+        </section>
+
+        <section class="divisor">
+            <h1 class="btn-divisor">Histórias de éxito</h1>
+        </section>
+
+        <section class="exito">
+            <div class="exito-izquierda">
+                <h4 class="h4"> En Mundo Mascota creemos en la colaboración</h4>
+                    <p class="h5"> Nuestros patrocinadores son excelentes marcas y empresas aliadas que también hacen esta plataforma posible.</p>
+                    <p class="h5">
+                    </p>
+                    <p class="h5">
+                    </p>
+            </div>
+            <div class="slideshowB">
+                <div>
+                    <div class="mySlidesB">
+                        <img src="images/exito1.png" class="img-slide-der">
+                        <div class="text-der">"A Salchi y Manchas les encanta jugar en el patio, pero no tengo tiempo de estarlos bañando. En Mundo Mascota encontré un vecino que brinda ese servicio. Estoy muy contenta." Paola Bermudez</div>
+                    </div>
+    
+                    <div class="mySlidesB">
+                        <img src="images/exito2.png" class="img-slide-der">
+                        <div class="text-der">"Por cuestiones de trabajo tengo que viajar al menos una vez al mes. No tengo quíen se encargue de Bolita. En Mundo Mascota encontré una niñera de mascotas. ¡Es un éxito!" Jorge Martinez</div>
+                    </div>
+    
+                    <div class="mySlidesB">
+                        <img src="images/exito3.png" class="img-slide-der">
+                        <div class="text-der">"A Karen y Brayan les encanta pasear por el barrio en las mañanas pero a veces con los niños y el trabajo no lo logro. Por dicha en Mundo Mascotas encontré Servicios Kakaroto. Ellos se encargan de sacar a mis perritos y son super felices."
+                            Soledad Vargas</div>
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10096;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10097;</a>
+            </div>
+        </section>
+
         <section class="divisor">
             <h1 class="btn-divisor">Proveedores Destacados</h1>
         </section>
@@ -184,57 +221,43 @@
                 </div>
             </div>
         </section>
+        <section class="divisor">
+            <h1 class="btn-divisor"></h1>
+        </section>
         <section>
             <a class="tienda" href="https://example.com/">
                 tienda
             </a>
         </section>
-        <section class="divisor">
-            <h1 class="btn-divisor">Quienes somos</h1>
-        </section>
-        <section class="registro">
-            <a class="imagen-izquierda" href="P02-quienes-somos.html">
-                <h2>Más sobre nosotros</h2>
-            </a>
 
-            <div class="imagen-derecha">
-                <h4 class="h4"> Nuestras actividades</h4>
-                <ul class="lista">
-                    <li class="actividades">Eventos salud animal</li>
-                    <li class="actividades">Voluntariados</li>
-                    <li class="actividades">Activismo</li>
-                    <li class="actividades">Iniciativas de ley</li>
-                    <li class="actividades">Capacitaciones</li>
-                </ul>
-            </div>
-        </section>
-
-
+        </div>
+        <div id="espaciador-der"></div>
+        </div>
     </main>
     <footer>
-        <section class="divisor2">
-            <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
-        </section>
-
         <div class="foot-madre">
             <div class="foot-A">
                 <h5>Una empresa 100% nacional</h5>
-                <div id="cr"></div>
+                <img src="images/cr.png" id="cr">
             </div>
 
             <div class="foot-B">
+                <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
                     <li>WhatsApp</li>
-                    <li class="italica">8888-8888</li>
+                    <li class="italica">8849-0592</li>
                     <li>Teléfono</li>
-                    <li class="italica">8888-8888</li>
+                    <li class="italica">800-MASCOTA</li>
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
 
             <div class="foot-C">
                 <h5>Siguenos</h5>
-                <a id="fb" href="https://www.facebook.com/"></a>
+                <div>
+                    <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a id="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
 

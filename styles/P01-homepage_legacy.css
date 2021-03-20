@@ -1,0 +1,258 @@
+
+.banner {
+    background-image: url('../images/index-banner.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.banner a {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.registro {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-izquierda {
+    background-image: url('../images/imagen-comprar.png');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen-derecha {
+    background-image: url('../images/imagen-vender.png');
+    /*Imagen de Светлана Бердник en Pixabay */
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tienda {
+    background-image: url('../images/index-tienda.png');
+    /*Imagen de Free-Photos en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.exito {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 100%;
+}
+
+.patrocinadores {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 100%;
+}
+
+/*Inicia código para slideshow de casos de éxito*/
+
+* {box-sizing:border-box}
+
+.slideshowA,
+.slideshowB,
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Botones siguiente y atras */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.80);
+}
+
+/* Descripciones */
+.text {
+    color: #f2f2f2;
+    background-color: #00000090;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 140%;
+}
+/*Termina código para slideshow de casos de éxito*/
+
+.proveedores-destacados {
+    border: solid red 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    border: solid rgb(5, 235, 5) 2px;
+    display: flex;
+    padding: 2px;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.lista-actividades {
+    display: flex;
+}
+.actividades {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+.quienes {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.imagen-derecha h4 {
+    margin: 0 0 20px 0;
+}
+
+a:hover {
+    color: #8EE5E8;
+}
+
+.contenedor-responsive0 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+.contenedor-responsive1 {
+    margin: 1%;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.contenedor-responsive2 {
+    margin: 1%;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.contenedor-responsive1, .contenedor-responsive2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-responsive1, .contenedor-responsive2 {
+    flex: 50%;
+    max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-responsive3 {
+        max-height: 0px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #ocultame1, #ocultame2 {
+        visibility: hidden;
+        max-height: 0px;
+    }
+}
+
+.contenedor-responsive3 {
+    height: 60px;
+    background-color: #8EE5D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+.contenedor-responsive3 a,
+#fix1 {
+    width: 100%;
+    color: black;
+}
+#ocultame1,
+#ocultame2 {
+    width: 100%;
+}
+
+.contenedor-responsive3 a:hover,
+#fix1 a:hover
+{
+    color: #F08700;
+}
