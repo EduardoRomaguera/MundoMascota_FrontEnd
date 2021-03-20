@@ -23,16 +23,16 @@
 }
 
 .tabla tr {
-    height: 35px;
+    height: 50px;
 }
 
 .tabla thead tr {
-    background: #8EE5D8;
+    background: #f08700;
     color: #fff;
 }
 
 .tabla thead tr th {
-    width: 200px;
+    width: 500px;
     text-align: center;
 }
 
@@ -42,6 +42,6 @@
 }
 
 .tabla tbody tr td {
-    width: 200px;
+    width: 500px;
     text-align: center;
 }
