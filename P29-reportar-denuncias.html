@@ -7,39 +7,55 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/P29-reportar-denuncias.css">
+    <link rel="icon" href="images/icono.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
     <title>Denuncias</title>
 </head>
 
 <body>
-    <header class="nav-madre">
-        <div class="nav-A">
-            <a class="logo" href=index.html></a>
-        </div>
-        <div class="nav-C">
-            <a class="btn" href="https://example.com/">Cerrar Sesión</a>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <div class="nav-A">
+                    <a class="logo" href="P19-principal-proveedor.html"></a>
 
-            <a class="btn" href="https://example.com/">Iniciar Sesión</a>
-        </div>
+                </div>
+
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input type="text" placeholder="Buscar">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <div class="nav-C">
+                    <a class="btn" href="P20-perfil-proveedor.html">Mi Perfil</a>
+                    <a class="btn" href="P01-homepage.html">Cerrar Sesión</a>
+                    <!-- pendiente agregar el cierre de sesión, que no quede abierta la sesión al regresar al index -->
+                </div>
+            </div>
+        </nav>
     </header>
+
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-        <section>
-            <div class="contenedor1">
-                <div class="contenedor3">
-                    <h4>REPORTAR DENUNCIAS</h4>
-                    <input class="input-formularios" id="txt-cliente-denunciar" placeholder="Cliente a denunciar">
-                    <input class="input-formularios" id="txt-motivo-denuncia" placeholder="Motivo de la denuncia">
-                    <textarea name="txt-descripcion" id="txt-descripcion-denuncia" cols="40" rows="8" placeholder="Por favor describa lo sucedido">
+                <section>
+                    <div class="contenedor1">
+                        <div class="contenedor3">
+                            <h4>REPORTAR DENUNCIAS</h4>
+                            <input class="input-formularios" id="txt-cliente-denunciar" placeholder="Cliente a denunciar">
+                            <input class="input-formularios" id="txt-motivo-denuncia" placeholder="Motivo de la denuncia">
+                            <textarea name="txt-descripcion" id="txt-descripcion-denuncia" cols="40" rows="8" placeholder="Por favor describa lo sucedido">
                          
                     </textarea>
-                </div>
-            </div>
-        </section>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div id="espaciador-der"></div>
-            </div>
+        </div>
     </main>
     <footer>
         <section class="divisor2">
