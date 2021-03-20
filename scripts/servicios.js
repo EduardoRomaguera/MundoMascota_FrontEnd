@@ -139,6 +139,64 @@ let listaUsuarios = [{
         'tipo': 'Cliente'
     }
 ];
+let listaUsuariosProveedores = [{
+    'correo': 'proveedor@proveedor.com',
+    'nombre': 'Pablo Monestel',
+    'nacimiento': '10-12-1987',
+    'sexo': 'Masculino',
+    'contrasenna': '123',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "alejandroproveedor@gmail.com",
+    "nombre": "Alejandro Ortiz",
+    "nacimiento": "29-01-1998",
+    'sexo': 'Masculino',
+    'contrasenna': 'abcd1254',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "josemendez@gmail.com",
+    "nombre": "Jose Mendez",
+    "nacimiento": "24-05-1995",
+    'sexo': 'Masculino',
+    'contrasenna': 'qwert124',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "miguelperez@puppyworld.com",
+    "nombre": "Miguel Perez",
+    "nacimiento": "15-07-2000",
+    'sexo': 'Masculino',
+    'contrasenna': 'proveedor445',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "Sammy12@outlook.com",
+    "nombre": "Samantha Hernandez",
+    "nacimiento": "21-04-1997",
+    'sexo': 'Femenino',
+    'contrasenna': 'sammy123',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "douglas78@hotmail.com",
+    "nombre": "Jhonny Jimenez",
+    "nacimiento": "01-07-1997",
+    'sexo': 'Masculino',
+    'contrasenna': 'rodri415',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "Glori@yahoo.com",
+    "nombre": "Gloriana Morales",
+    "nacimiento": "24-12-1992",
+    'sexo': 'Femenino',
+    'contrasenna': 'glorigirl48',
+    'tipo': 'Proveedor'
+}, {
+    "correo": "steph45@proveedor.com",
+    "nombre": "Stephan Ruiz",
+    "nacimiento": "22-05-1992",
+    'sexo': 'Masculino',
+    'contrasenna': 'Steph48',
+    'tipo': 'Proveedor'
+}];
+
 
 //Codigo para validar la información de usuario y contraseña
 
