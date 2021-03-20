@@ -3,43 +3,47 @@
 let listaRazas = [{
     'nombre': 'Pastor Alemán',
     'especie': 'Perro',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Bulldog',
     'especie': 'Perro',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Golden Retriever',
     'especie': 'Perro',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Gran Danés',
     'especie': 'Perro',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Poddle',
     'especie': 'Perro',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Persa',
     'especie': 'Gato',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
-    'nombre': 'Persa',
+    'nombre': 'Angora',
     'especie': 'Gato',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Bengala',
     'especie': 'Gato',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Maine Coon',
     'especie': 'Gato',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
 }, {
     'nombre': 'Criollo',
     'especie': 'Gato',
-    'estado': 'Áctivo'
+    'estado': 'Activo'
+}, {
+    'nombre': 'Siamés',
+    'especie': 'Gato',
+    'estado': 'Activo'
 }]
 
 let listaEnfermedades = [{
@@ -67,7 +71,7 @@ let listaEnfermedades = [{
     'especie': 'Gato',
     'estado': 'Áctivo'
 }, {
-    'nombre': 'Asma felino',
+    'nombre': 'Asma felina',
     'especie': 'Gato',
     'estado': 'Áctivo'
 }, {
@@ -101,7 +105,7 @@ let listaVacunas = [{
     'especie': 'Gato',
     'estado': 'Áctivo'
 }, {
-    'nombre': 'Leucemia felina',
+    'nombre': 'Trifelina',
     'especie': 'Gato',
     'estado': 'Áctivo'
 }]

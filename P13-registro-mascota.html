@@ -40,51 +40,75 @@
     </header>
 
     <main>
-        <div id="madre-espaciadores">
-            <div id="espaciador-izq"></div>
-            <div id="contenedor-main">
-
         <section>
             <div class="contenedor1">
-                <div class="contenedor2 class=" h1 ">
-                    <h1>Registrar nueva mascota</h1>
-                    <input class="input-formularios"  type="text" id="txt-nombre" placeholder="Nombre">
-                    <input class="input-formularios" type="text" placeholder="Especie">
-                    <input class="input-formularios" type="text" placeholder="Raza">
-                    <input class="input-formularios" type="text" placeholder="Teléfono de contacto">
+                <div class="contenedor2">
+                    <div class="titulo-registro">
+                        <h2>Registrar nueva mascota</h2>
+                    </div>
+                    <input class="input-formularios" type="text" id="txt-nombre" placeholder="Nombre">
+
                     <div class="info1">
-                         <!-- pendiente corregir desplegable para jalar información de catalogo -->
-                        <h1>Vacunas</h1>
-                            <select id="slt-vacuna">
-                                <option value=" ">--Seleccione una opción</option>
-                                <option value="Vacuna1">Vacuna1</option>
-                                <option value="Vacuna2">Vacuna2</option>
-                                <option value="Otra vacuna">Otra vacuna</option>
+                        <h5>Especie</h5>
+                        <select id="slt-especie">
+                                <option value=" ">--Seleccione una opción--</option>
+                                <option value="Perro">Perro</option>
+                                <option value="Gato">Gato</option>
                             </select>
                     </div>
+
+                    <div class="info1">
+                        <h5>Raza</h5>
+                        <select id="slt-Raza">
+                                <option value=" ">--Seleccione una opción--</option>
+                                <option value="Vacuna1">Angora</option>
+                                <option value="Vacuna2">Bengala</option>
+                                <option value="Otra vacuna">Criollo</option>
+                                <option value="Otra vacuna">Maime Coon</option>
+                                <option value="Otra vacuna">Persa</option>
+                                <option value="Otra vacuna">Siamés</option>
+                            </select>
+                    </div>
+
+
+                    <input class="input-formularios" type="text" placeholder="Teléfono de contacto">
+
                     <div class="info1">
                         <!-- pendiente corregir desplegable para jalar información de catalogo -->
-                        <h1>Padecimiento</h1>
-                            <select id="slt-padecimiento">
-                                <option value=" ">--Seleccione una opción</option>
-                                <option value="Padecimiento1">Padecimiento1</option>
-                                <option value="Padecimiento2">Padecimiento2</option>
-                                <option value="Otro padecimiento">Otro padecimiento</option>
+                        <h5>Vacunas</h5>
+                        <select id="slt-vacuna">
+                                <option value=" ">--Seleccione una opción--</option>
+                                <option value="Vacuna1">Trifelina</option>
+                                <option value="Vacuna2">Leucemia</option>
+                                <option value="Otra vacuna">Otitis externa</option>
+                                <option value="Otra vacuna">Insuficiencia renal</option>
+                                <option value="Otra vacuna">Toxoplasmosis</option>                                
                             </select>
                     </div>
                     <div class="info1">
-                        <h1>Fotografías</h1>
+                        <h5>Padecimiento</h5>
+                        <select id="slt-padecimiento">
+                                <option value=" ">--Seleccione una opción--</option>
+                                <option value="Vacuna1">Ninguno</option>
+                                <option value="Vacuna1">Leucemia viral felina</option>
+                                <option value="Vacuna2">Asma felina</option>
+                                <option value="Otra vacuna">Otitis externa</option>
+                                <option value="Otra vacuna">Insuficiencia renal</option>
+                                <option value="Otra vacuna">Toxoplasmosis</option>          
+                            </select>
                     </div>
-                    <a href="P47-mis-mascotas1.html"><button class="btn2">Completar registro</button></a>
-                    <a href="P09.1-principal-cliente"><button class="btn2">Cancelar</button></a>
+                    <div class="info1">
+                        <h5>Fotografías</h5>
+                    </div>
+                    <div class="botones">
+                        <a href="P47-mis-mascotas1.html"><button class="btn2">Completar registro</button></a>
+                        <a href="P09.1-principal-cliente"><button class="btn2">Cancelar</button></a>
+                    </div>
+
                 </div>
             </div>
             </div>
         </section>
-        </div>
-            </div>
-            <div id="espaciador-der"></div>
-            </div>
     </main>
 
     <footer>
@@ -120,7 +144,7 @@
             </a>
         </section>
     </footer>
-    
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/P13-registro-mascota.js"></script>

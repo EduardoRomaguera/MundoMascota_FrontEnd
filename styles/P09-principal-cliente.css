@@ -71,29 +71,102 @@
     border-radius: 7px;
 }
 
+
+/*Código para sección de proveedores destacados*/
+
 .proveedores-destacados {
-    background-image: url('../images/proveedor-destacado.jpg');
-    border: solid red 2px;
     display: flex;
     padding: 2px;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
-    height: 600px;
-    border-radius: 7px;
+    height: 700px;
 }
 
 .prov {
-    border: solid rgb(5, 235, 5) 2px;
+    background-color: #f0870030;
+    border-radius: 7px;
+    width: 30%;
     display: flex;
-    padding: 2px;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    border-radius: 7px;
 }
 
+.foto-calif {
+    border-radius: 7px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-proveedor {
+    height: 70%;
+    border-radius: 50%;
+    margin: 10% 0 0 0;
+}
+
+.dot {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #424D4B;
+    color: #8EE5D8;
+    border-radius: 50%;
+    display: inline;
+}
+
+.calificacion {
+    margin: 5% 0 0 0;
+    height: 20%;
+}
+
+.info-proveedor {
+    width: fit-content;
+    height: 30%;
+    padding: 6%;
+    text-align: center;
+    margin-top: 6%;
+    line-height: 120%;
+}
+
+.info-servicios ul li {
+    line-height: 100%;
+}
+
+.nombre-servicio {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.ubicacion-servicio {
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.info-servicios {
+    width: fit-content;
+    height: 30%;
+    padding: 6%;
+    text-align: center;
+}
+
+.info-servicios h4 {
+    margin-bottom: 4%;
+}
+
+.info-servicios ul li {
+    color: #000000;
+    margin-bottom: 4%;
+    line-height: 70%;
+    text-align: left;
+}
+
+
+/*Termina código para sección de proveedores destacados*/
+
 .divisor {
-    height: 30px;
+    height: 40px;
     margin-bottom: 5px;
 }
 

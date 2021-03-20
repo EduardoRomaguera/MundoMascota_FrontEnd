@@ -6,11 +6,11 @@
     padding: 0px 200px 100px 200px;
     justify-content: space-around;
     flex-direction: row;
-    height: 500px;
+    height: 400px;
 }
 
 .imagen-cliente {
-    background-color: #f0870040;
+    background-color: #f0870030;
     display: flex;
     padding: 2px;
     justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 .info-cliente {
-    background-color: #f0870040;
+    background-color: #f0870030;
     display: flex;
     padding: 30px;
     justify-content: space-between;

@@ -13,33 +13,35 @@
     flex-flow: column;
     align-items: center;
     padding: 60px;
-    font-weight: 700;
+}
+
+.titulo-registro {
+    margin-bottom: 10%;
 }
 
 .contenedor2 input {
-    height: 200%;
     margin: 10px;
 }
 
-.contenedor2 button {
+.botones {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 30px 0px 0 0;
+}
+
+.botones button {
     background-color: #8EE5D8;
     margin: 10px;
-    padding: auto;
-}
-
-.contenedor2 h1 {
-    margin: 0px 0px 35px 0px;
+    padding: 10px;
 }
 
 .info1 {
-    height: 200%;
     margin: 10px;
     border: solid 2px black;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 60px;
-    font-weight: 700;
+    padding: 35px;
 }
-
