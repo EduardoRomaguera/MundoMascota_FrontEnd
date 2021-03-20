@@ -7,33 +7,38 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P52-proveedores-rechazados.css">
+    <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
+    <link rel="stylesheet" href="styles/P51-proveedores-aprobados.css">
     <link rel="icon" href="images/icono.png">
+
 
     <script src="https://kit.fontawesome.com/731900e7f6.js " crossorigin="anonymous "></script>
     <title>Proveedores Rechazados</title>
 </head>
 
-<body style="background-color:#424D4B
+<body style="background-color:white
 ;">
     <header>
         <nav>
             <div class="nav-madre">
-                <div class="nav-A">
-                    <a class="logo" href="P49-principal-administrador.html"></a>
+                <a class="nav-A" href=P01-homepage.html>
 
-                </div>
+                    <img src="images/logo2-nav.png" id="logo">
+                    <!--<a class="logo" href=P01-homepage.html></a>-->
+                </a>
 
                 <div class="nav-B">
                     <form class="barra-busqueda">
-                        <input type="text" placeholder="Buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
                     </form>
                 </div>
 
                 <div class="nav-C">
-                    <a class="btn" href="#">Cerrar Sesión</a>
-                    <!-- pendiente agregar el cierre de sesión, que no quede abierta la sesión al regresar al index -->
+                    <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
+
+                    <a class="btn" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -41,17 +46,38 @@
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
-                <div id="contenedor-main">
+            <div id="contenedor-main">
+                <section class="catalogos">
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Usuarios Rechazados</h1>
+                        </section>
+                        <div class="contenedor1">
+                            <div class="contenedor-tabla">
+                                <table id="tbl-usuriosRecha" class="tabla">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Correo</th>
+                                            <th>Sexo</th>
+                                            <th>Tipo</th>
+                                            <th>Motivo Rechazo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-
-CONTENIDO MAIN
-
-
-
-                </div>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                </section>
+            </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
+
     <footer>
         <section class="divisor2">
             <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
@@ -86,5 +112,9 @@ CONTENIDO MAIN
         </section>
     </footer>
 
-    <script src="scripts/P01-homepage.js"></script>
+    <script src="scripts/navegacion.js"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P52-Proveedores Rechazados.js"></script>
 </body>
+
+</html>
