@@ -17,15 +17,17 @@
     <header>
         <nav>
             <div class="nav-madre">
-                <div class="nav-A">
-                    <a class="logo" href="P09-principal_cliente.html"></a>
+                <a class="nav-A" href="P09-principal-cliente.html">
 
-                </div>
+                    <img src="images/logo2-nav.png" id="logo">
+                    <!--<a class="logo" href=P01-homepage.html></a>-->
+                </a>
 
                 <div class="nav-B">
                     <form class="barra-busqueda">
-                        <input type="text" placeholder="Buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
                     </form>
                 </div>
 
@@ -33,7 +35,6 @@
                     <a class="btn" href="P13-registro-mascota.html">Registrar Mascota</a>
                     <a class="btn" href="P10-perfil-cliente.html">Mi Perfil</a>
                     <a class="btn" href="P01-homepage.html">Cerrar Sesión</a>
-                    <!-- pendiente agregar el cierre de sesión, que no quede abierta la sesión al regresar al index -->
                 </div>
             </div>
         </nav>
@@ -44,99 +45,107 @@
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
 
-        <!-- pendiente habilitar ingreso de datos-->
-        <section class="titulo">
-            <h1>Mis mascotas</h1>
-        </section>
+                <!-- pendiente habilitar ingreso de datos-->
+                <section class="titulo">
+                    <h1>Mis mascotas</h1>
+                </section>
 
-        <section class="perfil-mascota">
-            <div class="imagen-mascota">
-                <!-- <i class="fas fa-paw" id="icono-pata"></i>-->
-                <img src="images/pelusa.jpg" id="imagen">
-            </div>
-            <div class="info-mascota">
-                <div class="info1">
-                    <div><h3>Nombre: Pelusa</h3></div>
-                    <div><button class="btn2">Editar perfil</button></div>
-                </div>
-                <div class="info2" id="edad">
-                        <h4>Edad: 5 años</h4>
-                </div>
-                <div class="info2" id="especie">
-                        <h4>Especie: Gato</h4>
-                </div>
-                <div class="info2" id="raza">
-                        <h4>Raza: Angora turco</h4>
-                </div>
-                <div class="info2">
-                    <h4>Teléfono: 8302-5559</h4>
-                </div>
-                <div class="info2">
-                    <h4>Vacunas: Trifelina, Leucemia</h4>
-                </div>
-                <div class="info2">
-                    <h4>Padecimiento: Ninguno</h4>
-                </div>
-        </section>
+                <section class="perfil-mascota">
+                    <div class="imagen-mascota">
+                        <!-- <i class="fas fa-paw" id="icono-pata"></i>-->
+                        <img src="images/pelusa.jpg" id="imagen">
+                    </div>
+                    <div class="info-mascota">
+                        <div class="info1">
+                            <div>
+                                <h3>Nombre: Pelusa</h3>
+                            </div>
+                            <div><button class="btn2">Editar perfil</button></div>
+                        </div>
+                        <div class="info2" id="edad">
+                            <h4>Edad: 5 años</h4>
+                        </div>
+                        <div class="info2" id="especie">
+                            <h4>Especie: Gato</h4>
+                        </div>
+                        <div class="info2" id="raza">
+                            <h4>Raza: Angora turco</h4>
+                        </div>
+                        <div class="info2">
+                            <h4>Teléfono: 8302-5559</h4>
+                        </div>
+                        <div class="info2">
+                            <h4>Vacunas: Trifelina, Leucemia</h4>
+                        </div>
+                        <div class="info2">
+                            <h4>Padecimiento: Ninguno</h4>
+                        </div>
+                </section>
 
-        <section class="perfil-mascota">
-            <div class="imagen-mascota">
-                <!-- <i class="fas fa-paw" id="icono-pata"></i>-->
-                <img src="images/princesa.jpg" id="imagen">
-            </div>
-            <div class="info-mascota">
-                <div class="info1">
-                    <div><h3>Nombre: Princesa</h3></div>
-                    <div><button class="btn2">Editar perfil</button></div>
+                <section class="perfil-mascota">
+                    <div class="imagen-mascota">
+                        <!-- <i class="fas fa-paw" id="icono-pata"></i>-->
+                        <img src="images/princesa.jpg" id="imagen">
+                    </div>
+                    <div class="info-mascota">
+                        <div class="info1">
+                            <div>
+                                <h3>Nombre: Princesa</h3>
+                            </div>
+                            <div><button class="btn2">Editar perfil</button></div>
+                        </div>
+                        <div class="info2" id="edad">
+                            <h4>Edad: 3 años</h4>
+                        </div>
+                        <div class="info2" id="especie">
+                            <h4>Especie: Perro</h4>
+                        </div>
+                        <div class="info2" id="raza">
+                            <h4>Raza: Bichón maltés</h4>
+                        </div>
+                        <div class="info2">
+                            <h4>Teléfono: 8302-5559</h4>
+                        </div>
+                        <div class="info2">
+                            <h4>Vacunas: Polivalente, Rabia</h4>
+                        </div>
+                        <div class="info2">
+                            <h4>Padecimiento: Leptospirosis</h4>
+                        </div>
+                </section>
                 </div>
-                <div class="info2" id="edad">
-                        <h4>Edad: 3 años</h4>
+                <div id="espaciador-der"></div>
                 </div>
-                <div class="info2" id="especie">
-                        <h4>Especie: Perro</h4>
-                </div>
-                <div class="info2" id="raza">
-                        <h4>Raza: Bichón maltés</h4>
-                </div>
-                <div class="info2">
-                    <h4>Teléfono: 8302-5559</h4>
-                </div>
-                <div class="info2">
-                    <h4>Vacunas: Polivalente, Rabia</h4>
-                </div>
-                <div class="info2">
-                    <h4>Padecimiento: Leptospirosis</h4>
-                </div>
-        </section>
-            </div>
-            <div id="espaciador-der"></div>
-            </div>
     </main>
 
 
     <footer>
-        <section class="divisor2">
-            <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
-        </section>
         <div class="foot-madre">
             <div class="foot-A">
                 <h5>Una empresa 100% nacional</h5>
-                <div id="cr"></div>
+                <img src="images/cr.png" id="cr">
             </div>
+
             <div class="foot-B">
+                <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
                     <li>WhatsApp</li>
-                    <li class="italica">8888-8888</li>
+                    <li class="italica">8849-0592</li>
                     <li>Teléfono</li>
-                    <li class="italica">8888-8888</li>
+                    <li class="italica">800-MASCOTA</li>
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
+
             <div class="foot-C">
                 <h5>Siguenos</h5>
-                <a id="fb" href="https://www.facebook.com/"></a>
+                <div>
+                    <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a id="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
+
         <section class="divisor2">
             <a class="btn-sochi" href="P00-landing-sochi.html">
                 Desarrollado por Sochi Software 2021. Derechos Reservados.

@@ -1,6 +1,7 @@
 .tienda {
     background-image: url('../images/index-tienda.png');
     /*Imagen de Free-Photos en Pixabay*/
+    padding: 20px 0 0 0;
     background-size: cover;
     background-position: center;
     min-height: 300px;
@@ -13,6 +14,7 @@
     color: white;
     text-align: center;
     width: 100%;
+    border-radius: 7px;
 }
 
 .mis-mascotas {
@@ -30,6 +32,7 @@
     color: white;
     text-align: center;
     width: 100%;
+    border-radius: 7px;
 }
 
 .mis-ordenes {
@@ -47,6 +50,7 @@
     color: white;
     text-align: center;
     width: 100%;
+    border-radius: 7px;
 }
 
 .gestion-pago {
@@ -64,6 +68,7 @@
     color: white;
     text-align: center;
     width: 100%;
+    border-radius: 7px;
 }
 
 .proveedores-destacados {
@@ -74,6 +79,7 @@
     justify-content: space-around;
     flex-direction: row;
     height: 600px;
+    border-radius: 7px;
 }
 
 .prov {
@@ -83,4 +89,14 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    border-radius: 7px;
+}
+
+.divisor {
+       height:20px;
+       margin-bottom: 5px;  
+}
+
+.btn-divisor {
+    margin-bottom: 10px;
 }

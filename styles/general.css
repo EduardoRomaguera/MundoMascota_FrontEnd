@@ -236,6 +236,17 @@ h5 {
     cursor: pointer;
 }
 
+
+.titulo {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 50px;
+}
+
 .divisor {
     background-color: #ffffff;
     display: flex;
