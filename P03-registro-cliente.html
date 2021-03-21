@@ -75,7 +75,52 @@
                     <input class="input-formularios" id="txt-canton-cl"type="text" placeholder="CANTÓN">
                     <input class="input-formularios" id="txt-distrito-cl"type="text" placeholder="DISTRITO">
                     <input class="input-formularios" id="txt-sennas-cl" type="text" placeholder="Otras señas">
+
+                    <!-- Prueba -->
+                    <form name="f1"> 
+                        <select name=txt onchange="cambiaCanton()"> 
+                        <option value="">Provincia
+                        <option value="1">San José
+                        <option value="2">Heredia
+                        <option value="3">Alajuela
+                        <option value="4">Cartago
+                        <option value="5">Guanacaste
+                        <option value="6">Puntarenas
+                        <option value="7">Limón
+                        </select>
+                        
+                        <select name=canton onchange="cambiaDistrito()"> 
+                        <option value="-">- 
+                        </select> 
                     
+                        <select name=distrito> 
+                            <option value="-">- 
+                            </select> 
+
+                    </form>
+                    <script></script>
+                    <!-- Prueba -->
+                    <!-- Prueba2 -->
+                    <form name="form1" method="post" action="">
+                        <select name="provincias" onchange="slctryole(this,this.form.cantones)">
+                            <option>Provincia</option>
+                                <option value="sanjose">San José
+                                <option value="heredia">Heredia
+                                <option value="alajuela">Alajuela
+                                <option value="cartago">Cartago
+                                <option value="guanacaste">Guanacaste
+                                <option value="puntarenas">Puntarenas
+                                <option value="limon">Limón
+                        </select>
+                        <select name="cantones" onchange="slctryole(this,this.form.distritos)">
+                            <option>- - - - - -</option>
+                        </select>
+                        <select name="distritos">
+                            <option>- - - - - -</option>
+                        </select>
+                    </form>
+                    <!-- Prueba2 -->
+
                     <button class="btn2" id="btn-completar-registro">Completar registro </button>
                     <button class="btn2">Cancelar </button>
                 </div>
