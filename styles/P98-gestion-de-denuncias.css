@@ -14,6 +14,10 @@
     padding: 20px;
 }
 
+.bloque-denuncia contenido {
+    display: block;
+}
+
 .imagen-reportado {
     border-radius: 150%;
     padding: 30px;
