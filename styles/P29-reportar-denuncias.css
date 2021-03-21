@@ -12,6 +12,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: space-between;
     padding: 70px;
     content: normal;
     font-weight: 1900;
