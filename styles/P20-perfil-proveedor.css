@@ -1,211 +1,172 @@
-/*Seccion 1*/
 .contenedor1 {
+    background-color: #f0870030;
     background-size: cover;
     background-position: center;
-    border: solid rgb(55, 0, 253) 10px;
     display: flex;
-    padding: 1.5%;
     justify-content: space-around;
     flex-direction: row;
-    height: 600px;
+    height: 400px;
+    margin-bottom: 1%;
+}
+
+.contenedor2 {
+    background-color: #f0870030;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 300px;
+    margin-bottom: 1%;
+}
+
+.contenedor3 {
+    background-color: #f0870030;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 200px;
+    margin-bottom: 1%;
+    padding: 0 0 20px 0;
+}
+
+.contenedor4 {
+    background-color: #f0870030;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 400px;
+    padding: 0 0 20px 0;
+    margin-bottom: 1%;
 }
 
 .foto-proveedor {
-    border: solid rgb(235, 5, 224) 2px;
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 25%;
-}
-
-.contenedor1a {
-    border: solid rgb(59, 16, 212) 2px;
     display: flex;
     padding: 2px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 100%;
-}
-.info1 {
-    border: solid rgb(16, 230, 245) 2px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 1%;
-    width: 98%;
+    width: 30%;
 }
 
-.nombre-negocio {
-    border: solid red 3px;
-    width: 80%;
-    padding: 20px;
-    height: 50px;
+.datos-proveedor {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+}
+
+.datos-proveedor2 {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+}
+
+.datos-proveedor2 div h4 {
+    margin: 10px 0 30px 0;
+}
+
+.datos-proveedor3 {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+    height: 10%;
+}
+
+.info0 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.info0 h4 {
+    font-weight: bold;
+}
+
+.datos-proveedor2 h4 {
+    margin-bottom: 1%;
+}
+
+.info1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .info2 {
-    border: solid rgb(28, 5, 235) 2px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding: 1.5%;
-    margin: 1%;
-    width: 94.5%;
+    padding: 4px;
+    flex-direction: column;
 }
 
-.info3 {
-    border: solid rgb(28, 5, 235) 2px;
+.imagen-grooming {
     display: flex;
+    height: 80%;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
-    padding: 1.5%;
-    margin: 1%;
-    width: 94.5%;
+    justify-content: space-evenly;
 }
 
-.info4 {
-    width: 20%;
-    margin: 0 0 0 78%;
-}
-
-/*Seccion 2*/
-.contenedor2 {
-    background-size: cover;
-    background-position: center;
-    border: solid rgb(55, 0, 253) 10px;
+.imagen-grooming2 {
     display: flex;
-    padding: 1.5%;
-    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
     flex-direction: row;
-    height: 300px;
+    justify-content: space-around;
+    height: 90%;
 }
 
-.horario {
-    border: solid rgb(235, 5, 224) 2px;
+#imagen {
+    height: 100%;
+    max-width: 100%;
+}
+
+.info1 button {
+    background-color: #f08700;
+}
+
+.btn2 {
+    background-color: #f08700;
+}
+
+.ubicación {
     display: flex;
     padding: 2px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
 
-.contenedor2a {
-    border: solid rgb(59, 16, 212) 2px;
+.redes-sociales {
     display: flex;
-    padding: 2px;
-    justify-content: space-around;
+    padding: 0px 30px 0px 30px;
     flex-direction: column;
-    width: 40%;
+    justify-content: space-around;
+    height: 60%;
 }
 
-/*Seccion 3*/
-
-.contenedor3 {
-    background-size: cover;
-    background-position: center;
-    border: solid rgb(55, 0, 253) 10px;
+.redes-sociales div {
     display: flex;
-    padding: 1.5%;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 300px;
-}
-
-/*Seccion 3 Fotografias*/
-.contenedor4 {
-    background-size: cover;
-    background-position: center;
-    border: solid rgb(55, 0, 253) 10px;
-    display: flex;
-    padding: 1.5%;
-    justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    height: 300px;
 }
 
-
-/*Seccion 4 Redes sociales*/
-.contenedor5 {
-    background-size: cover;
-    background-position: center;
-    border: solid rgb(55, 0, 253) 10px;
-    display: flex;
-    padding: 1.5%;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    height: 300px;
+.redes-sociales div a {
+    margin: 0 10px 0 0;
 }
 
-
-
-.datos-servicios {
-    abackground-image: url('../images/perfil-cliente.jpg');
-    background-size: cover;
-    background-position: center;
-    border: solid red 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: space-around;
-    flex-direction: row;
-
-    height: 600px;
-}
-
-.info-servicios {
-    border: solid rgb(5, 235, 5) 0px;
-    display: flex;
-    padding: 2px;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 100%;
-}
-
-.info4 {
-    border: solid rgb(28, 5, 235) 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-.info5 {
-    border: solid rgb(235, 5, 224) 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 25%;
-}
-
-.info6 {
-    border: solid rgb(28, 5, 235) 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-.info7 {
-    border: solid rgb(28, 5, 235) 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: flex-end;
-    flex-direction: row;
-}
-
-.datos-representante {
-    abackground-image: url('../images/datos-representante.png');
-    background-size: cover;
-    background-position: center;
-    border: solid red 2px;
-    display: flex;
-    padding: 2px;
-    justify-content: space-around;
-    flex-direction: row;
-    height: 300px;
+#insta2,
+#fb2 {
+    color: black;
+    font-size: 150%;
 }

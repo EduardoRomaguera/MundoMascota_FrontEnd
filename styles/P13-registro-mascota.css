@@ -45,3 +45,12 @@
     align-items: center;
     padding: 35px;
 }
+
+h5 {
+    margin-bottom: 10%;
+}
+
+#slt-vacuna,
+#slt-padecimiento {
+    margin-bottom: 5%;
+}

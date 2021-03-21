@@ -71,7 +71,7 @@ const validarRegistro = () => {
     }
 
     if (error == false) {
-        window.location.href = 'P47-mis-mascotas1.html';
+        window.location.href = 'P47.2-mis-mascotas.html';
     } else {
         Swal.fire({
             imageUrl: "images/error.png",

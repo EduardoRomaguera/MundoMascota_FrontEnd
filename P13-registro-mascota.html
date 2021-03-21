@@ -51,7 +51,7 @@
                     <div class="info1">
                         <h5>Especie</h5>
                         <select id="slt-especie">
-                                <option value=" ">--Seleccione una opción--</option>
+                                <option value="">--Seleccione una opción--</option>
                                 <option value="Perro">Perro</option>
                                 <option value="Gato">Gato</option>
                             </select>
@@ -59,49 +59,77 @@
 
                     <div class="info1">
                         <h5>Raza</h5>
-                        <select id="slt-Raza">
-                                <option value=" ">--Seleccione una opción--</option>
-                                <option value="Vacuna1">Angora</option>
-                                <option value="Vacuna2">Bengala</option>
-                                <option value="Otra vacuna">Criollo</option>
-                                <option value="Otra vacuna">Maime Coon</option>
-                                <option value="Otra vacuna">Persa</option>
-                                <option value="Otra vacuna">Siamés</option>
+                        <select id="slt-raza">
+                                <option value="">--Seleccione una opción--</option>
+                                <option value="Angora">Angora</option>
+                                <option value="Bengala">Bengala</option>
+                                <option value="Criollo">Criollo</option>
+                                <option value="Maime Coon">Maime Coon</option>
+                                <option value="Persa">Persa</option>
+                                <option value="Siamés">Siamés</option>
                             </select>
                     </div>
 
 
-                    <input class="input-formularios" type="text" placeholder="Teléfono de contacto">
+                    <input class="input-formularios" type="text" id="txt-telefono" placeholder="Teléfono de contacto">
 
                     <div class="info1">
                         <!-- pendiente corregir desplegable para jalar información de catalogo -->
                         <h5>Vacunas</h5>
                         <select id="slt-vacuna">
-                                <option value=" ">--Seleccione una opción--</option>
-                                <option value="Vacuna1">Trifelina</option>
-                                <option value="Vacuna2">Leucemia</option>
-                                <option value="Otra vacuna">Otitis externa</option>
-                                <option value="Otra vacuna">Insuficiencia renal</option>
-                                <option value="Otra vacuna">Toxoplasmosis</option>                                
-                            </select>
+                                <option value="">--Seleccione una opción--</option>
+                                <option value="Ninguno">Ninguno</option>
+                                <option value="Trifelina">Trifelina</option>
+                                <option value="Leucemia">Leucemia</option>
+                        </select>
+                        <select id="slt-vacuna2">
+                            <option value="">--Seleccione una opción--</option>
+                            <option value="Ninguno">Ninguno</option>
+                            <option value="Trifelina">Trifelina</option>
+                            <option value="Leucemia">Leucemia</option>
+                    </select>
                     </div>
                     <div class="info1">
                         <h5>Padecimiento</h5>
                         <select id="slt-padecimiento">
-                                <option value=" ">--Seleccione una opción--</option>
-                                <option value="Vacuna1">Ninguno</option>
-                                <option value="Vacuna1">Leucemia viral felina</option>
-                                <option value="Vacuna2">Asma felina</option>
-                                <option value="Otra vacuna">Otitis externa</option>
-                                <option value="Otra vacuna">Insuficiencia renal</option>
-                                <option value="Otra vacuna">Toxoplasmosis</option>          
-                            </select>
+                                <option value="">--Seleccione una opción--</option>
+                                <option value="Ninguno">Ninguno</option>
+                                <option value="Leucemia viral felina">Leucemia viral felina</option>
+                                <option value="Asma felina">Asma felina</option>
+                                <option value="Otitis externa">Otitis externa</option>
+                                <option value="Insuficiencia renal">Insuficiencia renal</option>
+                                <option value="Toxoplasmosis">Toxoplasmosis</option>          
+                         </select>
+                        <select id="slt-padecimiento2">
+                            <option value="">--Seleccione una opción--</option>
+                            <option value="Ninguno">Ninguno</option>
+                            <option value="Leucemia viral felina">Leucemia viral felina</option>
+                            <option value="Asma felina">Asma felina</option>
+                            <option value="Otitis externa">Otitis externa</option>
+                            <option value="Insuficiencia renal">Insuficiencia renal</option>
+                            <option value="Toxoplasmosis">Toxoplasmosis</option>          
+                     </select>
                     </div>
                     <div class="info1">
-                        <h5>Fotografías</h5>
+                        <div>
+                            <h5>Fotografías</h5>
+                        </div>
+
+                        <div class=solicitud-imagenes>
+                            <form enctype="multipart/form-data" action="uploader.php" method="POST"></form>
+                            <input name="uploadedfile" type="file" />
+
+                            </form>
+                            <form enctype="multipart/form-data" action="uploader.php" method="POST">
+                                <input name="uploadedfile" type="file" />
+
+                            </form>
+                        </div>
+
+
                     </div>
                     <div class="botones">
-                        <a href="P47-mis-mascotas1.html"><button class="btn2">Completar registro</button></a>
+                        <button class="btn2" id="btn-registro">Completar registro</button>
                         <a href="P09.1-principal-cliente"><button class="btn2">Cancelar</button></a>
                     </div>
 
