@@ -1,0 +1,32 @@
+contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.contenedor2 {
+    border: solid 3px #f08700;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.contenedor2 form {
+    padding: inherit;
+    display: block;
+}
+
+.fomulario-vacuna div {
+    padding: 40px;
+}
+
+.fomulario-vacuna div label {
+    display: inline-block;
+}
+
+.fomulario-vacuna div input {
+    padding: 42px 20px;
+}
