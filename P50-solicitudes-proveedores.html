@@ -7,33 +7,36 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P50-solicitudes-proveedores.css">
+    <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
+
     <link rel="icon" href="images/icono.png">
 
     <script src="https://kit.fontawesome.com/731900e7f6.js " crossorigin="anonymous "></script>
-    <title>Solicitudes Pendientes</title>
+    <title>Pendientes</title>
 </head>
 
-<body style="background-color:#424D4B
-;">
+<body>
     <header>
         <nav>
             <div class="nav-madre">
-                <div class="nav-A">
-                    <a class="logo" href="P49-principal-administrador.html"></a>
+                <a class="nav-A" href="P49-principal-administrador.html">
 
-                </div>
+                    <img src="images/logo2-nav.png" id="logo">
+                    <!--<a class="logo" href=P01-homepage.html></a>-->
+                </a>
 
                 <div class="nav-B">
                     <form class="barra-busqueda">
-                        <input type="text" placeholder="Buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
                     </form>
                 </div>
 
                 <div class="nav-C">
-                    <a class="btn" href="#">Cerrar Sesión</a>
-                    <!-- pendiente agregar el cierre de sesión, que no quede abierta la sesión al regresar al index -->
+                    <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
+
+                    <a class="btn" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -41,14 +44,40 @@
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
-                <div id="contenedor-main">
+            <div id="contenedor-main">
+                <section class="catalogos">
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Solicitudes Pendientes</h1>
+                        </section>
+                        <div class="contenedor1">
+                            <div class="contenedor-tabla">
+                                <table id="tbl-usuriosPendi" class="tabla">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Correo</th>
+                                            <th>Sexo</th>
+                                            <th>Estado</th>
+                                            <th></th>
+                                            <th></th>
 
-                    CONTENIDO
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                </div>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                </section>
+            </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
+
     <footer>
         <section class="divisor2">
             <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
@@ -83,5 +112,9 @@
         </section>
     </footer>
 
-    <script src="scripts/P01-homepage.js"></script>
+    <script src="scripts/navegacion.js"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P50-solicitudes-proveedores.js"></script>
 </body>
+
+</html>

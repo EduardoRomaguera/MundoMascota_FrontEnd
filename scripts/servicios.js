@@ -408,7 +408,70 @@ let listaUsuariostotales = [{
         'tipo': 'Cliente'
     },
 ];
+let listaUsuariosPendientes = [{
 
+}, {
+    'correo': 'Christian@servipet.com',
+    'nombre': 'Christian Víquez',
+    'nacimiento': '03-11-1999',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+
+}, {
+    'correo': 'Julio@yahoo.com',
+    'nombre': 'Julio Nunez',
+    'nacimiento': '03-12-2001',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'nyrontt@yahoo.com',
+    'nombre': 'Nyron Salas',
+    'nacimiento': '11-02-1998',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'jimena@gmail.com',
+    'nombre': 'Jimena Arauz',
+    'nacimiento': '12-08-2000',
+    'sexo': 'Femenino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'andresc@yahoo.com',
+    'nombre': 'Andres Ortiz',
+    'nacimiento': '29-01-1997',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'jeremn@aol.com',
+    'nombre': 'Jeremy Sancho',
+    'nacimiento': '05-12-2001',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'fabrizzio@upet.com',
+    'nombre': 'Fabrizzio Vargas',
+    'nacimiento': '03-08-1994',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'Jeferg@aol.com',
+    'nombre': 'Jefferson Victor',
+    'nacimiento': '22-04-1994',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'Henry12@yahoo.com',
+    'nombre': 'Henry Bejarano',
+    'nacimiento': '07-07-1990',
+    'sexo': 'Masculino',
+    "estado": "Pendiente",
+}, {
+    'correo': 'andre333@gmail.com',
+    'nombre': 'Andrea Blanco',
+    'nacimiento': '12-05-1985',
+    'sexo': 'Femenino',
+    "estado": "Pendiente",
+}, ];
 
 
 //Codigo para validar la información de usuario y contraseña

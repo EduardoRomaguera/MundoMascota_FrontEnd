@@ -1,15 +1,13 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P98-gestion-de-denuncias.css">
-    <title>Gestion de denuncias</title>
+    <link rel="stylesheet" href="styles/P97-raza-modificar.css">
+    <title>Razas</title>
 </head>
 
 <body>
@@ -37,55 +35,37 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <div>
-                    <h1>Gestion de denuncias</h1>
-                </div>
-                <section class="divisor">
-                    <h1 class="btn-divisor"> </h1>
-                </section>
-                <section class="bloque-denuncia">
-                    <div class="imagen-usuario">
-                        <img src="images/proveedor1.jpg" class="imagen-reportado">
-                    </div>
-                    <div class="informacion-reporte">
-                        <p class="contenido">
-                            En esta parte se detalla: Nombre del proveedor que se reporto razon por la que se reporto.
-                        </p>
-                    </div>
-                    <div class="resolucion">
-                        <button type="button" id="btn-banear" class="btn-denuncia">Banear Usuario</button>
-                        <button type="button" id="btn-descartar" class="btn-denuncia">Descarta Denuncia</button>
-                    </div>
-                </section>
-                <section class="divisor">
-                    <h1 class="btn-divisor"> </h1>
-                </section>
-                <section class="bloque-denuncia">
-                    <div class="imagen-usuario">
-                        <img src="images/destacado3.jpg" class="imagen-reportado">
-                    </div>
-                    <div class="informacion-reporte">
-                        <p class="contenido">
-                            En esta parte se detalla: Nombre del proveedor que se reporto razon por la que se reporto.
-                        </p>
-                    </div>
-                    <div class="resolucion">
-                        <button type="button" id="btn-banear" class="btn-denuncia">Banear Usuario</button>
-                        <button type="button" id="btn-descartar" class="btn-denuncia">Descartar Denuncia</button>
-                    </div>
-                </section>
-                <section class="divisor">
-                    <h1 class="btn-divisor"> </h1>
-                </section>
+                <section>
+                    <div class="contenedor1">
+                        <div class="contenedor2">
+                            <form class="formulario-raza">
+                                <h2>Raza</h2>
+                                <div>
+                                    <label for="txt-nombre">Nombre de la raza</label>
+                                    <input class="input-formularios" id="txt-nombre-rz" type="text" placeholder="Nombre">
+                                </div>
+                                <label for="txt-especie">Nombre de la especie</label>
+                                <input class="input-formularios" id="txt-especie-rz" type="text" placeholder="Especie">
+                                <div>
+                                    <div>
+                                        <label for="txt-nombre">Estado de la raza</label>
+                                        <input class="input-formularios" id="txt-estado-rz" type="text" placeholder="Estado">
+                                    </div>
+                                    <div>
+                                        <button type="button" id="btn-guardar" class="btn">Guardar</button>
+                                        <button type="button" href='P39-mantenimiento-catalogos.html' id="btn-cancelar" class="btn">Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
 
+                        </div>
+
+                    </div>
+                </section>
             </div>
-        </div>
-        </section>
-        </div>
-        <div id="espaciador-der"></div>
+            <div id="espaciador-der"></div>
         </div>
     </main>
-
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
@@ -119,7 +99,9 @@
             </a>
         </section>
     </footer>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P97-raza-modificar.js"></script>
 </body>
 
 </html>

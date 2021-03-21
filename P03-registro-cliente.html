@@ -75,7 +75,28 @@
                     <input class="input-formularios" id="txt-canton-cl"type="text" placeholder="CANTÓN">
                     <input class="input-formularios" id="txt-distrito-cl"type="text" placeholder="DISTRITO">
                     <input class="input-formularios" id="txt-sennas-cl" type="text" placeholder="Otras señas">
-                    
+
+                    <!-- Prueba2 -->
+                    <form name="form1" method="post" action="">
+                        <select class="input-formularios" name="provincias" onchange="slctryole(this,this.form.cantones)">
+                            <option>Provincia</option>
+                                <option value="sanjose">San José
+                                <option value="heredia">Heredia
+                                <option value="alajuela">Alajuela
+                                <option value="cartago">Cartago
+                                <option value="guanacaste">Guanacaste
+                                <option value="puntarenas">Puntarenas
+                                <option value="limon">Limón
+                        </select>
+                        <select class="input-formularios" name="cantones" onchange="slctryole(this,this.form.distritos)">
+                            <option>Cantón</option>
+                        </select>
+                        <select class="input-formularios" name="distritos">
+                            <option>Distrito</option>
+                        </select>
+                    </form>
+                    <!-- Prueba2 -->
+
                     <button class="btn2" id="btn-completar-registro">Completar registro </button>
                     <button class="btn2">Cancelar </button>
                 </div>
