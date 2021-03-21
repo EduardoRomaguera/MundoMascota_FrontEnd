@@ -4,6 +4,9 @@ const TABLARAZAS = document.querySelector('#tbl-razas tbody');
 const TABLAENFERMEDADES = document.querySelector('#tbl-enfermedades tbody');
 const TABLAVACUNAS = document.querySelector('#tbl-vacunas tbody');
 const inputFiltro = document.querySelector('#txt-filtro');
+const BTNAGREGARRAZA = document.querySelector('#btn-agregar-raza');
+const BTNAGREGARENFERMEDAD = document.querySelector('#btn-agregar-enfermedad');
+const BTNAGREGARVACUNA = document.querySelector('#btn-agregar-vacuna');
 
 //Función que agrega las celdas de razas a la tabla
 const MOSTRARTABLARAZAS = () => {
