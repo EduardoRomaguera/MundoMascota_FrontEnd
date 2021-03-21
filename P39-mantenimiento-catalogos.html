@@ -13,74 +13,84 @@
 
 
 <body>
-    <header class="nav-madre">
-        <div class="nav-A">
-            <a class="logo" href=index.html></a>
-        </div>
-        <div class="nav-C">
-            <a class="btn" href="https://example.com/">Cerrar Sesión</a>
-
-            <a class="btn" href="https://example.com/">Iniciar Sesión</a>
-        </div>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <a class="nav-A" href=P01-homepage.html>
+                    <img src="images/logo2-nav.png" id="logo">
+                </a>
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
+                    </form>
+                </div>
+                <div class="nav-C">
+                    <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
+                    <a class="btn" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-        <section class="catalogos">
-            <section>
-                <section class="divisor">
-                    <h1 class="btn-divisor">Razas</h1>
-                </section>
-                <div class="contenedor1">
-                    <div class="contenedor-tabla">
-                        <table id="tbl-razas" class="tabla">
-                            <thead>
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Especie</th>
-                                    <th>Estado</th>
-                                    <th></th>
+                <section class="catalogos">
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Razas</h1>
+                        </section>
+                        <div class="contenedor1">
+                            <div class="contenedor-tabla">
+                                <table id="tbl-razas" class="tabla">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Especie</th>
+                                            <th>Estado</th>
+                                            <th></th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <section class="divisor">
-                    <h1 class="btn-divisor">Enfermerdades</h1>
-                </section>
-                <div class="contenedor1">
-                    <div class="contenedor-tabla">
-                        <table id="tbl-enfermedades" class="tabla">
-                            <thead>
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Especie</th>
-                                    <th>Estado</th>
-                                    <th></th>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Enfermerdades</h1>
+                        </section>
+                        <div class="contenedor1">
+                            <div class="contenedor-tabla">
+                                <table id="tbl-enfermedades" class="tabla">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Especie</th>
+                                            <th>Estado</th>
+                                            <th></th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                            </tbody>
+                                    </tbody>
 
-                        </table>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <section class="divisor">
-                    <h1 class="btn-divisor">Vacunas</h1>
-                </section>
-                <div class="contenedor1">
-                    <canvas id="contenedor-catalogos">
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Vacunas</h1>
+                        </section>
+                        <div class="contenedor1">
+                            <canvas id="contenedor-catalogos">
                         <div class="contenedor-tabla">
                             <table id="tbl-vacunas" class="tabla">
                                 <thead>
@@ -100,12 +110,12 @@
                         
                     </canvas>
 
-                </div>
-            </section>
-        </section>
+                        </div>
+                    </section>
+                </section>
             </div>
             <div id="espaciador-der"></div>
-            </div>
+        </div>
     </main>
 
     <footer>
