@@ -16,10 +16,19 @@
     font-weight: 700;
 }
 
+.contenedor3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 700;
+}
+
 .contenedor2 input {
     height: 200%;
-    margin: 10px;
+    margin: 3%;
 }
+
+
 
 .contenedor2 button {
     background-color: #8EE5D8;
@@ -45,4 +54,10 @@
 
 .input-formularios {
     width: 300px;
+}
+
+.contenedor2 select {
+    height: 200%;
+    margin: 3%;
+    width: 325px;
 }

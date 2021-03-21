@@ -61,24 +61,8 @@
                     <label for="txt-nacimiento-cl">Fecha de nacimiento:</label>
                     <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
                     <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
-                    <select class="input-formularios" id="txt-provincia-cl">
-                        <option value="">Provincia</option>
-                        <option value="sanjose">San José</option>
-                        <option value="alajuela">Alajuela</option>
-                        <option value="cartago">Cartago</option>
-                        <option value="heredia">Heredia</option>
-                        <option value="guanacaste">Guanacaste</option>
-                        <option value="puntarenas">Puntarenas</option>
-                        <option value="limon">Limón</option>
-                    </select>
-                    <!-- Falta hacer las listas para cantón y distrito -->
-                    <input class="input-formularios" id="txt-canton-cl"type="text" placeholder="CANTÓN">
-                    <input class="input-formularios" id="txt-distrito-cl"type="text" placeholder="DISTRITO">
-                    <input class="input-formularios" id="txt-sennas-cl" type="text" placeholder="Otras señas">
-
-                    <!-- Prueba2 -->
-                    <form name="form1" method="post" action="">
-                        <select class="input-formularios" name="provincias" onchange="slctryole(this,this.form.cantones)">
+                    <form class="contenedor3" class="h1" name="form1" method="post" action="">
+                        <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
                             <option>Provincia</option>
                                 <option value="sanjose">San José
                                 <option value="heredia">Heredia
@@ -88,13 +72,17 @@
                                 <option value="puntarenas">Puntarenas
                                 <option value="limon">Limón
                         </select>
-                        <select class="input-formularios" name="cantones" onchange="slctryole(this,this.form.distritos)">
+                        <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
                             <option>Cantón</option>
                         </select>
-                        <select class="input-formularios" name="distritos">
+                        <select class="input-formularios" id="txt-distrito-cl" name="distritos">
                             <option>Distrito</option>
                         </select>
                     </form>
+                    <input class="input-formularios" id="txt-sennas-cl" type="text" placeholder="Otras señas">
+
+                    <!-- Prueba2 -->
+
                     <!-- Prueba2 -->
 
                     <button class="btn2" id="btn-completar-registro">Completar registro </button>
