@@ -1,15 +1,15 @@
 'use strict'
 let razaSeleccionado;
-const INPUTNOMBRE = document.querySelector('#txt-nombre-rz');
-const INPUTESPECIE = document.querySelector('#txt-especie-rz');
-const INPUTESTADO = document.querySelector('#txt-estado-rz');
+const INPUTNOMBRE = document.querySelector('#txt-nombre-vc');
+const INPUTESPECIE = document.querySelector('#txt-especie-vc');
+const INPUTESTADO = document.querySelector('#txt-estado-vc');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
 const LLENARFORMULARIO = () => {
-    INPUTNOMBRE.value = razaSeleccionado.nombre;
-    INPUTESPECIE.value = razaSeleccionado.especie;
-    INPUTESTADO.value = razaSeleccionado.estado;
+    INPUTNOMBRE.value = vacunaSeleccionado.nombre;
+    INPUTESPECIE.value = vacunaSeleccionado.especie;
+    INPUTESTADO.value = vacunaSeleccionado.estado;
 };
 
 const VALIDAR = () => {
@@ -37,7 +37,7 @@ const VALIDAR = () => {
     if (error == false) {
         Swal.fire({
             'icon': 'success',
-            'title': 'Raza agregada',
+            'title': 'Vacuna agregada',
             'text': 'La información fue guardada correctamente',
             'confirmButtonText': 'Entendido'
         }).then(() => {
@@ -46,7 +46,7 @@ const VALIDAR = () => {
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo guardar la raza',
+            'title': 'No se pudo guardar la vacuna',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
