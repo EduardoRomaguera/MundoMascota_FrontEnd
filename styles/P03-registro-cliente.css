@@ -37,7 +37,11 @@
 }
 
 .contenedor2 h1 {
-    margin: 0px 0px 35px 0px;
+    margin: 0px 0px 2% 0px;
+}
+
+.contenedor2 h3 {
+    margin: 0px 0px 5% 0px;
 }
 
 .info1 {
@@ -60,4 +64,61 @@
     height: 200%;
     margin: 3%;
     width: 325px;
+}
+
+#texto-gris {
+    color: #00000090;
+    margin-top: 2%;
+}
+
+.input-direccion {
+    text-align: center;
+    border: solid #00000060 1px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    width: 300px;
+    height: 150px;
+    resize: none;
+    text-align: justify;
+}
+
+input[type="date"] {
+    text-align: center;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 18px;
+    background:#ffffff;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+select {
+    text-align: center;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 18px;
+    background:#ffffff;
+    display: inline-block !important;
+    visibility: visible !important;
+    color: #00000090;
+}
+
+select option{
+
+    color: #000000;
+    font-weight: 500;
+}
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
 }

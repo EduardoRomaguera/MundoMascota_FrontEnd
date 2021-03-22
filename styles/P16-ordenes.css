@@ -235,3 +235,9 @@
                         padding: 10px;
                         color: #D9D9D9;
                     }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}

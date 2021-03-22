@@ -170,3 +170,9 @@
     color: black;
     font-size: 150%;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}

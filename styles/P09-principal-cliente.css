@@ -178,3 +178,8 @@ h2 {
     font-weight: 700;
 }
 
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}

@@ -44,3 +44,13 @@
     text-align: center;
     width: 100%;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}

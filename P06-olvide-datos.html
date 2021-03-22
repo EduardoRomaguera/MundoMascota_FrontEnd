@@ -17,21 +17,19 @@
     <header>
         <nav>
             <div class="nav-madre">
-                <div class="nav-A">
-                    <a class="logo" href=P01-homepage.html></a>
-                </div>
-
+                <a class="nav-A" href=P01-homepage.html>
+                    <img src="images/logo2-nav.png" id="logo">
+                </a>
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
+                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
                     </form>
                 </div>
-
                 <div class="nav-C">
-                        <a class="btn"  href="https://example.com/">Cerrar Sesión</a>
-
-                        <a class="btn"  href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
+                    <a class="btn" id= "btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -44,12 +42,13 @@
         <section>
             <div class="contenedor1">
                 <div class="contenedor2">
-                    <h3>No te preocupes, vamos a recuperar tu cuenta</h3>
-                    <p class="h6" >Introduce el correo electrónico de la cuenta que deseas recuperar.</p>
-                    <p class="h6">Enviaremos instrucciones a tu correo para que recuperes tu cuenta.</p>
-                    <input class="input-formularios" type="email" placeholder="Correo electrónico">
+                    <h3>No te preocupes</h3>
+                    <h4>Vamos a recuperar tu cuenta</h4>
+                    <p class="h6">Enviaremos instrucciones a tu correo si existe una cuenta registrada.</p>
 
-                    <button class="btn2">Resetear contraseña </button>
+                    <input class="input-formularios" id="txt-correo" type="email" placeholder="Correo electrónico">
+
+                    <button class="btn2" id="btn-contrasenna">Restaurar contraseña </button>
                 </div>
             </div>
         </section>
@@ -91,6 +90,8 @@
         </section>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/servicios.js"></script>
     <script src="scripts/P06-olvide-datos.js"></script>
 </body>
 

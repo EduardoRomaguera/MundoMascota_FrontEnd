@@ -523,3 +523,18 @@ a:hover {
     line-height: 120%;
     text-align: justify;
 }
+
+#fix2 h1:hover {
+    color: #8EE5E8;
+
+}
+
+/* OCULTADOS*/
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
+}

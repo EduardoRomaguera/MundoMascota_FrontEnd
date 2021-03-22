@@ -59,3 +59,9 @@
 .btn2 {
     background-color: #f08700;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}

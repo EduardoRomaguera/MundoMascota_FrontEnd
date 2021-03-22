@@ -704,6 +704,8 @@ const iniciarSesion = (correo, contrasenna) => {
                 }
             });
     } else {
+        inputCorreo.classList.add('error');
+        inputContrasenna.classList.add('error');
         Swal.fire({
             imageUrl: "images/error2.jpg",
             title: "¡OOPS! Algo pasó aqui",
