@@ -1,5 +1,6 @@
 'use strict'
-let razaSeleccionado;
+let vacuna;
+Seleccionado;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-vc');
 const INPUTESPECIE = document.querySelector('#txt-especie-vc');
 const INPUTESTADO = document.querySelector('#txt-estado-vc');
