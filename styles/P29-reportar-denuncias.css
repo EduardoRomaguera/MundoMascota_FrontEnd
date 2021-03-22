@@ -20,16 +20,20 @@
 
 .contenedor3 input {
     height: 200%;
-    margin: 60px;
-    width: auto;
+    margin: 10%;
+    width: 300px;
+}
+
+.contenedor3 textarea {
+    text-align: center;
+    border: solid #00000060 1px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    width: 300px;
+    height: 150%;
+    resize: vertical;
 }
 
 .cotenedor3 textarea {
-    margin: 50px;
-    text-align: center;
-    border: 5px solid black;
-    border-radius: 13px;
-    padding: 30px;
-    font-size: 18px;
-    font-weight: 300;
-}
