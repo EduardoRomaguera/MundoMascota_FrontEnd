@@ -127,7 +127,7 @@ const MOSTRARTABLAVACUNAS = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                sessionStorage.setItem('razaSeleccionado', JSON.stringify(raza));
+                sessionStorage.setItem('vacunaSeleccionado', JSON.stringify(vacuna));
                 window.location.href = 'P95-vacunas-modificar.html';
 
             });
