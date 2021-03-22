@@ -113,6 +113,7 @@ const MOSTRARTABLAENFERMEDADES = () => {
 //Función que agrega las celdas de vacunas a la tabla
 const MOSTRARTABLAVACUNAS = () => {
     let filtro = FILTROVACUNAS.value.toLowerCase();
+    TABLAVACUNAS.innerHTML = '';
     listaVacunas.forEach(vacuna => {
         if (vacuna.nombre.toLowerCase().includes(filtro)) {
 
