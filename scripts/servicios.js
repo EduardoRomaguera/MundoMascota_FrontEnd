@@ -622,6 +622,40 @@ let listaActividadUsuarios = [{
     'Proveedor': 'Michael Ortiz',
 
 }, ];
+let listaPatrocinadores = [{
+    "nombre": 'Taste of the Wild',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, {
+    "nombre": 'Royal Canin',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, {
+    "nombre": 'La Vete Veterinaria y Petshop',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, {
+    "nombre": 'MediPet Veterinaria',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, {
+    "nombre": 'Alimentos Hills',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+
+}, {
+    "nombre": 'Purina Pro Plan',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, {
+    "nombre": 'BestForPets',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, {
+    "nombre": 'Cinepolis',
+    'fecha': "20-03-2021",
+    'estado': 'Activo',
+}, ];
 
 //Codigo para validar la información de usuario y contraseña
 
