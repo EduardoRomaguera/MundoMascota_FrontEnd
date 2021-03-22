@@ -96,3 +96,14 @@
     height: 400px;
     width: 100%;
 }
+
+.imagen-proveedor0 {
+    height: 130px;
+    border-radius: 50%;
+    width: -250px;
+}
+
+.info-proveedor1 {
+    height: 150px;
+    width: -50px;
+}

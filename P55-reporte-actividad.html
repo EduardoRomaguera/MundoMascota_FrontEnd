@@ -3,17 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
-
-    <link rel="icon" href="images/icono.png">
-
-    <script src="https://kit.fontawesome.com/731900e7f6.js " crossorigin="anonymous "></script>
-    <title>Pendientes</title>
+    <title>Actividad</title>
 </head>
+
 
 <body>
     <header>
@@ -48,20 +46,20 @@
                 <section class="catalogos">
                     <section>
                         <section class="divisor">
-                            <h1 class="btn-divisor">Solicitudes Pendientes</h1>
+                            <h1 class="btn-divisor">Actividad</h1>
                         </section>
-                        <input type="text" id='txt-filtro-razas'>
+                        <div>
+                            <label for='txt-filtro-apro'>Filtrar</label>
+                        </div>
                         <div class="contenedor1">
                             <div class="contenedor-tabla">
-                                <table id="tbl-usuriosPendi" class="tabla">
+                                <table id="tbl-actividad" class="tabla">
                                     <thead>
                                         <tr>
-                                            <th>Nombre</th>
-                                            <th>Correo</th>
-                                            <th>Sexo</th>
-                                            <th>Estado</th>
-                                            <th></th>
-                                            <th></th>
+                                            <th>Cliente</th>
+                                            <th>Servicio</th>
+                                            <th>Fecha</th>
+                                            <th>Proveedor</th>
 
                                         </tr>
                                     </thead>
@@ -115,7 +113,7 @@
 
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P50-solicitudes-proveedores.js"></script>
+    <script src="scripts/P55-reporte-actividad.js"></script>
 </body>
 
 </html>

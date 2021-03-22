@@ -473,6 +473,155 @@ let listaUsuariosPendientes = [{
     "estado": "Pendiente",
 }, ];
 
+let listaUsuariosBaneados = [{
+
+}, {
+    'correo': 'Gonzarey@gmail.com',
+    'nombre': 'Gonzalo Granados',
+    'nacimiento': '03-11-1989',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Cliente",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'celest23@gmail.com',
+    'nombre': 'Celeste Ulloa',
+    'nacimiento': '04-05-1998',
+    'sexo': 'Femenino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'amardor4@gmail.com',
+    'nombre': 'Andrey Amador',
+    'nacimiento': '14-01-1979',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'andecr1992@hotmail.com',
+    'nombre': 'Andrey Cardenas',
+    'nacimiento': '07-02-1992',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'gacavi@yahoo.com',
+    'nombre': 'Gabriel Camanno',
+    'nacimiento': '03-11-1989',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Cliente",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'Kevins@gmail.com',
+    'nombre': 'Kevin Siles',
+    'nacimiento': '16-06-1996',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'camii25@gmail.com',
+    'nombre': 'Camila Rojas',
+    'nacimiento': '24-12-1999',
+    'sexo': 'Femenino',
+    "estado": "Baneado",
+    "tipo": "Cliente",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'Abigama2@gmail.com',
+    'nombre': 'Abigail Gamboa',
+    'nacimiento': '12-08-1999',
+    'sexo': 'Femenino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'Ivanmd@gmail.com',
+    'nombre': 'Ivan Granados',
+    'nacimiento': '04-07-1993',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'Manuel12@gmail.com',
+    'nombre': 'Manuel Portillo',
+    'nacimiento': '07-12-1980',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Cliente",
+    "Razon": "Multiples Denuncias",
+}, {
+    'correo': 'juansho2@gmail.com',
+    'nombre': 'Juan Fernandez',
+    'nacimiento': '22-05-1990',
+    'sexo': 'Masculino',
+    "estado": "Baneado",
+    "tipo": "Proveedor",
+    "Razon": "Multiples Denuncias",
+}, ];
+
+let listaActividadUsuarios = [{
+    "Cliente": 'José Ramírez',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '22-03-2021',
+    'Proveedor': 'Alejandro Ortiz',
+}, {
+    "Cliente": 'Gonzalo Nunez',
+    'Servicio': 'Grooming',
+    'Fecha': '22-03-2021',
+    'Proveedor': 'Miguel Perez',
+}, {
+    "Cliente": 'Nathalia Oconitrillo',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '22-03-2021',
+    'Proveedor': 'Alejandro Ortiz',
+}, {
+    "Cliente": 'Amy Bosques',
+    'Servicio': 'Grooming',
+    'Fecha': '22-03-2021',
+    'Proveedor': 'Jose Mendez',
+}, {
+    "Cliente": 'Andrey Lobo',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '22-03-2021',
+    'Proveedor': 'Jhonny Jimenez',
+}, {
+    "Cliente": 'Samantha Hernandez',
+    'Servicio': 'Grooming',
+    'Fecha': '22-03-2021',
+    'Proveedor': 'Jhonny Jimenez',
+}, {
+    "Cliente": 'Gonzalo Nunez',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '21-03-2021',
+    'Proveedor': 'Alejandro Ortiz',
+}, {
+    "Cliente": 'Rodrigo Arauz',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '21-03-2021',
+    'Proveedor': 'Stephan Ruiz',
+}, {
+    "Cliente": 'Gloriana Morales',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '21-03-2021',
+    'Proveedor': 'Arion Corella',
+}, {
+    "Cliente": 'José Ramírez',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '21-03-2021',
+    'Proveedor': 'Lewis Vargas',
+}, {
+    "Cliente": 'Sergio Sanchez',
+    'Servicio': 'Paseo Mascota',
+    'Fecha': '21-03-2021',
+    'Proveedor': 'Michael Ortiz',
+
+}, ];
 
 //Codigo para validar la información de usuario y contraseña
 
