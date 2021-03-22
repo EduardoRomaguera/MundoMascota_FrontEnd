@@ -43,12 +43,13 @@
                             <h1 class="btn-divisor">Razas</h1>
                         </section>
                         <div>
-                            <label for='txt-filtro'>Filtrar</label>
-                            <input type="text" id='txt-filtro'>
+                            <label for='txt-filtro-razas'>Filtrar</label>
+                            <input type="text" id='txt-filtro-razas'>
+                            <button type="button" id="btn-agregar-raza" class="btn-agregar">
+                                Agregar Raza
+                            </button>
                         </div>
-                        <button type="button" id="btn-agregar-raza" class="btn">
-                            Agregar Raza
-                        </button>
+
                         <div class="contenedor1">
                             <div class="contenedor-tabla">
                                 <table id="tbl-razas" class="tabla">
@@ -58,7 +59,7 @@
                                             <th>Especie</th>
                                             <th>Estado</th>
                                             <th>
-                                                <button></button>
+
                                             </th>
 
                                         </tr>
@@ -75,12 +76,13 @@
                             <h1 class="btn-divisor">Enfermerdades</h1>
                         </section>
                         <div>
-                            <label for='txt-filtro'>Filtrar</label>
-                            <input type="text" id='txt-filtro'>
+                            <label for='txt-filtro-enfermedades'>Filtrar</label>
+                            <input type="text" id='txt-filtro-enfermedades'>
+                            <button type="button" id="btn-agregar-enfermedad" class="btn-agregar">
+                                Agregar Enfermedad
+                            </button>
                         </div>
-                        <button type="button" id="btn-agregar-enfermedad" class="btn">
-                            Agregar Enfermedad
-                        </button>
+
                         <div class="contenedor1">
                             <div class="contenedor-tabla">
                                 <table id="tbl-enfermedades" class="tabla">
@@ -90,7 +92,6 @@
                                             <th>Especie</th>
                                             <th>Estado</th>
                                             <th></th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -106,12 +107,13 @@
                             <h1 class="btn-divisor">Vacunas</h1>
                         </section>
                         <div>
-                            <label for='txt-filtro'>Filtrar</label>
-                            <input type="text" id='txt-filtro'>
+                            <label for='txt-filtro-vacunas'>Filtrar</label>
+                            <input type="text" id='txt-filtro-vacunas'>
+                            <button type="button" id="btn-agregar-vacuna" class="btn-agregar">
+                                Agregar Vacuna
+                            </button>
                         </div>
-                        <button type="button" id="btn-agregar-vacyba" class="btn">
-                            Agregar Vacuna
-                        </button>
+
                         <div class="contenedor1">
                             <canvas id="contenedor-catalogos">
                         <div class="contenedor-tabla">
@@ -174,8 +176,8 @@
             </a>
         </section>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/navegacion.js"></script>
     <script src="scripts/P39-mantenimiento-catalogos.js"></script>
 </body>
 

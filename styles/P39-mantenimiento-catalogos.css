@@ -17,31 +17,42 @@
 
 .tabla {
     margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #D9D9D9;
-    border-style: solid;
 }
 
 .tabla tr {
-    height: 50px;
+    height: 40px;
 }
 
 .tabla thead tr {
-    background: #f08700;
-    color: #fff;
+    width: 300px;
+    text-align: center;
+    background-color: #8EE5D8;
+    ;
 }
 
 .tabla thead tr th {
-    width: 500px;
+    width: 400px;
     text-align: center;
 }
 
-.tabla tbody tr:nth-child(even) {
-    background-color: #424D4B;
-    color: #fff;
+.tabla tbody tr {
+    border-bottom: 1px solid #424D4B;
 }
 
 .tabla tbody tr td {
-    width: 500px;
+    padding-top: 20px;
+    width: 200px;
     text-align: center;
+}
+
+.btn-agregar {
+    background-color: #8EE5D8;
+    margin: 60px 60px 60px 60px;
+    padding: auto;
+    color: black;
+    width: 180px;
+    border-radius: 7px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 300px;
 }

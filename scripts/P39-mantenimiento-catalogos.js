@@ -3,14 +3,16 @@
 const TABLARAZAS = document.querySelector('#tbl-razas tbody');
 const TABLAENFERMEDADES = document.querySelector('#tbl-enfermedades tbody');
 const TABLAVACUNAS = document.querySelector('#tbl-vacunas tbody');
-const inputFiltro = document.querySelector('#txt-filtro');
+const FILTRORAZAS = document.querySelector('#txt-filtro-razas');
+const FILTROENFERMEDADES = document.querySelector('#txt-filtro-enfermedades');
+const FILTROVACUNAS = document.querySelector('#txt-filtro-vacunas');
 const BTNAGREGARRAZA = document.querySelector('#btn-agregar-raza');
 const BTNAGREGARENFERMEDAD = document.querySelector('#btn-agregar-enfermedad');
 const BTNAGREGARVACUNA = document.querySelector('#btn-agregar-vacuna');
 
 //Función que agrega las celdas de razas a la tabla
 const MOSTRARTABLARAZAS = () => {
-    let filtro = inputFiltro.value.toLowerCase();
+    let filtro = FILTRORAZAS.value.toLowerCase();
     TABLARAZAS.innerHTML = '';
     listaRazas.forEach(raza => {
         if (raza.nombre.toLowerCase().includes(filtro)) {
@@ -53,16 +55,14 @@ const MOSTRARTABLARAZAS = () => {
                     }
                 })
             });
-            celdaAcciones.appendChild(botonModificar);
             celdaAcciones.appendChild(botonEliminar);
         }
     });
 };
 
-
 //Función que agrega las celdas de enfermedades a la tabla
 const MOSTRARTABLAENFERMEDADES = () => {
-    let filtro = inputFiltro.value.toLowerCase();
+    let filtro = FILTROENFERMEDADES.value.toLowerCase();
     TABLAENFERMEDADES.innerHTML = '';
     listaEnfermedades.forEach(enfermedad => {
         if (enfermedad.nombre.toLowerCase().includes(filtro)) {
@@ -104,7 +104,7 @@ const MOSTRARTABLAENFERMEDADES = () => {
                     }
                 })
             });
-            celdaAcciones.appendChild(botonModificar);
+
             celdaAcciones.appendChild(botonEliminar);
         }
     });
@@ -112,7 +112,7 @@ const MOSTRARTABLAENFERMEDADES = () => {
 
 //Función que agrega las celdas de vacunas a la tabla
 const MOSTRARTABLAVACUNAS = () => {
-    let filtro = inputFiltro.value.toLowerCase();
+    let filtro = FILTROVACUNAS.value.toLowerCase();
     listaVacunas.forEach(vacuna => {
         if (vacuna.nombre.toLowerCase().includes(filtro)) {
 
@@ -153,13 +153,22 @@ const MOSTRARTABLAVACUNAS = () => {
                     }
                 })
             });
-            celdaAcciones.appendChild(botonModificar);
+            celdaAcciones.appendChild(botonEliminar);
         }
     });
 };
 MOSTRARTABLARAZAS();
-inputFiltro.addEventListener('keyup', MOSTRARTABLARAZAS);
+FILTRORAZAS.addEventListener('keyup', MOSTRARTABLARAZAS);
+BTNAGREGARRAZA.addEventListener('click', () => {
+    window.location.href = 'P97-raza-modificar.html';
+})
 MOSTRARTABLAENFERMEDADES();
-inputFiltro.addEventListener('keyup', MOSTRARTABLAENFERMEDADES)
+FILTROENFERMEDADES.addEventListener('keyup', MOSTRARTABLAENFERMEDADES)
+BTNAGREGARENFERMEDAD.addEventListener('click', () => {
+    window.location.href = 'P96-padecimientos-modificar.html';
+})
 MOSTRARTABLAVACUNAS();
-inputFiltro.addEventListener('keyup', MOSTRARTABLAVACUNAS)
+FILTROVACUNAS.addEventListener('keyup', MOSTRARTABLAVACUNAS)
+BTNAGREGARVACUNA.addEventListener('click', () => {
+    window.location.href = 'P95-vacunas-modificar.html';
+})
