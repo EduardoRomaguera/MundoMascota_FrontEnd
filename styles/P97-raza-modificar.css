@@ -65,3 +65,14 @@
 .formulario-raza {
     border: #7720da solid 2px;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}
+

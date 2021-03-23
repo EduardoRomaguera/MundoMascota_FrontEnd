@@ -53,3 +53,13 @@ a:visited {
     height: 70%;
     max-width: 100%;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}

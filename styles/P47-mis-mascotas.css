@@ -17,6 +17,7 @@
     justify-content: space-around;
     flex-direction: row;
     height: 300px;
+    margin-bottom: 120px;
 }
 
 .imagen-mascota {
