@@ -29,6 +29,14 @@ const validar = () => {
         inputCorreoCl.classList.remove('error');
     }
 
+    let inputIdentificacionCl = /^[0-9]{9}$/;
+    if (inputIdentificacionCl.test(inputCorreoCl.value) == false) {
+        error = true;
+        inputCorreoCl.classList.add('error');
+    } else {
+        inputCorreoCl.classList.remove('error');
+    }
+
     //Validación de espacios vacios
     if (inputNombreCl.value == '') {
         error = true;

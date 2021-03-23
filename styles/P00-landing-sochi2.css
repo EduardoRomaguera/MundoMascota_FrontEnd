@@ -1041,15 +1041,16 @@ a:hover {
 
 .centered {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: #000000;
+    transform: translate(-80%, 20%);
+    color: #ffffff;
     font-weight: 900px;
     font-size: 40px;
     letter-spacing: 300%;
-    width: 90%;
+    width: 55%;
     font-family: Roboto;
+    text-align: left;
 }
 
 .container {
