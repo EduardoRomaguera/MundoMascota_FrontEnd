@@ -14,7 +14,7 @@ let listaOrdenesPendientes = [{
     'edad': '4 años',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
+    'servicio': 'Corte de pelo',
     'estado': 'Pendiente'
 }, {
     'cliente': 'Sergio Sanchez',
@@ -22,7 +22,7 @@ let listaOrdenesPendientes = [{
     'edad': '4 años',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
+    'servicio': 'Corte de pelo',
     'estado': 'Pendiente'
 }, {
     'cliente': 'Amy Bosques',
@@ -30,7 +30,7 @@ let listaOrdenesPendientes = [{
     'edad': '4 años',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
+    'servicio': 'Corte de pelo',
     'estado': 'Pendiente'
 }, {
     'cliente': 'Andrey Lobo',
@@ -38,7 +38,7 @@ let listaOrdenesPendientes = [{
     'edad': '4 años',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
+    'servicio': 'Corte de pelo',
     'estado': 'Pendiente'
 }]
 
