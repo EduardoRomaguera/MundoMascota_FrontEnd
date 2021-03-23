@@ -1,4 +1,4 @@
-window.onscroll = function() {mostrar(), sochi()};
+window.onscroll = function() {mostrar(), sochi(), test()};
 
 function mostrar() {
 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 510) {
@@ -11,7 +11,9 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 510) {
 function sochi() {
 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 180) {
     document.getElementById("romano").style.display = "inline";
+    document.getElementById("somo").className = "blanco";
 } else {
     document.getElementById("romano").style.display = "none";
+    document.getElementById("somo").className =  "negro";
 }
 }
