@@ -31,6 +31,8 @@
 }
 
 .tabla thead tr th {
+    font-weight: bold;
+    padding: 10px 0;
     width: 400px;
     text-align: center;
 }
@@ -57,12 +59,13 @@
     font-weight: 300px;
 }
 
+
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
+    display: none;
 }
