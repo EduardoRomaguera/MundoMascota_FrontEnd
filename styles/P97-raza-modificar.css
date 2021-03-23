@@ -37,15 +37,13 @@
 
 .items label {
     margin: 0 90 0 0px;
-    width:auto;
+    width: auto;
     align-items: center;
     display: flex;
-    
 }
 
 .items input {
     width: auto;
-
 }
 
 .items button {
@@ -55,6 +53,13 @@
     color: black;
     width: 180px;
     border-radius: 7px;
+}
+
+.items select {
+    height: 40px;
+    width: 240px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .formulario-raza {
