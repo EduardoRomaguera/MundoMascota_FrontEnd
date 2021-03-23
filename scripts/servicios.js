@@ -6,7 +6,7 @@ let listaOrdenesPendientes = [{
     'edad': '4',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
+    'servicio': 'Corte de pelo',
     'estado': 'Pendiente'
 }, {
     'cliente': 'Rodrigo Arauz',

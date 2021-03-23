@@ -404,14 +404,14 @@ a:hover {
 }
 
 .tabla tbody tr td {
-    padding-top: 20px;
+    padding: 10px 0;
     width: 200px;
     text-align: center;
 }
 
 .btn-agregar {
     background-color: #8EE5D8;
-    margin: 60px 60px 60px 60px;
+    margin: 10px 60px 10px 60px;
     padding: auto;
     color: black;
     width: 180px;

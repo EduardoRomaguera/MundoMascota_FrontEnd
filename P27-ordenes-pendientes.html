@@ -24,26 +24,14 @@
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
                         <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
-                        <a class="nav-A" href="P19-principal-proveedor.html">
-
-                            <img src="images/logo2-nav.png" id="logo">
-                            <!--<a class="logo" href=P01-homepage.html></a>-->
-                        </a>
-
-                        <div class="nav-B">
-                            <form class="barra-busqueda">
-                                <input class="placeholder" type="text" placeholder="Buscar">
-                                <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
-                                </input>
-                            </form>
-                        </div>
-                        <div class="nav-C">
-                            <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-                            <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
-                            <a class="btn" href="P20-perfil-proveedor.html">Mi Perfil</a>
-                            <a class="btn" href="P01-homepage.html">Cerrar Sesión</a>
-                        </div>
+                        </input>
+                    </form>
                 </div>
+                <div class="nav-C">
+                    <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -51,33 +39,29 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="solicitudes-pendientes">
-
-                    <section class="titulo">
-                        <h1>Solicitudes pendientes</h1>
-                    </section>
-
-                    <section class="catalogos">
-
-                        <div>
-                            <label for='txt-filtro-ordenes'>Filtrar</label>
-                            <input type="text" id='txt-filtro-ordenes'>
-                            <button type="button" id="btn-agregar-ordenes" class="btn-agregar">
+                <section class="titulo">
+                    <h1>Mantenimiento de catálogos</h1>
+                </section>
+                <section class="catalogos">
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Razas</h1>
+                        </section>
+                        <div class='filtro'>
+                            <label for='txt-filtro-razas'>Filtrar</label>
+                            <input type="text" id='txt-filtro-razas'>
+                            <button type="button" id="btn-agregar-raza" class="btn-agregar">
                                 Agregar Raza
-                                </button>
+                            </button>
                         </div>
 
                         <div class="contenedor1">
                             <div class="contenedor-tabla">
-                                <table id="tbl-ordenes" class="tabla">
+                                <table id="tbl-razas" class="tabla">
                                     <thead>
                                         <tr>
-                                            <th>Cliente</th>
-                                            <th>Mascota</th>
-                                            <th>Edad</th>
+                                            <th>Nombre</th>
                                             <th>Especie</th>
-                                            <th>Raza</th>
-                                            <th>Servicio solicitado</th>
                                             <th>Estado</th>
                                             <th>
 
@@ -91,7 +75,70 @@
                                 </table>
                             </div>
                         </div>
+                    </section>
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Padecimientos</h1>
+                        </section>
+                        <div>
+                            <label for='txt-filtro-enfermedades'>Filtrar</label>
+                            <input type="text" id='txt-filtro-enfermedades'>
+                            <button type="button" id="btn-agregar-enfermedad" class="btn-agregar">
+                                Agregar Padecimiento
+                            </button>
+                        </div>
 
+                        <div class="contenedor1">
+                            <div class="contenedor-tabla">
+                                <table id="tbl-enfermedades" class="tabla">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Especie</th>
+                                            <th>Estado</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <section class="divisor">
+                            <h1 class="btn-divisor">Vacunas</h1>
+                        </section>
+                        <div>
+                            <label for='txt-filtro-vacunas'>Filtrar</label>
+                            <input type="text" id='txt-filtro-vacunas'>
+                            <button type="button" id="btn-agregar-vacuna" class="btn-agregar">
+                                Agregar Vacuna
+                            </button>
+                        </div>
+
+                        <div class="contenedor1">
+                            <div class="contenedor-tabla">
+                                <table id="tbl-vacunas" class="tabla">
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Especie</th>
+                                            <th>Estado</th>
+                                            <th></th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                        </div>
                     </section>
                 </section>
             </div>
@@ -129,9 +176,7 @@
             </a>
         </section>
     </footer>
-
-    <script src="scripts/navegacion.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
     <script src="scripts/P39-mantenimiento-catalogos.js"></script>
 </body>
