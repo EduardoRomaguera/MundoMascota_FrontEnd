@@ -374,4 +374,49 @@ a:hover {
     border-radius: 7px;
 }
 
-.
+
+/* En esta clase se agregan los estilos de las tablas*/
+
+.tabla {
+    margin-top: 30px;
+}
+
+.tabla tr {
+    height: 40px;
+}
+
+.tabla thead tr {
+    width: 300px;
+    text-align: center;
+    background-color: #8EE5D8;
+    ;
+}
+
+.tabla thead tr th {
+    font-weight: bold;
+    padding: 10px 0;
+    width: 400px;
+    text-align: center;
+}
+
+.tabla tbody tr {
+    border-bottom: 1px solid #424D4B;
+}
+
+.tabla tbody tr td {
+    padding-top: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.btn-agregar {
+    background-color: #8EE5D8;
+    margin: 60px 60px 60px 60px;
+    padding: auto;
+    color: black;
+    width: 180px;
+    border-radius: 7px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+}
