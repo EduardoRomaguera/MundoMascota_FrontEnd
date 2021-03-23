@@ -1,12 +1,31 @@
 'use strict';
-const btnCancelar = document.querySelector("#btn3");
-const validar = () => {
-    Swal.fire({
-        'icon': 'warning',
-        'title': 'No se pudo iniciar sesión',
-        'text': 'Por favor revise los campos resaltados',
-        'confirmButtonText': 'Entendido'
-    });
+const BTNBANEAR = document.querySelector("#btn-banear");
+const BTNDESCARTAR = document.querySelector('#btn-descartar')
 
+const BANEAR = () => {
+    BTNBANEAR.addEventListener('click', () => {
+        Swal.fire({
+            'icon': 'warning',
+            'text': '¿Está seguro que desea banear al usuario?',
+            'showCancelButton': true,
+            'confirmButtonText': '¡Sí!, estoy seguro',
+            'cancelButtonColor': '#d33',
+            'cancelButtonText': 'Cancelar',
+            'reverseButtons': true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    '',
+                    'El usuario ha sido baneado',
+                    'success'
+                )
+            }
+        })
+    });
 }
-btnCancelar.addEventListener("click", validar);
+
+BANEAR();
+BTNDESCARTAR.addEventListener('click', () => {
+    window.location.href = 'P98-gestion-de-denuncias.html';
+
+})
