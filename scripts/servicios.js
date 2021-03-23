@@ -1,5 +1,47 @@
 'use strict'
 
+let listaOrdenesPendientes = [{
+    'cliente': 'Gonzalo Nunez',
+    'mascota': 'Rex',
+    'edad': '4',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio requerido': 'Corte de pelo',
+    'estado': 'Pendiente'
+}, {
+    'cliente': 'Rodrigo Arauz',
+    'mascota': 'Rex',
+    'edad': '4 años',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio requerido': 'Corte de pelo',
+    'estado': 'Pendiente'
+}, {
+    'cliente': 'Sergio Sanchez',
+    'mascota': 'Rex',
+    'edad': '4 años',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio requerido': 'Corte de pelo',
+    'estado': 'Pendiente'
+}, {
+    'cliente': 'Amy Bosques',
+    'mascota': 'Rex',
+    'edad': '4 años',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio requerido': 'Corte de pelo',
+    'estado': 'Pendiente'
+}, {
+    'cliente': 'Andrey Lobo',
+    'mascota': 'Rex',
+    'edad': '4 años',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio requerido': 'Corte de pelo',
+    'estado': 'Pendiente'
+}]
+
 let listaRazas = [{
     'nombre': 'Pastor Alemán',
     'especie': 'Perro',

@@ -1,36 +1,5 @@
-.solicitudes-pendientes {
-    background-image: url('../images/solicitudes-pendientes.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 2px;
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-.mis-servicios {
-    background-image: url('../images/mis-mascotas.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2px;
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
 .lista-servicios {
+    border: solid 2px orange;
     background-size: cover;
     background-position: center;
     min-height: 600px;
@@ -43,6 +12,7 @@
     color: black;
     text-align: center;
     width: 100%;
+<<<<<<< Updated upstream
 }
 
 
@@ -71,3 +41,6 @@
 #btn-iniciar-sesion {
     display:none;
 }
+=======
+}
+>>>>>>> Stashed changes

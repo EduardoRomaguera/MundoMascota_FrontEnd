@@ -44,19 +44,18 @@
     padding: 10px 0;
     width: 200px;
     text-align: center;
-<<<<<<< Updated upstream
     width: 100%;
 }
+
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
-=======
+    display: none;
 }
 
 .btn-agregar {
@@ -72,5 +71,4 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 300px;
->>>>>>> Stashed changes
 }
