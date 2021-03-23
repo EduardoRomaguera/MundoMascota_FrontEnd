@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <!-- pendiente agregar el cierre de sesión, que no quede abierta la sesión al regresar al index -->
-    <meta name="viewport" content="width=1080 initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P56-gestion-pagos.css">
-
+    <link rel="stylesheet" href="styles/P59-agregar-tarjeta.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Mundo Mascota</title>
+    <title>Calificar</title>
 </head>
 
 <body>
@@ -41,51 +36,32 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="titulo">
-                    <h1>Gestion de Pagos</h1>
-                </section>
-                <!-- sección 1-->
-                <section class="contenedor1">
-                    <div class="datos-tarjeta">
-                        <div class="info1">
-                            <div class="info0">
-                                <h4 class="nombre-negocio">Peluqueria Canina y Spa Steph's</h4>
-                            </div>
-                            <div><button class="btn2" href="P59-agregar-tarjeta.html">Agregar Tarjeta</button></div>
-                        </div>
-                        <div class="info2" id="nombre">
-                            <h5>Nombre: Stephanie</h5>
-                        </div>
-                        <div class="info2" id="apellidos">
-                            <h5>Apellido(s): Marín Brenes</h5>
-                        </div>
-                        <div class="info2" id="tipo-identificacion">
-                            <h5>Tipo de identificación: Física</h5>
-                        </div>
-                        <div class="info2" id="numero-identificacion">
-                            <h5>Número de identificación: 1-1436-0124</h5>
-                        </div>
-                        <div class="info2" id="correo electronico">
-                            <h5>Correo electrónico: stephaniemarin@gmail.com</h5>
-                        </div>
-                        <div class="info2" id="provincia">
-                            <h5>Provincia: Heredia</h5>
-                        </div>
-                        <div class="info2" id="canton">
-                            <h5>Cantón: Heredia</h5>
-                        </div>
-                        <div class="info2" id="distrito">
-                            <h5>Distrito: San Franciso</h5>
-                        </div>
-                        <div class="info2" id="otras-senas">
-                            <h5>Otras señas: Del restaurante Don Cicharron, 200m norte. Calle 38.</h5>
+                <section>
+                    <div class="contenedor1">
+                        <div class="contenedor2" class="h1">
+                            <h1>Calificar Proveedor </h1>
+                            <h3>Califica del 1 al 5</h3>
+                            <select class="input-formularios" id="txt-calificacion">
+                                <option value=""></option>
+                                <option value="5" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0  &#xf1b0  &#xf1b0 </option>
+                                <option value="4" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0  &#xf1b0 </option>
+                                <option value="3" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0 </option>
+                                <option value="2" class="patitas">&#xf1b0 &#xf1b0 </option>
+                                <option value="1" class="patitas">&#xf1b0 </option>
+                            </select>
+
+                            <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Comentarios Adicionales"></textarea>
+
+                            <button id="btn-calificar" class="btn2">Enviar Calificación </button>
                         </div>
                     </div>
-                </section>
             </div>
+            </section>
             <div id="espaciador-der"></div>
         </div>
     </main>
+
+
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
@@ -117,7 +93,10 @@
         </section>
     </footer>
 
-    <script src="scripts/P01-homepage.js"></script>
+    <script src="scripts/navegacion.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P58-calificar-proveedor.js"></script>
 </body>
 
 </html>
