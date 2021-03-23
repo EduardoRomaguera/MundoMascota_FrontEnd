@@ -57,22 +57,22 @@ a:visited {
 /*Tamaños generales de letra para H1, H2, H3, H4,  */
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 500;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -147,7 +147,7 @@ h5 {
 
 .input-formularios {
     text-align: center;
-    border: solid black 2px;
+    border: solid #00000060 1px;
     border-radius: 7px;
     padding: 10px;
     font-size: 18px;

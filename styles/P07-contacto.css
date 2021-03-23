@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 700px;
+    min-height: 680px;
 }
 
 .contenedor2 {
@@ -40,4 +40,14 @@
 
 #fix1 {
     margin-top: 20px;
+}
+
+/* OCULTADOS*/
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
 }

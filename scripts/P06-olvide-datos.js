@@ -1,52 +1,58 @@
 'use strict';
-//Codigo para ocultar y mostrar constraseña
-function showPassword() {
-    var x = document.getElementById("txt-contrasenna");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
 
 //Validación de espacios de inicio de sesión
   const inputCorreo = document.querySelector('#txt-correo');
-  const inputContrasenna = document.querySelector('#txt-contrasenna');
-  const btnSiguiente = document.querySelector('#btn-siguiente');
+  const btnContrasenna = document.querySelector('#btn-contrasenna');
   
-  const validarInicioSesion = () => {
+  const validarVacios = () => {
       let error = false;
-  
+      let error2 = false;
       let regexCorreo = /^[a-zA-Z.0-9]+\@{1}[a-zA-Z.]+$/;
-  
-      if (regexCorreo.test(inputCorreo.value) == false) {
-          error = true;
-          inputCorreo.classList.add('error');
-      } else {
-          inputCorreo.classList.remove('error');
-      }
-  
-      if (inputContrasenna.value == '') {
-          error = true;
-          inputContrasenna.classList.add('error');
-      } else {
-          inputContrasenna.classList.remove('error');
-      }
-  
-      if (error == false) {
-          iniciarSesion(inputCorreo.value, inputContrasenna.value);
 
-      } else {
-          Swal.fire({
-            imageUrl: "images/error.png",
-            title: "¡OOPS! Algo pasó aqui",
-            text: "Dejaste un espacio vacio",
-            confirmButtonText: "Intentar de nuevo"
-          });
-  
-      }
+      
+    if (regexCorreo.test(inputCorreo.value) == false) {
+      error2 = true;
+      inputCorreo.classList.add('error');
+  } else {
+      inputCorreo.classList.remove('error');
+  }
+
+    if (inputCorreo.value == '') {
+      error = true;
+      inputCorreo.classList.add('error');
+  } else {
+    inputCorreo.classList.remove('error');
+  }
+
+
+  if (error == true) {
+    Swal.fire({
+      imageUrl: "images/error.png",
+      title: "¡OOPS! Algo pasó aqui",
+      text: "Dejaste un espacio vacio",
+      confirmButtonText: "Intentar de nuevo"
+    });
+  } else {
+    if (error2 == true) {
+      inputCorreo.classList.add('error');
+      Swal.fire({
+        imageUrl: "images/error.png",
+        title: "¡OOPS! Algo pasó aqui",
+        text: "El correo que introduciste no es válido",
+        confirmButtonText: "Intentar de nuevo"
+      });
+    } else {
+        Swal.fire({
+          imageUrl: "images/gato-computadora.jpg",
+          title: "¡Gracias!",
+          text: "Nuestros agentes enviarán un correo electrónico con instrucciones para restaurar la contraseña en caso de existir una cuenta asociada.",
+          confirmButtonText: "Intentar de nuevo"
+        });
+    }
+    }
+
   };
-  btnSiguiente.addEventListener('click', validarInicioSesion);
+  btnContrasenna.addEventListener('click', validarVacios);
 
 
 //if (sessionStorage.getItem('usuarioConectado')) {

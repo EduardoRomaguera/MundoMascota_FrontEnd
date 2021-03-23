@@ -179,3 +179,11 @@
     font-size: 30px;
     font-style: italic;
 }
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
+}

@@ -54,3 +54,9 @@ h5 {
 #slt-padecimiento {
     margin-bottom: 5%;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}

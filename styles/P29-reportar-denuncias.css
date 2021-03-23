@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 900px;
+    min-height: 610px;
 }
 
 .contenedor3 {
@@ -36,4 +36,12 @@
     resize: vertical;
 }
 
-.cotenedor3 textarea {
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}

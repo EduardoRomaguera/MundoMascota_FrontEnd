@@ -62,3 +62,18 @@
     line-height: 150%;
 
 }
+
+
+/* OCULTADOS*/
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}

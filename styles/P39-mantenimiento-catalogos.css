@@ -56,3 +56,13 @@
     font-size: 18px;
     font-weight: 300px;
 }
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}
