@@ -85,37 +85,38 @@ let listaMisServicios = [{
 }]
 
 let listaOrdenesPendientes = [{
-        'cliente': 'Gonzálo Nuñez',
-        'mascota': 'Rex',
-        'especie': 'Perro',
-        'raza': 'Bulldog',
-        'servicio': 'Keratina'
-    }, {
-        'cliente': 'Rodrigo Arauz',
-        'mascota': 'Charlie',
-        'especie': 'Perro',
-        'raza': 'Terrier',
-        'servicio': 'Baño de fumigación'
-    }, {
-        'cliente': 'Sergio Sánchez',
-        'mascota': 'Max',
-        'especie': 'Perro',
-        'raza': 'Golden Retriever',
-        'servicio': 'Corte según raza'
-    }, {
-        'cliente': 'Amy Bosques',
-        'mascota': 'Kiara',
-        'especie': 'Perro',
-        'raza': 'Terrier',
-        'servicio': 'Baño, corte según raza'
-    }, {
-        'cliente': 'Andrey Lobo',
-        'mascota': 'Ori',
-        'especie': 'Perro',
-        'raza': 'Poodle',
-        'servicio': 'Tinte temporal'
-    }]
-    //Lista de razas
+    'cliente': 'Gonzálo Nuñez',
+    'mascota': 'Rex',
+    'especie': 'Perro',
+    'raza': 'Bulldog',
+    'servicio': 'Keratina'
+}, {
+    'cliente': 'Rodrigo Arauz',
+    'mascota': 'Charlie',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño de fumigación'
+}, {
+    'cliente': 'Sergio Sánchez',
+    'mascota': 'Max',
+    'especie': 'Perro',
+    'raza': 'Golden Retriever',
+    'servicio': 'Corte según raza'
+}, {
+    'cliente': 'Amy Bosques',
+    'mascota': 'Kiara',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Andrey Lobo',
+    'mascota': 'Ori',
+    'especie': 'Perro',
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
+}]
+
+//Lista de razas
 let listaRazas = [{
         'nombre': 'Pastor Alemán',
         'especie': 'Perro',
@@ -163,47 +164,48 @@ let listaRazas = [{
     }]
     //Lista de padecimientos
 let listaEnfermedades = [{
-        'nombre': 'Moquillo',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Hepatitis canina',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Parvovirus',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Rabia',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Brucelosis',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Leucemia viral felina',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Asma felina',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Otitis externa',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Insuficiencia renal',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Toxoplasmosis',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }]
-    //Lista de vacunas
+    'nombre': 'Moquillo',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Hepatitis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Parvovirus',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Rabia',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Brucelosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leucemia viral felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Asma felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Otitis externa',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Insuficiencia renal',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Toxoplasmosis',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}]
+
+//Lista de vacunas
 let listaVacunas = [{
     'nombre': 'Parvovirus',
     'especie': 'Perro',
@@ -224,6 +226,18 @@ let listaVacunas = [{
     'nombre': 'Trifelina',
     'especie': 'Gato',
     'estado': 'Activo'
+}, {
+    'nombre': 'Siberiano',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Sphynx',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Van Turco',
+    'especie': 'Gato',
+    'estado': 'Activo'
 }]
 
 //Lista no mantenible de motivos de denuncias
@@ -237,6 +251,255 @@ let listaMotivosDenuncias = [{
     'motivo': 'Amenza'
 }, {
     'motivo': 'Incitación al odio'
+}]
+
+
+let listaEnfermedades = [{
+    'nombre': 'Coranovorosis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Distemper',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Hepatitis infecciosa canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Herpesvirosis Canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Influenza canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Parvovirosis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Parvovirus',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Rabia',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Traqueobronquitis infecciosa canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Brucelosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Clostridiosis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Enfermedad de Lyme',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Erliquiosis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leptospirosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dermatitis alérgica picadura de pulgas',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Granuloma por lamido',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Meningoencefalitis granulomatosa',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Síndrome de cauda equina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Displasia de cadera (canina)',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Pancreatitis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Torsión gástrica',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Tumor venéreo transmisible',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Ectropión',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Entropión',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Babesia canis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Demodicosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dermatofitosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dirofilariasis canina',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Escabiosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gusano de la vejiga del perro',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Ixidiosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Toxoplasmosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Tripanosomiasis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Síndrome de furia',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Insuficiencia renal',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leucemia felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Panleucopenia felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Inmunodeficiencia felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Peritonitis infecciosa felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Trastornos gastrointestinales',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Otitis',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Conjuntivitis',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cataratas',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Glaucoma',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Alergias y dermatitis',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Tiña',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Toxocariasis',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Toxoplasmosis',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Asma felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}]
+
+let listaVacunas = [{
+    'nombre': 'Parvovirus',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leptospirosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Rabia',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Hepatitis infecciosa',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Moquillo canino',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Traquiobronquitis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leucemia felina (leucosis)',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Moquillo (panleucopenia)',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gripe felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Peritonitis infecciosa felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Rabia',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Trivalente felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
 }]
 
 // Lista de usuarios para probar inicio de sesión
