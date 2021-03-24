@@ -23,7 +23,17 @@ const MOSTRARTABLASERVICIOS = () => {
             botonComprar.innerText = "●";
             celdaAcciones.appendChild(botonComprar);
             botonComprar.setAttribute('class', 'btn-comprar');
-            
+            botonComprar.addEventListener('click', () => {
+                Swal.fire({
+                    'icon': 'question',
+                    'text': '¿Deseas adquirir este servicio?',
+                    'showCancelButton': true,
+                    'confirmButtonText': '   Sí    ',
+                    'confirmButtonColor': '#007552',
+                    'cancelButtonColor': '#d33',
+                    'cancelButtonText': 'Cancelar',
+                })
+            });
 
 
         })
