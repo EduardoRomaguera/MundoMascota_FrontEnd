@@ -1,8 +1,8 @@
 'use strict'
 let razaSeleccionado;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-pd');
-const INPUTESPECIE = document.querySelector('#txt-especie-pd');
-const INPUTESTADO = document.querySelector('#txt-estado-pd');
+const INPUTESPECIE = document.querySelector('#slt-especie-pd');
+const INPUTESTADO = document.querySelector('#slt-estado-pd');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 

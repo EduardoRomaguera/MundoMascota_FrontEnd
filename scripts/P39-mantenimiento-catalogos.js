@@ -60,6 +60,7 @@ const MOSTRARTABLARAZAS = () => {
     });
 };
 
+
 //Función que agrega las celdas de enfermedades a la tabla
 const MOSTRARTABLAENFERMEDADES = () => {
     let filtro = FILTROENFERMEDADES.value.toLowerCase();

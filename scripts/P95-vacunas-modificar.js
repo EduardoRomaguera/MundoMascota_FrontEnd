@@ -1,9 +1,8 @@
 'use strict'
-let vacuna;
-Seleccionado;
+let vacunaSeleccionado;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-vc');
-const INPUTESPECIE = document.querySelector('#txt-especie-vc');
-const INPUTESTADO = document.querySelector('#txt-estado-vc');
+const INPUTESPECIE = document.querySelector('#slt-especie-vc');
+const INPUTESTADO = document.querySelector('#slt-estado-vc');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
