@@ -1,74 +1,41 @@
 'use strict';
-//Codigo para ocultar y mostrar constraseña
-function showPassword() {
-    var x = document.getElementById("txt-contrasenna");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-  }
 
-//Validación de espacios de inicio de sesión
-  const inputCorreo = document.querySelector('#txt-correo');
-  const inputContrasenna = document.querySelector('#txt-contrasenna');
-  const btnSiguiente = document.querySelector('#btn-siguiente');
-  
-  const validarInicioSesion = () => {
-      let error = false;
-      let error2 = false;
-  
-      let regexCorreo = /^[a-zA-Z.0-9]+\@{1}[a-zA-Z.]+$/;
-  
-      if (regexCorreo.test(inputCorreo.value) == false) {
-        error2 = true;
-        inputCorreo.classList.add('error');
-    } else {
-      inputCorreo.classList.remove('error');
-    }
-  
-      if (inputContrasenna.value == '') {
-          error = true;
-          inputContrasenna.classList.add('error');
-      } else {
-        inputContrasenna.classList.remove('error');
-      }
-  
-      if (inputCorreo.value == '') {
-        error = true;
-        inputCorreo.classList.add('error');
-    } else {
-      inputCorreo.classList.remove('error');
-    }
+// Codigo para tabla de servicios, copiado de P22-Mis servicios
 
-      if (error == true) {
-        Swal.fire({
-          imageUrl: "images/error.png",
-          title: "¡OOPS! Algo pasó aqui",
-          text: "Dejaste un espacio vacio",
-          confirmButtonText: "Intentar de nuevo"
-        });
-      } else {
-        if (error2 == true) {
-          inputCorreo.classList.add('error');
-          Swal.fire({
-            imageUrl: "images/error.png",
-            title: "¡OOPS! Algo pasó aqui",
-            text: "El correo que introduciste no es válido",
-            confirmButtonText: "Intentar de nuevo"
-          });
-        } else {
-          iniciarSesion(inputCorreo.value, inputContrasenna.value);
-        }
-      }
+const TABLASERVICIOS = document.querySelector('#tbl-servicios tbody');
 
-  };
-  btnSiguiente.addEventListener('click', validarInicioSesion);
+//const FILTROSERVICIOS = document.querySelector('#txt-filtro-servicios');
+
+//Función que agrega las celdas de servicios a la tabla
+const MOSTRARTABLASERVICIOS = () => {
+//    let filtro = FILTROSERVICIOS.value.toLowerCase();
+    TABLASERVICIOS.innerHTML = '';
+    listaMisServicios.forEach(servicios => {
+//        if (servicios.nombre.toLowerCase().includes(filtro)) {
+
+            let fila = TABLASERVICIOS.insertRow();
+            fila.insertCell().innerHTML = servicios.nombre;
+            fila.insertCell().innerHTML = servicios.descripcion;
+            fila.insertCell().innerHTML = servicios.costo;
+            let celdaAcciones = fila.insertCell();
+
+            let botonComprar = document.createElement('button');
+            botonComprar.innerText = "●";
+            celdaAcciones.appendChild(botonComprar);
+            botonComprar.setAttribute('class', 'btn-comprar');
+            botonComprar.addEventListener('click', () => {
+                Swal.fire({
+                    'icon': 'question',
+                    'text': '¿Deseas adquirir este servicio?',
+                    'showCancelButton': true,
+                    'confirmButtonText': '   Sí    ',
+                    'confirmButtonColor': '#007552',
+                    'cancelButtonColor': '#d33',
+                    'cancelButtonText': 'Cancelar',
+                })
+            });
 
 
-//if (sessionStorage.getItem('usuarioConectado')) {
-//  usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
-//  tipoUsuario();
-//} else {
-//  window.location.href = 'index.html';
-//}
+        })
+    };
+MOSTRARTABLASERVICIOS();

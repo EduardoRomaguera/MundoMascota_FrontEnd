@@ -993,10 +993,6 @@ a:hover {
     margin-top: 510px;
 }
 
-#japones {
-    font-size: 200px;
-}
-
 #nav {
     position: fixed;
     top: -60px;
@@ -1019,8 +1015,15 @@ a:hover {
 
 #romano {
     transition: top 1.3s;
-    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 200px;
 }
+
+#japones {
+    font-size: 300px
+
+}
+
 .frase {
     height: 400px;
     width: 100%;
