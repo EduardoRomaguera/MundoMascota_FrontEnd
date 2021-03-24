@@ -939,7 +939,6 @@ a:hover {
 
 .negro {
     font-family: Roboto Mono;
-    background-color: #000000;
     height: 510px;
     width: 100%;
     color: #FFFFFF;
@@ -969,6 +968,15 @@ a:hover {
     top:0;
     left:0;
     z-index: -99; 
+}
+.somos span,
+#overlay {
+        position: absolute !important;
+        align-self: center !important;
+        z-index:9 !important;
+}
+#video {
+    autoplay 
 }
 
 .sochi {
@@ -1158,6 +1166,7 @@ a:hover {
     border-radius: 7px;
 }
 .foto {
+    height: 40%;
     border-radius: 50%;
-    height: 65%;
+    margin: 10% 0 0 0;
 }

@@ -63,3 +63,85 @@ a:visited {
 #btn-iniciar-sesion {
     display:none;
 }
+
+/* Código nuevo*/
+
+.serviciosEnVenta{
+display: flex;
+flex-direction: column;
+width: 100%;
+border: red solid 10px;
+min-height: 900px;
+}
+
+.contenedor-servicio {
+    display: flex;
+    width: 100%;
+    border-top:  rgb(177, 177, 177) solid 2px;
+    border-bottom: rebeccapurple solid 1px;
+    min-height: 250px;
+    padding: 10px 0 0 0;
+    margin: 30px 0 0 0;
+}
+
+.contenedor-foto-proveedor {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 210px;
+    border: solid 1px grey;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-proveedor {
+    height: 170px;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+.contenedor-informacion {
+    border: rgb(153, 51, 136) solid 1px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 210px;
+    padding: 20px;
+    align-items: center;
+}
+
+.nombre-proveedor{
+    border: rgb(54, 153, 51) solid 1px;
+    width: 100%;
+    text-align: left;
+    height: 15%;
+}
+
+.contenedor-informacion2 {
+    border: rgb(115, 255, 0) solid 1px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+}
+
+.contenedor-informacion3 {
+    border: rgb(153, 75, 51) solid 1px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 170px;
+    padding: 20px 0 0 0;
+    justify-content: left;
+}
+
+.servicios-precios {
+    border: rgb(153, 75, 51) solid 1px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 170px;
+    padding: 20px 0 0 0;
+    align-items: center;
+}
