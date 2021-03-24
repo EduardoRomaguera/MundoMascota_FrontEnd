@@ -60,7 +60,7 @@ let listaHistorialOrdenes = [{
     'especie': 'Perro',
     'raza': 'Poodle',
     'servicio': 'Tinte temporal'
-}]
+}];
 
 let listaMisServicios = [{
     'nombre': 'Keratina',
@@ -82,7 +82,7 @@ let listaMisServicios = [{
     'nombre': 'Tinte temporal',
     'descripcion': 'Cambia el look de tu mascota con una explosión de color',
     'costo': '₡ 7000 colones'
-}]
+}];
 
 let listaOrdenesPendientes = [{
     'cliente': 'Gonzálo Nuñez',
@@ -114,55 +114,55 @@ let listaOrdenesPendientes = [{
     'especie': 'Perro',
     'raza': 'Poodle',
     'servicio': 'Tinte temporal'
-}]
+}];
 
 //Lista de razas
 let listaRazas = [{
-        'nombre': 'Pastor Alemán',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Bulldog',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Golden Retriever',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Gran Danés',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Poddle',
-        'especie': 'Perro',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Persa',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Angora',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Bengala',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Maine Coon',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Criollo',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }, {
-        'nombre': 'Siamés',
-        'especie': 'Gato',
-        'estado': 'Activo'
-    }]
-    //Lista de padecimientos
+    'nombre': 'Pastor Alemán',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bulldog',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Golden Retriever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gran Danés',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Poddle',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Persa',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Angora',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bengala',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Maine Coon',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Criollo',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Siamés',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}];
+//Lista de padecimientos
 let listaEnfermedades = [{
     'nombre': 'Moquillo',
     'especie': 'Perro',
@@ -203,58 +203,7 @@ let listaEnfermedades = [{
     'nombre': 'Toxoplasmosis',
     'especie': 'Gato',
     'estado': 'Activo'
-}]
-
-//Lista de vacunas
-let listaVacunas = [{
-    'nombre': 'Parvovirus',
-    'especie': 'Perro',
-    'estado': 'Activo'
 }, {
-    'nombre': 'Leptospirosis',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Rabia',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Leucemia felina',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Trifelina',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Siberiano',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Sphynx',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Van Turco',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}]
-
-//Lista no mantenible de motivos de denuncias
-let listaMotivosDenuncias = [{
-    'motivo': 'Uso de lenguaje soez'
-}, {
-    'motivo': 'Discriminacion'
-}, {
-    'motivo': 'Acoso'
-}, {
-    'motivo': 'Amenza'
-}, {
-    'motivo': 'Incitación al odio'
-}]
-
-
-let listaEnfermedades = [{
     'nombre': 'Coranovorosis canina',
     'especie': 'Perro',
     'estado': 'Activo'
@@ -450,9 +399,42 @@ let listaEnfermedades = [{
     'nombre': 'Asma felina',
     'especie': 'Gato',
     'estado': 'Activo'
-}]
+}];
 
+//Lista de vacunas
 let listaVacunas = [{
+    'nombre': 'Parvovirus',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leptospirosis',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Rabia',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Leucemia felina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Trifelina',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Siberiano',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Sphynx',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Van Turco',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
     'nombre': 'Parvovirus',
     'especie': 'Perro',
     'estado': 'Activo'
@@ -500,7 +482,8 @@ let listaVacunas = [{
     'nombre': 'Trivalente felina',
     'especie': 'Gato',
     'estado': 'Activo'
-}]
+}];
+
 
 // Lista de usuarios para probar inicio de sesión
 let listaUsuarios = [{
