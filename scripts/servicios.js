@@ -1,5 +1,67 @@
 'use strict'
 
+let listaHistorialOrdenes = [{
+    'cliente': 'Neymar Cabezas',
+    'mascota': 'Pongo',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Eva Lee',
+    'mascota': 'Akita',
+    'especie': 'Perro',
+    'raza': 'Pekinés',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Andrés Solano',
+    'mascota': 'Milly',
+    'especie': 'Perro',
+    'raza': 'Mastín',
+    'servicio': 'Corte según raza'
+}, {
+    'cliente': 'Cristian Sandoval',
+    'mascota': 'Tom',
+    'especie': 'Perro',
+    'raza': 'Pug',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Ana Araya',
+    'mascota': 'Tiger',
+    'especie': 'Perro',
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
+}, {
+    'cliente': 'Leonel Rodríguez',
+    'mascota': 'Coco',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño de fumigación'
+}, {
+    'cliente': 'Karla Hernández',
+    'mascota': 'Chispas',
+    'especie': 'Perro',
+    'raza': 'Golden Retriever',
+    'servicio': 'Corte según raza'
+}, {
+    'cliente': 'Karla Hernández',
+    'mascota': 'Mani',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Juan García',
+    'mascota': 'Bailey',
+    'especie': 'Perro',
+    'raza': 'Golden Retriever',
+    'servicio': 'Tinte temporal'
+}, {
+    'cliente': 'Iván Acón',
+    'mascota': 'Daisey',
+    'especie': 'Perro',
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
+}]
+
 let listaMisServicios = [{
     'nombre': 'Keratina',
     'descripcion': 'Restaura el pelo de tu mascota',
