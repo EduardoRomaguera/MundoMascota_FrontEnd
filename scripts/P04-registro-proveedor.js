@@ -1,114 +1,232 @@
 //'use strict';
+
+//Datos de representante legal//
+
+function activarRepresentante() {
+    if (document.getElementById("txt-tipo-id-pr").value !== "juridica") {
+        document.getElementById("txt-nombre-rep-pr").value == "";
+        document.getElementById("txt-nombre-rep-pr").disabled=true;
+        document.getElementById("txt-apellido1-rep-pr").disabled=true;
+        document.getElementById("txt-apellido2-rep-pr").disabled=true;
+        document.getElementById("txt-correo-rep-pr").disabled=true;
+        
+    }
+    if (document.getElementById("txt-tipo-id-pr").value == "juridica") {
+    document.getElementById("txt-nombre-rep-pr").disabled=false;
+    document.getElementById("txt-apellido1-rep-pr").disabled=false;
+    document.getElementById("txt-apellido2-rep-pr").disabled=false;
+    document.getElementById("txt-correo-rep-pr").disabled=false;
+    }
+}
+document.getElementById('txt-tipo-id-pr').onchange = activarRepresentante;
+
+//Checkbox de redes sociales//
+function EnableDisableTextBox(facebook) {
+    var inputFacebookURL = document.getElementById("facebook-url");
+    inputFacebookURL.disabled = facebook.checked ? false : true;
+    if (!inputFacebookURL.disabled) {
+        inputFacebookURL.focus();
+    }
+}
+
+function EnableDisableTextBox2(instagram) {
+    var inputInstagramURL = document.getElementById("instagram-url");
+    inputInstagramURL.disabled = instagram.checked ? false : true;
+    if (!inputInstagramURL.disabled) {
+        inputInstagramURL.focus();
+    }
+}
+
+function EnableDisableTextBox3(tiktok) {
+    var inputtiktokURL = document.getElementById("tiktok-url");
+    inputtiktokURL.disabled = tiktok.checked ? false : true;
+    if (!inputtiktokURL.disabled) {
+        inputtiktokURL.focus();
+    }
+}
+
+
 //Validación de espacios de registro de cliente
-const inputNombreCl = document.querySelector('#txt-nombre-cl');
-const inputApellido1Cl = document.querySelector('#txt-apellido1-cl');
-const inputApellido2Cl = document.querySelector('#txt-apellido2-cl');
-const inputTipoIdCl = document.querySelector('#txt-tipo-id-cl');
-const inputIdentificacionCl = document.querySelector('#txt-identificacion-cl');
-const inputNacimientoCl = document.querySelector('#txt-nacimiento-cl');
-const inputCorreoCl = document.querySelector('#txt-correo-cl');
-const inputProvinciaCl = document.querySelector('#txt-provincia-cl');
-const inputCantonCl = document.querySelector('#txt-canton-cl');
-const inputDistritoCl = document.querySelector('#txt-distrito-cl');
-const inputSennasCl = document.querySelector('#txt-sennas-cl');
-const inputNombreMs = document.querySelector('#txt-nombre-ms');
-const selectEspecieMs = document.querySelector('#txt-especie-ms');
-const selectRazaMs = document.querySelector('#txt-raza-ms');
-const inputTelefonoMs = document.querySelector('#txt-telefono-ms');
+const inputNombreNegocioPr = document.querySelector('#txt-nombre-negocio-pr');
+const inputNombrePr = document.querySelector('#txt-nombre-pr');
+const inputApellido1Pr = document.querySelector('#txt-apellido1-pr');
+const inputApellido2Pr = document.querySelector('#txt-apellido2-pr');
+const inputTipoIdPr = document.querySelector('#txt-tipo-id-pr');
+const inputIdentificacionPr = document.querySelector('#txt-identificacion-pr');
+const inputNacimientoPr = document.querySelector('#txt-nacimiento-pr');
+const inputCorreoPr = document.querySelector('#txt-correo-pr');
+const inputProvinciaPr = document.querySelector('#txt-provincia-pr');
+const inputCantonPr = document.querySelector('#txt-canton-pr');
+const inputDistritoPr = document.querySelector('#txt-distrito-pr');
+const inputSennasPr = document.querySelector('#txt-sennas-pr');
+const inputHorarioPr = document.querySelector('#txt-horario-pr');
+const inputTelefonoPr = document.querySelector('#txt-teléfono-pr');
 const btnCompletarRegistro = document.querySelector('#btn-completar-registro');
+//Representante legal
+const inputNombreRepPr = document.querySelector('#txt-nombre-rep-pr');
+const inputApellido1RepPr = document.querySelector('#txt-apellido1-rep-pr');
+const inputApellido2RepPr = document.querySelector('#txt-apellido2-rep-pr');
+const inputCorreoRepPr = document.querySelector('#txt-correo-rep-pr');
 
 const validar = () => {
     let error = false;
     let errorCorreo = false;
     let errorIdentificacion = false;
 
-    //Validación de formato de correo electrónico
-    let regexCorreo = /^[a-zA-Z.0-9]+\@{1}[a-zA-Z.]+$/;
-
-    if (inputCorreoCl.value == '') {
-        error = true;
-        inputCorreoCl.classList.add('error');
-    } else {
-        inputCorreoCl.classList.remove('error');
-        if (regexCorreo.test(inputCorreoCl.value) == false) {
-            errorCorreo = true;
-            inputCorreoCl.classList.add('error');
-        } else {
-            inputCorreoCl.classList.remove('error');
+    //Validación de datos de representante legal
+    function activarRepresentante() {
+        if (document.getElementById("txt-tipo-id-pr").value !== "juridica") {
+            document.getElementById("txt-nombre-rep-pr").value == "";
+            document.getElementById("txt-nombre-rep-pr").disabled=true;
+            document.getElementById("txt-apellido1-rep-pr").disabled=true;
+            document.getElementById("txt-apellido2-rep-pr").disabled=true;
+            document.getElementById("txt-correo-rep-pr").disabled=true;
+            
+        }
+        if (document.getElementById("txt-tipo-id-pr").value == "juridica") {
+        document.getElementById("txt-nombre-rep-pr").disabled=false;
+        document.getElementById("txt-apellido1-rep-pr").disabled=false;
+        document.getElementById("txt-apellido2-rep-pr").disabled=false;
+        document.getElementById("txt-correo-rep-pr").disabled=false;
         }
     }
 
-    //   Algo pasa con el Regex: /^[0-9]{9}$/
-    //Validación de formato de cédula
-    let regexIdentificacion = /^$/;
-    if (inputIdentificacionCl.value == '') {
-        error = true;
-        inputIdentificacionCl.classList.add('error');
-    } else {
-        inputIdentificacionCl.classList.remove('error');
-        if (regexIdentificacion.test(inputCorreoCl.value) == false) {
-            errorIdentificacion = true;
-            inputIdentificacionCl.classList.add('error');
+    if (document.getElementById("txt-tipo-id-pr").value == "juridica"){
+        if (inputNombreRepPr.value == '') {
+            error = true;
+            inputNombreRepPr.classList.add('error');
         } else {
-            inputIdentificacionCl.classList.remove('error');
+            inputNombreRepPr.classList.remove('error');
+        }
+        if (inputApellido1RepPr.value == '') {
+            error = true;
+            inputApellido1RepPr.classList.add('error');
+        } else {
+            inputApellido1RepPr.classList.remove('error');
+        }
+        let regexCorreoRepPr = /^[a-zA-Z.0-9]+\@{1}[a-zA-Z.]+$/;
+        if (inputCorreoRepPr.value == '') {
+            error = true;
+            inputCorreoRepPr.classList.add('error');
+        } else {
+            inputCorreoRepPr.classList.remove('error');
+            if (regexCorreoRepPr.test(inputCorreoRepPr.value) == false) {
+                errorCorreo = true;
+                inputCorreoRepPr.classList.add('error');
+            } else {
+                inputCorreoRepPr.classList.remove('error');
+            }
+        }
+    }
+
+    //Validación de formato de correo electrónico
+    let regexCorreo = /^[a-zA-Z.0-9]+\@{1}[a-zA-Z.]+$/;
+
+    if (inputCorreoPr.value == '') {
+        error = true;
+        inputCorreoPr.classList.add('error');
+    } else {
+        inputCorreoPr.classList.remove('error');
+        if (regexCorreo.test(inputCorreoPr.value) == false) {
+            errorCorreo = true;
+            inputCorreoPr.classList.add('error');
+        } else {
+            inputCorreoPr.classList.remove('error');
+        }
+    }
+    //Validación de formato de cédula
+
+    //   Algo pasa con el Regex: /^[0-9]{9}$/
+    let regexIdentificacion = /^$/;
+    if (inputIdentificacionPr.value == '') {
+        error = true;
+        inputIdentificacionPr.classList.add('error');
+    } else {
+        inputIdentificacionPr.classList.remove('error');
+        if (regexIdentificacion.test(inputCorreoPr.value) == false) {
+            errorIdentificacion = true;
+            inputIdentificacionPr.classList.add('error');
+        } else {
+            inputIdentificacionPr.classList.remove('error');
         }
     }
         
     //Validación de espacios vacios
-    if (inputNombreCl.value == '') {
+    if (inputNombreNegocioPr.value == '') {
         error = true;
-        inputNombreCl.classList.add('error');
+        inputNombreNegocioPr.classList.add('error');
     } else {
-        inputNombreCl.classList.remove('error');
+        inputNombreNegocioPr.classList.remove('error');
     }
 
-    if (inputApellido1Cl.value == '') {
+    if (inputNombrePr.value == '') {
         error = true;
-        inputApellido1Cl.classList.add('error');
+        inputNombrePr.classList.add('error');
     } else {
-        inputApellido1Cl.classList.remove('error');
+        inputNombrePr.classList.remove('error');
     }
 
-    if (inputTipoIdCl.value == '') {
+    if (inputApellido1Pr.value == '') {
         error = true;
-        inputTipoIdCl.classList.add('error');
+        inputApellido1Pr.classList.add('error');
     } else {
-        inputTipoIdCl.classList.remove('error');
+        inputApellido1Pr.classList.remove('error');
     }
 
-    if (inputNacimientoCl.value == '') {
+    if (inputTipoIdPr.value == '') {
         error = true;
-        inputNacimientoCl.classList.add('error');
+        inputTipoIdPr.classList.add('error');
     } else {
-        inputNacimientoCl.classList.remove('error');
+        inputTipoIdPr.classList.remove('error');
     }
 
-    if (inputProvinciaCl.value == '') {
+    if (inputNacimientoPr.value == '') {
         error = true;
-        inputProvinciaCl.classList.add('error');
+        inputNacimientoPr.classList.add('error');
     } else {
-        inputProvinciaCl.classList.remove('error');
+        inputNacimientoPr.classList.remove('error');
     }
 
-    if (inputCantonCl.value == '') {
+    if (inputProvinciaPr.value == '') {
         error = true;
-        inputCantonCl.classList.add('error');
+        inputProvinciaPr.classList.add('error');
     } else {
-        inputCantonCl.classList.remove('error');
+        inputProvinciaPr.classList.remove('error');
     }
 
-    if (inputDistritoCl.value == '') {
+    if (inputCantonPr.value == '') {
         error = true;
-        inputDistritoCl.classList.add('error');
+        inputCantonPr.classList.add('error');
     } else {
-        inputDistritoCl.classList.remove('error');
+        inputCantonPr.classList.remove('error');
     }
 
-    if (inputSennasCl.value == '') {
+    if (inputDistritoPr.value == '') {
         error = true;
-        inputSennasCl.classList.add('error');
+        inputDistritoPr.classList.add('error');
     } else {
-        inputSennasCl.classList.remove('error');
+        inputDistritoPr.classList.remove('error');
+    }
+
+    if (inputSennasPr.value == '') {
+        error = true;
+        inputSennasPr.classList.add('error');
+    } else {
+        inputSennasPr.classList.remove('error');
+    }
+
+    if (inputHorarioPr.value == '') {
+        error = true;
+        inputHorarioPr.classList.add('error');
+    } else {
+        inputHorarioPr.classList.remove('error');
+    }
+
+    if (inputTelefonoPr.value == '') {
+        error = true;
+        inputTelefonoPr.classList.add('error');
+    } else {
+        inputTelefonoPr.classList.remove('error');
     }
 
     if (error == true) {
@@ -158,7 +276,7 @@ const calcularEdad = (nacimiento) => {
 };
 
 const imprimir = () => {
-    let nacimiento = new Date(inputNacimientoCl.value);
+    let nacimiento = new Date(inputNacimientoPr.value);
     let edad = calcularEdad(nacimiento);
     console.log(edad);
     //Validación de edad
@@ -173,6 +291,7 @@ const imprimir = () => {
 };
 
 btnCompletarRegistro.addEventListener('click', function() {validar(), imprimir()});
+
 
 //Codigo para Selects dinámicos de canton, cantón y distrito//
 function lista(texto,valor){

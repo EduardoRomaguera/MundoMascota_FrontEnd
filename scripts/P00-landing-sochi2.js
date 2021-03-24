@@ -1,4 +1,4 @@
-window.onscroll = function() {mostrar(), sochi(), test()};
+window.onscroll = function() {mostrar(), sochi()};
 
 function mostrar() {
 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 510) {

@@ -377,8 +377,12 @@ a:hover {
     color: #8EE5E8;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .error {
-    border: solid red 3px;
+    border: solid red 2px;
     border-radius: 7px;
 }
 
