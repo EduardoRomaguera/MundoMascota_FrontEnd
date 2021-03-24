@@ -26,10 +26,10 @@ a:hover {
     color: #8EE5E8;
 }
 
-.nav-madre:hover,
-.foot-madre:hover,
-.banner:hover {
-    cursor: url(../images/cursor.png), auto;
+/*.sochi:hover,*/
+/*.foot-madre:hover,*/
+/*.banner:hover {*/
+    cursor: url(../images/cursor-sochi2.png), auto;
 }
 
 
@@ -991,6 +991,10 @@ a:hover {
     font-size: 300px;
     font-weight: 1000;
     margin-top: 510px;
+}
+
+#japones {
+    font-size: 200px;
 }
 
 #nav {

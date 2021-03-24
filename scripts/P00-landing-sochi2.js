@@ -21,3 +21,6 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 180) {
     document.getElementById("video").style.vid.autoplay = true;
 }
 }
+
+var vid = document.getElementById("video");
+vid.playbackRate = 0.8;
