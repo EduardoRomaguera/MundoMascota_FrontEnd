@@ -16,6 +16,17 @@
     font-weight: 700;
 }
 
+button {
+    background-color: #8EE5D8;
+    padding: auto;
+    color: black;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 1px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
+}
 
 /* OCULTADOS*/
 
