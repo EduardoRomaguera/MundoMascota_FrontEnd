@@ -56,6 +56,7 @@ const MOSTRARTABLARAZAS = () => {
                 })
             });
             celdaAcciones.appendChild(botonEliminar);
+            celdaAcciones.appendChild(botonModificar);
         }
     });
 };
@@ -107,6 +108,7 @@ const MOSTRARTABLAENFERMEDADES = () => {
             });
 
             celdaAcciones.appendChild(botonEliminar);
+            celdaAcciones.appendChild(botonModificar);
         }
     });
 };
@@ -156,6 +158,7 @@ const MOSTRARTABLAVACUNAS = () => {
                 })
             });
             celdaAcciones.appendChild(botonEliminar);
+            celdaAcciones.appendChild(botonModificar);
         }
     });
 };
