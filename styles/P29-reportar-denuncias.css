@@ -34,7 +34,7 @@
 
 .items select {
     height: 40px;
-    width: 240px;
+    width: 350px;
     font-size: 18px;
     text-align: center;
 }
@@ -48,6 +48,16 @@
     border-radius: 7px;
 }
 
+#txt-descripcion-denuncia {
+    resize: vertical;
+    max-height: 300px;
+    width: 350px;
+    border-radius: 7px;
+}
+
+.input-formularios {
+    width: 350px;
+}
 
 /* OCULTADOS*/
 
