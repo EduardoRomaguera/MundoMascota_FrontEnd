@@ -1,10 +1,9 @@
 'use strict'
 const INPUTCLIETE = document.querySelector('#txt-cliente-denunciar');
 const INPUTESLT = document.querySelector('#slt-motivo-denuncia');
-const INPUTTEXTAREA = document.querySelector('#txt-descripcion-denuncia"');
+const INPUTTEXTAREA = document.querySelector('#txt-descripcion-denuncia');
 const BTNENVIAR = document.querySelector('#btn-enviar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
-
 
 const VALIDAR = () => {
     let error = false;
@@ -19,7 +18,7 @@ const VALIDAR = () => {
         error = true;
         INPUTESLT.classList.add('error');
     } else {
-        INPUINPUTESLTTESPECIE.classList.remove('error');
+        INPUTESLT.classList.remove('error');
     }
 
     if (INPUTTEXTAREA.value == '') {
@@ -28,11 +27,11 @@ const VALIDAR = () => {
     } else {
         INPUTTEXTAREA.classList.remove('error');
     }
+
     if (error == false) {
         Swal.fire({
             'icon': 'success',
             'title': 'El reporte ha sido enviado',
-            'text': 'La información fue guardada correctamente',
             'confirmButtonText': 'Entendido'
         }).then(() => {
             window.location.href = 'P26-historial-ordenes.html';
@@ -40,7 +39,7 @@ const VALIDAR = () => {
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo enviar la denuncia,
+            'title': 'No se pudo enviar la denuncia',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
