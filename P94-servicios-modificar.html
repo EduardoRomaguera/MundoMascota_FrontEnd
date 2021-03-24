@@ -1,23 +1,20 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P22-mis-servicios.css">
-    <link rel="icon" href="images/icono.png">
-    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Mis servicios</title>
+    <link rel="stylesheet" href="styles/P94-servicios-modificar.css">
+    <title>Padecimientos</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href=P01-homepage.html>
+                <a class="nav-A" href="P49-principal-administrador.html">
                     <img src="images/logo2-nav.png" id="logo">
                 </a>
                 <div class="nav-B">
@@ -38,56 +35,46 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="titulo">
-                    <h1>Mis servicios</h1>
-                </section>
-                <section class="catalogos">
-                    <section>
-
-                        <div class='filtro'>
-                            <label for='txt-filtro-servicios'>Filtrar por servicio</label>
-                            <input type="text" id='txt-filtro-servicios'>
-                            <button type="button" id="btn-agregar-servicios" class="btn-agregar">
-                                Agregar servicio
-                            </button>
-                        </div>
-
-                        <div class="contenedor1">
-
-                            <table id="tbl-servicios" class="tabla">
-                                <thead>
-                                    <tr>
-                                        <th>Nombre de servicio</th>
-                                        <th>Descripción del servicio</th>
-                                        <th>Costo</th>
-                                        <th>
-
-                                        </th>
-
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
+                <section>
+                    <div class="contenedor1">
+                        <div class="contenedor2">
+                            <form class="formulario-servicios">
+                                <section class="titulo">
+                                    <h1>Agregar un servicio</h1>
+                                </section>
+                                <div class="items">
+                                    <label class="label" for="txt-nombre-sv">Nombre del servicio</label>
+                                    <input class="input-formularios" id="txt-nombre-sv" type="text" placeholder="Nombre">
+                                </div>
+                                <div class="items">
+                                    <label class="label" for="txt-descripcion-sv">Descripcion del servicio</label>
+                                    <input class="input-formularios" id="txt-descripcion-sv" type="text" placeholder="Descripción">
+                                </div>
+                                <div class="items">
+                                    <label class="label" for="num-costo-sv">Costo en colones</label>
+                                    <input class="input-formularios" id="num-costo-sv" type="number" placeholder="Costo">
+                                </div>
+                                <div class="items">
+                                    <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
+                                    <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
+                                </div>
+                            </form>
 
                         </div>
-                    </section>
 
-
+                    </div>
                 </section>
             </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
-
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
                 <h5>Una empresa 100% nacional</h5>
                 <img src="images/cr.png" id="cr">
             </div>
+
             <div class="foot-B">
                 <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
@@ -98,6 +85,7 @@
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
+
             <div class="foot-C">
                 <h5>Siguenos</h5>
                 <div>
@@ -106,6 +94,7 @@
                 </div>
             </div>
         </div>
+
         <section class="divisor2">
             <a class="btn-sochi" href="P00-landing-sochi.html">
                 Desarrollado por Sochi Software 2021. Derechos Reservados.
@@ -114,7 +103,7 @@
     </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P22-mis-servicios.js"></script>
+    <script src="scripts/P94-servicios-modificar.js"></script>
 </body>
 
 </html>

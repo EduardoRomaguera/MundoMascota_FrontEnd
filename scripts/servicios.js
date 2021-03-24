@@ -1,45 +1,57 @@
 'use strict'
 
+let listaMisServicios = [{
+    'nombre': 'Keratina',
+    'descripcion': 'Restaura el pelo de tu mascota',
+    'costo': '₡ 12000 colones'
+}, {
+    'nombre': 'Baño de fumigación',
+    'descripcion': 'Baño profundo para eliminar toda la suciedad de tu mascota',
+    'costo': '₡ 7000 colones'
+}, {
+    'nombre': 'Corte según raza',
+    'descripcion': 'Estiliza tu mascota con nuestro experto en corte',
+    'costo': '₡ 6500 colones'
+}, {
+    'nombre': 'Baño',
+    'descripcion': 'Baño y cepillado para consentir a tu mascota',
+    'costo': '₡ 5000 colones'
+}, {
+    'nombre': 'Tinte temporal',
+    'descripcion': 'Cambia el look de tu mascota con una explosión de color',
+    'costo': '₡ 7000 colones'
+}]
+
 let listaOrdenesPendientes = [{
-    'cliente': 'Gonzalo Nunez',
+    'cliente': 'Gonzálo Nuñez',
     'mascota': 'Rex',
-    'edad': '4',
     'especie': 'Perro',
-    'raza': 'Terrier',
-    'servicio': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'raza': 'Bulldog',
+    'servicio': 'Keratina'
 }, {
     'cliente': 'Rodrigo Arauz',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'mascota': 'Charlie',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'servicio': 'Baño de fumigación'
 }, {
-    'cliente': 'Sergio Sanchez',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'cliente': 'Sergio Sánchez',
+    'mascota': 'Max',
     'especie': 'Perro',
-    'raza': 'Terrier',
-    'servicio': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'raza': 'Golden Retriever',
+    'servicio': 'Corte según raza'
 }, {
     'cliente': 'Amy Bosques',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'mascota': 'Kiara',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'servicio': 'Baño, corte según raza'
 }, {
     'cliente': 'Andrey Lobo',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'mascota': 'Ori',
     'especie': 'Perro',
-    'raza': 'Terrier',
-    'servicio': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
 }]
 
 let listaRazas = [{

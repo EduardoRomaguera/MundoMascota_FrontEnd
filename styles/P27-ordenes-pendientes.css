@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 300 px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .contenedor2 {
@@ -16,6 +16,10 @@
     font-weight: 700;
 }
 
+.catalogos {
+    min-height: 500px;
+}
+
 
 /* OCULTADOS*/
 
@@ -25,4 +29,8 @@
 
 #btn-iniciar-sesion {
     display: none;
+}
+
+button {
+    margin-left: 20px;
 }
