@@ -65,23 +65,23 @@ let listaHistorialOrdenes = [{
 let listaMisServicios = [{
     'nombre': 'Keratina',
     'descripcion': 'Restaura el pelo de tu mascota',
-    'costo': '₡ 12000 colones'
+    'costo': '₡ 12000'
 }, {
     'nombre': 'Baño de fumigación',
     'descripcion': 'Baño profundo para eliminar toda la suciedad de tu mascota',
-    'costo': '₡ 7000 colones'
+    'costo': '₡ 7000'
 }, {
     'nombre': 'Corte según raza',
     'descripcion': 'Estiliza tu mascota con nuestro experto en corte',
-    'costo': '₡ 6500 colones'
+    'costo': '₡ 6500'
 }, {
     'nombre': 'Baño',
     'descripcion': 'Baño y cepillado para consentir a tu mascota',
-    'costo': '₡ 5000 colones'
+    'costo': '₡ 5000'
 }, {
     'nombre': 'Tinte temporal',
     'descripcion': 'Cambia el look de tu mascota con una explosión de color',
-    'costo': '₡ 7000 colones'
+    'costo': '₡ 7000'
 }];
 
 let listaOrdenesPendientes = [{
