@@ -1,45 +1,119 @@
 'use strict'
 
-let listaOrdenesPendientes = [{
-    'cliente': 'Gonzalo Nunez',
-    'mascota': 'Rex',
-    'edad': '4',
+let listaHistorialOrdenes = [{
+    'cliente': 'Neymar Cabezas',
+    'mascota': 'Pongo',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Eva Lee',
+    'mascota': 'Akita',
+    'especie': 'Perro',
+    'raza': 'Pekinés',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Andrés Solano',
+    'mascota': 'Milly',
+    'especie': 'Perro',
+    'raza': 'Mastín',
+    'servicio': 'Corte según raza'
+}, {
+    'cliente': 'Cristian Sandoval',
+    'mascota': 'Tom',
+    'especie': 'Perro',
+    'raza': 'Pug',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Ana Araya',
+    'mascota': 'Tiger',
+    'especie': 'Perro',
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
+}, {
+    'cliente': 'Leonel Rodríguez',
+    'mascota': 'Coco',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño de fumigación'
+}, {
+    'cliente': 'Karla Hernández',
+    'mascota': 'Chispas',
+    'especie': 'Perro',
+    'raza': 'Golden Retriever',
+    'servicio': 'Corte según raza'
+}, {
+    'cliente': 'Karla Hernández',
+    'mascota': 'Mani',
+    'especie': 'Perro',
+    'raza': 'Terrier',
+    'servicio': 'Baño, corte según raza'
+}, {
+    'cliente': 'Juan García',
+    'mascota': 'Bailey',
+    'especie': 'Perro',
+    'raza': 'Golden Retriever',
+    'servicio': 'Tinte temporal'
+}, {
+    'cliente': 'Iván Acón',
+    'mascota': 'Daisey',
+    'especie': 'Perro',
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
+}]
+
+let listaMisServicios = [{
+    'nombre': 'Keratina',
+    'descripcion': 'Restaura el pelo de tu mascota',
+    'costo': '₡ 12000 colones'
+}, {
+    'nombre': 'Baño de fumigación',
+    'descripcion': 'Baño profundo para eliminar toda la suciedad de tu mascota',
+    'costo': '₡ 7000 colones'
+}, {
+    'nombre': 'Corte según raza',
+    'descripcion': 'Estiliza tu mascota con nuestro experto en corte',
+    'costo': '₡ 6500 colones'
+}, {
+    'nombre': 'Baño',
+    'descripcion': 'Baño y cepillado para consentir a tu mascota',
+    'costo': '₡ 5000 colones'
+}, {
+    'nombre': 'Tinte temporal',
+    'descripcion': 'Cambia el look de tu mascota con una explosión de color',
+    'costo': '₡ 7000 colones'
+}]
+
+let listaOrdenesPendientes = [{
+    'cliente': 'Gonzálo Nuñez',
+    'mascota': 'Rex',
+    'especie': 'Perro',
+    'raza': 'Bulldog',
+    'servicio': 'Keratina'
 }, {
     'cliente': 'Rodrigo Arauz',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'mascota': 'Charlie',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'servicio': 'Baño de fumigación'
 }, {
-    'cliente': 'Sergio Sanchez',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'cliente': 'Sergio Sánchez',
+    'mascota': 'Max',
     'especie': 'Perro',
-    'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'raza': 'Golden Retriever',
+    'servicio': 'Corte según raza'
 }, {
     'cliente': 'Amy Bosques',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'mascota': 'Kiara',
     'especie': 'Perro',
     'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'servicio': 'Baño, corte según raza'
 }, {
     'cliente': 'Andrey Lobo',
-    'mascota': 'Rex',
-    'edad': '4 años',
+    'mascota': 'Ori',
     'especie': 'Perro',
-    'raza': 'Terrier',
-    'servicio requerido': 'Corte de pelo',
-    'estado': 'Pendiente'
+    'raza': 'Poodle',
+    'servicio': 'Tinte temporal'
 }]
 
 let listaRazas = [{

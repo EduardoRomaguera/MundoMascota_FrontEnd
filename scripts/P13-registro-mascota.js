@@ -1,73 +1,73 @@
 'use strict';
 
 //Validación de espacios de inicio de sesión
-const inputNombre = document.querySelector('#txt-nombre');
-const sltEspecie = document.querySelector('#slt-especie');
-const sltRaza = document.querySelector('#slt-raza');
-const inputTelefono = document.querySelector('#txt-telefono');
-const sltVacuna = document.querySelector('#slt-vacuna');
-const sltVacuna2 = document.querySelector('#slt-vacuna2');
-const sltPadecimiento = document.querySelector('#slt-padecimiento');
-const sltPadecimiento2 = document.querySelector('#slt-padecimiento2');
-const btnRegistro = document.querySelector('#btn-registro');
+const INPUTNOMBRE = document.querySelector('#txt-nombre');
+const SLTESPECIES = document.querySelector('#slt-especie');
+const SLTRAZAS = document.querySelector('#slt-raza');
+const INPUTTELEFONO = document.querySelector('#num-telefono');
+const SLTVACUNA = document.querySelector('#slt-vacuna');
+const SLTVACUNA2 = document.querySelector('#slt-vacuna2');
+const SLTPADECIMIENTO = document.querySelector('#slt-padecimiento');
+const SLTPADECIMIENTO2 = document.querySelector('#slt-padecimiento2');
+const BTNREGISTRO = document.querySelector('#btn-registro');
 
 const validarRegistro = () => {
     let error = false;
 
-    if (inputNombre.value == '') {
+    if (INPUTNOMBRE.value == '') {
         error = true;
-        inputNombre.classList.add('error');
+        INPUTNOMBRE.classList.add('error');
     } else {
-        inputNombre.classList.remove('error');
+        INPUTNOMBRE.classList.remove('error');
     }
 
-    if (sltEspecie.value == '') {
+    if (SLTESPECIES.value == '') {
         error = true;
-        sltEspecie.classList.add('error');
+        SLTESPECIES.classList.add('error');
     } else {
-        sltEspecie.classList.remove('error');
+        SLTESPECIES.classList.remove('error');
     }
 
-    if (sltRaza.value == '') {
+    if (SLTRAZAS.value == '') {
         error = true;
-        sltRaza.classList.add('error');
+        SLTRAZAS.classList.add('error');
     } else {
-        sltRaza.classList.remove('error');
+        SLTRAZAS.classList.remove('error');
     }
 
-    if (inputTelefono.value == '') {
+    if (INPUTTELEFONO.value == '') {
         error = true;
-        inputTelefono.classList.add('error');
+        INPUTTELEFONO.classList.add('error');
     } else {
-        inputTelefono.classList.remove('error');
+        INPUTTELEFONO.classList.remove('error');
     }
 
-    if (sltVacuna.value == '') {
+    if (SLTVACUNA.value == '') {
         error = true;
-        sltVacuna.classList.add('error');
+        SLTVACUNA.classList.add('error');
     } else {
-        sltVacuna.classList.remove('error');
+        SLTVACUNA.classList.remove('error');
     }
 
-    if (sltVacuna2.value == '') {
+    if (SLTVACUNA2.value == '') {
         error = true;
-        sltVacuna2.classList.add('error');
+        SLTVACUNA2.classList.add('error');
     } else {
-        sltVacuna2.classList.remove('error');
+        SLTVACUNA2.classList.remove('error');
     }
 
-    if (sltPadecimiento.value == '') {
+    if (SLTPADECIMIENTO.value == '') {
         error = true;
-        sltPadecimiento.classList.add('error');
+        SLTPADECIMIENTO.classList.add('error');
     } else {
-        sltPadecimiento.classList.remove('error');
+        SLTPADECIMIENTO.classList.remove('error');
     }
 
-    if (sltPadecimiento2.value == '') {
+    if (SLTPADECIMIENTO2.value == '') {
         error = true;
-        sltPadecimiento2.classList.add('error');
+        SLTPADECIMIENTO2.classList.add('error');
     } else {
-        sltPadecimiento2.classList.remove('error');
+        SLTPADECIMIENTO2.classList.remove('error');
     }
 
     if (error == false) {
@@ -82,4 +82,4 @@ const validarRegistro = () => {
     }
 };
 
-btnRegistro.addEventListener('click', validarRegistro);
+BTNREGISTRO.addEventListener('click', validarRegistro);

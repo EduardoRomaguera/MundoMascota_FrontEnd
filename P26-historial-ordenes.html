@@ -10,72 +10,78 @@
     <link rel="stylesheet" href="styles/P26-historial-ordenes.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Historial órdenes</title>
+    <title>Historial ordenes</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-<<<<<<< Updated upstream
                 <a class="nav-A" href=P01-homepage.html>
                     <img src="images/logo2-nav.png" id="logo">
                 </a>
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
-=======
-                <a class="nav-A" href="P19-principal-proveedor.html">
-
-                    <img src="images/logo2-nav.png" id="logo">
-                    <!--<a class="logo" href=P01-homepage.html></a>-->
-                </a>
-
-                <div class="nav-B">
-                    <form class="barra-busqueda">
-                        <input class="placeholder" type="text" placeholder="Buscar">
                         <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
->>>>>>> Stashed changes
                         </input>
                     </form>
                 </div>
                 <div class="nav-C">
-<<<<<<< Updated upstream
                     <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-                    <a class="btn"  id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
-=======
-                    <a class="btn" href="P20-perfil-proveedor.html">Mi Perfil</a>
-                    <a class="btn" href="P01-homepage.html">Cerrar Sesión</a>
->>>>>>> Stashed changes
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-
-                <section class="divisor">
-                    <h1 class="btn-divisor"> </h1>
+                <section class="titulo">
+                    <h1>Historial de órdenes de mis clientes</h1>
                 </section>
+                <section class="catalogos">
+                    <section>
 
-                <section class="lista-servicios">
+                        <div class='filtro'>
+                            <label for='txt-filtro-ordenes'>Filtrar por servicio</label>
+                            <input type="text" id='txt-filtro-ordenes'>
 
-                    TABLA CON HISTORIAL DE ORDENES PASADAS
+                        </div>
+
+                        <div class="contenedor1">
+
+                            <table id="tbl-ordenes" class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre de cliente</th>
+                                        <th>Nombre de mascota</th>
+                                        <th>Especie</th>
+                                        <th>Raza</th>
+                                        <th>Servicio solicitado</th>
+                                        <th>
+
+                                        </th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </section>
+
 
                 </section>
             </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
-<<<<<<< Updated upstream
-    
-=======
 
->>>>>>> Stashed changes
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
@@ -106,9 +112,7 @@
             </a>
         </section>
     </footer>
-
-    <script src="scripts/navegacion.js"></script>
-    <script src="scripts/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P26-historial-ordenes.js"></script>
 </body>
-
-</html>

@@ -20,13 +20,13 @@
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
                         </input>
                     </form>
                 </div>
                 <div class="nav-C">
                     <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-                    <a class="btn" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn"  id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -40,36 +40,19 @@
                     <div class="contenedor1">
                         <div class="contenedor2" class="h1">
                             <h1>Calificar Proveedor </h1>
-                            <h3>Califica del 1 al 5 </h3>
-                            <select class="input-formularios" id="txt-tipo-id-cl">
-                        <option value="5" >
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                        </option>
-                        <option value="4">
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span></option>
-                        <option value="3">
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span></option>
-                        <option value="2">
-                            <span class="dot"><i class="fas fa-paw"></i></span>
-                            <span class="dot"><i class="fas fa-paw"></i></span</option>
+                            <h3>Califica del 1 al 5</h3>
+                            <select class="input-formularios" id="txt-calificacion">
+                                <option value=""></option>
+                                <option value="5" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0  &#xf1b0  &#xf1b0 </option>
+                                <option value="4" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0  &#xf1b0 </option>
+                                <option value="3" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0 </option>
+                                <option value="2" class="patitas">&#xf1b0 &#xf1b0 </option>
+                                <option value="1" class="patitas">&#xf1b0 </option>
+                            </select>
                     
                             <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Comentarios Adicionales"></textarea>
 
-                            <!-- Prueba2 -->
-
-                            <!-- Prueba2 -->
-
-                            
-                            <button class="btn2">Enviar Calificacion </button>
+                            <button id="btn-calificar" class="btn2">Enviar Calificación </button>
                         </div>
                     </div>
             </div>
@@ -110,9 +93,10 @@
         </section>
     </footer>
 
+    <script src="scripts/navegacion.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P03-registro-cliente.js"></script>
+    <script src="scripts/P58-calificar-proveedor.js"></script>
 </body>
 
 </html>

@@ -1,73 +1,36 @@
-.solicitudes-pendientes {
-    background-image: url('../images/solicitudes-pendientes.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
+.contenedor1 {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 2px;
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-.mis-servicios {
-    background-image: url('../images/mis-mascotas.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 2px;
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    width: 100%;
-}
-
-.lista-servicios {
-    background-size: cover;
-    background-position: center;
-    min-height: 600px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 2px;
-    font-size: 45px;
-    font-weight: 700;
-    color: black;
-    text-align: center;
-    width: 100%;
+    min-height: 300 px;
+    margin-bottom: 30px;
 }
 
-
-.mis-clientes {
-    background-image: url('../images/mis-clientes.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 10px;
     display: flex;
+    flex-flow: column;
     align-items: center;
-    justify-content: center;
-    margin: 2px;
-    font-size: 45px;
+    padding: 60px;
     font-weight: 700;
-    color: white;
-    text-align: center;
-    width: 100%;
 }
+
+.catalogos {
+    min-height: 500px;
+}
+
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
+    display: none;
+}
+
+button {
+    margin-left: 20px;
 }

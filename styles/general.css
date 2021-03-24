@@ -274,6 +274,14 @@ h5 {
     margin: 0 0 0 0;
 }
 
+.divisor3 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
 .btn-divisor {
     color: black;
     font-size: 30px;
@@ -404,14 +412,14 @@ a:hover {
 }
 
 .tabla tbody tr td {
-    padding-top: 20px;
+    padding: 10px 0;
     width: 200px;
     text-align: center;
 }
 
 .btn-agregar {
     background-color: #8EE5D8;
-    margin: 60px 60px 60px 60px;
+    margin: 20px 60px 10px 60px;
     padding: auto;
     color: black;
     width: 180px;
