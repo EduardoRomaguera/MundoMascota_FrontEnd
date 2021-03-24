@@ -1,13 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P59-agregar-tarjeta.css">
+    <link rel="stylesheet" href="styles/P03-registro-cliente.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Calificar</title>
+    <title>Agregar Pago</title>
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                 </div>
                 <div class="nav-C">
                     <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -39,20 +42,42 @@
                 <section>
                     <div class="contenedor1">
                         <div class="contenedor2" class="h1">
-                            <h1>Calificar Proveedor </h1>
-                            <h3>Califica del 1 al 5</h3>
-                            <select class="input-formularios" id="txt-calificacion">
-                                <option value=""></option>
-                                <option value="5" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0  &#xf1b0  &#xf1b0 </option>
-                                <option value="4" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0  &#xf1b0 </option>
-                                <option value="3" class="patitas">&#xf1b0 &#xf1b0  &#xf1b0 </option>
-                                <option value="2" class="patitas">&#xf1b0 &#xf1b0 </option>
-                                <option value="1" class="patitas">&#xf1b0 </option>
-                            </select>
+                            <h1>Agrega tu nuevo metodo de pago</h1>
+                            <h3></h3>
+                            <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre Ttular">
+                            <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Apellido Titular">
 
-                            <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Comentarios Adicionales"></textarea>
 
-                            <button id="btn-calificar" class="btn2">Enviar Calificación </button>
+                            <input class="input-formularios" id="txt-identificacion-cl" type="text" placeholder="Número de Tarjeta">
+                            <label for="txt-nacimiento-cl" id="texto-gris">Fecha de Expiracion:</label>
+                            <input class="input-formularios" id="txt-nacimiento-cl" type="text" placeholder="MM/YYYY">
+                            <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="codigo de seguridad / CVV">
+                            <form class="contenedor3" class="h1" name="form1" method="post" action="">
+                                <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
+                            <option>Provincia</option>
+                                <option value="sanjose">San José
+                                <option value="heredia">Heredia
+                                <option value="alajuela">Alajuela
+                                <option value="cartago">Cartago
+                                <option value="guanacaste">Guanacaste
+                                <option value="puntarenas">Puntarenas
+                                <option value="limon">Limón
+                        </select>
+                                <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
+                            <option>Cantón</option>
+                        </select>
+                                <select class="input-formularios" id="txt-distrito-cl" name="distritos">
+                            <option>Distrito</option>
+                        </select>
+                            </form>
+                            <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Otras señas"></textarea>
+
+                            <!-- Prueba2 -->
+
+                            <!-- Prueba2 -->
+
+                            <button class="btn2" id="btn-completar-registro">Agregar Tarjeta</button>
+                            <a href="P56-Gestion-Pago.html"> <button class="btn2">Cancelar</button></a>
                         </div>
                     </div>
             </div>
@@ -93,10 +118,9 @@
         </section>
     </footer>
 
-    <script src="scripts/navegacion.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P58-calificar-proveedor.js"></script>
+    <script src="scripts/P59-agregar-tarjeta.js"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 680px;
+    min-height: 700px;
 }
 
 .contenedor2 {
@@ -55,7 +55,7 @@
 }
 
 .input-formularios {
-    width: 900px;
+    width: 300px;
 }
 
 .contenedor2 select {
@@ -76,7 +76,7 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    width: 325px;
+    width: 300px;
     height: 150px;
     resize: none;
     text-align: justify;
@@ -94,60 +94,28 @@ input[type="date"] {
     visibility: visible !important;
 }
 
+select {
+    text-align: center;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 18px;
+    background: #ffffff;
+    display: inline-block !important;
+    visibility: visible !important;
+    color: #00000090;
+}
+
+select option {
+    color: #000000;
+    font-weight: 500;
+}
+
 #btn-cerrar-sesion {
     display: none;
 }
 
 .barra-busqueda {
-    display: none;
-}
-
-.dot {
-    padding: 8px;
-    font-size: 16px;
-    background-color: #424D4B;
-    color: #8EE5D8;
-    border-radius: 50%;
-    display: inline;
-}
-
-.calificacion {
-    margin: 5% 0 0 0;
-    height: 20%;
-}
-
-.patitas {
-    font-family: 'FontAwesome', 'Second Font name';
-    font-size: 20px;
-}
-
-#test {
-    font-family: 'FontAwesome', 'Second Font name';
-}
-
-select {
-    font-family: 'FontAwesome', 'Second Font name';
-    font-size: 30px;
-    text-align-last: center;
-}
-
-option {
-    text-align-last: center;
-    padding-left: 90px;
-}
-
-#invisible {
-    display: none;
-    color: #ffffff;
-}
-
-
-/* OCULTADOS*/
-
-.barra-busqueda {
-    display: none;
-}
-
-#btn-iniciar-sesion {
     display: none;
 }
