@@ -6,42 +6,55 @@
     min-height: 610px;
 }
 
-.contenedor3 {
+.contenedor2 {
     border: solid 2px #f08700;
     border-radius: 30px;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
-    padding: 70px;
-    content: normal;
-    font-weight: 1900;
+    padding: 50px;
 }
 
-.contenedor3 input {
-    height: 200%;
-    margin: 10%;
-    width: 300px;
+.contenedor2 form {
+    padding: 42px 20px;
+    display: center;
 }
 
-.contenedor3 textarea {
+.contenedor2 h2 {
     text-align: center;
-    border: solid #00000060 1px;
-    border-radius: 7px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 300;
-    width: 300px;
-    height: 150%;
-    resize: vertical;
+    margin-bottom: 5%;
 }
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0 4% 0;
+}
+
+.items select {
+    height: 40px;
+    width: 240px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.items button {
+    background-color: #8EE5D8;
+    margin: 40px 40px 40px 40px;
+    padding: auto;
+    color: black;
+    width: 180px;
+    border-radius: 7px;
+}
+
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
+    display: none;
 }

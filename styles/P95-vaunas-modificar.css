@@ -30,10 +30,3 @@ contenedor1 {
 .fomulario-vacuna div input {
     padding: 42px 20px;
 }
-
-.items select {
-    height: 40px;
-    width: 240px;
-    font-size: 18px;
-    text-align: center;
-}

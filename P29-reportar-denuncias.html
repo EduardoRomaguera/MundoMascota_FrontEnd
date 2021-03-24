@@ -40,14 +40,31 @@
             <div id="contenedor-main">
                 <section>
                     <div class="contenedor1">
-                        <div class="contenedor3">
-                            <h4>REPORTAR DENUNCIAS</h4>
-                            <input class="input-formularios" id="txt-cliente-denunciar" placeholder="Cliente a denunciar">
-                            <input class="input-formularios" id="txt-motivo-denuncia" placeholder="Motivo de la denuncia">
-                            <textarea name="txt-descripcion" id="txt-descripcion-denuncia" cols="40" rows="8" placeholder="Por favor describa lo sucedido">
-                    </textarea>
-                            <button type="button" id='btn-enviar' class="btn"> Enviar </button>
-                        </div>
+                        <form class="contenedor2">
+                            <h2>REPORTAR DENUNCIA</h2>
+                            <div class="items">
+                                <input class="input-formularios" id="txt-cliente-denunciar" placeholder="Cliente a denunciar">
+                            </div>
+                            <div class="items">
+                                <select id="slt-motivo-denuncia">
+                                <option value="">--Seleccione una opción--</option>
+                                <option value="Acoso">Acoso</option>
+                                <option value="Amenaza">Amenaza</option>
+                                <option value="Disrciminación">Discriminación</option>
+                                <option value="Incitacion al odio">Incitación al odio</option>
+                                <option value="Violencia">Violencia</option>
+                                <option value="LenguajeSoez">Lenguaje</option>
+                                </select>
+                            </div>
+                            <div class="items">
+                                <textarea id="txt-descripcion-denuncia" cols="40" rows="8">
+                                </textarea>
+                            </div>
+                            <div class="items">
+                                <button type="button" id='btn-enviar' class="btn">Enviar</button>
+                                <button type="button" id='btn-cancelar' class="btn">Cancelar </button>
+                            </div>
+                        </form>
                     </div>
                 </section>
             </div>
@@ -87,9 +104,8 @@
             </a>
         </section>
     </footer>
-
-
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/P29-reportar-denuncias.js"></script>
 </body>
 
 </html>
