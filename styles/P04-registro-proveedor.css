@@ -1,3 +1,134 @@
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.contenedor2 {
+    margin: 50px;
+    border: solid 2px #f08700;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.contenedor2 input {
+    height: 200%;
+    margin: 3%;
+}
+
+
+
+.contenedor2 button {
+    background-color: #8EE5D8;
+    margin: 10px;
+    padding: auto;
+}
+
+.contenedor2 h1 {
+    margin: 0px 0px 2% 0px;
+}
+
+.contenedor2 h3 {
+    margin: 0px 0px 5% 0px;
+}
+
+.info1 {
+    height: 200%;
+    margin: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.input-formularios {
+    width: 300px;
+}
+
+.contenedor2 select {
+    height: 200%;
+    margin: 3%;
+    width: 325px;
+}
+
+#texto-gris {
+    color: #00000090;
+    margin-top: 2%;
+}
+
+.input-direccion {
+    text-align: center;
+    border: solid #00000060 1px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    width: 300px;
+    height: 150px;
+    resize: none;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.input-horario {
+    text-align: center;
+    border: solid #00000060 1px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    width: 300px;
+    height: 100px;
+    resize: none;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+input[type="date"] {
+    text-align: center;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 18px;
+    background:#ffffff;
+    display: inline-block;
+    visibility: visible;
+}
+
+select {
+    text-align: center;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 18px;
+    background:#ffffff;
+    display: inline-block;
+    visibility: visible;
+    color: #00000090;
+}
+
+select option{
+
+    color: #000000;
+    font-weight: 500;
+}
 
 #btn-cerrar-sesion {
     display:none;
@@ -5,4 +136,39 @@
 
 .barra-busqueda {
     display:none;
+}
+
+.error {
+    border: solid red 2px;
+    border-radius: 7px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    height: 50px;
+    width: 320px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.red {
+    width: 90%;
+    height: 20px;
+    text-align: center;
+    border: solid #00000060 1px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contenedor5 {
+
 }

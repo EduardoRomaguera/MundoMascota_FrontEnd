@@ -92,8 +92,8 @@ input[type="date"] {
     font-family: Montserrat;
     font-size: 18px;
     background:#ffffff;
-    display: inline-block !important;
-    visibility: visible !important;
+    display: inline-block;
+    visibility: visible;
 }
 
 select {
@@ -104,8 +104,8 @@ select {
     font-family: Montserrat;
     font-size: 18px;
     background:#ffffff;
-    display: inline-block !important;
-    visibility: visible !important;
+    display: inline-block;
+    visibility: visible;
     color: #00000090;
 }
 
@@ -121,4 +121,9 @@ select option{
 
 .barra-busqueda {
     display:none;
+}
+
+.error {
+    border: solid red 2px;
+    border-radius: 7px;
 }

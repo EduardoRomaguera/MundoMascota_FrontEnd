@@ -59,7 +59,7 @@
                     <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
                     <form class="contenedor3" class="h1" name="form1" method="post" action="">
                         <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
-                            <option>Provincia</option>
+                            <option value="">Provincia</option>
                                 <option value="sanjose">San José
                                 <option value="heredia">Heredia
                                 <option value="alajuela">Alajuela
@@ -69,20 +69,16 @@
                                 <option value="limon">Limón
                         </select>
                         <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
-                            <option>Cantón</option>
+                            <option value="">Cantón</option>
                         </select>
                         <select class="input-formularios" id="txt-distrito-cl" name="distritos">
-                            <option>Distrito</option>
+                            <option value="">Distrito</option>
                         </select>
                     </form>
                     <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Otras señas"></textarea>
 
-                    <!-- Prueba2 -->
-
-                    <!-- Prueba2 -->
-
                     <button class="btn2" id="btn-completar-registro">Completar registro </button>
-                    <button class="btn2">Cancelar </button>
+                    <a href="P01-homepage.html"> <button class="btn2">Cancelar </button> </a>
                 </div>
                 </div>
             </div>
