@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P97-raza-modificar.css">
+    <link rel="stylesheet" href="styles/P96-padecimientos-modificar.css">
     <title>Padecimientos</title>
 </head>
 
@@ -20,13 +20,13 @@
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
                         </input>
                     </form>
                 </div>
                 <div class="nav-C">
                     <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-                    <a class="btn"  id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -37,36 +37,33 @@
             <div id="contenedor-main">
                 <section>
                     <div class="contenedor1">
-                        <div class="contenedor2">
-                            <form class="formulario-padecimientos">
-                                <h2>Padecimientos</h2>
-                                <div class="items">
-                                    <label class="label" for="txt-nombre-pd">Nombre de la raza</label>
-                                    <input class="input-formularios" id="txt-nombre-pd" type="text" placeholder="Nombre">
-                                </div>
-                                <div class="items">
-                                    <label class="label" for="slt-especie-pd">Nombre de la especie</label>
-                                    <select id="slt-especie-pd">
+                        <form class="contenedor2">
+                            <h2>Padecimientos</h2>
+                            <div class="items">
+                                <label class="label" for="txt-nombre-pd">Nombre de la raza</label>
+                                <input class="input-formularios" id="txt-nombre-pd" type="text" placeholder="Nombre">
+                            </div>
+                            <div class="items">
+                                <label class="label" for="slt-especie-pd">Nombre de la especie</label>
+                                <select id="slt-especie-pd">
                                         <option value="">--Seleccione una opción--</option>
                                         <option value="Perro">Perro</option>
                                         <option value="Gato">Gato</option>
                                         </select>
-                                </div>
-                                <div class="items">
-                                    <label class="label" for="slt-estado-pd">Estado de la raza</label>
-                                    <select id="slt-estado-pd">
+                            </div>
+                            <div class="items">
+                                <label class="label" for="slt-estado-pd">Estado de la raza</label>
+                                <select id="slt-estado-pd">
                                         <option value="">--Seleccione una opción--</option>
                                         <option value="Activo">Activo</option>
                                         <option value="Inactivo">Inactivo</option>
                                         </select>
-                                </div>
-                                <div class="items">
-                                    <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
-                                    <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
-                                </div>
-                            </form>
-
-                        </div>
+                            </div>
+                            <div class="items">
+                                <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
+                                <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
+                            </div>
+                        </form>
 
                     </div>
                 </section>

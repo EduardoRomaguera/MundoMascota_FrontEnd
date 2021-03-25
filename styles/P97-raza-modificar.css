@@ -62,17 +62,13 @@
     text-align: center;
 }
 
-.formulario-raza {
-    border: #7720da solid 2px;
-}
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
+    display: none;
 }
-
