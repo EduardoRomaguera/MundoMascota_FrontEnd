@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P50-solicitudes-proveedores.css">
+    <link rel="stylesheet" href="styles/P51-proveedores-aprobados.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
     <title>Proveedores Aprobados</title>
@@ -39,13 +39,13 @@
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
                 <section class="titulo">
-                    <h1>Solcitudes Pendientes</h1>
+                    <h1>Proveedores Aprobados</h1>
                 </section>
                 <section class="catalogos">
                     <section>
 
                         <div class='filtro'>
-                            <label for='txt-filtro-ordenes'>Filtrar</label>
+                            <label for='txt-filtro-ordenes'>Filtrar nombre negocio</label>
                             <input type="text" id='txt-filtro-ordenes'>
 
                         </div>
@@ -55,10 +55,11 @@
                             <table id="tbl-ordenes" class="tabla">
                                 <thead>
                                     <tr>
+                                        <th>Nombre negocio</th>
                                         <th>Nombre</th>
                                         <th>Correo</th>
                                         <th>Nacimiento</th>
-                                        <th>Tipo</th>
+
 
                                     </tr>
                                 </thead>

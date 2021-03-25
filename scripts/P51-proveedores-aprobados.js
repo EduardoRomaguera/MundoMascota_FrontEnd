@@ -12,10 +12,10 @@ const MOSTRARTABLAPROB = () => {
         if (usuarios.nombre.toLowerCase().includes(filtro)) {
 
             let fila = TABLAAPROB.insertRow();
+            fila.insertCell().innerHTML = usuarios.nombreNegocio;
             fila.insertCell().innerHTML = usuarios.nombre;
             fila.insertCell().innerHTML = usuarios.correo;
             fila.insertCell().innerHTML = usuarios.nacimiento;
-            fila.insertCell().innerHTML = usuarios.tipo;
 
         }
     });

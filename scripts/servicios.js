@@ -524,6 +524,7 @@ let listaUsuariosProveedores = [{
     'nacimiento': '10-12-1987',
     'sexo': 'Masculino',
     'contrasenna': '123',
+    'nombreNegocio': "Grooming Pablo",
     'tipo': 'Proveedor'
 }, {
     "correo": "alejandroproveedor@gmail.com",
@@ -531,6 +532,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "29-01-1998",
     'sexo': 'Masculino',
     'contrasenna': 'abcd1254',
+    'nombreNegocio': "Receta Alejo",
     'tipo': 'Proveedor'
 }, {
     "correo": "josemendez@gmail.com",
@@ -538,6 +540,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "24-05-1995",
     'sexo': 'Masculino',
     'contrasenna': 'qwert124',
+    'nombreNegocio': "Paseo Chepe",
     'tipo': 'Proveedor'
 }, {
     "correo": "miguelperez@puppyworld.com",
@@ -545,6 +548,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "15-07-2000",
     'sexo': 'Masculino',
     'contrasenna': 'proveedor445',
+    'nombreNegocio': "Paseos Migue",
     'tipo': 'Proveedor'
 }, {
     "correo": "Sammy12@outlook.com",
@@ -552,6 +556,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "21-04-1997",
     'sexo': 'Femenino',
     'contrasenna': 'sammy123',
+    'nombreNegocio': "YummyPet",
     'tipo': 'Proveedor'
 }, {
     "correo": "douglas78@hotmail.com",
@@ -559,6 +564,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "01-07-1997",
     'sexo': 'Masculino',
     'contrasenna': 'rodri415',
+    'nombreNegocio': "DeliPet",
     'tipo': 'Proveedor'
 }, {
     "correo": "Glori@yahoo.com",
@@ -566,6 +572,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "24-12-1992",
     'sexo': 'Femenino',
     'contrasenna': 'glorigirl48',
+    'nombreNegocio': "Cuidos Glori",
     'tipo': 'Proveedor'
 }, {
     "correo": "steph45@proveedor.com",
@@ -573,6 +580,7 @@ let listaUsuariosProveedores = [{
     "nacimiento": "22-05-1992",
     'sexo': 'Masculino',
     'contrasenna': 'Steph48',
+    'nombreNegocio': "Peluqueria Canina Steph",
     'tipo': 'Proveedor'
 }];
 
@@ -1062,42 +1070,42 @@ let listaMisOrdenes = [{
 //Lista de usuarios para llenar reportados:
 
 let listaUsuariosReportados = [{
-    'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
-    'Usuario': 'Miguel Perez Botero',
-    'Razon': 'Acoso',
-    'Descripcion': 'No deja de llamarme'
+        'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
+        'Usuario': 'Miguel Perez Botero',
+        'Razon': 'Acoso',
+        'Descripcion': 'No deja de llamarme'
 
-}, {
-    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Samantha Hernandez Ruiz',
-    'Razon': 'Violencia',
-    'Descripcion': 'Llevó a pasear a mi perrito y le pegó'
-}, {
-    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Miguel Santos Polanco',
-    'Razon': 'Discriminación',
-    'Descripcion': 'Me trató de forma ofensiva por ser afroamericano'
-}, {
-    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Luis Daniel Vargas ',
-    'Razon': 'Lenguaje',
-    'Descripcion': 'Persona sumamente malhablada, trata a mis perritos de hijos de tal'
-}, {
-    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Carlos Alpizar Justo',
-    'Razon': 'Incumplimiento',
-    'Descripcion': 'No cumplió con los tratamientos que pagamos'
-}, {
-    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Catherine Pintor Frias',
-    'Razon': 'Violencia',
-    'Descripcion': 'Mi perrito tiene un morete como si lo hubieran pateado'
-}, {
-    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Daniela Guzmán',
-    'Razon': 'Incumplimiento',
-    'Descripcion': 'Me quedó mal con el servicio y no avisó, mi gatito se quedó sin comida 2 días'
-},
+    }, {
+        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+        'Usuario': 'Samantha Hernandez Ruiz',
+        'Razon': 'Violencia',
+        'Descripcion': 'Llevó a pasear a mi perrito y le pegó'
+    }, {
+        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+        'Usuario': 'Miguel Santos Polanco',
+        'Razon': 'Discriminación',
+        'Descripcion': 'Me trató de forma ofensiva por ser afroamericano'
+    }, {
+        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+        'Usuario': 'Luis Daniel Vargas ',
+        'Razon': 'Lenguaje',
+        'Descripcion': 'Persona sumamente malhablada, trata a mis perritos de hijos de tal'
+    }, {
+        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+        'Usuario': 'Carlos Alpizar Justo',
+        'Razon': 'Incumplimiento',
+        'Descripcion': 'No cumplió con los tratamientos que pagamos'
+    }, {
+        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+        'Usuario': 'Catherine Pintor Frias',
+        'Razon': 'Violencia',
+        'Descripcion': 'Mi perrito tiene un morete como si lo hubieran pateado'
+    }, {
+        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+        'Usuario': 'Daniela Guzmán',
+        'Razon': 'Incumplimiento',
+        'Descripcion': 'Me quedó mal con el servicio y no avisó, mi gatito se quedó sin comida 2 días'
+    },
 
 
 
