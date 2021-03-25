@@ -22,6 +22,17 @@ const MOSTRARTABLAORDENES = () => {
 
             let celdaAcciones = fila.insertCell();
 
+            let botonModificar = document.createElement('button');
+            botonModificar.innerText = 'Editar';
+
+            botonModificar.addEventListener('click', () => {
+                Swal.fire({
+                    imageUrl: "images/cute-pets.jpg",
+                    title: "Nuestro equipo aún está trabajando en eso",
+                    text: "Mientras tanto puedes ver esos lindos cachorros",
+                    confirmButtonText: "Regresar"
+                });
+            });
 
             let botonDenunciar = document.createElement('button');
             botonDenunciar.innerText = 'Denunciar';
@@ -31,6 +42,7 @@ const MOSTRARTABLAORDENES = () => {
             })
 
             celdaAcciones.appendChild(botonDenunciar);
+            celdaAcciones.appendChild(botonModificar);
 
         }
     });
