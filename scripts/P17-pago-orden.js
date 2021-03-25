@@ -1,13 +1,15 @@
 'use strict';
 
-const btnPagar = document.querySelector('#btn2');
+const btnPagar = document.querySelector('#btn-pagar');
 
 const pendiente = () => {
     Swal.fire({
-        imageUrl: "images/cute-pets.jpg",
-        title: "Nuestro equipo aún está trabajando en eso",
-        text: "Mientras tanto puedes ver esos lindos cachorros",
-        confirmButtonText: "Regresar"
+        icon: "warning",
+        title: "¿Deseas Realizar el Pago?",
+        confirmButtonText: "Si,Pagar",
+        cancelButtonText: 'Cancelar',
+        'cancelButtonColor': '#d33',
+        cancelButtonText: 'Cancelar',
     });
 }
 btnPagar.addEventListener('click', pendiente);
