@@ -1,17 +1,26 @@
 'use strict';
 
-const TABLAUSUARIOSTOTALES = document.querySelector('#tbl-usuriosTotal tbody');
+const TABLATOTAL = document.querySelector('#tbl-ordenes tbody');
 
-//Función que agrega las celdas de razas
-const MOSTRARTABLAUSUARIOTOTALES = () => {
-    listaUsuariostotales.forEach(usuario => {
-        let fila = TABLAUSUARIOSTOTALES.insertRow();
-        fila.insertCell().innerHTML = usuario.nombre;
-        fila.insertCell().innerHTML = usuario.correo;
-        fila.insertCell().innerHTML = usuario.nacimiento;
-        fila.insertCell().innerHTML = usuario.tipo;
+const FILTROTOTAL = document.querySelector('#txt-filtro-ordenes');
 
+//Función que agrega las celdas de ordenes a la tabla
+const MOSTRARTABLATOTAL = () => {
+    let filtro = FILTROTOTAL.value.toLowerCase();
+    TABLATOTAL.innerHTML = '';
+    listaUsuariostotales.forEach(usuarios => {
+        if (usuarios.nombre.toLowerCase().includes(filtro)) {
+
+            let fila = TABLATOTAL.insertRow();
+            fila.insertCell().innerHTML = usuarios.nombre;
+            fila.insertCell().innerHTML = usuarios.correo;
+            fila.insertCell().innerHTML = usuarios.nacimiento;
+            fila.insertCell().innerHTML = usuarios.tipo;
+
+        }
     });
 };
 
-MOSTRARTABLAUSUARIOTOTALES();
+
+MOSTRARTABLATOTAL();
+FILTROTOTAL.addEventListener('keyup', MOSTRARTABLATOTAL);
