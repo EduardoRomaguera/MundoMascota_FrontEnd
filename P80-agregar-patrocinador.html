@@ -3,28 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
+    <link rel="stylesheet" href="styles/P97-raza-modificar.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Reporte usuarios baneados</title>
+    <title>Razas</title>
 </head>
-
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
                 <a class="nav-A" href="P49-principal-administrador.html">
-
                     <img src="images/logo2-nav.png" id="logo">
-                    <!--<a class="logo" href=P01-homepage.html></a>-->
                 </a>
-
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
@@ -32,11 +27,9 @@
                         </input>
                     </form>
                 </div>
-
                 <div class="nav-C">
                     <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-
-                    <a class="btn" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -45,39 +38,40 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="catalogos">
-                    <section>
-                        <section class="divisor">
-                            <h1 class="btn-divisor">Usuarios Baneados</h1>
-                        </section>
-
-                        <div>
-                            <label for='txt-filtro-usuarios-baneados'>Filtrar</label>
-                            <input type="text" id='txt-filtro-usuarios-baneados'>
-
-                            <div class="contenedor1">
-                                <div class="contenedor-tabla">
-                                    <table id="tbl-usurios-ban" class="tabla">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Tipo</th>
-                                                <th>Razon</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                        </tbody>
-                                    </table>
-                                </div>
+                <section>
+                    <div class="contenedor1">
+                        <form class="contenedor2">
+                            <h2>Raza</h2>
+                            <div class="items">
+                                <label class="label" for="txt-nombre-rz">Nombre</label>
+                                <input class="input-formularios" id="txt-nombre-rz" type="text" placeholder="Nombre">
                             </div>
-                    </section>
+                            <div class="items">
+                                <label class="label" for="slt-especie-rz">Nombre de la especie</label>
+                                <select id="slt-especie-rz">
+                                    <option value="">--Seleccione una opción--</option>
+                                    <option value="Perro">Perro</option>
+                                    <option value="Gato">Gato</option>
+                                    </select>
+                            </div>
+                            <div class="items">
+                                <label class="label" for="slt-estado-rz">Estado de la raza</label>
+                                <select id="slt-estado-rz">
+                                    <option value="">--Seleccione una opción--</option>
+                                    <option value="Activo">Activo</option>
+                                    <option value="Inactivo">Inactivo</option>
+                                    </select>
+                            </div>
+                            <div class="items">
+                                <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
+                                <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
                 </section>
-                </section>
-                </div>
-                <div id="espaciador-der"></div>
             </div>
+            <div id="espaciador-der"></div>
+        </div>
     </main>
     <footer>
         <div class="foot-madre">
@@ -85,6 +79,7 @@
                 <h5>Una empresa 100% nacional</h5>
                 <img src="images/cr.png" id="cr">
             </div>
+
             <div class="foot-B">
                 <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
@@ -95,6 +90,7 @@
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
+
             <div class="foot-C">
                 <h5>Siguenos</h5>
                 <div>
@@ -103,16 +99,16 @@
                 </div>
             </div>
         </div>
+
         <section class="divisor2">
             <a class="btn-sochi" href="P00-landing-sochi.html">
                 Desarrollado por Sochi Software 2021. Derechos Reservados.
             </a>
         </section>
     </footer>
-
-    <script src="scripts/navegacion.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P99-reporte-baneados.js"></script>
+    <script src="scripts/P97-raza-modificar.js"></script>
 </body>
 
 </html>

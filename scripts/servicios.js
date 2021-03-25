@@ -1059,16 +1059,21 @@ let listaMisOrdenes = [{
 }, ];
 
 
+//Lista de usuarios para llenar reportados:
 
+let listaUsuariosReportados = [{
+    'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
+    'Usuario': 'Miguel Perez',
+    'Razon': 'Acoso',
+    'Descripcion': 'No deja de llamarme'
 
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Samantha Hernandez',
+    'Razon': 'Violencia',
+    'Descripcion': 'Llevo a pasear a mi perrito y le pego'
 
-
-
-
-
-
-
-
+}, ]
 
 
 //Codigo para validar la información de usuario y contraseña

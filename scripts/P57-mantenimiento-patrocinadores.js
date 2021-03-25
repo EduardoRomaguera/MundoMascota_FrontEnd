@@ -1,7 +1,7 @@
 'use strict';
 
 const TABLAPATROCINADORES = document.querySelector('#tbl-patrocinadores tbody');
-
+const btnAgregarPatrocinador = document.querySelector('#btn-agregar-patrocinador');
 const FILTROPATROCINADORES = document.querySelector('#txt-filtro-patro');
 
 //Función que agrega las celdas de ordenes a la tabla
@@ -52,3 +52,7 @@ const MOSTRARTABLAORDENES = () => {
 
 MOSTRARTABLAORDENES();
 FILTROPATROCINADORES.addEventListener('keyup', MOSTRARTABLAORDENES);
+
+btnAgregarPatrocinador.addEventListener('click', () => {
+    window.location.href = 'P80-agregar-patrocinador.html';
+})

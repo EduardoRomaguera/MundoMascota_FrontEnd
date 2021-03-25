@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400 px;
-    margin-bottom: 100px;
+    min-height: 300 px;
+    margin-bottom: 30px;
 }
 
 .contenedor2 {
@@ -16,13 +16,19 @@
     font-weight: 700;
 }
 
-.reporte.Imagen {
-    border-radius: 150%;
-    padding: 30px;
-    width: 100px;
-    height: 100px;
-    right: 220px;
-    bottom: 15px;
+.catalogos {
+    min-height: 500px;
+}
+
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display: none;
+}
+
+#btn-iniciar-sesion {
+    display: none;
 }
 
 button {
@@ -35,15 +41,4 @@ button {
     font-weight: 600;
     font-size: 15px;
     margin-left: 20px;
-}
-
-
-/* OCULTADOS*/
-
-.barra-busqueda {
-    display: none;
-}
-
-#btn-iniciar-sesion {
-    display: none;
 }
