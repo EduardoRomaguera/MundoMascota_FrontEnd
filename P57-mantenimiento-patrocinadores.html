@@ -6,22 +6,18 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P49-principal-administrador.css">
+    <link rel="stylesheet" href="styles/P57-mantenimiento-patrocinadores.css">
     <link rel="icon" href="images/icono.png">
 
     <script src="https://kit.fontawesome.com/731900e7f6.js " crossorigin="anonymous "></script>
-    <title>Patrocinadores</title>
+    <title>Mantenimiento de Patrocinadores</title>
 </head>
-
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href="P49-principal-administrador.html">
+                <a class="nav-A" href=P01-homepage.html>
                     <img src="images/logo2-nav.png" id="logo">
                 </a>
                 <div class="nav-B">
@@ -42,40 +38,41 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
+                <section class="titulo">
+                    <h1>Mantenimiento de Patrocinadores</h1>
+                </section>
                 <section class="catalogos">
                     <section>
-                        <section class="divisor">
-                            <h1 class="btn-divisor">Patrocinadores</h1>
-                        </section>
-                        <div>
-                            <label for='txt-filtro-patro'>Filtrar</label>
+
+                        <div class='filtro'>
+                            <label for='txt-filtro-patro'>Filtrar por nombre</label>
                             <input type="text" id='txt-filtro-patro'>
-                            <button type="button" id="btn-agregar-patro" class="btn-agregar">
-                                Agregar Patrocinador
-                            </button>
+
                         </div>
 
                         <div class="contenedor1">
-                            <div class="contenedor-tabla">
-                                <table id="tbl-patrocinadores" class="tabla">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Fecha de Inclusion</th>
-                                            <th>Estado</th>
-                                            <th>
 
-                                            </th>
+                            <table id="tbl-patrocinadores" class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Frase</th>
+                                        <th>Fotografía</th>
+                                        <th>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                                        </th>
 
-                                    </tbody>
-                                </table>
-                            </div>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
                         </div>
                     </section>
+
 
                 </section>
             </div>

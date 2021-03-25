@@ -1,56 +1,35 @@
-"use strict"
+'use strict';
 
-const TABLAPENDIENTES = document.querySelector("#tbl-usuriosPendi");
-const FILTROPENDIENTES = document.querySelector('#txt-filtro-soli');
+const TABLAPENDI = document.querySelector('#tbl-ordenes tbody');
 
+const FILTROORDENES = document.querySelector('#txt-filtro-ordenes');
 
+//Función que agrega las celdas de ordenes a la tabla
 const MOSTRARTABLAPENDI = () => {
-    let filtro = FILTROPENDIENTES.value.toLowerCase();
-    TABLAPENDIENTES.innerHTML = '';
-    listaUsuariosPendiente.forEach(Usuario => {
-        if (Pendiente.nombre.toLowerCase().includes(filtro)) {
+    let filtro = FILTROORDENES.value.toLowerCase();
+    TABLAPENDI.innerHTML = '';
+    listaUsuariosPendientes.forEach(usuarios => {
+        if (usuarios.nombre.toLowerCase().includes(filtro)) {
 
-            let fila = TABLAPENDIENTES.insertRow();
-            fila.insertCell().innerHTML = Usuario.nombre;
-            fila.insertCell().innerHTML = Usuario.correo;
-            fila.insertCell().innerHTML = Usuario.nacimiento;
-            fila.insertCell().innerHTML = Usuario.tipo;
+            let fila = TABLAPENDI.insertRow();
+            fila.insertCell().innerHTML = usuarios.nombre;
+            fila.insertCell().innerHTML = usuarios.correo;
+            fila.insertCell().innerHTML = usuarios.nacimiento;
+            fila.insertCell().innerHTML = usuarios.tipo;
+
 
             let celdaAcciones = fila.insertCell();
 
-            let botonModificar = document.createElement('button');
-            botonModificar.innerText = 'Aceptar';
 
-            botonModificar.addEventListener('click', () => {
-                Swal.fire({
-                    'icon': 'warning',
-                    'text': '¿Está seguro que desea aceptar a este usuario?',
-                    'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
-                    'cancelButtonColor': '#d33',
-                    'cancelButtonText': 'Cancelar',
-                    'reverseButtons': true
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'correo de acceso enviado',
-                            'success'
-                        )
-                    }
-                })
+            let botonRechazar = document.createElement('button');
+            botonRechazar.innerText = 'Rechazar';
 
-            });
-
-            let botonEliminar = document.createElement('button');
-            botonEliminar.innerText = 'Eliminar';
-
-            botonEliminar.addEventListener('click', () => {
+            botonRechazar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
                     'text': '¿Está seguro que desea rechazar la solicitud?',
                     'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'confirmButtonText': 'Sí, estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
                     'reverseButtons': true
@@ -58,15 +37,33 @@ const MOSTRARTABLAPENDI = () => {
                     if (result.isConfirmed) {
                         Swal.fire(
                             '',
-                            'el proveedor ha sido rechazado',
+                            'La solicitud ha sido rechazada',
                             'success'
                         )
                     }
                 })
             });
-            celdaAcciones.appendChild(botonEliminar);
+
+            let botonAceptar = document.createElement('button');
+            botonAceptar.innerText = 'Aceptar';
+
+            botonAceptar.addEventListener('click', () => {
+                Swal.fire(
+                    '',
+                    'Solicitud aceptada',
+                    'success'
+                )
+            });
+
+            celdaAcciones.appendChild(botonAceptar);
+            celdaAcciones.appendChild(botonRechazar);
+
+
+
         }
     });
 };
+
+
 MOSTRARTABLAPENDI();
-FILTROPENDIENTES.addEventListener('keyup', MOSTRARTABLAPENDI);
+FILTROORDENES.addEventListener('keyup', MOSTRARTABLAPENDI);

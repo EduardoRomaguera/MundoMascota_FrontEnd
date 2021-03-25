@@ -1,20 +1,26 @@
 'use strict';
 
-const TABLAUSUARIOSAPROB = document.querySelector('#tbl-usuriosApro tbody');
+const TABLAAPROB = document.querySelector('#tbl-ordenes tbody');
 
-//Función que agrega las celdas de razas
-const MOSTRARTABLAUSUARIOAPROB = () => {
+const FILTROORDENES = document.querySelector('#txt-filtro-ordenes');
 
-    listaUsuariosProveedores.forEach(usuario => {
+//Función que agrega las celdas de ordenes a la tabla
+const MOSTRARTABLAPROB = () => {
+    let filtro = FILTROORDENES.value.toLowerCase();
+    TABLAAPROB.innerHTML = '';
+    listaUsuariosProveedores.forEach(usuarios => {
+        if (usuarios.nombre.toLowerCase().includes(filtro)) {
 
-        let fila = TABLAUSUARIOSAPROB.insertRow();
+            let fila = TABLAAPROB.insertRow();
+            fila.insertCell().innerHTML = usuarios.nombre;
+            fila.insertCell().innerHTML = usuarios.correo;
+            fila.insertCell().innerHTML = usuarios.nacimiento;
+            fila.insertCell().innerHTML = usuarios.tipo;
 
-        fila.insertCell().innerHTML = usuario.nombre;
-        fila.insertCell().innerHTML = usuario.correo;
-        fila.insertCell().innerHTML = usuario.nacimiento;
-        fila.insertCell().innerHTML = usuario.tipo;
+        }
     });
 };
 
 
-MOSTRARTABLAUSUARIOAPROB();
+MOSTRARTABLAPROB();
+FILTROORDENES.addEventListener('keyup', MOSTRARTABLAPROB);

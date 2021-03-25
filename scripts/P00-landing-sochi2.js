@@ -15,7 +15,8 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 180) {
     document.getElementById("overlay").className = "blanco";
     document.getElementById("video").style.vid.autoplay = true;
 } else {
-    document.getElementById("romano").style.display = "none";
+    document.getElementById("romano").style.display = "inline";
+    // Linea 18 con none para ocultar y luego mostrar el texto en japo
     document.getElementById("somo").className =  "negro";
     document.getElementById("overlay").className = "negro";
     document.getElementById("video").style.vid.autoplay = true;

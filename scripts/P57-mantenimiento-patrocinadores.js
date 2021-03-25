@@ -1,12 +1,11 @@
-"use strict"
+'use strict';
 
-const TABLAPATROCINADORES = document.querySelector("#tbl-patrocinadores");
+const TABLAPATROCINADORES = document.querySelector('#tbl-patrocinadores tbody');
+
 const FILTROPATROCINADORES = document.querySelector('#txt-filtro-patro');
-const BTNAGREGARPATRO = document.querySelector("btn-agregar-patro");
 
-
-
-const MOSTRARTABLAPATRO = () => {
+//Función que agrega las celdas de ordenes a la tabla
+const MOSTRARTABLAORDENES = () => {
     let filtro = FILTROPATROCINADORES.value.toLowerCase();
     TABLAPATROCINADORES.innerHTML = '';
     listaPatrocinadores.forEach(patrocinador => {
@@ -14,48 +13,42 @@ const MOSTRARTABLAPATRO = () => {
 
             let fila = TABLAPATROCINADORES.insertRow();
             fila.insertCell().innerHTML = patrocinador.nombre;
-            fila.insertCell().innerHTML = patrocinador.fecha;
-            fila.insertCell().innerHTML = patrocinador.estado;
+            fila.insertCell().innerHTML = patrocinador.frase;
+            fila.insertCell().innerHTML = patrocinador.fotografia;
 
             let celdaAcciones = fila.insertCell();
 
-            let botonModificar = document.createElement('button');
-            botonModificar.innerText = 'Editar';
+            //let botonSubir = document.createElement('input');
+            //botonSubir.type="file";
 
-            botonModificar.addEventListener('click', () => {
-                sessionStorage.setItem('patrocinadorSeleccionado', JSON.stringify(patrocinador));
-                window.location.href = 'P97-raza-modificar.html';
+            let botonRechazar = document.createElement('button');
+            botonRechazar.innerText = 'Eliminar';
 
-            });
-
-            let botonEliminar = document.createElement('button');
-            botonEliminar.innerText = 'Eliminar';
-
-            botonEliminar.addEventListener('click', () => {
+            botonRechazar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea borrar el patrocinador?',
+                    'text': '¿Seguro que desea eliminar al patrocinador?',
                     'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'confirmButtonText': 'Sí, estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
-                    'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
                         Swal.fire(
                             '',
-                            'el patrocinador sido eliminado',
+                            'Patrocinador eliminado',
                             'success'
                         )
                     }
                 })
             });
-            celdaAcciones.appendChild(botonEliminar);
+            //celdaAcciones.appendChild(botonSubir);
+            celdaAcciones.appendChild(botonRechazar);
+
         }
     });
 };
-MOSTRARTABLAPATRO();
-FILTROPATROCINADORES.addEventListener('keyup', MOSTRARTABLAPATRO);
-BTNAGREGARPATRO.addEventListener('click', () => {
-    window.location.href = 'P97-raza-modificar.html';
-})
+
+
+MOSTRARTABLAORDENES();
+FILTROPATROCINADORES.addEventListener('keyup', MOSTRARTABLAORDENES);
