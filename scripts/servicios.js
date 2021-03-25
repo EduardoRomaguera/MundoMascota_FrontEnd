@@ -658,9 +658,8 @@ let listaUsuariosRechazados = [{
     "razon": "Falta de informacion"
 }, ];
 
-let listaUsuariostotales = [{
-
-    }, {
+let listaUsuariostotales = [
+    {
         'correo': 'cliente@cliente.com',
         'nombre': 'Amanda Víquez',
         'nacimiento': '03-11-1991',
@@ -783,9 +782,8 @@ let listaUsuariostotales = [{
         'tipo': 'Cliente'
     },
 ];
-let listaUsuariosPendientes = [{
-
-}, {
+let listaUsuariosPendientes = [
+{
     'correo': 'Christian@servipet.com',
     'nombre': 'Christian Víquez',
     'nacimiento': '03-11-1999',
@@ -848,9 +846,8 @@ let listaUsuariosPendientes = [{
     "estado": "Pendiente",
 }, ];
 
-let listaUsuariosBaneados = [{
-
-}, {
+let listaUsuariosBaneados = [
+    {
     'correo': 'Gonzarey@gmail.com',
     'nombre': 'Gonzalo Granados',
     'nacimiento': '03-11-1989',
@@ -999,8 +996,8 @@ let listaActividadUsuarios = [{
 }, ];
 let listaPatrocinadores = [{
     "nombre": 'Taste of the Wild',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "20-03-2021",
+    'fotografía': 'Activo',
 }, {
     "nombre": 'Royal Canin',
     'fecha': "20-03-2021",
