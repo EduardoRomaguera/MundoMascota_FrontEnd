@@ -1076,18 +1076,6 @@ let listaUsuariosReportados = [{
 }, ]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Codigo para validar la información de usuario y contraseña
 
 const iniciarSesion = (correo, contrasenna) => {
