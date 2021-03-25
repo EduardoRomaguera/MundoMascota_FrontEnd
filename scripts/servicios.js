@@ -785,62 +785,62 @@ let listaUsuariosPendientes = [{
     'correo': 'Christian@servipet.com',
     'nombre': 'Christian Víquez',
     'nacimiento': '03-11-1999',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Servipet',
     "estado": "Pendiente",
 
 }, {
     'correo': 'Julio@yahoo.com',
     'nombre': 'Julio Nunez',
     'nacimiento': '03-12-2001',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Paseos Paco',
     "estado": "Pendiente",
 }, {
     'correo': 'nyrontt@yahoo.com',
     'nombre': 'Nyron Salas',
     'nacimiento': '11-02-1998',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Servicios Kakaroto',
     "estado": "Pendiente",
 }, {
     'correo': 'jimena@gmail.com',
     'nombre': 'Jimena Arauz',
     'nacimiento': '12-08-2000',
-    'sexo': 'Femenino',
+    'nombreNegocio': 'Jime Mascotas',
     "estado": "Pendiente",
 }, {
     'correo': 'andresc@yahoo.com',
-    'nombre': 'Andres Ortiz',
+    'nombre': 'Andrés Ortiz',
     'nacimiento': '29-01-1997',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Cuidado de perros Andrés',
     "estado": "Pendiente",
 }, {
     'correo': 'jeremn@aol.com',
     'nombre': 'Jeremy Sancho',
     'nacimiento': '05-12-2001',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Queques para perro Pancho',
     "estado": "Pendiente",
 }, {
     'correo': 'fabrizzio@upet.com',
     'nombre': 'Fabrizzio Vargas',
     'nacimiento': '03-08-1994',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Veterinaria el Barrio',
     "estado": "Pendiente",
 }, {
     'correo': 'Jeferg@aol.com',
     'nombre': 'Jefferson Victor',
     'nacimiento': '22-04-1994',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Paseos Juanca',
     "estado": "Pendiente",
 }, {
     'correo': 'Henry12@yahoo.com',
     'nombre': 'Henry Bejarano',
     'nacimiento': '07-07-1990',
-    'sexo': 'Masculino',
+    'nombreNegocio': 'Veterianaria Express el Pitufo',
     "estado": "Pendiente",
 }, {
     'correo': 'andre333@gmail.com',
     'nombre': 'Andrea Blanco',
     'nacimiento': '12-05-1985',
-    'sexo': 'Femenino',
+    'nombreNegocio': 'Cuidado de mascotas Andrea',
     "estado": "Pendiente",
 }, ];
 
@@ -851,7 +851,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Cliente",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Acoso",
 }, {
     'correo': 'celest23@gmail.com',
     'nombre': 'Celeste Ulloa',
@@ -859,7 +859,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Femenino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Acoso",
 }, {
     'correo': 'amardor4@gmail.com',
     'nombre': 'Andrey Amador',
@@ -867,7 +867,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Incumplimiento",
 }, {
     'correo': 'andecr1992@hotmail.com',
     'nombre': 'Andrey Cardenas',
@@ -875,7 +875,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Amenaza",
 }, {
     'correo': 'gacavi@yahoo.com',
     'nombre': 'Gabriel Camanno',
@@ -883,7 +883,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Cliente",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Discriminación",
 }, {
     'correo': 'Kevins@gmail.com',
     'nombre': 'Kevin Siles',
@@ -891,7 +891,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Violencia",
 }, {
     'correo': 'camii25@gmail.com',
     'nombre': 'Camila Rojas',
@@ -899,7 +899,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Femenino',
     "estado": "Baneado",
     "tipo": "Cliente",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Incumplimiento",
 }, {
     'correo': 'Abigama2@gmail.com',
     'nombre': 'Abigail Gamboa',
@@ -907,7 +907,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Femenino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Incitación al odio",
 }, {
     'correo': 'Ivanmd@gmail.com',
     'nombre': 'Ivan Granados',
@@ -915,7 +915,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Acoso",
 }, {
     'correo': 'Manuel12@gmail.com',
     'nombre': 'Manuel Portillo',
@@ -923,7 +923,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Cliente",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Discriminación",
 }, {
     'correo': 'juansho2@gmail.com',
     'nombre': 'Juan Fernandez',
@@ -931,7 +931,7 @@ let listaUsuariosBaneados = [{
     'sexo': 'Masculino',
     "estado": "Baneado",
     "tipo": "Proveedor",
-    "Razon": "Multiples Denuncias",
+    "Razon": "Incumplimiento",
 }, ];
 
 let listaActividadUsuarios = [{
@@ -1063,17 +1063,47 @@ let listaMisOrdenes = [{
 
 let listaUsuariosReportados = [{
     'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
-    'Usuario': 'Miguel Perez',
+    'Usuario': 'Miguel Perez Botero',
     'Razon': 'Acoso',
     'Descripcion': 'No deja de llamarme'
 
 }, {
     'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-    'Usuario': 'Samantha Hernandez',
+    'Usuario': 'Samantha Hernandez Ruiz',
     'Razon': 'Violencia',
-    'Descripcion': 'Llevo a pasear a mi perrito y le pego'
+    'Descripcion': 'Llevó a pasear a mi perrito y le pegó'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Miguel Santos Polanco',
+    'Razon': 'Discriminación',
+    'Descripcion': 'Me trató de forma ofensiva por ser afroamericano'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Luis Daniel Vargas ',
+    'Razon': 'Lenguaje',
+    'Descripcion': 'Persona sumamente malhablada, trata a mis perritos de hijos de tal'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Carlos Alpizar Justo',
+    'Razon': 'Incumplimiento',
+    'Descripcion': 'No cumplió con los tratamientos que pagamos'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Catherine Pintor Frias',
+    'Razon': 'Violencia',
+    'Descripcion': 'Mi perrito tiene un morete como si lo hubieran pateado'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Daniela Guzmán',
+    'Razon': 'Incumplimiento',
+    'Descripcion': 'Me quedó mal con el servicio y no avisó, mi gatito se quedó sin comida 2 días'
+},
 
-}, ]
+
+
+
+
+]
 
 
 //Codigo para validar la información de usuario y contraseña
