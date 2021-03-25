@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400 px;
-    margin-bottom: 100px;
+    min-height: 300 px;
+    margin-bottom: 30px;
 }
 
 .contenedor2 {
@@ -16,6 +16,10 @@
     font-weight: 700;
 }
 
+.catalogos {
+    min-height: 500px;
+}
+
 
 /* OCULTADOS*/
 
@@ -25,4 +29,16 @@
 
 #btn-iniciar-sesion {
     display: none;
+}
+
+button {
+    background-color: #8EE5D8;
+    padding: auto;
+    color: black;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 1px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
 }

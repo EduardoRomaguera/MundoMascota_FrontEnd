@@ -1,17 +1,26 @@
 'use strict';
 
-const TABLAUSUARIOSRECHA = document.querySelector('#tbl-usuriosRecha tbody');
+const TABLARECHA = document.querySelector('#tbl-ordenes tbody');
 
-//Función que agrega las celdas de razas
-const MOSTRARTABLAUSUARIORECHA = () => {
-    listaUsuariosRechazados.forEach(usuario => {
-        let fila = TABLAUSUARIOSRECHA.insertRow();
-        fila.insertCell().innerHTML = usuario.nombre;
-        fila.insertCell().innerHTML = usuario.correo;
-        fila.insertCell().innerHTML = usuario.sexo;
-        fila.insertCell().innerHTML = usuario.tipo;
-        fila.insertCell().innerHTML = usuario.razon;
+const FILTRORECHAZO = document.querySelector('#txt-filtro-ordenes');
+
+//Función que agrega las celdas de ordenes a la tabla
+const MOSTRARTABLARECHAZO = () => {
+    let filtro = FILTRORECHAZO.value.toLowerCase();
+    TABLARECHA.innerHTML = '';
+    listaUsuariosRechazados.forEach(usuarios => {
+        if (usuarios.nombre.toLowerCase().includes(filtro)) {
+
+            let fila = TABLARECHA.insertRow();
+            fila.insertCell().innerHTML = usuarios.nombre;
+            fila.insertCell().innerHTML = usuarios.correo;
+            fila.insertCell().innerHTML = usuarios.nacimiento;
+            fila.insertCell().innerHTML = usuarios.razon;
+
+        }
     });
 };
 
-MOSTRARTABLAUSUARIORECHA();
+
+MOSTRARTABLARECHAZO();
+FILTRORECHAZO.addEventListener('keyup', MOSTRARTABLARECHAZO);

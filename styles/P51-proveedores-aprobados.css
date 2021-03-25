@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400 px;
+    min-height: 300 px;
+    margin-bottom: 30px;
 }
 
 .contenedor2 {
@@ -15,33 +16,29 @@
     font-weight: 700;
 }
 
-.tabla {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #D9D9D9;
-    border-style: solid;
+.catalogos {
+    min-height: 500px;
 }
 
-.tabla tr {
-    height: 35px;
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display: none;
 }
 
-.tabla thead tr {
-    background: #8EE5D8;
-    color: #fff;
+#btn-iniciar-sesion {
+    display: none;
 }
 
-.tabla thead tr th {
-    width: 200px;
-    text-align: center;
-}
-
-.tabla tbody tr:nth-child(even) {
-    background-color: #424D4B;
-    color: #fff;
-}
-
-.tabla tbody tr td {
-    width: 200px;
-    text-align: center;
+button {
+    background-color: #8EE5D8;
+    padding: auto;
+    color: black;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 1px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
 }
