@@ -20,7 +20,7 @@ const MOSTRARTABLASERVICIOS = () => {
             let celdaAcciones = fila.insertCell();
 
             let botonComprar = document.createElement('button');
-            botonComprar.innerText = "●";
+            botonComprar.innerText = "🛒";
             celdaAcciones.appendChild(botonComprar);
             botonComprar.setAttribute('class', 'btn-comprar');
             botonComprar.addEventListener('click', () => {
@@ -39,3 +39,6 @@ const MOSTRARTABLASERVICIOS = () => {
         })
     };
 MOSTRARTABLASERVICIOS();
+
+//🛒
+//●

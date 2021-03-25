@@ -1021,8 +1021,19 @@ a:hover {
 
 #japones {
     font-size: 300px
-
 }
+
+#sochi-soft {
+    text-align: center;
+    line-height: 60%;
+}
+
+#software {
+    font-size: 160px;
+    font-variant: small-caps;
+    
+}
+
 
 .frase {
     height: 400px;
