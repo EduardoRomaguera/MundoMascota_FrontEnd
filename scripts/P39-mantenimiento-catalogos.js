@@ -28,9 +28,12 @@ const MOSTRARTABLARAZAS = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                sessionStorage.setItem('razaSeleccionado', JSON.stringify(raza));
-                window.location.href = 'P97-raza-modificar.html';
-
+                Swal.fire({
+                    imageUrl: "images/cute-pets.jpg",
+                    title: "Nuestro equipo aún está trabajando en eso",
+                    text: "Mientras tanto puedes ver esos lindos cachorros",
+                    confirmButtonText: "Regresar"
+                });
             });
 
             let botonEliminar = document.createElement('button');
@@ -80,8 +83,12 @@ const MOSTRARTABLAENFERMEDADES = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                sessionStorage.setItem('enfermedadSeleccionado', JSON.stringify(enfermedad));
-                window.location.href = 'P96-padecimientos-modificar.html';
+                Swal.fire({
+                    imageUrl: "images/cute-pets.jpg",
+                    title: "Nuestro equipo aún está trabajando en eso",
+                    text: "Mientras tanto puedes ver esos lindos cachorros",
+                    confirmButtonText: "Regresar"
+                });
 
             });
             let botonEliminar = document.createElement('button');
@@ -131,9 +138,12 @@ const MOSTRARTABLAVACUNAS = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                sessionStorage.setItem('vacunaSeleccionado', JSON.stringify(vacuna));
-                window.location.href = 'P95-vacunas-modificar.html';
-
+                Swal.fire({
+                    imageUrl: "images/cute-pets.jpg",
+                    title: "Nuestro equipo aún está trabajando en eso",
+                    text: "Mientras tanto puedes ver esos lindos cachorros",
+                    confirmButtonText: "Regresar"
+                });
             });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
