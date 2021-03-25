@@ -1029,6 +1029,51 @@ let listaPatrocinadores = [{
     'estado': 'Activo',
 }, ];
 
+let listaMisOrdenes = [{
+    "mascota": 'Pelusa',
+    'proveedor': "Clínica Veterinaria Dra. Andrea Guillén A.",
+    'servicio': 'Castración',
+    "costo": '20000 colones',
+    'estado': 'Pendiente aprobación',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Pao Grooming",
+    'servicio': 'Baño y corte según raza',
+    "costo": '6500 colones',
+    'estado': 'Pendiente pago',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Pao Grooming",
+    'servicio': 'Baño y corte según raza',
+    "costo": '6500 colones',
+    'estado': 'Pagado',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Pao Grooming",
+    'servicio': 'Baño y corte según raza',
+    "costo": '6500 colones',
+    'estado': 'Pagado',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Peluqueria Canina Codymax",
+    'servicio': 'Baño y corte',
+    "costo": '10000 colones',
+    'estado': 'Pagado',
+}, ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Codigo para validar la información de usuario y contraseña
 
 const iniciarSesion = (correo, contrasenna) => {
