@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P57-mantenimiento-patrocinadores.css">
+    <link rel="stylesheet" href="styles/P16-mis-ordenes.css">
     <link rel="icon" href="images/icono.png">
-
-    <script src="https://kit.fontawesome.com/731900e7f6.js " crossorigin="anonymous "></script>
-    <title>Mantenimiento de Patrocinadores</title>
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Mis órdenes</title>
 </head>
 
 <body>
@@ -23,13 +23,13 @@
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
                         </input>
                     </form>
                 </div>
                 <div class="nav-C">
                     <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
-                    <a class="btn"  id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
@@ -39,25 +39,27 @@
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
                 <section class="titulo">
-                    <h1>Mantenimiento de Patrocinadores</h1>
+                    <h1>Mis órdenes</h1>
                 </section>
                 <section class="catalogos">
                     <section>
 
                         <div class='filtro'>
-                            <label for='txt-filtro-patro'>Filtrar por nombre</label>
-                            <input type="text" id='txt-filtro-patro'>
+                            <label for='txt-filtro-ordenes'>Filtrar por servicio</label>
+                            <input type="text" id='txt-filtro-ordenes'>
 
                         </div>
 
                         <div class="contenedor1">
 
-                            <table id="tbl-patrocinadores" class="tabla">
+                            <table id="tbl-ordenes" class="tabla">
                                 <thead>
                                     <tr>
-                                        <th>Nombre</th>
-                                        <th>Frase</th>
-                                        <th>Fotografía</th>
+                                        <th>Nombre de mascota</th>
+                                        <th>Proveedor</th>
+                                        <th>Servicio</th>
+                                        <th>Costo</th>
+                                        <th>Estado</th>
                                         <th>
 
                                         </th>
@@ -112,8 +114,7 @@
     </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts / navegacion.js "></script>
-    <script src="scripts/P57-mantenimiento-patrocinadores.js"></script>
+    <script src="scripts/P16-mis-ordenes.js"></script>
 </body>
 
 </html>

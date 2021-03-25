@@ -993,38 +993,83 @@ let listaActividadUsuarios = [{
 }, ];
 let listaPatrocinadores = [{
     "nombre": 'Taste of the Wild',
-    'frase': "20-03-2021",
-    'fotografía': 'Activo',
+    'frase': "Taste of the Wild, tu mascota anhela el sabor de la naturaleza",
+    'fotografia': 'patrocinador1.jpg',
 }, {
     "nombre": 'Royal Canin',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "Royal Canin, la salud es única para cada mascota",
+    'fotografia': 'patrocinador2.jpg',
 }, {
     "nombre": 'La Vete Veterinaria y Petshop',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "La Vete Veterinaria y Petshop, su veterinaria de confianza",
+    'fotografia': 'patrocinador3.jpg',
 }, {
     "nombre": 'MediPet Veterinaria',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "MediPet Veterinaria, su mascota merece la mejor atención",
+    'fotografia': 'patrocinador4.jpg',
 }, {
     "nombre": 'Alimentos Hills',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "Alimentos Hills, alimentación balanceada para ese miembro especial de la familia",
+    'fotografia': 'patrocinador5.jpg',
 
 }, {
     "nombre": 'Purina Pro Plan',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "Purina Pro Plan, simplemente el mejor alimento para su mascota",
+    'fotografia': 'patrocinador6.jpg',
 }, {
     "nombre": 'BestForPets',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "BestForPets, somos su veterinaria preferida",
+    'fotografia': 'patrocinador7.jpg',
 }, {
     "nombre": 'Cinepolis',
-    'fecha': "20-03-2021",
-    'estado': 'Activo',
+    'frase': "¿Hace cuanto que no vas al cine? Cinepolis te espera",
+    'fotografia': 'patrocinador8.jpg',
 }, ];
+
+let listaMisOrdenes = [{
+    "mascota": 'Pelusa',
+    'proveedor': "Clínica Veterinaria Dra. Andrea Guillén A.",
+    'servicio': 'Castración',
+    "costo": '20000 colones',
+    'estado': 'Pendiente aprobación',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Pao Grooming",
+    'servicio': 'Baño y corte según raza',
+    "costo": '6500 colones',
+    'estado': 'Pendiente pago',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Pao Grooming",
+    'servicio': 'Baño y corte según raza',
+    "costo": '6500 colones',
+    'estado': 'Pagado',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Pao Grooming",
+    'servicio': 'Baño y corte según raza',
+    "costo": '6500 colones',
+    'estado': 'Pagado',
+}, {
+    "mascota": 'Princesa',
+    'proveedor': "Peluqueria Canina Codymax",
+    'servicio': 'Baño y corte',
+    "costo": '10000 colones',
+    'estado': 'Pagado',
+}, ];
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Codigo para validar la información de usuario y contraseña
 
