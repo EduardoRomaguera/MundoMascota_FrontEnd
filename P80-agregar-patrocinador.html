@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P97-raza-modificar.css">
+    <link rel="stylesheet" href="styles/P80-agregar-patrocinador.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Razas</title>
+    <title>Agregar patrocinador</title>
 </head>
 
 <body>
@@ -41,28 +41,24 @@
                 <section>
                     <div class="contenedor1">
                         <form class="contenedor2">
-                            <h2>Raza</h2>
+                            <h2>Agregar nuevo patrocinador</h2>
                             <div class="items">
                                 <label class="label" for="txt-nombre-rz">Nombre</label>
-                                <input class="input-formularios" id="txt-nombre-rz" type="text" placeholder="Nombre">
+                                <input class="input-formularios" id="txt-nombre" type="text" placeholder="Nombre">
                             </div>
                             <div class="items">
-                                <label class="label" for="slt-especie-rz">Nombre de la especie</label>
-                                <select id="slt-especie-rz">
-                                    <option value="">--Seleccione una opción--</option>
-                                    <option value="Perro">Perro</option>
-                                    <option value="Gato">Gato</option>
-                                    </select>
+                                <label class="label" for="txt-nombre-rz">Frase</label>
+                                <input class="input-formularios" id="txt-descripcion" type="text" placeholder="Nombre">
                             </div>
                             <div class="items">
-                                <label class="label" for="slt-estado-rz">Estado de la raza</label>
-                                <select id="slt-estado-rz">
-                                    <option value="">--Seleccione una opción--</option>
-                                    <option value="Activo">Activo</option>
-                                    <option value="Inactivo">Inactivo</option>
-                                    </select>
+                                <label class="label" for="a">Imagen</label>
+                                <input id="file" name="uploadedfile" type="file"/>
                             </div>
-                            <div class="items">
+                            <div class="instrucciones">
+                                <p>La imágen de patrocinador debe medir (925 x 401) px.</p>
+                                <p>El archivo debe ser un jpg con nombre: "patrocinador#".</p>
+                            </div>
+                                <div class="items">
                                 <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
                                 <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
                             </div>
@@ -108,7 +104,7 @@
     </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P97-raza-modificar.js"></script>
+    <script src="scripts/P80-agregar-patrocinador.js"></script>
 </body>
 
 </html>

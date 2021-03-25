@@ -72,3 +72,13 @@
 #btn-iniciar-sesion {
     display: none;
 }
+
+.instrucciones {
+    display:flex;
+    width: 580px;
+    margin-top: 5%;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 150%;
+    flex-direction: column;
+}

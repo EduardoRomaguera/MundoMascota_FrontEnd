@@ -1,59 +1,59 @@
 'use strict'
 let razaSeleccionado;
-const INPUTNOMBRE = document.querySelector('#txt-nombre-rz');
-const INPUTESPECIE = document.querySelector('#slt-especie-rz');
-const INPUTESTADO = document.querySelector('#slt-estado-rz');
-const BTNGUARDAR = document.querySelector('#btn-guardar');
-const BTNCANCELAR = document.querySelector('#btn-cancelar');
+const inputNombre = document.querySelector('#txt-nombre');
+const inputDescripcion = document.querySelector('#txt-descripcion');
+const inputFile = document.querySelector('#file');
+const btnGuardar = document.querySelector('#btn-guardar');
+const btnCancelar = document.querySelector('#btn-cancelar');
 
-const LLENARFORMULARIO = () => {
-    INPUTNOMBRE.value = razaSeleccionado.nombre;
-    INPUTESPECIE.value = razaSeleccionado.especie;
-    INPUTESTADO.value = razaSeleccionado.estado;
-};
+//const LLENARFORMULARIO = () => {
+//    inputNombre.value = razaSeleccionado.nombre;
+//    inputDescripcion.value = razaSeleccionado.especie;
+//    inputFile.value = razaSeleccionado.estado;
+//};
 
 const VALIDAR = () => {
     let error = false;
-    if (INPUTNOMBRE.value == '') {
+    if (inputNombre.value == '') {
         error = true;
-        INPUTNOMBRE.classList.add('error');
+        inputNombre.classList.add('error');
     } else {
-        INPUTNOMBRE.classList.remove('error');
+        inputNombre.classList.remove('error');
     }
 
-    if (INPUTESPECIE.value == '') {
+    if (inputDescripcion.value == '') {
         error = true;
-        INPUTESPECIE.classList.add('error');
+        inputDescripcion.classList.add('error');
     } else {
-        INPUTESPECIE.classList.remove('error');
+        inputDescripcion.classList.remove('error');
     }
 
-    if (INPUTESTADO.value == '') {
+    if (inputFile.value == '') {
         error = true;
-        INPUTESTADO.classList.add('error');
+        inputFile.classList.add('error');
     } else {
-        INPUTESTADO.classList.remove('error');
+        inputFile.classList.remove('error');
     }
     if (error == false) {
         Swal.fire({
             'icon': 'success',
-            'title': 'Raza agregada',
-            'text': 'La información fue guardada correctamente',
-            'confirmButtonText': 'Entendido'
+            'title': 'Patrocinador agregado',
+            'text': 'La información se guardó correctamente',
+            'confirmButtonText': 'OK'
         }).then(() => {
-            window.location.href = 'P39-mantenimiento-catalogos.html';
+            window.location.href = 'P57-mantenimiento-patrocinadores.html';
         });
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo guardar la raza',
+            'title': 'No se pudo guardar el patrocinador',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
 
     };
 };
-BTNGUARDAR.addEventListener('click', VALIDAR)
-BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P39-mantenimiento-catalogos.html';
+btnGuardar.addEventListener('click', VALIDAR)
+btnCancelar.addEventListener('click', () => {
+    window.location.href = 'P57-mantenimiento-patrocinadores.html';
 })
