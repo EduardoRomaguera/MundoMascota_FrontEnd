@@ -111,15 +111,6 @@
     flex-direction: column;
 }
 
-.imagen-grooming {
-    display: flex;
-    height: 80%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .imagen-grooming2 {
     display: flex;
     padding: 0px 20px 0px 20px;
@@ -174,6 +165,10 @@
     font-size: 150%;
 }
 
+.btn3 {
+    background-color: #f08700;
+}
+
 
 /* OCULTADOS*/
 
@@ -184,5 +179,4 @@
 #logo-P56 {
     height: 20px;
     max-width: 5%;
-    margin-left: 2%;
 }
