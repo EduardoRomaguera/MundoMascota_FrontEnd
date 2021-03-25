@@ -1,24 +1,22 @@
-.contenedor-main {
-    display: flexbox;
+.contenedor1 {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    min-height: 400 px;
+    margin-bottom: 100px;
 }
 
-.bloque-denuncia {
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 10px;
     display: flex;
-    width: 950px;
-    background-color: #D9D9D9;
+    flex-flow: column;
     align-items: center;
-    flex-flow: row;
-    padding: 20px;
+    padding: 60px;
+    font-weight: 700;
 }
 
-.bloque-denuncia contenido {
-    display: block;
-}
-
-.imagen-reportado {
+.reporte.Imagen {
     border-radius: 150%;
     padding: 30px;
     width: 100px;
@@ -27,20 +25,25 @@
     bottom: 15px;
 }
 
-.btn-denuncia {
-    display: block;
+button {
     background-color: #8EE5D8;
-    color: #fff;
-    border-radius: 8px;
-    padding: 15px;
+    padding: auto;
+    color: black;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 1px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
 }
+
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
+    display: none;
 }

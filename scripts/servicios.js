@@ -658,8 +658,7 @@ let listaUsuariosRechazados = [{
     "razon": "Falta de informacion"
 }, ];
 
-let listaUsuariostotales = [
-    {
+let listaUsuariostotales = [{
         'correo': 'cliente@cliente.com',
         'nombre': 'Amanda Víquez',
         'nacimiento': '03-11-1991',
@@ -782,8 +781,7 @@ let listaUsuariostotales = [
         'tipo': 'Cliente'
     },
 ];
-let listaUsuariosPendientes = [
-{
+let listaUsuariosPendientes = [{
     'correo': 'Christian@servipet.com',
     'nombre': 'Christian Víquez',
     'nacimiento': '03-11-1999',
@@ -846,8 +844,7 @@ let listaUsuariosPendientes = [
     "estado": "Pendiente",
 }, ];
 
-let listaUsuariosBaneados = [
-    {
+let listaUsuariosBaneados = [{
     'correo': 'Gonzarey@gmail.com',
     'nombre': 'Gonzalo Granados',
     'nacimiento': '03-11-1989',
@@ -1060,6 +1057,23 @@ let listaMisOrdenes = [{
     "costo": '10000 colones',
     'estado': 'Pagado',
 }, ];
+
+
+//Lista de usuarios para llenar reportados:
+
+let listaUsuariosReportados = [{
+    'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
+    'Usuario': 'Miguel Perez',
+    'Razon': 'Acoso',
+    'Descripcion': 'No deja de llamarme'
+
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Samantha Hernandez',
+    'Razon': 'Violencia',
+    'Descripcion': 'Llevo a pasear a mi perrito y le pego'
+
+}, ]
 
 
 
