@@ -21,21 +21,6 @@ const validar = () => {
     let error = false;
 
     //Validación de formato de correo electrónico
-    let inputXCorreoCl = /^[a-zA-Z.0-9]+\@{1}[a-zA-Z.]+$/;
-    if (inputXCorreoCl.test(inputCorreoCl.value) == false) {
-        error = true;
-        inputCorreoCl.classList.add('error');
-    } else {
-        inputCorreoCl.classList.remove('error');
-    }
-
-    let inputIdentificacionCl = /^[0-9]{9}$/;
-    if (inputIdentificacionCl.test(inputCorreoCl.value) == false) {
-        error = true;
-        inputCorreoCl.classList.add('error');
-    } else {
-        inputCorreoCl.classList.remove('error');
-    }
 
     //Validación de espacios vacios
     if (inputNombreCl.value == '') {
@@ -80,12 +65,6 @@ const validar = () => {
         inputNacimientoCl.classList.remove('error');
     }
 
-    if (inputCorreoCl.value == '') {
-        error = true;
-        inputCorreoCl.classList.add('error');
-    } else {
-        inputCorreoCl.classList.remove('error');
-    }
 
     if (inputProvinciaCl.value == '') {
         error = true;
