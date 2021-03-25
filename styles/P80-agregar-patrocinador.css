@@ -1,0 +1,74 @@
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 670px;
+}
+
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 7px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 6%;
+}
+
+.contenedor2 form {
+    padding: inherit;
+    display: block;
+}
+
+.contenedor2 h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.fomulario-raza div input {
+    padding: 42px 20px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 0 2% 0;
+}
+
+.items label {
+    margin: 0 90 0 0px;
+    width: auto;
+    align-items: center;
+    display: flex;
+}
+
+.items input {
+    width: auto;
+}
+
+.items button {
+    background-color: #8EE5D8;
+    margin: 40px 40px 40px 40px;
+    padding: auto;
+    color: black;
+    width: 180px;
+    border-radius: 7px;
+}
+
+.items select {
+    height: 40px;
+    width: 240px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display: none;
+}
+
+#btn-iniciar-sesion {
+    display: none;
+}
