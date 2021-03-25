@@ -518,7 +518,7 @@ let listaUsuarios = [{
         'tipo': 'Cliente'
     }
 ];
-let listaUsuariosProveedores = [{
+let listaUsuariosPendiente = [{
     'correo': 'proveedor@proveedor.com',
     'nombre': 'Pablo Monestel',
     'nacimiento': '10-12-1987',

@@ -34,7 +34,7 @@ const MOSTRARTABLAPATRO = () => {
             botonEliminar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea borrar la raza?',
+                    'text': '¿Está seguro que desea borrar el patrocinador?',
                     'showCancelButton': true,
                     'confirmButtonText': '¡Sí!, estoy seguro',
                     'cancelButtonColor': '#d33',
@@ -44,7 +44,7 @@ const MOSTRARTABLAPATRO = () => {
                     if (result.isConfirmed) {
                         Swal.fire(
                             '',
-                            'La raza ha sido eliminada',
+                            'el patrocinador sido eliminado',
                             'success'
                         )
                     }

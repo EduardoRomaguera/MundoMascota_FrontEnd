@@ -1,28 +1,72 @@
-'use strict';
+"use strict"
 
-const TABLAUSUARIOSPENDI = document.querySelector('#tbl-usuriosPendi tbody');
+const TABLAPENDIENTES = document.querySelector("#tbl-usuriosPendi");
+const FILTROPENDIENTES = document.querySelector('#txt-filtro-soli');
 
-//Función que agrega las celdas de razas
-const MOSTRARTABLAUSUARIOPENDI = () => {
-    listaUsuariosPendientes.forEach(usuario => {
-        let fila = TABLAUSUARIOSPENDI.insertRow();
-        fila.insertCell().innerHTML = usuario.nombre;
-        fila.insertCell().innerHTML = usuario.correo;
-        fila.insertCell().innerHTML = usuario.sexo;
-        fila.insertCell().innerHTML = usuario.estado;
-        let celdaAcciones = fila.insertCell();
 
-        let botonModificar = document.createElement('button');
-        botonModificar.innerText = 'Aprobar';
+const MOSTRARTABLAPENDI = () => {
+    let filtro = FILTROPENDIENTES.value.toLowerCase();
+    TABLAPENDIENTES.innerHTML = '';
+    listaUsuariosPendiente.forEach(Usuario => {
+        if (Pendiente.nombre.toLowerCase().includes(filtro)) {
 
-        celdaAcciones.appendChild(botonModificar);
-        let celdaAcciones2 = fila.insertCell();
+            let fila = TABLAPENDIENTES.insertRow();
+            fila.insertCell().innerHTML = Usuario.nombre;
+            fila.insertCell().innerHTML = Usuario.correo;
+            fila.insertCell().innerHTML = Usuario.nacimiento;
+            fila.insertCell().innerHTML = Usuario.tipo;
 
-        let botonModificar2 = document.createElement('button');
-        botonModificar2.innerText = 'Rechazar';
+            let celdaAcciones = fila.insertCell();
 
-        celdaAcciones2.appendChild(botonModificar2);
+            let botonModificar = document.createElement('button');
+            botonModificar.innerText = 'Aceptar';
+
+            botonModificar.addEventListener('click', () => {
+                Swal.fire({
+                    'icon': 'warning',
+                    'text': '¿Está seguro que desea aceptar a este usuario?',
+                    'showCancelButton': true,
+                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'cancelButtonColor': '#d33',
+                    'cancelButtonText': 'Cancelar',
+                    'reverseButtons': true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            '',
+                            'correo de acceso enviado',
+                            'success'
+                        )
+                    }
+                })
+
+            });
+
+            let botonEliminar = document.createElement('button');
+            botonEliminar.innerText = 'Eliminar';
+
+            botonEliminar.addEventListener('click', () => {
+                Swal.fire({
+                    'icon': 'warning',
+                    'text': '¿Está seguro que desea rechazar la solicitud?',
+                    'showCancelButton': true,
+                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'cancelButtonColor': '#d33',
+                    'cancelButtonText': 'Cancelar',
+                    'reverseButtons': true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire(
+                            '',
+                            'el proveedor ha sido rechazado',
+                            'success'
+                        )
+                    }
+                })
+            });
+            celdaAcciones.appendChild(botonEliminar);
+        }
     });
 };
-
-MOSTRARTABLAUSUARIOPENDI();
+MOSTRARTABLAPENDI();
+FILTROPENDIENTES.addEventListener('keyup', MOSTRARTABLAPENDI);
