@@ -38,11 +38,11 @@ const MOSTRARTABLAORDENES = () => {
             botonDenunciar.innerText = 'Denunciar';
 
             botonDenunciar.addEventListener('click', () => {
-                window.location.href = 'P29-reportar-denuncias.html';
-            })
+                window.location.href = 'P29.2-reportar-denuncias.html';
+            });
 
             celdaAcciones.appendChild(botonDenunciar);
-            celdaAcciones.appendChild(botonModificar);
+            //celdaAcciones.appendChild(botonModificar);
 
         }
     });
