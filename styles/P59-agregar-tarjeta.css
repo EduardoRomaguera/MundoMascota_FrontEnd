@@ -28,6 +28,8 @@
     margin: 3%;
 }
 
+
+
 .contenedor2 button {
     background-color: #8EE5D8;
     margin: 10px;
@@ -89,9 +91,9 @@ input[type="date"] {
     font-weight: 300;
     font-family: Montserrat;
     font-size: 18px;
-    background: #ffffff;
-    display: inline-block !important;
-    visibility: visible !important;
+    background:#ffffff;
+    display: inline-block;
+    visibility: visible;
 }
 
 select {
@@ -101,21 +103,27 @@ select {
     font-weight: 300;
     font-family: Montserrat;
     font-size: 18px;
-    background: #ffffff;
-    display: inline-block !important;
-    visibility: visible !important;
+    background:#ffffff;
+    display: inline-block;
+    visibility: visible;
     color: #00000090;
 }
 
-select option {
+select option{
+
     color: #000000;
     font-weight: 500;
 }
 
 #btn-cerrar-sesion {
-    display: none;
+    display:none;
 }
 
 .barra-busqueda {
-    display: none;
+    display:none;
+}
+
+.error {
+    border: solid red 2px;
+    border-radius: 7px;
 }

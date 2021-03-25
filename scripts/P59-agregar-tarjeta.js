@@ -1,18 +1,18 @@
 //'use strict';
 //Validación de espacios de registro de cliente
-const inputNombreCl = document.querySelector('#txt-nombre-cl');
-const inputApellido1Cl = document.querySelector('#txt-apellido1-cl');
-const inputApellido2Cl = document.querySelector('#txt-apellido2-cl');
-const inputIdentificacionCl = document.querySelector('#txt-identificacion-cl');
-const inputNacimientoCl = document.querySelector('#txt-nacimiento-cl');
+const inputNombreTarjeta = document.querySelector('#txt-nombre-tarjeta');
+const inputNumeroTarjeta = document.querySelector('#txt-numero-tarjeta');
+const inputMesExpira = document.querySelector('#txt-mes-expira');
+const inputAnnoExpira = document.querySelector('#txt-anno-expira');
+const inputCvv = document.querySelector('#txt-cvv');
 const inputProvinciaCl = document.querySelector('#txt-provincia-cl');
 const inputCantonCl = document.querySelector('#txt-canton-cl');
 const inputDistritoCl = document.querySelector('#txt-distrito-cl');
 const inputSennasCl = document.querySelector('#txt-sennas-cl');
-const inputNombreMs = document.querySelector('#txt-nombre-ms');
-const selectEspecieMs = document.querySelector('#txt-especie-ms');
-const selectRazaMs = document.querySelector('#txt-raza-ms');
-const inputTelefonoMs = document.querySelector('#txt-telefono-ms');
+
+//const selectEspecieMs = document.querySelector('#txt-especie-ms');
+//const selectRazaMs = document.querySelector('#txt-raza-ms');
+
 const btnCompletarRegistro = document.querySelector('#btn-completar-registro');
 
 const validar = () => {
@@ -27,36 +27,41 @@ const validar = () => {
     //   Algo pasa con el Regex: /^[0-9]{9}$/
     //Validación de formato de cédula
     let regexIdentificacion = /^$/;
-    if (inputIdentificacionCl.value == '') {
+    if (inputNumeroTarjeta.value == '') {
         error = true;
-        inputIdentificacionCl.classList.add('error');
+        inputNumeroTarjeta.classList.add('error');
     } else {
-        inputIdentificacionCl.classList.remove('error');
+        inputNumeroTarjeta.classList.remove('error');
 
     }
 
     //Validación de espacios vacios
-    if (inputNombreCl.value == '') {
+    if (inputNombreTarjeta.value == '') {
         error = true;
-        inputNombreCl.classList.add('error');
+        inputNombreTarjeta.classList.add('error');
     } else {
-        inputNombreCl.classList.remove('error');
+        inputNombreTarjeta.classList.remove('error');
     }
 
-    if (inputApellido1Cl.value == '') {
+    if (inputMesExpira.value == '') {
         error = true;
-        inputApellido1Cl.classList.add('error');
+        inputMesExpira.classList.add('error');
     } else {
-        inputApellido1Cl.classList.remove('error');
+        inputMesExpira.classList.remove('error');
     }
 
-
-
-    if (inputNacimientoCl.value == '') {
+    if (inputAnnoExpira.value == '') {
         error = true;
-        inputNacimientoCl.classList.add('error');
+        inputAnnoExpira.classList.add('error');
     } else {
-        inputNacimientoCl.classList.remove('error');
+        inputAnnoExpira.classList.remove('error');
+    }
+
+    if (inputCvv.value == '') {
+        error = true;
+        inputCvv.classList.add('error');
+    } else {
+        inputCvv.classList.remove('error');
     }
 
     if (inputProvinciaCl.value == '') {

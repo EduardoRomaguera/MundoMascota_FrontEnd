@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P03-registro-cliente.css">
+    <link rel="stylesheet" href="styles/P59-agregar-tarjeta.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
     <title>Agregar Pago</title>
@@ -42,19 +42,17 @@
                 <section>
                     <div class="contenedor1">
                         <div class="contenedor2" class="h1">
-                            <h1>Agrega tu nuevo metodo de pago</h1>
+                            <h1>Agrega tu nuevo método de pago</h1>
                             <h3></h3>
-                            <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre Ttular">
-                            <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Apellido Titular">
-
-
-                            <input class="input-formularios" id="txt-identificacion-cl" type="number" placeholder="Número de Tarjeta">
+                            <input class="input-formularios" id="txt-nombre-tarjeta" type="text" placeholder="Nombre como aparece en la tarjeta">
+                            <input class="input-formularios" id="txt-numero-tarjeta" type="number" placeholder="Número de Tarjeta">
                             <label for="txt-nacimiento-cl" id="texto-gris">Fecha de Expiracion:</label>
-                            <input class="input-formularios" id="txt-nacimiento-cl" type="text" placeholder="MM/YYYY">
-                            <input class="input-formularios" id="txt-nacimiento-cl" type="number" placeholder="codigo de seguridad / CVV">
+                            <input class="input-formularios" id="txt-mes-expira" type="number" placeholder="Mes (MM)">
+                            <input class="input-formularios" id="txt-anno-expira" type="number" placeholder="Año (YYYY)">
+                            <input class="input-formularios" id="txt-cvv" type="number" placeholder="codigo de seguridad / CVV">
                             <form class="contenedor3" class="h1" name="form1" method="post" action="">
                                 <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
-                            <option>Provincia</option>
+                                <option value="">Provincia</option>
                                 <option value="sanjose">San José
                                 <option value="heredia">Heredia
                                 <option value="alajuela">Alajuela
@@ -64,17 +62,13 @@
                                 <option value="limon">Limón
                         </select>
                                 <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
-                            <option>Cantón</option>
+                            <option value="">Cantón</option>
                         </select>
                                 <select class="input-formularios" id="txt-distrito-cl" name="distritos">
-                            <option>Distrito</option>
+                            <option value="">Distrito</option>
                         </select>
                             </form>
                             <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Otras señas"></textarea>
-
-                            <!-- Prueba2 -->
-
-                            <!-- Prueba2 -->
 
                             <button class="btn2" id="btn-completar-registro">Agregar Tarjeta</button>
                             <a href="P56-Gestion-Pago.html"> <button class="btn2">Cancelar</button></a>
