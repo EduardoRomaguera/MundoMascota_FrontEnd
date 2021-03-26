@@ -89,6 +89,13 @@
     flex-direction: column;
 }
 
+.pagar {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .info0 h4 {
     font-weight: bold;
 }

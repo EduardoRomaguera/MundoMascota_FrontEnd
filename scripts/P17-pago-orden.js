@@ -23,19 +23,15 @@ const validar = () => {
 
     if (inputNacimientoCl.value = 457) {
         error = false;
-        if (error = false) {
-
-        }
-
-        window.location.href = 'P54-tienda.html';
         Swal.fire({
             icon: "warning",
-            title: "¿Deseas Realizar el Pago?",
-            confirmButtonText: "Si,Pagar",
+            title: "¿Deseas realizar el pago?",
+            confirmButtonText: "Si, pagar",
             cancelButtonText: 'Cancelar',
             'cancelButtonColor': '#d33',
             cancelButtonText: 'Cancelar',
         });
+        window.location.href = 'P54-tienda.html';
     }
 };
 btnPagar.addEventListener('click', () => validar());

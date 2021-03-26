@@ -32,7 +32,7 @@ const MOSTRARTABLAORDENES = () => {
             botonPagar.innerText = 'Pagar';
 
             botonPagar.addEventListener('click', () => {
-                window.location.href = 'P56-gestion-pago.html';
+                window.location.href = 'P17-pago-orden.html';
             })
 
 
