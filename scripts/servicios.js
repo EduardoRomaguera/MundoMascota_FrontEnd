@@ -1066,6 +1066,60 @@ let listaMisOrdenes = [{
     'estado': 'Pagado',
 }, ];
 
+let listaServiciosPaco = [{
+    'nombre': 'Paseo de mascotas',
+    'descripcion': 'El ejercicio es esencial para tu mascota. Duración= 1 hora',
+    'costo': '₡ 4000'
+}, {
+    'nombre': 'Visita y cuidado de mascotas',
+    'descripcion': 'Asegurate que tu mascota este bien en todo momento. Costo por visita',
+    'costo': '₡ 15000'
+}];
+
+let listaServiciosLaura = [{
+    'nombre': 'Sesión mascota',
+    'descripcion': 'Sesión fotográfica solo de mascota. Duración = 1hora',
+    'costo': '₡ 20000'
+}, {
+    'nombre': 'Sesión mascota/dueño',
+    'descripcion': 'Sesión fotográfica mascota y dueño. Duración = 1hora',
+    'costo': '₡ 30000'
+}, {
+    'nombre': 'Sesión video mascota/dueño',
+    'descripcion': 'Sesión videografía mascota y dueño. Duración = 1hora',
+    'costo': '₡ 35000'
+}];
+
+let listaServiciosPao = [{
+    'nombre': 'Baño y corte según raza',
+    'descripcion': 'Tu mascota estará lista para la alfombra roja con un excelente baño y corte',
+    'costo': '₡ 6500'
+}];
+
+let listaServiciosPitufo = [{
+    'nombre': 'Emergencias',
+    'descripcion': 'Atención de emergencias (no incluye medicamentos ni hospitalización',
+    'costo': '₡ 35000'
+}, {
+    'nombre': 'Castración',
+    'descripcion': 'Procedimiento castración. No incluye medicamentos postoperatorios',
+    'costo': '₡ 18000'
+}, {
+    'nombre': 'Consulta veterinaria',
+    'descripcion': 'Atención de enfermedades crónicas',
+    'costo': '₡ 20000'
+}];
+
+let listaServiciosAndrea = [{
+    'nombre': 'Castración',
+    'descripcion': 'Procedimiento castración. ',
+    'costo': '₡ 13000'
+}, {
+    'nombre': 'Consulta veterinaria',
+    'descripcion': 'Consulta rutinaria y vacunación (costo vacuna no incluida)',
+    'costo': '₡ 10000'
+}];
+
 
 //Lista de usuarios para llenar reportados:
 
