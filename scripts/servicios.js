@@ -1116,7 +1116,15 @@ let listaVacunas = [{
 
 
 // Lista de usuarios para probar inicio de sesión
-let listaUsuarios = [{
+let listaUsuarios = [
+    {
+        'correo': 'admin@mundomascota.com',
+        'nombre': 'Raúl Pérez',
+        'nacimiento': '09-20-1973',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Administrador'
+    }, {
         'correo': 'admin@admin.com',
         'nombre': 'Raúl Pérez',
         'nacimiento': '09-20-1973',
@@ -1144,7 +1152,7 @@ let listaUsuarios = [{
         'nombre': 'José Ramírez',
         'nacimiento': '03-11-1990',
         'sexo': 'Masculino',
-        'contrasenna': '123Abc!',
+        'contrasenna': 'Qwerty457!',
         'tipo': 'Cliente'
     },
     {
@@ -1154,7 +1162,152 @@ let listaUsuarios = [{
         'sexo': 'Femenino',
         'contrasenna': 'Carmen01!',
         'tipo': 'Cliente'
+    },
+    {
+        'correo': 'miguel@gmail.com',
+        'nombre': 'Miguel Gomez',
+        'nacimiento': '09-10-1980',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'carolina746@gmail.com',
+        'nombre': 'Carolina Diaz',
+        'nacimiento': '08-02-1987',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'danielacarbacr@gmail.com',
+        'nombre': 'Daniela Carvajal',
+        'nacimiento': '09-09-1999',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'pablito76@gmail.com',
+        'nombre': 'Pablo Pinzón',
+        'nacimiento': '02-03-2000',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'camiloellindo@gmail.com',
+        'nombre': 'Camilo Bravo',
+        'nacimiento': '12-12-1963',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'laurita9cr@gmail.com',
+        'nombre': 'Laura Moreno',
+        'nacimiento': '11-12-1970',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'marcejandra@gmail.com',
+        'nombre': 'Marcela Galeano',
+        'nacimiento': '01-01-1999',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'sandraximena@gmail.com',
+        'nombre': 'Sandra Parra',
+        'nacimiento': '12-05-1976',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'stephespacr@gmail.com',
+        'nombre': 'Stephanie Brenes',
+        'nacimiento': '03-11-1993',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'Sebastiancasas@gmail.com',
+        'nombre': 'Sebastian Casas',
+        'nacimiento': '02-08-1985',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'Ricardovegueta@gmail.com',
+        'nombre': 'Ricardo Acuña',
+        'nacimiento': '02-06-1996',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'mariafercr2@gmail.com',
+        'nombre': 'María Fernandez',
+        'nacimiento': '08-01-1990',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'miguelLeecr@gmail.com',
+        'nombre': 'Miguel Lee',
+        'nacimiento': '06-02-1960',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'sandrapusk@gmail.com',
+        'nombre': 'Sandra Ochoa',
+        'nacimiento': '11-11-1950',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'paseospaco@gmail.com',
+        'nombre': 'Pablo Larios',
+        'nacimiento': '08-08-1998',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'perritosfelicezcr@gmail.com',
+        'nombre': 'Paola Páez',
+        'nacimiento': '12-10-1991',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'marioperritos@gmail.com',
+        'nombre': 'Mario Luna',
+        'nacimiento': '09-02-1982',
+        'sexo': 'Masculino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
+    },
+    {
+        'correo': 'olgavivicr@gmail.com',
+        'nombre': 'Olga Rojas',
+        'nacimiento': '07-05-1995',
+        'sexo': 'Femenino',
+        'contrasenna': 'Qwerty457!',
+        'tipo': 'Proveedor'
     }
+
 ];
 let listaUsuariosProveedores = [{
     'correo': 'proveedor@proveedor.com',
