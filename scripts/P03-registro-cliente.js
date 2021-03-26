@@ -40,13 +40,14 @@ const validar = () => {
 
     //   Algo pasa con el Regex: /^[0-9]{9}$/
     //Validación de formato de cédula
-    let regexIdentificacion = /^$/;
+    let regexIdentificacion = /^[0-9]{9}$/;
     if (inputIdentificacionCl.value == '') {
         error = true;
         inputIdentificacionCl.classList.add('error');
     } else {
         inputIdentificacionCl.classList.remove('error');
-        if (regexIdentificacion.test(inputCorreoCl.value) == false) {
+        // En la línea siguiente no está habilitada la validacion, hay que devolverlo a true el error y ponerle add error
+        if (regexIdentificacion.test(inputIdentificacionCl.value) == false) {
             errorIdentificacion = true;
             inputIdentificacionCl.classList.add('error');
         } else {
@@ -141,6 +142,34 @@ const validar = () => {
     } else{
     }
 
+    if (error == false && errorCorreo == false && errorIdentificacion == false) {
+        Swal.fire({
+            title: "Ve a revisar tu correo electrónico",
+            text: "Te enviaremos instrucciones para que completes el proceso de registro.",
+            confirmButtonText: "OK"
+        }).then(() => {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+            Toast.fire({
+                    icon: 'success',
+                    title: 'Completando registo'
+                }).then(() => {
+                window.location.href = 'P05-inicio-sesion.html';
+            });
+
+        });
+
+        }
+
 };
 
 const calcularEdad = (nacimiento) => {
@@ -163,6 +192,7 @@ const imprimir = () => {
     console.log(edad);
     //Validación de edad
     if (edad < 18) {
+        inputNacimientoCl.classList.add('error');
         Swal.fire({
         imageUrl: "images/error.png",
         title: "Espera",
