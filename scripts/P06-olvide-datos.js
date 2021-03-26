@@ -46,7 +46,9 @@
           imageUrl: "images/gato-computadora.jpg",
           title: "¡Gracias!",
           text: "Nuestros agentes enviarán un correo electrónico con instrucciones para restaurar la contraseña en caso de existir una cuenta asociada.",
-          confirmButtonText: "Intentar de nuevo"
+          confirmButtonText: "OK"
+        }).then(function()  {
+          window.location.href = 'P05-inicio-sesion.html';
         });
     }
     }
