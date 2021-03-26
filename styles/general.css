@@ -6,20 +6,23 @@ html {
 
 #madre-espaciadores {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #espaciador-izq {
     width: 12.5%;
+    height: 200px;
+
 }
 
 #espaciador-der {
     width: 12.5%;
+    height: 200px;
+
 }
 
-#contenedor-main {
+.contenedor-main {
     width: 75%;
+
 }
 
 a:hover {
@@ -436,3 +439,4 @@ button:hover {
 .ocultar {
     display:none;
 }
+

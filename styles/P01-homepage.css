@@ -194,7 +194,7 @@
 }
 
 #img-proveedor {
-    height: 70%;
+    width: 30%;
     border-radius: 50%;
 }
 
@@ -435,6 +435,99 @@ a:hover {
     color: #8EE5E8;
 }
 
+
+.img-slide-izq {
+    border-radius: 7px 0 0 7px;
+    width:100%
+}
+
+.img-slide-der {
+    border-radius: 0 7px 7px 0;
+    width:100%
+}
+
+.h6 {
+    text-align: center;
+    margin-top: 2%;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+.imagen-derecha2 p {
+    padding: 0.5%;
+    line-height: 120%;
+    text-align: justify;
+}
+
+#fix2 h1:hover {
+    color: #8EE5E8;
+
+}
+
+/* OCULTADOS*/
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
+}
+
+
+/* Codigo para responsive */
+
+@media screen and (max-width: 1200px) {
+    .ocultar-responsive-1,
+    .ocultar-responsive-3 {
+        display:none;
+    }
+
+@media screen and (max-width: 1200px) {
+    #ocultar-responsive-2 {
+        width: 100%;
+    }
+
+@media screen and (max-width: 1200px) {
+    .exito-izquierda p {
+        padding: 0 1% 0 1%;
+        text-align: justify;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+@media screen and (max-width: 1200px) {
+    .exito-izquierda  {
+        height: 400px;
+    }
+
+@media screen and (max-width: 1200px) {
+    .patrocinadores-derecha p {
+        padding: 0 1% 0 1%;
+        font-size: 15px;
+    }
+
+@media screen and (max-width: 1200px) {
+    .imagen-derecha2 p {
+        padding: 0 1% 0 1%;
+        font-size: 15px;
+    }
+
+@media screen and (max-width: 1200px) {
+    .text-der,
+    .text-izq,
+    .info-proveedor p,
+    .info-servicios {
+        font-size: 15px;
+    }
+
+
+
+
+
+
+
+
 .contenedor-responsive0 {
     display: flex;
     justify-content: space-between;
@@ -478,6 +571,8 @@ a:hover {
     }
 }
 
+
+
 .contenedor-responsive3 {
     background-color: #ffffff;
     display: flex;
@@ -500,42 +595,4 @@ a:hover {
 #fix1 a:hover
 {
     color: #F08700;
-}
-
-.img-slide-izq {
-    border-radius: 7px 0 0 7px;
-    width:100%
-}
-
-.img-slide-der {
-    border-radius: 0 7px 7px 0;
-    width:100%
-}
-
-.h6 {
-    text-align: center;
-    margin-top: 2%;
-    line-height: 150%;
-    font-weight: 300;
-}
-
-.imagen-derecha2 p {
-    padding: 0.5%;
-    line-height: 120%;
-    text-align: justify;
-}
-
-#fix2 h1:hover {
-    color: #8EE5E8;
-
-}
-
-/* OCULTADOS*/
-
-#btn-cerrar-sesion {
-    display:none;
-}
-
-.barra-busqueda {
-    display:none;
 }
