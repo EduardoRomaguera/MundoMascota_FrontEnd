@@ -23,7 +23,7 @@
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
                         </input>
                     </form>
                 </div>
@@ -39,26 +39,26 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-        <section>
-            <div class="contenedor1">
-                <div class="contenedor2" class="h1">
-                    <h1>Registrarme para comprar </h1>
-                    <h3>Cuentanos más sobre ti</h3>
-                    <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre">
-                    <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Apellido1">
-                    <input class="input-formularios" id="txt-apellido2-cl" type="text" placeholder="Apellido2">
-                    <select class="input-formularios" id="txt-tipo-id-cl">
+                <section>
+                    <div class="contenedor1">
+                        <div class="contenedor2" class="h1">
+                            <h1>Registrarme para comprar </h1>
+                            <h3>Cuentanos más sobre ti</h3>
+                            <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre">
+                            <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Apellido1">
+                            <input class="input-formularios" id="txt-apellido2-cl" type="text" placeholder="Apellido2 (opcional)">
+                            <select class="input-formularios" id="txt-tipo-id-cl">
                         <option value="">Tipo de identificación</option>
                         <option value="dimex">DIMEX</option>
                         <option value="fisica">Física</option>
                         <option value="juridica">Jurídica</option>
                     </select>
-                    <input class="input-formularios" id="txt-identificacion-cl" type="text" placeholder="Número de identificación">
-                    <label for="txt-nacimiento-cl" id="texto-gris">Fecha de nacimiento:</label>
-                    <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
-                    <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
-                    <form class="contenedor3" class="h1" name="form1" method="post" action="">
-                        <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
+                            <input class="input-formularios" id="txt-identificacion-cl" type="text" placeholder="Número de identificación">
+                            <label for="txt-nacimiento-cl" id="texto-gris">Fecha de nacimiento:</label>
+                            <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
+                            <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
+                            <form class="contenedor3" class="h1" name="form1" method="post" action="">
+                                <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
                             <option value="">Provincia</option>
                                 <option value="sanjose">San José
                                 <option value="heredia">Heredia
@@ -68,23 +68,23 @@
                                 <option value="puntarenas">Puntarenas
                                 <option value="limon">Limón
                         </select>
-                        <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
+                                <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
                             <option value="">Cantón</option>
                         </select>
-                        <select class="input-formularios" id="txt-distrito-cl" name="distritos">
+                                <select class="input-formularios" id="txt-distrito-cl" name="distritos">
                             <option value="">Distrito</option>
                         </select>
-                    </form>
-                    <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Otras señas"></textarea>
+                            </form>
+                            <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Otras señas"></textarea>
 
-                    <button class="btn2" id="btn-completar-registro">Completar registro </button>
-                    <a href="P01-homepage.html"> <button class="btn2">Cancelar </button> </a>
-                </div>
-                </div>
+                            <button class="btn2" id="btn-completar-registro">Completar registro </button>
+                            <a href="P01-homepage.html"> <button class="btn2">Cancelar </button> </a>
+                        </div>
+                    </div>
             </div>
-        </section>
+            </section>
             <div id="espaciador-der"></div>
-            </div>
+        </div>
     </main>
 
 
@@ -123,4 +123,5 @@
     <script src="scripts/servicios.js"></script>
     <script src="scripts/P03-registro-cliente.js"></script>
 </body>
+
 </html>

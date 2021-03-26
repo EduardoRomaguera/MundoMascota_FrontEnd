@@ -514,12 +514,6 @@ let listaRazas = [{
     'especie': 'Perro',
     'estado': 'Activo'
 }, {
-
-
-
-
-
-
     'nombre': 'Jindo Coreano',
     'especie': 'Perro',
     'estado': 'Activo'
@@ -1151,6 +1145,14 @@ let listaUsuarios = [{
         'nacimiento': '03-11-1990',
         'sexo': 'Masculino',
         'contrasenna': '123Abc!',
+        'tipo': 'Cliente'
+    },
+    {
+        'correo': 'carmensolano@gmail.com',
+        'nombre': 'Carmen Solano',
+        'nacimiento': '08-01-1990',
+        'sexo': 'Femenino',
+        'contrasenna': 'Carmen01!',
         'tipo': 'Cliente'
     }
 ];
