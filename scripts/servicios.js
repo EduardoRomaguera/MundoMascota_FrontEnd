@@ -118,7 +118,87 @@ let listaOrdenesPendientes = [{
 
 //Lista de razas
 let listaRazas = [{
-    'nombre': 'Pastor Alemán',
+    'nombre': 'Affenpinscher',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Airedale terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Akita',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Alaskan Husky',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Alaskan malamute',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'American Foxhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'American pit bull terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'American staffordshire terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Ariegeois',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Artois',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Australian silky terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Australian Terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Austrian Black & Tan Hound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Azawakh',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Balkan Hound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Basenji',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Basset',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bavarian Mountain Scenthound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Beagle',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Beauceron',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bedlington Terrier',
     'especie': 'Perro',
     'estado': 'Activo'
 }, {
@@ -126,7 +206,247 @@ let listaRazas = [{
     'especie': 'Perro',
     'estado': 'Activo'
 }, {
+    'nombre': 'Bichón',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Billy',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Black and Tan Coonhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bloodhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bobtail',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Boerboel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Border Collie',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Border terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Borzoi',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bosnian Hound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Boston terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Boxer',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Boyero',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Braco',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Broholmer',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Buhund Noruego',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bull terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bulldog',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bullmastiff',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cairn terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cane Corso',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Caniche (Poodle)',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Caniche Toy (Toy Poodle)',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cao da Serra',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cavalier King Charles Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cesky',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Chesapeake Bay Retriever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Chihuahua',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Chin',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Chow Chow',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cirneco del Etna',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Clumber Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cocker Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Collie',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cotón de Tuléar',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Curly Coated Retriever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dálmata',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dandie dinmont terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Deerhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dobermann',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dogo',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Drentse Partridge Dog',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Drever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dunker',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Elkhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'English Foxhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'English Springer Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'English Toy Terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Epagneul Picard',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Eurasier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Fila Brasileiro',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Finnish Lapphound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Flat Coated Retriever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Fox terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Foxhound Inglés',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Frisian Pointer',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Galgo',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Glen of Imaal Terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
     'nombre': 'Golden Retriever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gordon Setter',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gran Boyero',
     'especie': 'Perro',
     'estado': 'Activo'
 }, {
@@ -134,15 +454,233 @@ let listaRazas = [{
     'especie': 'Perro',
     'estado': 'Activo'
 }, {
-    'nombre': 'Poddle',
+    'nombre': 'Gran Gascón Saintongeois',
     'especie': 'Perro',
     'estado': 'Activo'
 }, {
-    'nombre': 'Persa',
+    'nombre': 'Gran Griffon Vendeano',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gran Munsterlander',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gran Perro Japonés',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Grand Anglo Francais Tricoleur',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Greyhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Griffon',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Haldenstoever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Harrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Hokkaido',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Hovawart',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Husky Siberiano',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Irish terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Irish Wolfhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Jack Russell terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+
+
+
+
+
+
+    'nombre': 'Jindo Coreano',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Kai',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Keeshond',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Kerry blue terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'King Charles Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Kishu',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Komondor',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Kooiker',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Kromfohrländer',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Kuvasz',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Labrador Retriever',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Laika',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Lakeland terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Maltés',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Manchester terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Mastín',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Norfolk terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Norwich terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Ovejero alemán',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Otterhound',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Retriever de Nueva Escocia',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Rottweiler',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Sabueso',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'San Bernardo',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Schipperke',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Schnauzer',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Scottish terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Shar Pei',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Shih Tzu',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Staffordshire bull terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Staffordshire terrier americano',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Sussex Spaniel',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Yorkshire Terrier',
+    'especie': 'Perro',
+    'estado': 'Activo'
+}, {
+    'nombre': 'American curl',
     'especie': 'Gato',
     'estado': 'Activo'
 }, {
-    'nombre': 'Angora',
+    'nombre': 'Azul ruso',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'American shorthair',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'American wirehair',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Angora turco',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Africano doméstico',
     'especie': 'Gato',
     'estado': 'Activo'
 }, {
@@ -150,60 +688,190 @@ let listaRazas = [{
     'especie': 'Gato',
     'estado': 'Activo'
 }, {
+    'nombre': 'Bobtail japonés',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Bombay',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Boque de Noruega',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'British shorthair',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Burmés',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Cornish rex',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'California Spangled',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Chartreux',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Carex',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gato Carey',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Deutsch Langhaar',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Devon rex',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dorado africano',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Don Sphynx',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Dragon Li',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Europeo Común',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Exótico de Pelo Corto',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gato europeo bicolor',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'German Rex',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Habana brown',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Himalayo',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Korat',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Khao Manee',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
     'nombre': 'Maine Coon',
     'especie': 'Gato',
     'estado': 'Activo'
 }, {
-    'nombre': 'Criollo',
+    'nombre': 'Manx',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Mau egipcio',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Munchkin',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Ocicat',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Oriental',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Persa Americano o Moderno',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Peterbald',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Pixie Bob',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Gato rojo',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Ragdoll',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Sagrado de Birmania',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Savannah',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Selkirk rex',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Serengeti',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Seychellois',
     'especie': 'Gato',
     'estado': 'Activo'
 }, {
     'nombre': 'Siamés',
     'especie': 'Gato',
     'estado': 'Activo'
+}, {
+    'nombre': 'Siberiano',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Snowshoe',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Sphynx',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Tonkinés',
+    'especie': 'Gato',
+    'estado': 'Activo'
+}, {
+    'nombre': 'Van Turco',
+    'especie': 'Gato',
+    'estado': 'Activo'
 }];
+
+
 //Lista de padecimientos
 let listaEnfermedades = [{
-    'nombre': 'Moquillo',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Hepatitis canina',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Parvovirus',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Rabia',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Brucelosis',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Leucemia viral felina',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Asma felina',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Otitis externa',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Insuficiencia renal',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Toxoplasmosis',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
     'nombre': 'Coranovorosis canina',
     'especie': 'Perro',
     'estado': 'Activo'
@@ -403,38 +1071,6 @@ let listaEnfermedades = [{
 
 //Lista de vacunas
 let listaVacunas = [{
-    'nombre': 'Parvovirus',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Leptospirosis',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Rabia',
-    'especie': 'Perro',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Leucemia felina',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Trifelina',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Siberiano',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Sphynx',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
-    'nombre': 'Van Turco',
-    'especie': 'Gato',
-    'estado': 'Activo'
-}, {
     'nombre': 'Parvovirus',
     'especie': 'Perro',
     'estado': 'Activo'
