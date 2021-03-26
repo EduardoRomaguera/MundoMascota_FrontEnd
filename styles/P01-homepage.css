@@ -484,7 +484,7 @@ a:hover {
     }
 
 @media screen and (max-width: 1200px) {
-    #ocultar-responsive-2 {
+    #contenedor-main {
         width: 100%;
     }
 

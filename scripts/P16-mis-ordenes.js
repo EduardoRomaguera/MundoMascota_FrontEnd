@@ -27,7 +27,7 @@ const MOSTRARTABLAORDENES = () => {
             botonCalificar.addEventListener('click', () => {
                 window.location.href = 'P58-calificar-proveedor.html';
             })
-
+            
             let botonPagar = document.createElement('button');
             botonPagar.innerText = 'Pagar';
 
