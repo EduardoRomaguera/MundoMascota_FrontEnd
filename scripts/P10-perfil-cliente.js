@@ -11,3 +11,18 @@
       });
     }
   btnEditar.addEventListener('click', pendiente);
+
+
+  if (sessionStorage.getItem('usuarioConectado')) {
+    let usuario;
+    usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
+    sessionStorage.getItem('usuarioConectado')
+    switch (usuario.tipo) {
+        case 'Proveedor':
+            window.location.href = 'P20-perfil-proveedor.html';
+            break;
+        case 'Administrador':
+            window.location.href = 'P49-principal-administrador.html';
+            break;
+    }
+};

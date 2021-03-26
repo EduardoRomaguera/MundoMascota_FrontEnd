@@ -1,37 +1,49 @@
 'use strict';
 
 const btnPagar = document.querySelector('#btn-pagar');
-const inputNacimientoCl = document.querySelector('#txt-nacimiento-cl');
+const inputCvv = document.querySelector('#txt-cvv');
 
 
 const validar = () => {
     let error = false;
-    if (inputNacimientoCl.value == '') {
+    if (inputCvv.value == '') {
         error = true;
-        inputNacimientoCl.classList.add('error');
+        inputCvv.classList.add('error');
     } else {
-        inputNacimientoCl.classList.remove('error');
+        inputCvv.classList.remove('error');
     }
     if (error == true) {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Su codigo de seguridad es invalido",
+            text: "Dejaste un espacio en blanco",
             confirmButtonText: "Intentar de nuevo"
         });
-    } else {}
+    } else {
+        if (inputCvv.value == "457") {
+            error = false;
+            Swal.fire({
+                icon: "warning",
+                title: "¿Deseas realizar el pago?",
+                showCancelButton: true,
+                confirmButtonText: "Sí, pagar",
+                cancelButtonColor: '#d33',
+                cancelButtonText: 'Cancelar',
+            }).then(() => {
+                window.location.href = 'P54-tienda.html';
+            });
 
-    if (inputNacimientoCl.value = 457) {
-        error = false;
-        Swal.fire({
-            icon: "warning",
-            title: "¿Deseas realizar el pago?",
-            confirmButtonText: "Si, pagar",
-            cancelButtonText: 'Cancelar',
-            'cancelButtonColor': '#d33',
-            cancelButtonText: 'Cancelar',
-        });
-        window.location.href = 'P54-tienda.html';
-    }
-};
+        } else {
+            Swal.fire({
+                imageUrl: "images/error.png",
+                title: "¡OOPS! Algo pasó aqui",
+                text: "El pago no se ha podrido procesar, hay un dato incorrecto con el método de pago",
+                confirmButtonText: "Intentar de nuevo"
+            });
+        }}
+    };
 btnPagar.addEventListener('click', () => validar());
+
+
+
+

@@ -34,7 +34,7 @@ const VALIDAR = () => {
             'title': 'El reporte ha sido enviado',
             'confirmButtonText': 'Entendido'
         }).then(() => {
-            window.location.href = 'P26-historial-ordenes.html';
+            window.location.href = 'P16-mis-ordenes.html';
         });
     } else {
         Swal.fire({
@@ -48,5 +48,5 @@ const VALIDAR = () => {
 };
 BTNENVIAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P26-historial-ordenes.html';
+    window.location.href = 'P16-mis-ordenes.html';
 })

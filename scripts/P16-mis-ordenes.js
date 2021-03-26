@@ -51,6 +51,19 @@ const MOSTRARTABLAORDENES = () => {
     });
 };
 
+if (sessionStorage.getItem('usuarioConectado')) {
+    let usuario;
+    usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
+    sessionStorage.getItem('usuarioConectado')
+    switch (usuario.tipo) {
+        case 'Proveedor':
+            window.location.href = 'P26-historial-ordenes.html';
+            break;
+    }
+};
+
+
+
 
 MOSTRARTABLAORDENES();
 FILTROORDENES.addEventListener('keyup', MOSTRARTABLAORDENES);

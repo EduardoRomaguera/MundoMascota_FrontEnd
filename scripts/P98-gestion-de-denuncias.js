@@ -1,12 +1,14 @@
 'use strict';
 
 const TABLADENUNCIAS = document.querySelector('#tbl-denuncias tbody');
+const FILTROUSUARIOS = document.querySelector('#txt-filtro-usuarios-baneados');
 
 //Función que agrega las celdas de razas a la tabla
 const MOSTRARTABLADENUNCIAS = () => {
-
+    let filtro = FILTROUSUARIOS.value.toLowerCase();
     TABLADENUNCIAS.innerHTML = '';
     listaUsuariosReportados.forEach(reporte => {
+        if (reporte.Usuario.toLowerCase().includes(filtro)) {
 
         let fila = TABLADENUNCIAS.insertRow();
         fila.insertCell().innerHTML = reporte.Usuario;
@@ -23,10 +25,9 @@ const MOSTRARTABLADENUNCIAS = () => {
                 'icon': 'warning',
                 'text': '¿Está seguro que desea banear al usuario?',
                 'showCancelButton': true,
-                'confirmButtonText': '¡Sí!, estoy seguro',
+                'confirmButtonText': 'Sí, estoy seguro',
                 'cancelButtonColor': '#d33',
                 'cancelButtonText': 'Cancelar',
-                'reverseButtons': true
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire(
@@ -46,10 +47,9 @@ const MOSTRARTABLADENUNCIAS = () => {
                 'icon': 'warning',
                 'text': '¿Está seguro que desea descartar la denuncia?',
                 'showCancelButton': true,
-                'confirmButtonText': '¡Sí!, estoy seguro',
+                'confirmButtonText': 'Sí, estoy seguro',
                 'cancelButtonColor': '#d33',
                 'cancelButtonText': 'Cancelar',
-                'reverseButtons': true
             }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire(
@@ -62,7 +62,7 @@ const MOSTRARTABLADENUNCIAS = () => {
         });
         celdaAcciones.appendChild(botonDescartar);
         celdaAcciones.appendChild(botonBanear);
-    });
+    }});
 };
 MOSTRARTABLADENUNCIAS();
-FILTRODENUNCIAS.addEventListener('keyup', MOSTRARTABLADENUNCIAS);
+FILTROUSUARIOS.addEventListener('keyup', MOSTRARTABLADENUNCIAS);

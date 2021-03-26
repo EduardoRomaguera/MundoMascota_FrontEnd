@@ -44,10 +44,9 @@ const MOSTRARTABLARAZAS = () => {
                     'icon': 'warning',
                     'text': '¿Está seguro que desea borrar la raza?',
                     'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'confirmButtonText': 'Sí, estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
-                    'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
                         Swal.fire(
