@@ -1,0 +1,38 @@
+#contenedor-todo {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 680px;
+}
+
+#construccion {
+    max-height: 60%;
+}
+
+
+
+
+#btn-cerrar-sesion {
+    display:none;
+}
+
+.barra-busqueda {
+    display:none;
+}
+
+#btn-iniciar-sesion {
+    display:none;
+}
+
+#btn3 {
+    background-color: #8EE5D8;
+    margin: 20px 60px 10px 60px;
+    padding: auto;
+    color: black;
+    width: 180px;
+    border-radius: 7px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+}

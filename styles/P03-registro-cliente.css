@@ -82,6 +82,7 @@
     height: 150px;
     resize: none;
     text-align: justify;
+    font-family: Montserrat;
 }
 
 input[type="date"] {

@@ -432,3 +432,7 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
 }
+
+.ocultar {
+    display:none;
+}

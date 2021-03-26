@@ -1668,7 +1668,7 @@ let listaPatrocinadores = [{
     'fotografia': 'patrocinador7.jpg',
 }, {
     "nombre": 'Cinepolis',
-    'frase': "¿Hace cuanto que no vas al cine? Cinepolis te espera",
+    'frase': "¿Hace cuánto que no vas al cine? Cinepolis te espera",
     'fotografia': 'patrocinador8.jpg',
 }, ];
 
@@ -1798,12 +1798,9 @@ let listaUsuariosReportados = [{
         'Razon': 'Incumplimiento',
         'Descripcion': 'Me quedó mal con el servicio y no avisó, mi gatito se quedó sin comida 2 días'
     },
-
-
-
-
-
 ]
+
+
 
 
 //Codigo para validar la información de usuario y contraseña

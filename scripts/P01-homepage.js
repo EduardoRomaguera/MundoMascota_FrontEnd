@@ -18,3 +18,20 @@ function showSlides(n, no) {
     x[slideIndex[no] - 1].style.display = "block";
 
 }
+
+if (sessionStorage.getItem('usuarioConectado')) {
+    let usuario;
+    usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
+    sessionStorage.getItem('usuarioConectado')
+    switch (usuario.tipo) {
+        case 'Administrador':
+            window.location.href = 'P49-principal-administrador.html';
+            break;
+        case 'Cliente':
+            window.location.href = 'P09-principal-cliente.html';
+            break;
+        case 'Proveedor':
+            window.location.href = 'P19-principal-proveedor.html';
+            break;
+    }
+};

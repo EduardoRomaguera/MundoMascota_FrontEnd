@@ -83,6 +83,7 @@
     resize: none;
     text-align: justify;
     margin-top: 10px;
+    font-family: Montserrat;
 }
 
 .input-horario {
@@ -97,6 +98,7 @@
     resize: none;
     text-align: justify;
     margin-top: 30px;
+    font-family: Montserrat;
 }
 
 input[type="date"] {
