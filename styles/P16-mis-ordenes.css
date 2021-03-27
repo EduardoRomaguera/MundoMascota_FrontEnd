@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 300 px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contenedor2 {
@@ -17,7 +17,14 @@
 }
 
 .catalogos {
-    min-height: 500px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 

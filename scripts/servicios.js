@@ -1116,8 +1116,7 @@ let listaVacunas = [{
 
 
 // Lista de usuarios para probar inicio de sesión
-let listaUsuarios = [
-    {
+let listaUsuarios = [{
         'correo': 'admin@mundomascota.com',
         'nombre': 'Raúl Pérez',
         'nacimiento': '09-20-1973',
@@ -1825,32 +1824,37 @@ let listaPatrocinadores = [{
     'fotografia': 'patrocinador8.jpg',
 }, ];
 
-let listaMisOrdenes = [{
-    "mascota": 'Pelusa',
+let listaMisOrdenes1 = [{
+    "mascota": 'Sammy',
     'proveedor': "Clínica Veterinaria Dra. Andrea Guillén A.",
     'servicio': 'Castración',
     "costo": '20000 colones',
     'estado': 'Pendiente aprobación',
-}, {
-    "mascota": 'Princesa',
+}, ];
+
+
+let listaMisOrdenes2 = [{
+    "mascota": 'Sammy',
     'proveedor': "Pao Grooming",
     'servicio': 'Baño y corte según raza',
     "costo": '6500 colones',
     'estado': 'Pendiente pago',
-}, {
-    "mascota": 'Princesa',
+}, ];
+
+let listaMisOrdenes3 = [{
+    "mascota": 'Sammy',
     'proveedor': "Pao Grooming",
     'servicio': 'Baño y corte según raza',
     "costo": '6500 colones',
     'estado': 'Pagado',
 }, {
-    "mascota": 'Princesa',
+    "mascota": 'Sammy',
     'proveedor': "Pao Grooming",
     'servicio': 'Baño y corte según raza',
     "costo": '6500 colones',
     'estado': 'Pagado',
 }, {
-    "mascota": 'Princesa',
+    "mascota": 'Sammy',
     'proveedor': "Peluqueria Canina Codymax",
     'servicio': 'Baño y corte',
     "costo": '10000 colones',
@@ -1915,43 +1919,42 @@ let listaServiciosAndrea = [{
 //Lista de usuarios para llenar reportados:
 
 let listaUsuariosReportados = [{
-        'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
-        'Usuario': 'Miguel Perez Botero',
-        'Razon': 'Acoso',
-        'Descripcion': 'No deja de llamarme'
+    'Imagen': '<img src="images/reportado1.jpg" class="imagen-reportado">',
+    'Usuario': 'Miguel Perez Botero',
+    'Razon': 'Acoso',
+    'Descripcion': 'No deja de llamarme'
 
-    }, {
-        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-        'Usuario': 'Samantha Hernandez Ruiz',
-        'Razon': 'Violencia',
-        'Descripcion': 'Llevó a pasear a mi perrito y le pegó'
-    }, {
-        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-        'Usuario': 'Miguel Santos Polanco',
-        'Razon': 'Discriminación',
-        'Descripcion': 'Me trató de forma ofensiva por ser afroamericano'
-    }, {
-        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-        'Usuario': 'Luis Daniel Vargas ',
-        'Razon': 'Lenguaje',
-        'Descripcion': 'Persona sumamente malhablada, trata a mis perritos de hijos de tal'
-    }, {
-        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-        'Usuario': 'Carlos Alpizar Justo',
-        'Razon': 'Incumplimiento',
-        'Descripcion': 'No cumplió con los tratamientos que pagamos'
-    }, {
-        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-        'Usuario': 'Catherine Pintor Frias',
-        'Razon': 'Violencia',
-        'Descripcion': 'Mi perrito tiene un morete como si lo hubieran pateado'
-    }, {
-        'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
-        'Usuario': 'Daniela Guzmán',
-        'Razon': 'Incumplimiento',
-        'Descripcion': 'Me quedó mal con el servicio y no avisó, mi gatito se quedó sin comida 2 días'
-    },
-]
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Samantha Hernandez Ruiz',
+    'Razon': 'Violencia',
+    'Descripcion': 'Llevó a pasear a mi perrito y le pegó'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Miguel Santos Polanco',
+    'Razon': 'Discriminación',
+    'Descripcion': 'Me trató de forma ofensiva por ser afroamericano'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Luis Daniel Vargas ',
+    'Razon': 'Lenguaje',
+    'Descripcion': 'Persona sumamente malhablada, trata a mis perritos de hijos de tal'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Carlos Alpizar Justo',
+    'Razon': 'Incumplimiento',
+    'Descripcion': 'No cumplió con los tratamientos que pagamos'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Catherine Pintor Frias',
+    'Razon': 'Violencia',
+    'Descripcion': 'Mi perrito tiene un morete como si lo hubieran pateado'
+}, {
+    'Imagen': '<img src="images/reportado2.jpg" class="imagen-reportado">',
+    'Usuario': 'Daniela Guzmán',
+    'Razon': 'Incumplimiento',
+    'Descripcion': 'Me quedó mal con el servicio y no avisó, mi gatito se quedó sin comida 2 días'
+}, ]
 
 
 
