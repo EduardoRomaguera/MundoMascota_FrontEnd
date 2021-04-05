@@ -37,7 +37,7 @@ const validar = () => {
             Swal.fire({
                 imageUrl: "images/error.png",
                 title: "¡OOPS! Algo pasó aqui",
-                text: "El pago no se ha podrido procesar, hay un dato incorrecto con el método de pago",
+                text: "El pago no se ha podido procesar, hay un dato incorrecto con el método de pago",
                 confirmButtonText: "Intentar de nuevo"
             });
         }}
