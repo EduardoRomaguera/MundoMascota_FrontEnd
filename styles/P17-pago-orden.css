@@ -209,3 +209,26 @@
     width: 500px;
     margin-top: 20px;
 }
+
+.btn-agregar2 {
+    margin: 20px 30px 10px 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px 10px 25px;
+    border: solid black 2px;
+    border-radius: 7px;
+    background-color: #f08700;
+}
+
+.btn-agregar3 {
+    margin: 20px 30px 10px 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px 10px 25px;
+    border: solid black 2px;
+    border-radius: 7px;
+    align-items: flex-end;
+    background-color: #f08700;
+}

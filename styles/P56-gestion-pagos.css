@@ -1,16 +1,15 @@
 .contenedor1 {
-    background-color: #f0870030;
-    background-size: cover;
+    background-color: #d6cabb30;
     background-position: center;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     height: 200px;
     margin-bottom: 1%;
+    border-radius: 7px;
 }
 
 .contenedor2 {
-    background-color: #f0870030;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -18,18 +17,20 @@
     flex-direction: row;
     height: 300px;
     margin-bottom: 1%;
+    border-radius: 7px;
+    border-color: black
 }
 
 .contenedor3 {
-    background-color: #f0870030;
-    background-size: cover;
-    background-position: center;
+    border-color: solid black;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     height: 200px;
     margin-bottom: 1%;
     padding: 0 0 20px 0;
+    border-radius: 7px;
+    border-color: black
 }
 
 .contenedor4 {
@@ -42,6 +43,11 @@
     height: 400px;
     padding: 0 0 20px 0;
     margin-bottom: 1%;
+    border-color: solid black;
+}
+
+.datos-tarjeta {
+    border-color: black;
 }
 
 .foto-proveedor {

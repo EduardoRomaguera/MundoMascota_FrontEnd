@@ -5,11 +5,6 @@ const inputNumeroTarjeta = document.querySelector('#txt-numero-tarjeta');
 const inputMesExpira = document.querySelector('#txt-mes-expira');
 const inputAnnoExpira = document.querySelector('#txt-anno-expira');
 const inputCvv = document.querySelector('#txt-cvv');
-const inputProvinciaCl = document.querySelector('#txt-provincia-cl');
-const inputCantonCl = document.querySelector('#txt-canton-cl');
-const inputDistritoCl = document.querySelector('#txt-distrito-cl');
-const inputSennasCl = document.querySelector('#txt-sennas-cl');
-
 //const selectEspecieMs = document.querySelector('#txt-especie-ms');
 //const selectRazaMs = document.querySelector('#txt-raza-ms');
 
@@ -62,34 +57,6 @@ const validar = () => {
         inputCvv.classList.add('error');
     } else {
         inputCvv.classList.remove('error');
-    }
-
-    if (inputProvinciaCl.value == '') {
-        error = true;
-        inputProvinciaCl.classList.add('error');
-    } else {
-        inputProvinciaCl.classList.remove('error');
-    }
-
-    if (inputCantonCl.value == '') {
-        error = true;
-        inputCantonCl.classList.add('error');
-    } else {
-        inputCantonCl.classList.remove('error');
-    }
-
-    if (inputDistritoCl.value == '') {
-        error = true;
-        inputDistritoCl.classList.add('error');
-    } else {
-        inputDistritoCl.classList.remove('error');
-    }
-
-    if (inputSennasCl.value == '') {
-        error = true;
-        inputSennasCl.classList.add('error');
-    } else {
-        inputSennasCl.classList.remove('error');
     }
 
     if (error == true) {
