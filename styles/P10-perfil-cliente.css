@@ -17,6 +17,7 @@
     align-items: center;
     flex-direction: column;
     width: 25%;
+    border-radius: 7px;
 }
 
 .info-cliente {
@@ -26,6 +27,7 @@
     justify-content: space-between;
     flex-direction: column;
     width: 75%;
+    border-radius: 7px;
 }
 
 .info0 {
@@ -60,8 +62,9 @@
     background-color: #f08700;
 }
 
+
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }

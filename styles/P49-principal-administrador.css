@@ -34,7 +34,7 @@
 }
 
 .imagen-izquierda {
-    background-image: url('../images/necesidad-aprobacion_1.jpg');
+    background-image: url('../images/aprobado-izq.jpg');
     /*Imagen de AmandaCullingford en Pixabay*/
     background-size: cover;
     background-position: center;
@@ -51,7 +51,7 @@
 }
 
 .imagen-centro {
-    background-image: url('../images/Cosas-pendientes-1-e1479501308387-800x560.jpg');
+    background-image: url('../images/pendiente-cent.jpg');
     /*Imagen de Светлана Бердник en Pixabay */
     background-size: cover;
     background-position: center;
@@ -97,11 +97,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 11px;
+    border-radius: 7px;
 }
 
 .imagen-izquierda2 {
-    background-image: url('../images/denuncias.jpg');
+    background-image: url('../images/ban-derecha.jpg');
     /*Imagen de AmandaCullingford en Pixabay*/
     background-size: cover;
     background-position: center;
@@ -114,7 +114,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 11px;
+    border-radius: 7px;
 }
 
 .imagen-derecha2 {
@@ -131,7 +131,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 11px;
+    border-radius: 7px;
 }
 
 .imagen-catalogo {
@@ -148,7 +148,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 11px;
+    border-radius: 7px;
 }
 
 .imagen-patrocinador {
@@ -165,7 +165,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 11px;
+    border-radius: 7px;
 }
 
 .imagen-acciones {
@@ -182,15 +182,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 11px;
+    border-radius: 7px;
 }
+
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 #btn-iniciar-sesion {
-    display:none;
+    display: none;
 }
