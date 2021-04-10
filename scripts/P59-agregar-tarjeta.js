@@ -63,7 +63,7 @@ const validar = () => {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Dejaste un espacio vacio",
+            text: "Se dejó un espacio vacio",
             confirmButtonText: "Intentar de nuevo"
         });
     } else {}
@@ -81,7 +81,7 @@ const validar = () => {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Esa identificación no es válida",
+            text: "La identificación no es válida",
             confirmButtonText: "Intentar de nuevo"
         });
     } else {}

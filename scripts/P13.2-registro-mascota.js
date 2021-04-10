@@ -76,7 +76,7 @@ const validarRegistro = () => {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Dejaste un espacio vacio",
+            text: "Se dejó un espacio vacio",
             confirmButtonText: "Intentar de nuevo"
         });
     }

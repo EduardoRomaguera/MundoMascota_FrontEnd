@@ -5,7 +5,7 @@ const btnEliminar = document.querySelector('#btn-elim');
 const pendiente = () => {
     Swal.fire({
         icon: "warning",
-        title: "¿Desea eliminar esta tarjeta?",
+        title: "¿Eliminar esta tarjeta?",
         confirmButtonText: "Si, eliminar",
         cancelButtonText: 'Cancelar',
         'cancelButtonColor': '#d33',

@@ -35,7 +35,7 @@ const MOSTRARTABLASERVICIOSSTEPH = () => {
         botonComprar.addEventListener('click', () => {
             Swal.fire({
                 'icon': 'question',
-                'text': '¿Deseas adquirir este servicio?',
+                'text': '¿Adquirir servicio?',
                 'showCancelButton': true,
                 'confirmButtonText': '   Sí    ',
                 'confirmButtonColor': '#007552',
@@ -107,7 +107,7 @@ const MOSTRARTABLASERVICIOSLAURA = () => {
         botonComprar.addEventListener('click', () => {
             Swal.fire({
                 'icon': 'question',
-                'text': '¿Deseas adquirir este servicio?',
+                'text': '¿adquirir este servicio?',
                 'showCancelButton': true,
                 'confirmButtonText': '   Sí    ',
                 'confirmButtonColor': '#007552',
@@ -143,7 +143,7 @@ const MOSTRARTABLASERVICIOSPAO = () => {
         botonComprar.addEventListener('click', () => {
             Swal.fire({
                 'icon': 'question',
-                'text': '¿Deseas adquirir este servicio?',
+                'text': '¿Adquirir este servicio?',
                 'showCancelButton': true,
                 'confirmButtonText': '   Sí    ',
                 'confirmButtonColor': '#007552',
@@ -179,7 +179,7 @@ const MOSTRARTABLASERVICIOPITUFO = () => {
         botonComprar.addEventListener('click', () => {
             Swal.fire({
                 'icon': 'question',
-                'text': '¿Deseas adquirir este servicio?',
+                'text': '¿Adquirir este servicio?',
                 'showCancelButton': true,
                 'confirmButtonText': '   Sí    ',
                 'confirmButtonColor': '#007552',
@@ -216,7 +216,7 @@ const MOSTRARTABLASERVICIOANDREA = () => {
         botonComprar.addEventListener('click', () => {
             Swal.fire({
                 'icon': 'question',
-                'text': '¿Deseas adquirir este servicio?',
+                'text': '¿Adquirir este servicio?',
                 'showCancelButton': true,
                 'confirmButtonText': '   Sí    ',
                 'confirmButtonColor': '#007552',

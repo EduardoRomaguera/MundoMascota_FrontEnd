@@ -27,9 +27,9 @@ const MOSTRARTABLAORDENES = () => {
             botonRechazar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Seguro que desea eliminar al patrocinador?',
+                    'text': '¿Eliminar al patrocinador?',
                     'showCancelButton': true,
-                    'confirmButtonText': 'Sí, estoy seguro',
+                    'confirmButtonText': 'Sí',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {

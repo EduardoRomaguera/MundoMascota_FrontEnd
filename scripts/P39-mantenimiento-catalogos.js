@@ -42,7 +42,7 @@ const MOSTRARTABLARAZAS = () => {
             botonEliminar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea borrar la raza?',
+                    'text': '¿Borrar la raza?',
                     'showCancelButton': true,
                     'confirmButtonText': 'Sí, estoy seguro',
                     'cancelButtonColor': '#d33',
@@ -96,7 +96,7 @@ const MOSTRARTABLAENFERMEDADES = () => {
             botonEliminar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea borrar la enfermedad?',
+                    'text': '¿Borrar la enfermedad?',
                     'showCancelButton': true,
                     'confirmButtonText': '¡Sí!, estoy seguro',
                     'cancelButtonColor': '#d33',

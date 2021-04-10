@@ -12,7 +12,7 @@ const calificar = () => {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Dejaste un espacio en blanco",
+            text: "Se dejó un espacio en blanco",
             confirmButtonText: "Intentar de nuevo"
         });
     } else {

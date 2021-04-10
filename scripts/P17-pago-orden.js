@@ -16,7 +16,7 @@ const validar = () => {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Dejaste un espacio en blanco",
+            text: "Se dejó un espacio en blanco",
             confirmButtonText: "Intentar de nuevo"
         });
     } else {
@@ -24,7 +24,7 @@ const validar = () => {
             error = false;
             Swal.fire({
                 icon: "warning",
-                title: "¿Deseas realizar el pago?",
+                title: "¿Dese realizar el pago?",
                 showCancelButton: true,
                 confirmButtonText: "Sí, pagar",
                 cancelButtonColor: '#d33',
@@ -40,10 +40,7 @@ const validar = () => {
                 text: "El pago no se ha podido procesar, hay un dato incorrecto con el método de pago",
                 confirmButtonText: "Intentar de nuevo"
             });
-        }}
-    };
+        }
+    }
+};
 btnPagar.addEventListener('click', () => validar());
-
-
-
-
