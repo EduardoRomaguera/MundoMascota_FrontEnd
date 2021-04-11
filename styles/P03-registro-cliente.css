@@ -57,7 +57,18 @@
 }
 
 .input-formularios {
-    width: 300px;
+    width: 303px;
+}
+
+#txt-provincia-cl,
+#txt-canton-cl,
+#txt-distrito-cl {
+    margin-left: 25px;
+}
+
+#txt-tipo-id-cl,
+#txt-nacimiento-cl {
+    margin-left: 10px;
 }
 
 .contenedor2 select {
@@ -67,7 +78,7 @@
 }
 
 #texto-gris {
-    color: #00000090;
+    color: #000000;
     margin-top: 2%;
 }
 
@@ -78,40 +89,32 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    width: 300px;
-    height: 150px;
+    width: 303px;
+    height: 146px;
     resize: none;
     text-align: justify;
     font-family: Montserrat;
+    margin-left: 14px;
 }
 
 input[type="date"] {
     text-align: center;
     border-radius: 7px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Montserrat;
-    font-size: 18px;
     background:#ffffff;
     display: inline-block;
     visibility: visible;
+    color: #7e7e7e;
+    font-weight: 400;
 }
 
 select {
-    text-align: center;
     border-radius: 7px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Montserrat;
-    font-size: 18px;
     background:#ffffff;
-    display: inline-block;
-    visibility: visible;
     color: #00000090;
+    margin: 0px ;
 }
 
 select option{
-
     color: #000000;
     font-weight: 500;
 }
@@ -127,4 +130,54 @@ select option{
 .error {
     border: solid red 2px;
     border-radius: 7px;
+}
+
+.label {
+    width: 200px;
+    border-radius: 7px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -20px;
+    font-size: 18px;
+}
+
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6,
+.contenedor7,
+.contenedor8 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+}
+
+#txt-identificacion-cl  {
+    margin-left: -110px;
+}
+
+.invisible {
+    user-select: none;
+    color: #00000000;
+}
+
+#posicion-correo {
+    margin-left: -191px;
+}
+
+#posicion-correo .label {
+    margin-left: 16px;
+}
+
+#txt-correo-cl {
+    height: 26px;
+}
+
+#imagen-perro {
+    height: 500px;
+    overflow: show;
 }
