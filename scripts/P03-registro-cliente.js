@@ -135,14 +135,14 @@ const validar = () => {
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
             text: "La identificación no es válida",
-            confirmButtonText: "Intentar de nuevo"
+            confirmButtonText: "Intente de nuevo"
         });
     } else {}
 
     if (error == false && errorCorreo == false && errorIdentificacion == false) {
         Swal.fire({
-            title: "Ve a revisar tu correo electrónico",
-            text: "Se enviarán instrucciones para que completar el proceso de registro.",
+            title: "Revise su correo electrónico",
+            text: "Se enviarán instrucciones para completar el proceso de registro.",
             confirmButtonText: "OK"
         }).then(() => {
             const Toast = Swal.mixin({

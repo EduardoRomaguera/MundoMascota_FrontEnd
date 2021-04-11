@@ -27,7 +27,7 @@ const MOSTRARTABLAPENDI = () => {
             botonRechazar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea rechazar la solicitud?',
+                    'text': '¿Rrechazar la solicitud?',
                     'showCancelButton': true,
                     'confirmButtonText': 'Sí, estoy seguro',
                     'cancelButtonColor': '#d33',

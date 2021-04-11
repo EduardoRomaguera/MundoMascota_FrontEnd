@@ -17,6 +17,8 @@ const VALIDAR = () => {
     if (INPUTNOMBRE.value == '') {
         error = true;
         INPUTNOMBRE.classList.add('error');
+        
+
     } else {
         INPUTNOMBRE.classList.remove('error');
     }
@@ -47,7 +49,7 @@ const VALIDAR = () => {
         Swal.fire({
             'icon': 'warning',
             'title': 'No se pudo guardar el padecimiento',
-            'text': 'Por favor revise los campos resaltados',
+            'text': 'Por favor revisar los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
 
