@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Mantenimiento de catálogos</title>
+    <title>Mantenimiento de catálogo de Razas</title>
 </head>
 
 <body>
@@ -38,71 +38,39 @@
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
                 <section class="titulo">
-                    <h1>Mantenimiento de catálogos</h1>
+                    <h1>Mantenimiento de catálogo de razas</h1>
                 </section>
                 <section class="catalogos">
                     <section>
-                        <section class="divisor3">
-                            <h2>Padecimientos</h2>
-                        </section>
-                        <div>
-                            <label for='txt-filtro-enfermedades'>Filtrar</label>
-                            <input type="text" id='txt-filtro-enfermedades'>
-                            <button type="button" id="btn-agregar-enfermedad" class="btn-agregar">
-                                Agregar Padecimiento
+                        <div class="divisor3">
+                        </div>
+                        <div class='filtro'>
+                            <label for='txt-filtro-razas'>Filtrar</label>
+                            <input type="text" id='txt-filtro-razas'>
+                            <button type="button" id="btn-agregar-raza" class="btn-agregar">
+                                Agregar Raza
                             </button>
                         </div>
 
                         <div class="contenedor1">
 
-                            <table id="tbl-enfermedades" class="tabla">
+                            <table id="tbl-razas" class="tabla">
                                 <thead>
                                     <tr>
                                         <th>Nombre</th>
                                         <th>Especie</th>
                                         <th>Estado</th>
-                                        <th></th>
+                                        <th>
+
+                                        </th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                 </tbody>
-
                             </table>
-
-                        </div>
-                    </section>
-                    <section>
-                        <section class="divisor3">
-                            <h2>Vacunas</h2>
-                        </section>
-                        <div>
-                            <label for='txt-filtro-vacunas'>Filtrar</label>
-                            <input type="text" id='txt-filtro-vacunas'>
-                            <button type="button" id="btn-agregar-vacuna" class="btn-agregar">
-                                Agregar Vacuna
-                            </button>
-                        </div>
-
-                        <div class="contenedor1">
-                            <div class="contenedor-tabla">
-                                <table id="tbl-vacunas" class="tabla">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Especie</th>
-                                            <th>Estado</th>
-                                            <th></th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    </tbody>
-
-                                </table>
-                            </div>
-
+                            <p id='txt-mensaje-raza'></p>
                         </div>
                     </section>
                 </section>
@@ -141,10 +109,13 @@
             </a>
         </section>
     </footer>
+    <!--Script de terceros-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!--Script propios-->
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P39-mantenimiento-catalogos.js"></script>
+    <script src="scripts/P40-mantenimiento-razas.js"></script>
 </body>
 
 </html>
