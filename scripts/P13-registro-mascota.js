@@ -83,3 +83,76 @@ const validarRegistro = () => {
 };
 
 BTNREGISTRO.addEventListener('click', validarRegistro);
+
+function add_vacunas() {
+    var container = document.getElementById('div-vacuna'),
+        input = document.createElement('select');
+    input.classList.add('input-formularios2');
+
+    input.innerHTML = document.getElementById('slt-vacuna').innerHTML;
+    input.setAttribute('type', 'select');
+
+    var btns = document.createElement("input");
+
+    btns.setAttribute("type", "button");
+    btns.setAttribute("value", "Borrar");
+    btns.setAttribute("name", "dlete");
+
+    container.appendChild(input);
+    container.appendChild(btns);
+
+    btns.onclick = function remove_field() {
+        input.parentNode.removeChild(input);
+        btns.parentNode.removeChild(btns);
+    }
+
+};
+
+function add_padecimientos() {
+    var container = document.getElementById('div-padecimiento'),
+        input = document.createElement('select');
+    input.classList.add('input-formularios2');
+
+    input.innerHTML = document.getElementById('slt-padecimiento').innerHTML;
+    input.setAttribute('type', 'select');
+
+    var btns = document.createElement("input");
+
+    btns.setAttribute("type", "button");
+    btns.setAttribute("value", "Borrar");
+    btns.setAttribute("name", "dlete");
+
+    container.appendChild(input);
+    container.appendChild(btns);
+
+    btns.onclick = function remove_field() {
+        input.parentNode.removeChild(input);
+        btns.parentNode.removeChild(btns);
+    }
+
+};
+
+function add_fotografia() {
+    var container = document.getElementById('div-fotografia'),
+        input = document.createElement('input');
+
+    input.setAttribute("type", "file");
+    input.setAttribute("id", "subir-foto");
+    input.setAttribute("accept", "Image/*");
+    input.setAttribute("name", "img");
+
+    var btns = document.createElement("input");
+
+    btns.setAttribute("type", "button");
+    btns.setAttribute("value", "Borrar");
+    btns.setAttribute("name", "dlete");
+
+    container.appendChild(input);
+    container.appendChild(btns);
+
+    btns.onclick = function remove_field() {
+        input.parentNode.removeChild(input);
+        btns.parentNode.removeChild(btns);
+    }
+
+};
