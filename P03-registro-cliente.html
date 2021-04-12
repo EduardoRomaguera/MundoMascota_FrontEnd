@@ -42,43 +42,85 @@
                 <section>
                     <div class="contenedor1">
                         <div class="contenedor2" class="h1">
-                            <h1>Registrarme para comprar </h1>
-                            <h3>Cuentanos más sobre ti</h3>
-                            <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre">
-                            <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Apellido1">
-                            <input class="input-formularios" id="txt-apellido2-cl" type="text" placeholder="Apellido2 (opcional)">
-                            <select class="input-formularios" id="txt-tipo-id-cl">
-                        <option value="">Tipo de identificación</option>
-                        <option value="dimex">DIMEX</option>
-                        <option value="fisica">Física</option>
-                        <option value="juridica">Jurídica</option>
-                    </select>
-                            <input class="input-formularios" id="txt-identificacion-cl" type="number" placeholder="Número de identificación">
-                            <label for="txt-nacimiento-cl" id="texto-gris">Fecha de nacimiento:</label>
-                            <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
-                            <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
-                            <form class="contenedor3" class="h1" name="form1" method="post" action="">
-                                <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
-                            <option value="">Provincia</option>
-                                <option value="sanjose">San José
-                                <option value="heredia">Heredia
-                                <option value="alajuela">Alajuela
-                                <option value="cartago">Cartago
-                                <option value="guanacaste">Guanacaste
-                                <option value="puntarenas">Puntarenas
-                                <option value="limon">Limón
-                        </select>
-                                <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
-                            <option value="">Cantón</option>
-                        </select>
-                                <select class="input-formularios" id="txt-distrito-cl" name="distritos">
-                            <option value="">Distrito</option>
-                        </select>
-                            </form>
-                            <textarea class="input-direccion" id="txt-sennas-cl" type="text" placeholder="Otras señas"></textarea>
-
-                            <button class="btn2" id="btn-completar-registro">Completar registro </button>
-                            <a href="P01-homepage.html"> <button class="btn2">Cancelar </button> </a>
+                            <div class="contenedor3">
+                                <h1>Registrarse para comprar </h1>
+                                <h4>Podrá encontrar servicios para sus mascotas</h4>
+                            </div>
+                            <div class="contenedor4">
+                                <div>
+                                    <label for=txt-nombre-cl class="label">Nombre</label>
+                                    <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre">
+                                </div>
+                                <div>
+                                    <label for=txt-apellido1-cl class="label invisible">Apellido 1</label>
+                                    <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Apellido1">
+                                </div>
+                                <div>
+                                    <label for=txt-apellido2-cl class="label invisible">Apellido 2</label>
+                                    <input class="input-formularios" id="txt-apellido2-cl" type="text" placeholder="Apellido2 (opcional)">
+                                </div>
+                            </div>
+                            <div class="contenedor5">
+                                <div>
+                                    <label for=txt-tipo-id-cl class="label">Identificación</label>
+                                    <select class="input-formularios select" id="txt-tipo-id-cl">
+                                        <option value="">Tipo de identificación</option>
+                                        <option value="dimex">DIMEX</option>
+                                        <option value="fisica">Física</option>
+                                        <option value="juridica">Jurídica</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for=txt-identificacion-cl class="label invisible">Número de identificación</label>
+                                    <input class="input-formularios" id="txt-identificacion-cl" type="number" placeholder="Número de identificación">
+                                </div>
+                                <div id="imagen-perro1">
+                                    <img src="images/perro-registro.jpg" alt="imagen perro" id="imagen-perro">
+                                </div>
+                            </div>
+                            <div class="contenedor6">
+                                <div>
+                                    <label for="txt-nacimiento-cl" id="texto-gris"  class="label">Fecha de nacimiento</label>
+                                    <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
+                                </div>
+                                <div id="posicion-correo">
+                                    <label for="txt-correo-cl" id="texto-gris"  class="label">Correo electrónico</label>
+                                    <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
+                                </div>
+                            </div>
+                            <div class="contenedor7">
+                                <div>
+                                    <label for="txt-provincia-cl" id="texto-gris"  class="label">Ubicación</label>
+                                    <form class="contenedor3" class="h1" name="form1" method="post" action="">
+                                        <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
+                                            <option value="">Provincia</option>
+                                            <option value="sanjose">San José
+                                            <option value="heredia">Heredia
+                                            <option value="alajuela">Alajuela
+                                            <option value="cartago">Cartago
+                                            <option value="guanacaste">Guanacaste
+                                            <option value="puntarenas">Puntarenas
+                                            <option value="limon">Limón
+                                        </select>
+                                        <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
+                                            <option value="">Cantón</option>
+                                        </select>
+                                        <select class="input-formularios" id="txt-distrito-cl" name="distritos">
+                                            <option value="">Distrito</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div>
+                                    <label for="txt-sennas-cl" class="label invisible">Ubiascación</label>
+                                    <div>
+                                    <textarea class="input-direccion" id="txt-sennas-cl" placeholder="Otras señas"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contenedor9">
+                                <button class="btn2" id="btn-completar-registro">Completar registro </button>
+                                <a href="P01-homepage.html"> <button class="btn2">Cancelar </button> </a>
+                            </div>
                         </div>
                     </div>
             </div>

@@ -44,6 +44,8 @@
     flex-flow: column;
     align-items: center;
     padding: 35px;
+    width: 330px;
+    justify-content: center;
 }
 
 h5 {
@@ -55,8 +57,21 @@ h5 {
     margin-bottom: 5%;
 }
 
+
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
+}
+
+.input-formularios2 {
+    text-align: center;
+    border: solid #00000060 1px;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
 }

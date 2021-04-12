@@ -7,7 +7,7 @@
 
 .contenedor2 {
     margin: 50px;
-    border: solid 2px #f08700;
+    border: solid 2px #f0870020;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
@@ -41,7 +41,7 @@
 }
 
 .contenedor2 h3 {
-    margin: 0px 0px 5% 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .info1 {
@@ -57,7 +57,18 @@
 }
 
 .input-formularios {
-    width: 300px;
+    width: 303px;
+}
+
+#txt-provincia-cl,
+#txt-canton-cl,
+#txt-distrito-cl {
+    margin-left: 25px;
+}
+
+#txt-tipo-id-cl,
+#txt-nacimiento-cl {
+    margin-left: 10px;
 }
 
 .contenedor2 select {
@@ -67,7 +78,7 @@
 }
 
 #texto-gris {
-    color: #00000090;
+    color: #000000;
     margin-top: 2%;
 }
 
@@ -78,42 +89,38 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    width: 300px;
-    height: 150px;
+    width: 303px;
+    height: 146px;
     resize: none;
     text-align: justify;
     font-family: Montserrat;
+    margin-left: 06px;
 }
 
 input[type="date"] {
     text-align: center;
     border-radius: 7px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Montserrat;
-    font-size: 18px;
     background:#ffffff;
     display: inline-block;
     visibility: visible;
+    color: #7e7e7e;
+    font-weight: 400;
 }
 
 select {
-    text-align: center;
     border-radius: 7px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Montserrat;
-    font-size: 18px;
     background:#ffffff;
-    display: inline-block;
-    visibility: visible;
     color: #00000090;
+    margin: 0px ;
 }
 
 select option{
-
     color: #000000;
     font-weight: 500;
+}
+
+.contenedor7 {
+    margin-left: 15px;
 }
 
 #btn-cerrar-sesion {
@@ -127,4 +134,69 @@ select option{
 .error {
     border: solid red 2px;
     border-radius: 7px;
+}
+
+.label {
+    width: 200px;
+    border-radius: 7px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -20px;
+    font-size: 18px;
+}
+
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6,
+.contenedor7,
+.contenedor8 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+}
+
+.contenedor9 {
+    margin-top: 50px;
+}
+
+#txt-identificacion-cl  {
+    margin-left: -7px;
+}
+
+.invisible {
+    user-select: none;
+    color: #00000000;
+}
+
+#posicion-correo {
+    margin-left: -191px;
+}
+
+#posicion-correo .label {
+    margin-left: 16px;
+}
+
+#txt-correo-cl {
+    height: 26px;
+}
+
+#imagen-perro {
+    height: 450px;
+    overflow: show;
+    padding-left: -900px;
+    margin-top: 40px;
+    justify-content: flex-start;
+}
+
+#imagen-perro1 {
+    height: 100px;
+    overflow: show;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-start;
 }
