@@ -433,6 +433,19 @@ button:hover {
     font-weight: bold;
 }
 
+.contenedor-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400 px;
+    margin-bottom: 100px;
+}
+
+.txt-filtro-razas {
+    height: 50px;
+    width: 200px;
+}
+
 .ocultar {
-    display:none;
+    display: none;
 }

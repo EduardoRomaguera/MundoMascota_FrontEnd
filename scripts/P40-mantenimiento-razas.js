@@ -54,10 +54,6 @@ const MOSTRARTABLARAZAS = () => {
             });
             celdaAcciones.appendChild(botonEliminar);
             celdaAcciones.appendChild(botonModificar);
-        } else {
-
-            let mensaje = TABLARAZAS.textContent = 'No se encontro resultado';
-
         }
 
     });
