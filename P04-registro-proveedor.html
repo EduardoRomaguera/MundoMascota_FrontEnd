@@ -42,49 +42,113 @@
         <section>
             <div class="contenedor1">
                 <div class="contenedor2" class="h1">
-                    <h1>Registrarme para ofrecer servicios </h1>
-                    <h3>Mi información</h3>
-                    <input class="input-formularios" id="txt-nombre-negocio-pr" type="text" placeholder="Nombre del negocio">
-                    <input class="input-formularios" id="txt-nombre-pr" type="text" placeholder="Nombre">
-                    <input class="input-formularios" id="txt-apellido1-pr" type="text" placeholder="Apellido1">
-                    <input class="input-formularios" id="txt-apellido2-pr" type="text" placeholder="Apellido2">
-                    <select class="input-formularios" id="txt-tipo-id-pr">
-                        <option value="">Tipo de identificación</option>
-                        <option value="dimex">DIMEX</option>
-                        <option value="fisica">Física</option>
-                        <option value="juridica">Jurídica</option>
-                    </select>
-                    <input class="input-formularios" id="txt-identificacion-pr" type="number" placeholder="Número de identificación">
-
-                    <input class="input-formularios" id="txt-nombre-rep-pr" type="text" disabled="disabled" placeholder="Nombre representante legal">
-                    <input class="input-formularios" id="txt-apellido1-rep-pr" type="text" disabled="disabled" placeholder="Apellido1 representante legal">
-                    <input class="input-formularios" id="txt-apellido2-rep-pr" type="text" disabled="disabled" placeholder="Apellido2 representante legal">
-                    <input class="input-formularios" id="txt-correo-rep-pr" type="text" disabled="disabled" placeholder="Correo representante legal">
-
-                    <label for="txt-nacimiento-pr" id="texto-gris">Fecha de nacimiento:</label>
-                    <input class="input-formularios" id="txt-nacimiento-pr" type="date" placeholder="Fecha de nacimiento">
-                    <input class="input-formularios" id="txt-correo-pr" type="text" placeholder="Correo electrónico">
-                    <form class="contenedor3" class="h1" name="form1" method="post" action="">
-                        <select class="input-formularios" id="txt-provincia-pr" name="provincias" onchange="seleccionar(this,this.form.cantones)">
-                            <option value="">Provincia</option>
-                                <option value="sanjose">San José
-                                <option value="heredia">Heredia
-                                <option value="alajuela">Alajuela
-                                <option value="cartago">Cartago
-                                <option value="guanacaste">Guanacaste
-                                <option value="puntarenas">Puntarenas
-                                <option value="limon">Limón
-                        </select>
-                        <select class="input-formularios" id="txt-canton-pr" name="cantones" onchange="seleccionar(this,this.form.distritos)">
-                            <option value="">Cantón</option>
-                        </select>
-                        <select class="input-formularios" id="txt-distrito-pr" name="distritos">
-                            <option value="">Distrito</option>
-                        </select>
-                    </form>
-                    <textarea class="input-direccion" id="txt-sennas-pr" type="text" placeholder="Otras señas"></textarea>
+                    <div class="contenedor6">
+                        <h1>Registrarse para ofrecer servicios </h1>
+                        <h4>Podrá ofrecer sus servicios de mascotas a clientes</h4>
+                    </div>
+                    <div class="contenedor7">
+                        <div>
+                            <label for=txt-nombre-negocio-pr class="label">Nombre del negocio</label>
+                            <input class="input-formularios" id="txt-nombre-negocio-pr" type="text" placeholder="Nombre del negocio">
+                        </div>
+                    </div>
+                    <div class="contenedor8">
+                        <div>
+                            <label for=txt-nombre-pr class="label">Nombre</label>
+                            <input class="input-formularios" id="txt-nombre-pr" type="text" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <label for=txt-apellido1-pr class="label">Apellido1</label>
+                            <input class="input-formularios" id="txt-apellido1-pr" type="text" placeholder="Apellido1">
+                        </div>
+                        <div>
+                            <label for=txt-apellido2-pr class="label">Apellido2</label>
+                            <input class="input-formularios" id="txt-apellido2-pr" type="text" placeholder="Apellido2">
+                        </div>
+                    </div>
+                    <div class="contenedor9">
+                        <div class="flex-columna">
+                            <label for=txt-tipo-id-pr class="label">Identificación</label>
+                            <select class="input-formularios" id="txt-tipo-id-pr">
+                                <option value="">Tipo de identificación</option>
+                                <option value="dimex">DIMEX</option>
+                                <option value="fisica">Física</option>
+                                <option value="juridica">Jurídica</option>
+                            </select>
+                        </div>
+                        <div class="flex-columna">
+                            <label for=txt-identificacion-pr class="label invisible">Nú</label>
+                            <input class="input-formularios" id="txt-identificacion-pr" type="number" placeholder="Número de identificación">
+                        </div>
+                    </div>
+                    <div class="contenedor10">
+                        <h4 class="label">Los datos de representante legal solo aplican si se registra una cédula jurídica.</h4>
+                    </div>
+                    <div class="contenedor10">
+                        <div>
+                            <label for=txt-nombre-rep-pr class="label">Nombre representante legal</label>
+                            <input class="input-formularios" id="txt-nombre-rep-pr" type="text" disabled="disabled" placeholder="Nombre representante legal">
+                        </div>
+                        <div>
+                            <label for=txt-apellido1-rep-pr class="label">Apellido1 representante legal</label>
+                            <input class="input-formularios" id="txt-apellido1-rep-pr" type="text" disabled="disabled" placeholder="Apellido1 representante legal">
+                        </div>
+                        <div>
+                            <label for=txt-apellido2-rep-pr class="label">Apellido2 representante legal</label>
+                            <input class="input-formularios" id="txt-apellido2-rep-pr" type="text" disabled="disabled" placeholder="Apellido2 representante legal">
+                        </div>
+                    </div>
+                    <div class="contenedor11 flex-columna">
+                        <div>
+                            <label for="txt-correo-rep-pr" class="label">Correo electrónico del representante legal</label>
+                        </div>
+                        <div>
+                            <input class="input-formularios" id="txt-correo-rep-pr" type="text" disabled="disabled" placeholder="Correo representante legal">
+                        </div>
+                    </div>
+                    <div class="contenedor12">
+                        <div class="flex-columna">
+                            <label for="txt-nacimiento-pr" class="label">Fecha de nacimiento</label>
+                            <input class="input-formularios" id="txt-nacimiento-pr" type="date" placeholder="Fecha de nacimiento">
+                        </div>
+                        <div class="flex-columna correo">
+                            <label for="txt-correo-pr" class="label">Correo electrónico</label>
+                            <input class="input-formularios" id="txt-correo-pr" type="text" placeholder="Correo electrónico">
+                        </div>
+                        <div>
+                            <label for="txt-teléfono-pr" class="label">Número telefónico</label>
+                            <input class="input-formularios" id="txt-teléfono-pr" type="number" placeholder="Número de teléfono">
+                        </div>
+                    </div>
+                    <div class="contenedor13">
+                        <div>
+                            <label for="txt-provincia-pr" class="label">Ubicación</label>
+                            <form class="contenedor3" class="h1" name="form1" method="post" action="">
+                                <select class="input-formularios" id="txt-provincia-pr" name="provincias" onchange="seleccionar(this,this.form.cantones)">
+                                    <option value="">Provincia</option>
+                                        <option value="sanjose">San José
+                                        <option value="heredia">Heredia
+                                        <option value="alajuela">Alajuela
+                                        <option value="cartago">Cartago
+                                        <option value="guanacaste">Guanacaste
+                                        <option value="puntarenas">Puntarenas
+                                        <option value="limon">Limón
+                                </select>
+                                <select class="input-formularios" id="txt-canton-pr" name="cantones" onchange="seleccionar(this,this.form.distritos)">
+                                    <option value="">Cantón</option>
+                                </select>
+                                <select class="input-formularios" id="txt-distrito-pr" name="distritos">
+                                    <option value="">Distrito</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div>
+                            <textarea class="input-direccion" id="txt-sennas-pr" type="text" placeholder="Otras señas"></textarea>
+                        </div>
+                    </div>
+                    
                     <textarea class="input-horario" id="txt-horario-pr" type="text" placeholder="Horario"></textarea>
-                    <input class="input-formularios" id="txt-teléfono-pr" type="number" placeholder="Número de teléfono">
+
                     
                     <div>
                         <div class="redes">

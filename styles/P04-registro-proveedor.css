@@ -16,7 +16,7 @@
     font-weight: 700;
 }
 
-.contenedor3 {
+.contenedor6 {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -25,7 +25,7 @@
 
 .contenedor2 input {
     height: 200%;
-    margin: 3%;
+    margin: 10px;
 }
 
 
@@ -57,12 +57,12 @@
 }
 
 .input-formularios {
-    width: 300px;
+    width: 303px;
 }
 
 .contenedor2 select {
     height: 200%;
-    margin: 3%;
+    margin: 10px;
     width: 325px;
 }
 
@@ -78,12 +78,14 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    width: 300px;
+    width: 303px;
     height: 150px;
     resize: none;
     text-align: justify;
     margin-top: 10px;
     font-family: Montserrat;
+    margin-left: 22px;
+    margin-top: 60px;
 }
 
 .input-horario {
@@ -93,7 +95,7 @@
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    width: 300px;
+    width: 303px;
     height: 100px;
     resize: none;
     text-align: justify;
@@ -101,7 +103,7 @@
     font-family: Montserrat;
 }
 
-input[type="date"] {
+input[type="date"] {`1
     text-align: center;
     border-radius: 7px;
     font-size: 18px;
@@ -114,20 +116,13 @@ input[type="date"] {
 }
 
 select {
-    text-align: center;
     border-radius: 7px;
-    font-size: 18px;
-    font-weight: 300;
-    font-family: Montserrat;
-    font-size: 18px;
     background:#ffffff;
-    display: inline-block;
-    visibility: visible;
     color: #00000090;
+    margin: 0px ;
 }
 
 select option{
-
     color: #000000;
     font-weight: 500;
 }
@@ -171,6 +166,61 @@ select option{
     font-weight: 300;
 }
 
-.contenedor5 {
+.label {
+    border-radius: 7px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -20px;
+    font-size: 18px;
+}
 
+.contenedor6,
+.contenedor7,
+.contenedor8,
+.contenedor9,
+.contenedor10,
+.contenedor11,
+.contenedor12,
+.contenedor13 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+#txt-nombre-negocio-pr {
+    width: 1020px;
+}
+
+.flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.invisible {
+    user-select: none;
+    color: #00000000;
+}
+
+#txt-identificacion-pr {
+    margin-left: 22px;
+}
+
+.contenedor11 .label {
+    margin-left: 12px;
+}
+
+.correo {
+    margin-left: 13px;
 }
