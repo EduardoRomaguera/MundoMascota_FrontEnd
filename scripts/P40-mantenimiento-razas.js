@@ -3,7 +3,7 @@
 const TABLARAZAS = document.querySelector('#tbl-razas tbody');
 const FILTRORAZAS = document.querySelector('#txt-filtro-razas');
 const BTNAGREGARRAZA = document.querySelector('#btn-agregar-raza');
-const MENSAJERAZA = document.querySelector('#txt-mensaje-raza');
+const MENSAJE = document.querySelector('#No-encontrado');
 
 //Función que agrega las celdas de razas a la tabla
 const MOSTRARTABLARAZAS = () => {
@@ -54,6 +54,8 @@ const MOSTRARTABLARAZAS = () => {
             });
             celdaAcciones.appendChild(botonEliminar);
             celdaAcciones.appendChild(botonModificar);
+        } else if (!raza.nombre.toLowerCase().includes(filtro) || !raza.especie.toLowerCase().includes(filtro)) {
+            MENSAJE.style.display = 'block';
         }
 
     });
