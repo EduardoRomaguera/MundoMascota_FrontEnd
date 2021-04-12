@@ -7,12 +7,32 @@ const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
 const LLENARFORMULARIO = () => {
+
     INPUTNOMBRE.value = vacunaSeleccionado.nombre;
     INPUTESPECIE.value = vacunaSeleccionado.especie;
     INPUTESTADO.value = vacunaSeleccionado.estado;
+
+
+};
+
+const VALIDARINPUTS = () => {
+    INPUTNOMBRE.value = vacunaSeleccionado.nombre;
+    if (!INPUTNOMBRE.value == '') {
+        error.style.display = 'none';
+    }
+    INPUTESPECIE.value = vacunaSeleccionado.especie;
+    if (!INPUTESPECIE.value == '') {
+        INPUTESPECIE.style.display = 'none';
+    }
+
+    INPUTESTADO.value = vacunaSeleccionado.estado;
+    if (!INPUTESTADO.value == '') {
+        INPUTESTADO.style.display = 'none';
+    }
 };
 
 const VALIDAR = () => {
+
     let error = false;
     if (INPUTNOMBRE.value == '') {
         error = true;
@@ -57,3 +77,4 @@ BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P39-mantenimiento-catalogos.html';
 })
+VALIDARINPUTS();
