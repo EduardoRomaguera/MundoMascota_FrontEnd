@@ -4,9 +4,15 @@
 const TABLAVACUNAS = document.querySelector('#tbl-vacunas tbody');
 const FILTROVACUNAS = document.querySelector('#txt-filtro-vacunas');
 const BTNAGREGARVACUNA = document.querySelector('#btn-agregar-vacuna');
+let listaVacunas = [];
+
+const LLENARTABLAVACUNAS = async() => {
+    listaVacunas = await LISTARVACUNAS();
+    MOSTRARTABLAVACUNAS();
+};
 
 //Función que agrega las celdas de vacunas a la tabla
-const MOSTRARTABLAVACUNAS = () => {
+const MOSTRARTABLAVACUNAS = async => {
     let filtro = FILTROVACUNAS.value.toLowerCase();
     TABLAVACUNAS.innerHTML = '';
     listaVacunas.forEach(vacuna => {
@@ -58,7 +64,7 @@ const MOSTRARTABLAVACUNAS = () => {
     });
 };
 
-MOSTRARTABLAVACUNAS();
+LLENARTABLAVACUNAS();
 FILTROVACUNAS.addEventListener('keyup', MOSTRARTABLAVACUNAS)
 BTNAGREGARVACUNA.addEventListener('click', () => {
     window.location.href = 'P95-vacunas-modificar.html';

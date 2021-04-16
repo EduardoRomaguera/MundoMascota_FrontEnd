@@ -6,6 +6,14 @@ const INPUTESTADO = document.querySelector('#slt-estado-vc');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
+
+const AGREGARVACUNA = () => {
+    let nombre = INPUTNOMBRE.value;
+    let especie = INPUTESPECIE.value;
+    let estado = INPUTESTADO.value;
+
+    REGISTRARVACUNA(nombre, especie, estado);
+};
 const LLENARFORMULARIO = () => {
 
     INPUTNOMBRE.value = vacunaSeleccionado.nombre;
@@ -55,6 +63,7 @@ const VALIDAR = () => {
         INPUTESTADO.classList.remove('error');
     }
     if (error == false) {
+        AGREGARVACUNA();
         Swal.fire({
             'icon': 'success',
             'title': 'Vacuna agregada',
@@ -75,6 +84,6 @@ const VALIDAR = () => {
 };
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P39-mantenimiento-catalogos.html';
-})
-VALIDARINPUTS();
+        window.location.href = 'P42-mantenimiento-vacunas.html';
+    })
+    //VALIDARINPUTS();
