@@ -3,51 +3,76 @@
 const REGISTRARVACUNA = async(pnombre, pespecie, pestado) => {
 
     await axios({
-            method: 'post',
-            url: 'http://localhost:3000/api/registrar-vacuna',
-            responType: 'json',
-            data: {
-                nombre: pnombre,
-                especie: pespecie,
-                estado: pestado
-            }
-        })
-        .then((response) => {
-            Swal.fire({
-                'icon': 'success',
-                'title': 'La vacuna ha sido registrada correctamente',
-                'text': response.msj
-            }).then(() => {
-                if (response.data.usuario.estado == 'Cambio de contrasenna') {
-                    window.location.href = 'inicio-sesion.html';
-                }
+        method: 'post',
+        url: 'http://localhost:3000/api/registrar-vacuna',
+        responType: 'json',
+        data: {
+            nombre: pnombre,
+            especie: pespecie,
+            estado: pestado
+        }
+    })
+    .then((response) => {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'La vacuna ha sido registrada correctamente',
+            'text': response.msj
+        }).then(() => {
+            //
 
-            });
+        });
 
+    }).catch((response) => {
+        Swal.fire({
+            'title': response.msj,
+            'icon': 'error',
+            'text': response.err
         })
-        .catch((error) => {
-            Swal.fire({
-                'title': 'No se pudo registrar la vacuna',
-                'text': 'Ocurrio el siguiente error {error}',
-                'icon': 'error'
-            })
-        })
+    })
 };
 
 const LISTARVACUNAS = async() => {
-    let listaVacunas;
+    let listaVacunas = [];
 
     await axios({
-            method: 'get',
-            url: 'http://localhost:3000/api/listar-vacunas',
-            reponse: 'json',
-        })
-        .then((response) => {
-            listaVacunas = response.data.vacunas;
-        })
-        .catch((error) => {
-            console.log(error)
-        });
+        method: 'get',
+        url: 'http://localhost:3000/api/listar-vacunas',
+        responseType: 'json'
+    }).then((response) => {
+        listaVacunas = response.data.vacunas;
+    }).catch((response) => {
+
+    });
 
     return listaVacunas;
+};
+
+
+const MODIFICARVACUNA = async(_id, nombre, tipo, estado) => {
+    await axios({
+        method: 'put',
+        url: 'http://localhost:3000/api/modificar-vacuna',
+        responseType: 'json',
+        data: {
+            _id: _id,
+            nombre: nombre,
+            tipo: tipo,
+            estado: estado
+        }
+    }).then((response) => {
+        Swal.fire({
+            'title': 'La vacuna se modificó correctamente',
+            'icon': 'success',
+            'text': response.msj
+        }).then(() => {
+            mostrar_vacunas();
+        });
+    }).catch((response) => {
+        Swal.fire({
+            'title': response.msj,
+            'icon': 'error',
+            'text': response.err
+        })
+    });
+
 };

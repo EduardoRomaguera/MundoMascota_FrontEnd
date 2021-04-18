@@ -31,29 +31,27 @@ const REGISTRARRAZA = async(pnombre, pespecie, pestado) => {
         })
 };
 
-const LISTARVACUNAS = async() => {
-    let listaVacunas;
+const LISTARRAZAS = async() => {
+    let listaRazas = [];
 
     await axios({
-            method: 'get',
-            url: 'http://localhost:3000/api/listar-vacunas',
-            reponse: 'json',
-        })
-        .then((response) => {
-            listaVacunas = response.data.vacunas;
-        })
-        .catch((error) => {
-            console.log(error)
-        });
+        method: 'get',
+        url: 'http://localhost:3000/api/listar-razas',
+        responseType: 'json'
+    }).then((response) => {
+        listaRazas = response.data.razas;
+    }).catch((response) => {
 
-    return listaVacunas;
+    });
+
+    return listaRazas;
 };
 
 
 const MODIFICARVACUNA = async(_id, nombre, tipo, estado) => {
     await axios({
         method: 'put',
-        url: 'http://localhost:3000/api/modificar-vacuna',
+        url: 'http://localhost:3000/api/modificar-raza',
         responseType: 'json',
         data: {
             _id: _id,
@@ -63,11 +61,11 @@ const MODIFICARVACUNA = async(_id, nombre, tipo, estado) => {
         }
     }).then((response) => {
         Swal.fire({
-            'title': 'La vacuna se modificó correctamente',
+            'title': 'La raza se modificó correctamente',
             'icon': 'success',
             'text': response.msj
         }).then(() => {
-            mostrar_vacunas();
+            mostrar_razas();
         });
     }).catch((response) => {
         Swal.fire({
