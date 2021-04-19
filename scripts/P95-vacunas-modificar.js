@@ -13,6 +13,7 @@ const AGREGARVACUNA = () => {
     let estado = INPUTESTADO.value;
 
     REGISTRARVACUNA(nombre, especie, estado);
+    ACCIONUSUARIO('Agregar vacuna');
 };
 const LLENARFORMULARIO = () => {
 
@@ -82,6 +83,17 @@ const VALIDAR = () => {
 
     };
 };
+
+const ACCIONUSUARIO = (pNombreAccion) => {
+    let nombre = pNombreAccion;
+    let usuario;
+    let tipo = 'Administrador';
+    let fecha = Date.now();
+
+    REGISTRARACCION = async(nombre, usuario, tipo, fecha)
+        //Falta conseguir el id del usuario//
+};
+
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
         window.location.href = 'P42-mantenimiento-vacunas.html';
