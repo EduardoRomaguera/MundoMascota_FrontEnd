@@ -3,20 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
+    <link rel="stylesheet" href="styles/P95-vacunas-modificar.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Mantenimiento de catálogos</title>
+    <title>Vacunas</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href=P01-homepage.html>
+                <a class="nav-A" href="P49-principal-administrador.html">
                     <img src="images/logo2-nav.png" id="logo">
                 </a>
                 <div class="nav-B">
@@ -37,51 +38,43 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="titulo">
-                    <h1>Mantenimiento de catálogo de especies</h1>
-                </section>
-                <section class="catalogos">
-                    <section>
-                        <div>
-                            <label for='txt-filtro-especies'>Filtrar</label>
-                            <input type="text" id='txt-filtro-especies'>
-                            <button type="button" id="btn-agregar-especie" class="btn-agregar">
-                                Agregar Especie
-                            </button>
-                        </div>
+                <section>
+                    <div class="contenedor1">
+                        <form class="contenedor2">
 
-                        <div class="contenedor1">
-                            <div class="contenedor-tabla">
-                                <table id="tbl-especies" class="tabla">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Estado</th>
-                                            <th></th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                    </tbody>
-
-                                </table>
+                            <h2>Especie</h2>
+                            <div class="items">
+                                <label class="label" for="txt-nombre-especie">Nombre</label>
+                                <input class="input-formularios" id="txt-nombre-especie" type="text" placeholder="Nombre">
                             </div>
+                            <div class="items">
+                                <label class="label" for="slt-estado-especie">Estado</label>
+                                <select id="slt-estado-especie">
+                                        <option value="">--Seleccione una opción--</option>
+                                        <option value="Activo">Activo</option>
+                                        <option value="Inactivo">Inactivo</option>
+                                        </select>
+                            </div>
+                            <div class="items">
+                                <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
+                                <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
+                            </div>
+                        </form>
 
-                        </div>
-                    </section>
+
+                    </div>
                 </section>
             </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
-
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
                 <h5>Una empresa 100% nacional</h5>
                 <img src="images/cr.png" id="cr">
             </div>
+
             <div class="foot-B">
                 <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
@@ -92,6 +85,7 @@
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
+
             <div class="foot-C">
                 <h5>Síguenos</h5>
                 <div>
@@ -100,20 +94,22 @@
                 </div>
             </div>
         </div>
+
         <section class="divisor2">
             <a class="btn-sochi" href="P00-landing-sochi.html">
                 Desarrollado por Sochi Software 2021. Derechos Reservados.
             </a>
         </section>
     </footer>
-
     <!--Script de terceros-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+    <!-- Scripts de propios -->
     <!--script src="scripts/navegacion.js"></script-->
+    <script src="scripts/acciones.js"></script>
     <script src="scripts/P43-servicio-especies.js"></script>
-    <script src="scripts/P43-mantenimiento-especies.js"></script>
+    <script src="scripts/P93-especies-modificar.js"></script>
 </body>
 
 </html>

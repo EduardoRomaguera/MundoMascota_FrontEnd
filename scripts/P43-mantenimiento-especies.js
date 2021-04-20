@@ -3,11 +3,11 @@
 
 const TABLAESPECIES = document.querySelector('#tbl-especies tbody');
 const FILTROESPECIES = document.querySelector('#txt-filtro-especies');
-const BTNAGREGESPECIE = document.querySelector('#btn-agregar-especie');
+const BTNAGREGARESPECIE = document.querySelector('#btn-agregar-especie');
 let listaEspecies = [];
 
 const LLENARTABLAESPECIES = async() => {
-    listaVacunas = await LISTARESPECIES();
+    listaEspecies = await LISTARESPECIES();
     MOSTRARTABLAESPECIES();
 };
 
@@ -15,10 +15,10 @@ const LLENARTABLAESPECIES = async() => {
 const MOSTRARTABLAESPECIES = async => {
     let filtro = FILTROESPECIES.value.toLowerCase();
     TABLAESPECIES.innerHTML = '';
-    listaVacunas.forEach(vacuna => {
-        if (vacuna.nombre.toLowerCase().includes(filtro)) {
+    listaEspecies.forEach(especie => {
+        if (especie.nombre.toLowerCase().includes(filtro)) {
 
-            let fila = TABLAVACUNAS.insertRow();
+            let fila = TABLAESPECIES.insertRow();
             fila.insertCell().innerHTML = especie.nombre;
             fila.insertCell().innerHTML = especie.estado;
 
@@ -28,12 +28,8 @@ const MOSTRARTABLAESPECIES = async => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                Swal.fire({
-                    imageUrl: "images/cute-pets.jpg",
-                    title: "Nuestro equipo aún está trabajando en eso",
-                    text: "Mientras tanto puedes ver esos lindos cachorros",
-                    confirmButtonText: "Regresar"
-                });
+                sessionStorage.setItem('especieSeleccionado', JSON.stringify(especie));
+                window.location.href = 'P93-especies-modificar.html';
             });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
@@ -64,7 +60,7 @@ const MOSTRARTABLAESPECIES = async => {
 };
 
 LLENARTABLAESPECIES();
-FILTROVACUNAS.addEventListener('keyup', MOSTRARTABLAESPECIES)
+FILTROESPECIES.addEventListener('keyup', MOSTRARTABLAESPECIES)
 BTNAGREGARESPECIE.addEventListener('click', () => {
     window.location.href = 'P93-especies-modificar.html';
-})
+});
