@@ -84,6 +84,17 @@ const VALIDAR = () => {
     };
 };
 
+const OBTENERDATOS = () => {
+    let nombre = INPUTNOMBRE.value;
+    let especie = INPUTESPECIE.value;
+    let estado = INPUTESTADO.value;
+
+};
+
+const MODIFICARVACUNAF = () => {
+
+};
+
 const ACCIONUSUARIO = (pNombreAccion) => {
     let nombre = pNombreAccion;
     let usuario;

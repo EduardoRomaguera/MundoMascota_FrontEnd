@@ -28,7 +28,7 @@ const MOSTRARTABLAESPECIES = async => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                sessionStorage.setItem('especieSeleccionado', JSON.stringify(especie));
+                localStorage.setItem('especieSeleccionado', JSON.stringify(especie));
                 window.location.href = 'P93-especies-modificar.html';
             });
             let botonEliminar = document.createElement('button');
@@ -45,11 +45,10 @@ const MOSTRARTABLAESPECIES = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'La especie ha sido eliminada',
-                            'success'
-                        )
+                        localStorage.setItem('especieSeleccionado', especie._id);
+                        ELIMINARESPECIE();
+
+
                     }
                 })
             });
