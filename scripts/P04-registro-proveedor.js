@@ -1,7 +1,6 @@
 //'use strict';
 
 //Datos de representante legal//
-
 function activarRepresentante() {
     if (document.getElementById("txt-tipo-id-pr").value !== "juridica") {
         document.getElementById("txt-nombre-rep-pr").value == "";
@@ -9,7 +8,6 @@ function activarRepresentante() {
         document.getElementById("txt-apellido1-rep-pr").disabled = true;
         document.getElementById("txt-apellido2-rep-pr").disabled = true;
         document.getElementById("txt-correo-rep-pr").disabled = true;
-
     }
     if (document.getElementById("txt-tipo-id-pr").value == "juridica") {
         document.getElementById("txt-nombre-rep-pr").disabled = false;
@@ -22,7 +20,7 @@ document.getElementById('txt-tipo-id-pr').onchange = activarRepresentante;
 
 //Checkbox de redes sociales//
 function EnableDisableTextBox(facebook) {
-    var inputFacebookURL = document.getElementById("facebook-url");
+    var inputFacebookURL = document.getElementById("txt-enlaceFacebook-pr");
     inputFacebookURL.disabled = facebook.checked ? false : true;
     if (!inputFacebookURL.disabled) {
         inputFacebookURL.focus();
@@ -30,7 +28,7 @@ function EnableDisableTextBox(facebook) {
 }
 
 function EnableDisableTextBox2(instagram) {
-    var inputInstagramURL = document.getElementById("instagram-url");
+    var inputInstagramURL = document.getElementById("txt-enlaceInstagram-pr");
     inputInstagramURL.disabled = instagram.checked ? false : true;
     if (!inputInstagramURL.disabled) {
         inputInstagramURL.focus();
@@ -38,7 +36,7 @@ function EnableDisableTextBox2(instagram) {
 }
 
 function EnableDisableTextBox3(tiktok) {
-    var inputtiktokURL = document.getElementById("tiktok-url");
+    var inputtiktokURL = document.getElementById("txt-enlaceTiktok-pr");
     inputtiktokURL.disabled = tiktok.checked ? false : true;
     if (!inputtiktokURL.disabled) {
         inputtiktokURL.focus();
@@ -61,6 +59,9 @@ const inputDistritoPr = document.querySelector('#txt-distrito-pr');
 const inputSennasPr = document.querySelector('#txt-sennas-pr');
 const inputHorarioPr = document.querySelector('#txt-horario-pr');
 const inputTelefonoPr = document.querySelector('#txt-teléfono-pr');
+const inputEnlaceFacebook = document.querySelector('#txt-enlaceFacebook-pr');
+const inputEnlaceInstagram = document.querySelector('#txt-enlaceInstagram-pr');
+const inputEnlaceTiktok = document.querySelector('#txt-enlaceTiktok-pr');
 const btnCompletarRegistro = document.querySelector('#btn-completar-registro');
 //Representante legal
 const inputNombreRepPr = document.querySelector('#txt-nombre-rep-pr');
@@ -256,7 +257,10 @@ const validar = () => {
         });
     } else {}
 
+    validarEdad();
+
     if (error == false && errorCorreo == false && errorIdentificacion == false) {
+        registrar();
         Swal.fire({
             title: "Revise su correo electrónico",
             text: "Se enviarán instrucciones para completar el proceso de registro.",
@@ -300,11 +304,10 @@ const calcularEdad = (nacimiento) => {
     return edad;
 };
 
-const imprimir = () => {
+const validarEdad = () => {
     let nacimiento = new Date(inputNacimientoPr.value);
     let edad = calcularEdad(nacimiento);
     console.log(edad);
-    //Validación de edad
     if (edad < 18) {
         inputNacimientoPr.classList.add('error');
         Swal.fire({
@@ -316,7 +319,31 @@ const imprimir = () => {
     }
 };
 
-btnCompletarRegistro.addEventListener('click', function() { validar(), imprimir() });
+const registrar = () => {
+    let nombreNegocio = inputNombreNegocioPr.value;
+    let nombre = inputNombrePr.value;
+    let apellido1 = inputApellido1Pr.value;
+    let apellido2 = inputApellido2Pr.value;
+    let tipoId = inputTipoIdPr.value;
+    let identificacion = inputIdentificacionPr.value;
+    let nacimiento = new Date(inputNacimientoPr.value);
+    let edad = calcularEdad(nacimiento);
+    let correo = inputCorreoPr.value;
+    let telefono = inputTelefonoPr.value;
+    let provincia = inputProvinciaPr.value;
+    let canton = inputCantonPr.value;
+    let distrito = inputDistritoPr.value;
+    let otrasSenas = inputSennasPr.vaue;
+    let horario =  inputHorarioPr.value;
+    let enlaceFacebook = inputEnlaceFacebook.value;
+    let enlaceInstagram = inputEnlaceInstagram.value;
+    let enlaceTiktok = inputEnlaceTiktok.value;
+    registrarUsuario(nombreNegocio, nombre, apellido1, apellido2, tipoId, identificacion, nacimiento, edad, correo, telefono, provincia, canton, distrito, otrasSenas, horario, enlaceFacebook, enlaceInstagram, enlaceTiktok);
+};
+
+btnCompletarRegistro.addEventListener('click', function() { validar() });
+
+
 
 
 //Codigo para Selects dinámicos de canton, cantón y distrito//
