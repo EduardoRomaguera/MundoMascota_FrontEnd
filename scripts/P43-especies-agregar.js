@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
 const INPUTESTADO = document.querySelector('#slt-estado-especie');
@@ -12,7 +12,6 @@ const AGREGARESPECIE = () => {
     REGISTRARESPECIE(nombre, estado);
     // ACCIONUSUARIO('Agregar especie');
 };
-
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
@@ -36,7 +35,7 @@ const VALIDAR = () => {
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo modificar la especie',
+            'title': 'No se pudo guardar la especie',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
@@ -55,5 +54,5 @@ const VALIDAR = () => {
 //};
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P43-mantenimiento-especies.html';
-});
+    window.location.href = 'P43-especies-mantenimiento.html';
+})

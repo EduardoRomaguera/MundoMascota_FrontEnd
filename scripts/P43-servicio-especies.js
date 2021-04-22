@@ -15,10 +15,10 @@ const REGISTRARESPECIE = async(pnombre, pestado) => {
             Swal.fire({
                 'icon': 'success',
                 'title': 'La especie ha sido registrada correctamente',
-                'text': response.msj
+                'text': response.msj,
+                'confirmButtonText': 'Entendido'
             }).then(() => {
-                //
-
+                window.location.href = 'P43-especies-mantenimiento.html';
             });
 
         }).catch((response) => {
@@ -32,7 +32,6 @@ const REGISTRARESPECIE = async(pnombre, pestado) => {
 
 const LISTARESPECIES = async() => {
     let listaEspecies = [];
-
     await axios({
         method: 'get',
         url: 'http://localhost:3000/api/listar-especies',

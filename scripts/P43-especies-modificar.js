@@ -1,36 +1,18 @@
 'use strict'
-let especieSeleccionado;
+
 const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
 const INPUTESTADO = document.querySelector('#slt-estado-especie');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
+let especieSeleccionado;
 
-//Funcion que llena el formulario con la info de la especie seleccionada
-const LLENARFORMULARIO = () => {
-    INPUTNOMBRE.value = especieSeleccionado.nombre;
-    INPUTESTADO.value = especieSeleccionado.estado;
-};
-
-//Funcion que registra la especie 
-const AGREGARESPECIE = () => {
+const CAMBIARESPECIE = () => {
     let nombre = INPUTNOMBRE.value;
     let estado = INPUTESTADO.value;
-    REGISTRARESPECIE(nombre, estado);
-    // ACCIONUSUARIO('Agregar especie');
-};
+    MODIFICARESPECIE(nombre, estado);
+}
 
 
-//Falta revisar este*******
-const VALIDARINPUTS = () => {
-    INPUTNOMBRE.value = especieSeleccionado.nombre;
-    if (!INPUTNOMBRE.value == '') {
-        error.style.display = 'none';
-    }
-    INPUTESTADO.value = especieSeleccionado.estado;
-    if (!INPUTESTADO.value == '') {
-        INPUTESTADO.style.display = 'none';
-    }
-};
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
@@ -48,9 +30,7 @@ const VALIDAR = () => {
 
     //validaciones de formato
     if (error == false) {
-
-        OBTENERESPECIE();
-
+        CAMBIARESPECIE();
     } else {
         Swal.fire({
             'icon': 'warning',
@@ -62,15 +42,11 @@ const VALIDAR = () => {
     }
 };
 
-const OBTENERESPECIE = () => {
-    let nombre = especieSeleccionado.nombre;
-    let estado = especieSeleccionado.estado;
-    MODIFICARESPECIE(nombre, estado);
-}
-
 if (localStorage.getItem('especieSeleccionado')) {
     especieSeleccionado = JSON.parse(localStorage.getItem('especieSeleccionado'));
-    LLENARFORMULARIO();
+    INPUTNOMBRE.value = especieSeleccionado.nombre;
+    INPUTESTADO.value = especieSeleccionado.estado;
+    console.log(especieSeleccionado);
 } else {
     Swal.fire({
         'icon': 'warning',
@@ -92,5 +68,5 @@ if (localStorage.getItem('especieSeleccionado')) {
 //};
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P43-mantenimiento-especies.html';
-});
+    window.location.href = 'P43-especies-mantenimiento.html';
+})

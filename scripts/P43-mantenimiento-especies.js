@@ -29,7 +29,7 @@ const MOSTRARTABLAESPECIES = async => {
 
             botonModificar.addEventListener('click', () => {
                 localStorage.setItem('especieSeleccionado', JSON.stringify(especie));
-                window.location.href = 'P93-especies-modificar.html';
+                window.location.href = 'P43-especies-modificar.html';
             });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
@@ -47,8 +47,6 @@ const MOSTRARTABLAESPECIES = async => {
                     if (result.isConfirmed) {
                         localStorage.setItem('especieSeleccionado', especie._id);
                         ELIMINARESPECIE();
-
-
                     }
                 })
             });
@@ -61,5 +59,5 @@ const MOSTRARTABLAESPECIES = async => {
 LLENARTABLAESPECIES();
 FILTROESPECIES.addEventListener('keyup', MOSTRARTABLAESPECIES)
 BTNAGREGARESPECIE.addEventListener('click', () => {
-    window.location.href = 'P93-especies-modificar.html';
-});
+    window.location.href = 'P43-especies-agregar.html';
+})
