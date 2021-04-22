@@ -91,9 +91,7 @@ const OBTENERDATOS = () => {
 
 };
 
-const MODIFICARVACUNAF = () => {
 
-};
 
 const ACCIONUSUARIO = (pNombreAccion) => {
     let nombre = pNombreAccion;

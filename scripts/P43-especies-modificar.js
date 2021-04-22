@@ -12,8 +12,6 @@ const CAMBIARESPECIE = () => {
     MODIFICARESPECIE(nombre, estado);
 }
 
-
-
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
 
@@ -46,7 +44,6 @@ if (localStorage.getItem('especieSeleccionado')) {
     especieSeleccionado = JSON.parse(localStorage.getItem('especieSeleccionado'));
     INPUTNOMBRE.value = especieSeleccionado.nombre;
     INPUTESTADO.value = especieSeleccionado.estado;
-    console.log(especieSeleccionado);
 } else {
     Swal.fire({
         'icon': 'warning',
