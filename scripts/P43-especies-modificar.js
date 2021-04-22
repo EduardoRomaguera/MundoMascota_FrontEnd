@@ -1,20 +1,14 @@
 'use strict'
-
+let especieSeleccionado;
+let _id;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
 const INPUTESTADO = document.querySelector('#slt-estado-especie');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
-let especieSeleccionado;
 
-const CAMBIARESPECIE = () => {
-    let nombre = INPUTNOMBRE.value;
-    let estado = INPUTESTADO.value;
-    MODIFICARESPECIE(nombre, estado);
-}
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
-
     let error = false;
     let inputsRequeridos = document.querySelectorAll('.input-formularios :required');
     inputsRequeridos.forEach(input => {
@@ -25,8 +19,6 @@ const VALIDAR = () => {
             input.classList.remove('error');
         }
     });
-
-    //validaciones de formato
     if (error == false) {
         CAMBIARESPECIE();
     } else {
@@ -40,10 +32,19 @@ const VALIDAR = () => {
     }
 };
 
+//Funcion que obtiene los datos del formulario
+const CAMBIARESPECIE = () => {
+    let nombre = INPUTNOMBRE.value;
+    let estado = INPUTESTADO.value;
+    MODIFICARESPECIE(_id, nombre, estado);
+}
+
 if (localStorage.getItem('especieSeleccionado')) {
     especieSeleccionado = JSON.parse(localStorage.getItem('especieSeleccionado'));
     INPUTNOMBRE.value = especieSeleccionado.nombre;
     INPUTESTADO.value = especieSeleccionado.estado;
+    _id = especieSeleccionado._id;
+    console.log(especieSeleccionado);
 } else {
     Swal.fire({
         'icon': 'warning',

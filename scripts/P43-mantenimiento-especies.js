@@ -1,17 +1,17 @@
 'use strict';
 
-
 const TABLAESPECIES = document.querySelector('#tbl-especies tbody');
 const FILTROESPECIES = document.querySelector('#txt-filtro-especies');
 const BTNAGREGARESPECIE = document.querySelector('#btn-agregar-especie');
 let listaEspecies = [];
+
 
 const LLENARTABLAESPECIES = async() => {
     listaEspecies = await LISTARESPECIES();
     MOSTRARTABLAESPECIES();
 };
 
-//Función que agrega las celdas de vacunas a la tabla
+//Función que agrega las celdas de especies a la tabla
 const MOSTRARTABLAESPECIES = async => {
     let filtro = FILTROESPECIES.value.toLowerCase();
     TABLAESPECIES.innerHTML = '';
@@ -45,8 +45,7 @@ const MOSTRARTABLAESPECIES = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        localStorage.setItem('especieSeleccionado', especie._id);
-                        ELIMINARESPECIE();
+                        ELIMINARESPECIE(id);
                     }
                 })
             });

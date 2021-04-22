@@ -92,7 +92,6 @@ const OBTENERDATOS = () => {
 };
 
 
-
 const ACCIONUSUARIO = (pNombreAccion) => {
     let nombre = pNombreAccion;
     let usuario;

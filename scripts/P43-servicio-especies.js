@@ -31,7 +31,8 @@ const REGISTRARESPECIE = async(pnombre, pestado) => {
 };
 
 const LISTARESPECIES = async() => {
-    let listaEspecies = [];
+    let listaEspecies;
+
     await axios({
         method: 'get',
         url: 'http://localhost:3000/api/listar-especies',
@@ -39,19 +40,19 @@ const LISTARESPECIES = async() => {
     }).then((response) => {
         listaEspecies = response.data.especies;
     }).catch((error) => {
-
+        console.log(error)
     });
 
     return listaEspecies;
 };
 
-
-const MODIFICARESPECIE = async(pnombre, pestado) => {
+const MODIFICARESPECIE = async(pid, pnombre, pestado) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-especie',
         responseType: 'json',
         data: {
+            _id: pid,
             nombre: pnombre,
             estado: pestado
         }
@@ -61,7 +62,7 @@ const MODIFICARESPECIE = async(pnombre, pestado) => {
             'title': 'La especie se modificó correctamente',
             'text': response.msj
         }).then(() => {
-
+            window.location.href = 'P43-especies-mantenimiento.html';
         });
     }).catch((error) => {
         Swal.fire({
@@ -73,13 +74,13 @@ const MODIFICARESPECIE = async(pnombre, pestado) => {
 
 };
 
-const ELIMINARESPECIE = async() => {
+const ELIMINARESPECIE = async(pid) => {
     await axios({
             method: 'delete',
             url: 'http://localhost:3000/api/eliminar-especie',
             responseType: 'json',
             data: {
-                _id: sessionStorage.getItem(objEspecie._id),
+                _id: pid
             }
         })
         .then((response) => {

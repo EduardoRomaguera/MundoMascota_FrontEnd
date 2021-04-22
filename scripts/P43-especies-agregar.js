@@ -26,10 +26,7 @@ const VALIDAR = () => {
             input.classList.remove('error');
         }
     });
-
-    //validaciones de formato
     if (error == false) {
-
         AGREGARESPECIE();
 
     } else {
