@@ -4,9 +4,17 @@ const TABLARAZAS = document.querySelector('#tbl-razas tbody');
 const FILTRORAZAS = document.querySelector('#txt-filtro-razas');
 const BTNAGREGARRAZA = document.querySelector('#btn-agregar-raza');
 const MENSAJE = document.querySelector('#No-encontrado');
+let listaEspecies = [];
+
+
+
+const LLENARTABLARAZAS = async() => {
+    listaEspecies = await LISTARRAZAS();
+    MOSTRARTABLARAZAS();
+};
 
 //Función que agrega las celdas de razas a la tabla
-const MOSTRARTABLARAZAS = () => {
+const MOSTRARTABLARAZAS = async() => {
     let filtro = FILTRORAZAS.value.toLowerCase();
     TABLARAZAS.innerHTML = '';
     listaRazas.forEach(raza => {
@@ -23,12 +31,8 @@ const MOSTRARTABLARAZAS = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                Swal.fire({
-                    imageUrl: "images/cute-pets.jpg",
-                    title: "Nuestro equipo aún está trabajando en eso",
-                    text: "Mientras tanto puedes ver esos lindos cachorros",
-                    confirmButtonText: "Regresar"
-                });
+                localStorage.setItem('razaSeleccionado', JSON.stringify(raza));
+                window.location.href = 'P40-raza-modificar.html';
             });
 
             let botonEliminar = document.createElement('button');
@@ -60,8 +64,8 @@ const MOSTRARTABLARAZAS = () => {
 
     });
 };
-MOSTRARTABLARAZAS();
+LLENARTABLARAZAS();
 FILTRORAZAS.addEventListener('keyup', MOSTRARTABLARAZAS);
 BTNAGREGARRAZA.addEventListener('click', () => {
-    window.location.href = 'P97-raza-modificar.html';
+    window.location.href = 'P40-raza-modificar.html';
 })
