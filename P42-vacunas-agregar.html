@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/P95-vacunas-modificar.css">
+    <link rel="icon" href="images/icono.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Vacunas Agregar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <a class="nav-A" href="P49-principal-administrador.html">
+                    <img src="images/logo2-nav.png" id="logo">
+                </a>
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
+                    </form>
+                </div>
+                <div class="nav-C">
+                    <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="madre-espaciadores">
+            <div id="espaciador-izq"></div>
+            <div id="contenedor-main">
+                <section>
+                    <div class="contenedor1">
+                        <form class="contenedor2">
+
+                            <h2>Vacuna</h2>
+                            <div class="items">
+                                <label class="label" for="txt-nombre-vc">Nombre</label>
+                                <input class="input-formularios" id="txt-nombre-vc" type="text" placeholder="Nombre">
+                            </div>
+                            <div class="items">
+                                <label class="label" for="slt-especie-vc">Especie</label>
+                                <select id="slt-especie-vc">
+                                        <option value="">--Seleccione una opción--</option>
+                                        <option value="Perro">Perro</option>
+                                        <option value="Gato">Gato</option>
+                                        </select>
+                            </div>
+                            <div class="items">
+                                <label class="label" for="slt-estado-vc">Estado</label>
+                                <select id="slt-estado-vc">
+                                        <option value="">--Seleccione una opción--</option>
+                                        <option value="Activo">Activo</option>
+                                        <option value="Inactivo">Inactivo</option>
+                                        </select>
+                            </div>
+                            <div class="items">
+                                <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
+                                <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </section>
+            </div>
+            <div id="espaciador-der"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Una empresa 100% nacional</h5>
+                <img src="images/cr.png" id="cr">
+            </div>
+
+            <div class="foot-B">
+                <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8849-0592</li>
+                    <li>Teléfono</li>
+                    <li class="italica">800-MASCOTA</li>
+                    <li class="italica">hola@mundomascota.com</li>
+                </ul>
+            </div>
+
+            <div class="foot-C">
+                <h5>Síguenos</h5>
+                <div>
+                    <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a id="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="divisor2">
+            <a class="btn-sochi" href="P00-landing-sochi.html">
+                Desarrollado por Sochi Software 2021. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+    <!--Script de terceros-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Scripts de propios -->>
+    <script src="scripts/navegacion.js"></script>
+    <script src="scripts/acciones.js"></script>
+    <script src="scripts/P42-servicio-vacunas.js"></script>
+    <script src="scripts/P42-vacunas-agregar.js"></script>
+</body>
+
+</html>

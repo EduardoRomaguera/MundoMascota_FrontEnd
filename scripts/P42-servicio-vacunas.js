@@ -3,32 +3,32 @@
 const REGISTRARVACUNA = async(pnombre, pespecie, pestado) => {
 
     await axios({
-        method: 'post',
-        url: 'http://localhost:3000/api/registrar-vacuna',
-        responType: 'json',
-        data: {
-            nombre: pnombre,
-            especie: pespecie,
-            estado: pestado
-        }
-    })
-    .then((response) => {
-        Swal.fire({
-            'icon': 'success',
-            'title': 'La vacuna ha sido registrada correctamente',
-            'text': response.msj
-        }).then(() => {
-            //
-
-        });
-
-    }).catch((response) => {
-        Swal.fire({
-            'title': response.msj,
-            'icon': 'error',
-            'text': response.err
+            method: 'post',
+            url: 'http://localhost:3000/api/registrar-vacuna',
+            responType: 'json',
+            data: {
+                nombre: pnombre,
+                especie: pespecie,
+                estado: pestado
+            }
         })
-    })
+        .then((response) => {
+            Swal.fire({
+                'icon': 'success',
+                'title': 'La vacuna ha sido registrada correctamente',
+                'text': response.msj
+            }).then(() => {
+                window.location.href = 'P42-mantenimiento-vacunas.html';
+
+            });
+
+        }).catch((response) => {
+            Swal.fire({
+                'title': response.msj,
+                'icon': 'error',
+                'text': response.err
+            })
+        })
 };
 
 const LISTARVACUNAS = async() => {
@@ -40,38 +40,37 @@ const LISTARVACUNAS = async() => {
         responseType: 'json'
     }).then((response) => {
         listaVacunas = response.data.vacunas;
-    }).catch((response) => {
-
+    }).catch((error) => {
+        console.log(error)
     });
 
     return listaVacunas;
 };
 
 
-const MODIFICARVACUNA = async(_id, nombre, tipo, estado) => {
+const MODIFICARVACUNA = async(pid, pnombre, pestado) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-vacuna',
         responseType: 'json',
         data: {
-            _id: _id,
-            nombre: nombre,
-            tipo: tipo,
-            estado: estado
+            _id: pid,
+            nombre: pnombre,
+            estado: pestado
         }
     }).then((response) => {
         Swal.fire({
-            'title': 'La vacuna se modificó correctamente',
             'icon': 'success',
+            'title': 'La vacuna se modificó correctamente',
             'text': response.msj
         }).then(() => {
-            mostrar_vacunas();
+            window.location.href = 'P42-mantenimiento-vacunas.html';
         });
-    }).catch((response) => {
+    }).catch((error) => {
         Swal.fire({
             'title': response.msj,
             'icon': 'error',
-            'text': response.err
+            'text': error
         })
     });
 

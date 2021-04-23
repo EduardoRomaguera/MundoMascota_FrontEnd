@@ -1,20 +1,20 @@
-'use strict';
-
-const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
-const INPUTESPECIE = document.querySelector('#slt-especie-vc');
-const INPUTESTADO = document.querySelector('#slt-estado-especie');
+'use strict'
+let razaSeleccionado;
+const INPUTNOMBRE = document.querySelector('#txt-nombre-rz');
+const INPUTESPECIE = document.querySelector('#slt-especie-rz');
+const INPUTESTADO = document.querySelector('#slt-estado-rz');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
-//Funcion que registra la especie 
-const AGREGARESPECIE = () => {
+//Funcion que registra la raza 
+const AGREGARRAZA = () => {
     let nombre = INPUTNOMBRE.value;
+    let especie = INPUTESPECIE.value;
     let estado = INPUTESTADO.value;
-    REGISTRARESPECIE(nombre, estado);
+
+    REGISTRARRAZA(nombre, estado);
     // ACCIONUSUARIO('Agregar especie');
 };
-
-//Valida que los inputs no esten vacios.
 const VALIDAR = () => {
 
     let error = false;
@@ -28,29 +28,19 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        AGREGARESPECIE();
+        AGREGARRAZA();
 
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo guardar la especie',
+            'title': 'No se pudo guardar la raza',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
 
     }
 };
-
-//const ACCIONUSUARIO = (pNombreAccion) => {
-//  let nombre = pNombreAccion;
-//let usuario;
-//let tipo = 'Administrador';
-//let fecha = Date.now();
-
-//REGISTRARACCION = async(nombre, usuario, tipo, fecha)
-//Falta conseguir el id del usuario//
-//};
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P43-especies-mantenimiento.html';
+    window.location.href = 'P39-mantenimiento-catalogos.html';
 })

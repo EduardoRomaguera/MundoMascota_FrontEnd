@@ -1,16 +1,15 @@
 'use strict';
 
-const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
-const INPUTESPECIE = document.querySelector('#slt-especie-vc');
-const INPUTESTADO = document.querySelector('#slt-estado-especie');
+const INPUTNOMBRE = document.querySelector('#txt-nombre-vc');
+const INPUTESTADO = document.querySelector('#slt-estado-vc');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
 //Funcion que registra la especie 
-const AGREGARESPECIE = () => {
+const AGREGARVACUNA = () => {
     let nombre = INPUTNOMBRE.value;
     let estado = INPUTESTADO.value;
-    REGISTRARESPECIE(nombre, estado);
+    REGISTRARVACUNA(nombre, especie, estado);
     // ACCIONUSUARIO('Agregar especie');
 };
 
@@ -28,29 +27,15 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        AGREGARESPECIE();
+        AGREGARVACUNA();
 
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo guardar la especie',
+            'title': 'No se pudo guardar la vacuna',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
 
     }
 };
-
-//const ACCIONUSUARIO = (pNombreAccion) => {
-//  let nombre = pNombreAccion;
-//let usuario;
-//let tipo = 'Administrador';
-//let fecha = Date.now();
-
-//REGISTRARACCION = async(nombre, usuario, tipo, fecha)
-//Falta conseguir el id del usuario//
-//};
-BTNGUARDAR.addEventListener('click', VALIDAR)
-BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P43-especies-mantenimiento.html';
-})
