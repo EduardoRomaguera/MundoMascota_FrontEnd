@@ -29,12 +29,8 @@ const MOSTRARTABLAVACUNAS = async => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                Swal.fire({
-                    imageUrl: "images/cute-pets.jpg",
-                    title: "Nuestro equipo aún está trabajando en eso",
-                    text: "Mientras tanto puedes ver esos lindos cachorros",
-                    confirmButtonText: "Regresar"
-                });
+                localStorage.setItem('vacunaSeleccionado', JSON.stringify(vacuna));
+                window.location.href = 'P42-vacunas-modificar.html';
             });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
@@ -50,11 +46,7 @@ const MOSTRARTABLAVACUNAS = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'La vacuna ha sido eliminada',
-                            'success'
-                        )
+                        ELIMINARESPECIE(id);
                     }
                 })
             });
@@ -67,5 +59,5 @@ const MOSTRARTABLAVACUNAS = async => {
 LLENARTABLAVACUNAS();
 FILTROVACUNAS.addEventListener('keyup', MOSTRARTABLAVACUNAS)
 BTNAGREGARVACUNA.addEventListener('click', () => {
-    window.location.href = 'P95-vacunas-modificar.html';
+    window.location.href = 'P42-vacunas-agregar.html';
 })
