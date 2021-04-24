@@ -257,13 +257,24 @@ const validar = () => {
         });
     } else {}
 
-    validarEdad();
+    let nacimiento = new Date(inputNacimientoPr.value);
+    let edad = calcularEdad(nacimiento);
+    console.log(edad);
+    if (edad < 18) {
+        error = true;
+        inputNacimientoPr.classList.add('error');
+        Swal.fire({
+            imageUrl: "images/error.png",
+            title: "Espere",
+            text: "Solo se permite el registro de mayores de 18 años",
+            confirmButtonText: "Regresar"
+        });
+    }
 
     if (error == false && errorCorreo == false && errorIdentificacion == false) {
         registrar();
         console.log("Se envió el registro al backend");
     }
-
 };
 
 const calcularEdad = (nacimiento) => {
@@ -278,22 +289,6 @@ const calcularEdad = (nacimiento) => {
         }
     }
     return edad;
-};
-
-const validarEdad = () => {
-    let nacimiento = new Date(inputNacimientoPr.value);
-    let edad = calcularEdad(nacimiento);
-    console.log(edad);
-    if (edad < 18) {
-        error = true;
-        inputNacimientoPr.classList.add('error');
-        Swal.fire({
-            imageUrl: "images/error.png",
-            title: "Espere",
-            text: "Solo se permite el registro de mayores de 18 años",
-            confirmButtonText: "Regresar"
-        });
-    }
 };
 
 const registrar = () => {

@@ -22,12 +22,27 @@ const registrarCliente = async(pnombre, papellido1, papellido2, pcorreo, ptipoID
         })
         .then((response) => {
             Swal.fire({
-                'icon': 'success',
-                'title': 'Su cuenta se registro con éxito',
-                'text': 'Por favor revise su correo electrónico',
-                'confirmButtonText': 'Entendido'
+                title: "Revise su correo electrónico",
+                text: "Se enviarán instrucciones para completar el proceso de registro.",
+                confirmButtonText: "OK"
             }).then(() => {
-                window.location.href = 'inicio-sesion.html';
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'top-end',
+                    showConfirmButton: false,
+                    timer: 1500,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                })
+                Toast.fire({
+                    icon: 'success',
+                    title: 'Completando registo'
+                }).then(() => {
+                    window.location.href = 'P05-inicio-sesion.html';
+                });
             });
         })
         .catch((error) => {

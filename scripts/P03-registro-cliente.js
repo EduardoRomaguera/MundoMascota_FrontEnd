@@ -155,33 +155,8 @@ const validar = () => {
     }
     if (error == false && errorCorreo == false && errorIdentificacion == false) {
         registrar();
-        Swal.fire({
-            title: "Revise su correo electrónico",
-            text: "Se enviarán instrucciones para completar el proceso de registro.",
-            confirmButtonText: "OK"
-        }).then(() => {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 1500,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
-            })
-            Toast.fire({
-                icon: 'success',
-                title: 'Completando registo'
-            }).then(() => {
-                window.location.href = 'P05-inicio-sesion.html';
-            });
-
-        });
-
+        console.log("Se envió el registro al backend");
     }
-
 };
 
 const calcularEdad = (nacimiento) => {
