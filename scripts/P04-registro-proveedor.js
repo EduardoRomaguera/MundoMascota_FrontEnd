@@ -261,31 +261,7 @@ const validar = () => {
 
     if (error == false && errorCorreo == false && errorIdentificacion == false) {
         registrar();
-        Swal.fire({
-            title: "Revise su correo electrónico",
-            text: "Se enviarán instrucciones para completar el proceso de registro.",
-            confirmButtonText: "OK"
-        }).then(() => {
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 1500,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
-            })
-            Toast.fire({
-                icon: 'success',
-                title: 'Completando registo'
-            }).then(() => {
-                window.location.href = 'P05-inicio-sesion.html';
-            });
-
-        });
-
+        console.log("Se envió el registro al backend");
     }
 
 };
@@ -309,6 +285,7 @@ const validarEdad = () => {
     let edad = calcularEdad(nacimiento);
     console.log(edad);
     if (edad < 18) {
+        error = true;
         inputNacimientoPr.classList.add('error');
         Swal.fire({
             imageUrl: "images/error.png",
@@ -342,9 +319,6 @@ const registrar = () => {
 };
 
 btnCompletarRegistro.addEventListener('click', function() { validar() });
-
-
-
 
 //Codigo para Selects dinámicos de canton, cantón y distrito//
 function lista(texto, valor) {
