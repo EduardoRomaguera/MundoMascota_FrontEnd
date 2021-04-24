@@ -19,7 +19,7 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        CAMBIARESPECIE();
+        CAMBIARVACUNA();
     } else {
         Swal.fire({
             'icon': 'warning',
@@ -50,13 +50,11 @@ if (localStorage.getItem('vacunaSeleccionado')) {
         'title': 'Atención',
         'text': 'Debe seleccionar primero una vacuna'
     }).then(() => {
-        window.location.href = 'P43-mantenimiento-vacunas';
+        window.location.href = 'P43-mantenimiento-especies';
     });
 }
 
-
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-        window.location.href = 'P42-mantenimiento-vacunas.html';
-    })
-    //VALIDARINPUTS();
+    window.location.href = 'P42-mantenimiento-vacunas.html';
+})

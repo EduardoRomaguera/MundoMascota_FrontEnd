@@ -45,7 +45,7 @@ const MOSTRARTABLAESPECIES = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        ELIMINARESPECIE(id);
+                        ELIMINARESPECIE(especie._id);
                     }
                 })
             });
