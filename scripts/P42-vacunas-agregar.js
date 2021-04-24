@@ -10,6 +10,7 @@ const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 //Funcion que registra la especie 
 const AGREGARVACUNA = () => {
     let nombre = INPUTNOMBRE.value;
+    let especie = INPUTESPECIE.value;
     let estado = INPUTESTADO.value;
     REGISTRARVACUNA(nombre, especie, estado);
     // ACCIONUSUARIO('Agregar especie');

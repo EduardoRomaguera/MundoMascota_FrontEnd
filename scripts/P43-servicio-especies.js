@@ -84,10 +84,11 @@ const ELIMINARESPECIE = async(pid) => {
             }
         })
         .then((response) => {
-            Swal.fire(
-                'La especie ha sido eliminada',
-                'success'
-            ).then(() => {
+            Swal.fire({
+                'title': 'La especie ha sido eliminada',
+                'icon': 'success',
+                'text': response.msj
+            }).then(() => {
                 window.location.href = 'P43-especies-mantenimiento.html';
             });
         })

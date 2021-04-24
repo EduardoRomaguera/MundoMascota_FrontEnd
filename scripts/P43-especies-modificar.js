@@ -52,7 +52,7 @@ if (localStorage.getItem('especieSeleccionado')) {
         'title': 'Atención',
         'text': 'Debe seleccionar primero una especie'
     }).then(() => {
-        window.location.href = 'P43-mantenimiento-especies';
+        window.location.href = 'P43-especies-mantenimiento.html';
     });
 }
 

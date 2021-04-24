@@ -6,11 +6,12 @@ const INPUTESPECIE = document.querySelector('#slt-especie-vc');
 const INPUTESTADO = document.querySelector('#slt-estado-vc');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
+const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 
 const VALIDAR = () => {
     let error = false;
-    let inputsRequeridos = document.querySelectorAll('.input-formularios :required');
-    inputsRequeridos.forEach(input => {
+    let inputRequeridos = INPUTSREQUERIDOS;
+    inputRequeridos.forEach(input => {
         if (input.value == '') {
             error = true;
             input.classList.add('error');
@@ -34,13 +35,17 @@ const VALIDAR = () => {
 //Funcion que obtiene los datos del formulario
 const CAMBIARVACUNA = () => {
     let nombre = INPUTNOMBRE.value;
+    let especie = INPUTESPECIE.value;
     let estado = INPUTESTADO.value;
-    MODIFICARVACUNA(nombre, especie, estado);
+    MODIFICARVACUNA(_id, nombre, especie, estado);
+    console.log(vacunaSeleccionado);
+
 }
 
 if (localStorage.getItem('vacunaSeleccionado')) {
-    especieSeleccionado = JSON.parse(localStorage.getItem('vacunaSeleccionado'));
+    vacunaSeleccionado = JSON.parse(localStorage.getItem('vacunaSeleccionado'));
     INPUTNOMBRE.value = vacunaSeleccionado.nombre;
+    INPUTESPECIE.value = vacunaSeleccionado.especie;
     INPUTESTADO.value = vacunaSeleccionado.estado;
     _id = vacunaSeleccionado._id;
     console.log(vacunaSeleccionado);
@@ -50,9 +55,18 @@ if (localStorage.getItem('vacunaSeleccionado')) {
         'title': 'Atención',
         'text': 'Debe seleccionar primero una vacuna'
     }).then(() => {
-        window.location.href = 'P43-mantenimiento-especies';
+        window.location.href = 'P42-vacunas-mantenimiento.html';
     });
 }
+INPUTSREQUERIDOS.forEach(input => {
+    input.addEventListener('blur', () => {
+        if (input.value == '') {
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+        }
+    });
+});
 
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {

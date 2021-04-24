@@ -48,7 +48,7 @@ const LISTARVACUNAS = async() => {
 };
 
 
-const MODIFICARVACUNA = async(pid, pnombre, pestado) => {
+const MODIFICARVACUNA = async(pid, pnombre, pespecie, pestado) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-vacuna',
@@ -56,6 +56,7 @@ const MODIFICARVACUNA = async(pid, pnombre, pestado) => {
         data: {
             _id: pid,
             nombre: pnombre,
+            especie: pespecie,
             estado: pestado
         }
     }).then((response) => {
@@ -86,9 +87,11 @@ const ELIMINARVACUNA = async(pid) => {
             }
         })
         .then((response) => {
-            Swal.fire(
-                'La vacuna ha sido eliminada',
-                'success'
+            Swal.fire({
+                    'title': 'La vacuna ha sido eliminada',
+                    'icon': 'success',
+                    'text': response.msj
+                }
 
             ).then(() => {
                 window.location.href = 'P42-vacunas-mantenimiento.html';

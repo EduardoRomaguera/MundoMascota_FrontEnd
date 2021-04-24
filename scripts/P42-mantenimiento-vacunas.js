@@ -46,7 +46,7 @@ const MOSTRARTABLAVACUNAS = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        ELIMINARESPECIE(id);
+                        ELIMINARVACUNA(vacuna._id);
                     }
                 })
             });
