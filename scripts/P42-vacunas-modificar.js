@@ -56,5 +56,5 @@ if (localStorage.getItem('vacunaSeleccionado')) {
 
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P42-mantenimiento-vacunas.html';
+    window.location.href = 'P42-vacunas-mantenimiento.html';
 })

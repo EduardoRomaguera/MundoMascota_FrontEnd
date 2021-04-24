@@ -18,7 +18,7 @@ const REGISTRARVACUNA = async(pnombre, pespecie, pestado) => {
                 'title': 'La vacuna ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
-                window.location.href = 'P42-mantenimiento-vacunas.html';
+                window.location.href = 'P42-vacunas-mantenimiento.html';
 
             });
 
@@ -64,7 +64,7 @@ const MODIFICARVACUNA = async(pid, pnombre, pestado) => {
             'title': 'La vacuna se modificó correctamente',
             'text': response.msj
         }).then(() => {
-            window.location.href = 'P42-mantenimiento-vacunas.html';
+            window.location.href = 'P42-vacunas-mantenimiento.html';
         });
     }).catch((error) => {
         Swal.fire({
@@ -74,4 +74,27 @@ const MODIFICARVACUNA = async(pid, pnombre, pestado) => {
         })
     });
 
+};
+
+const ELIMINARVACUNA = async(pid) => {
+    await axios({
+            method: 'delete',
+            url: 'http://localhost:3000/api/eliminar-vacuna',
+            responseType: 'json',
+            data: {
+                _id: pid
+            }
+        })
+        .then((response) => {
+            Swal.fire(
+                'La vacuna ha sido eliminada',
+                'success'
+
+            ).then(() => {
+                window.location.href = 'P42-vacunas-mantenimiento.html';
+            });
+        })
+        .catch((error) => {
+            console.log(error)
+        });
 };

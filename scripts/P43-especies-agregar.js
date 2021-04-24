@@ -1,7 +1,6 @@
 'use strict';
 
 const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
-const INPUTESPECIE = document.querySelector('#slt-especie-vc');
 const INPUTESTADO = document.querySelector('#slt-estado-especie');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
