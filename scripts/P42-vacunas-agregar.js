@@ -2,10 +2,11 @@
 
 const INPUTNOMBRE = document.querySelector('#txt-nombre-vc');
 const INPUTESTADO = document.querySelector('#slt-estado-vc');
-const INPUTESPECIE = document.querySelector('#slt-especie-vc')
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
+const INPUTESPECIE = document.getElementById('slt-especie-vc');
+let lista = [];
 
 //Funcion que registra la especie 
 const AGREGARVACUNA = () => {
@@ -15,6 +16,23 @@ const AGREGARVACUNA = () => {
     REGISTRARVACUNA(nombre, especie, estado);
     // ACCIONUSUARIO('Agregar especie');
 };
+
+//Funcion que llena las especies
+
+const ESPECIESDESPLEGABLE = async() => {
+    lista = await LISTARESPECIES();
+    AGREGAROPCION();
+}
+const AGREGAROPCION = async() => {
+    lista.forEach(especie => {
+        let opcion = document.createElement('option');
+        opcion.innerText = especie.nombre;
+        opcion.id = especie.id;
+        INPUTESPECIE.add(opcion)
+
+    });
+};
+
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
@@ -51,6 +69,7 @@ INPUTSREQUERIDOS.forEach(input => {
         }
     });
 });
+INPUTESPECIE.addEventListener('click', ESPECIESDESPLEGABLE)
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P42-vacunas-mantenimiento.html';
