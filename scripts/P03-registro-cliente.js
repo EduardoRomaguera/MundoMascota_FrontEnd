@@ -137,9 +137,24 @@ const validar = () => {
             text: "La identificación no es válida",
             confirmButtonText: "Intente de nuevo"
         });
-    } else {}
+    }
 
+    let nacimiento = new Date(inputNacimientoCl.value);
+    let edad = calcularEdad(nacimiento);
+    console.log(edad);
+    //Validación de edad
+    if (edad < 18) {
+        inputNacimientoCl.classList.add('error');
+        error = true;
+        Swal.fire({
+            imageUrl: "images/error.png",
+            title: "Espera",
+            text: "Solo se permite el registro de mayores de 18 años",
+            confirmButtonText: "Regresar"
+        });
+    }
     if (error == false && errorCorreo == false && errorIdentificacion == false) {
+        registrar();
         Swal.fire({
             title: "Revise su correo electrónico",
             text: "Se enviarán instrucciones para completar el proceso de registro.",
@@ -183,23 +198,22 @@ const calcularEdad = (nacimiento) => {
     return edad;
 };
 
-const imprimir = () => {
-    let nacimiento = new Date(inputNacimientoCl.value);
-    let edad = calcularEdad(nacimiento);
-    console.log(edad);
-    //Validación de edad
-    if (edad < 18) {
-        inputNacimientoCl.classList.add('error');
-        Swal.fire({
-            imageUrl: "images/error.png",
-            title: "Espera",
-            text: "Solo se permite el registro de mayores de 18 años",
-            confirmButtonText: "Regresar"
-        });
-    }
-};
 
-btnCompletarRegistro.addEventListener('click', function() { validar(), imprimir() });
+const registrar = () => {
+    let nombre = inputNombreCl.value;
+    let apellido1 = inputApellido1Cl.value;
+    let apellido2 = inputApellido2Cl.value;
+    let correo = inputCorreoCl.value;
+    let tipoId = inputTipoIdCl.value;
+    let identificacion = inputIdentificacionCl.value;
+    let nacimiento = new Date(inputNacimientoCl.value);
+    let provincia = inputProvinciaCl.value;
+    let canton = inputCantonCl.value;
+    let distrito = inputDistritoCl.value;
+    let sennas = inputSennasCl.value;
+    registrarCliente(nombre, apellido1, apellido2, correo, tipoId, identificacion, nacimiento, provincia, canton, distrito, sennas);
+};
+btnCompletarRegistro.addEventListener('click', function() { validar() });
 
 //Codigo para Selects dinámicos de canton, cantón y distrito//
 function lista(texto, valor) {

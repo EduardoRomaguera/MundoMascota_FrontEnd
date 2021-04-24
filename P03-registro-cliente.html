@@ -80,17 +80,17 @@
                             </div>
                             <div class="contenedor6">
                                 <div>
-                                    <label for="txt-nacimiento-cl" id="texto-gris"  class="label">Fecha de nacimiento</label>
+                                    <label for="txt-nacimiento-cl" id="texto-gris" class="label">Fecha de nacimiento</label>
                                     <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
                                 </div>
                                 <div id="posicion-correo">
-                                    <label for="txt-correo-cl" id="texto-gris"  class="label">Correo electrónico</label>
+                                    <label for="txt-correo-cl" id="texto-gris" class="label">Correo electrónico</label>
                                     <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
                                 </div>
                             </div>
                             <div class="contenedor7">
                                 <div>
-                                    <label for="txt-provincia-cl" id="texto-gris"  class="label">Ubicación</label>
+                                    <label for="txt-provincia-cl" id="texto-gris" class="label">Ubicación</label>
                                     <form class="contenedor3" class="h1" name="form1" method="post" action="">
                                         <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
                                             <option value="">Provincia</option>
@@ -113,7 +113,7 @@
                                 <div>
                                     <label for="txt-sennas-cl" class="label invisible">Ubiascación</label>
                                     <div>
-                                    <textarea class="input-direccion" id="txt-sennas-cl" placeholder="Otras señas"></textarea>
+                                        <textarea class="input-direccion" id="txt-sennas-cl" placeholder="Otras señas"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -162,9 +162,11 @@
     </footer>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-    <script src="scripts/servicios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="scripts/P03-servicio-clientes.js"></script>
     <script src="scripts/P03-registro-cliente.js"></script>
+    <script src="scripts/servicios.js"></script>
+
 </body>
 
 </html>
