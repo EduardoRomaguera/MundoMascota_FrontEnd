@@ -5,6 +5,7 @@ const INPUTESPECIE = document.querySelector('#slt-especie-vc');
 const INPUTESTADO = document.querySelector('#slt-estado-especie');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
+const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 
 //Funcion que registra la especie 
 const AGREGARESPECIE = () => {
@@ -16,10 +17,9 @@ const AGREGARESPECIE = () => {
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
-
     let error = false;
-    let inputsRequeridos = document.querySelectorAll('.input-formularios :required');
-    inputsRequeridos.forEach(input => {
+    let inputRequeridos = INPUTSREQUERIDOS;
+    inputRequeridos.forEach(input => {
         if (input.value == '') {
             error = true;
             input.classList.add('error');
@@ -40,6 +40,15 @@ const VALIDAR = () => {
 
     }
 };
+INPUTSREQUERIDOS.forEach(input => {
+    input.addEventListener('blur', () => {
+        if (input.value == '') {
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+        }
+    });
+});
 
 //const ACCIONUSUARIO = (pNombreAccion) => {
 //  let nombre = pNombreAccion;

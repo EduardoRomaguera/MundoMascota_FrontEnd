@@ -5,13 +5,14 @@ const INPUTNOMBRE = document.querySelector('#txt-nombre-especie');
 const INPUTESTADO = document.querySelector('#slt-estado-especie');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
+const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
     let error = false;
-    let inputsRequeridos = document.querySelectorAll('.input-formularios :required');
-    inputsRequeridos.forEach(input => {
+    let inputRequeridos = INPUTSREQUERIDOS;
+    inputRequeridos.forEach(input => {
         if (input.value == '') {
             error = true;
             input.classList.add('error');
@@ -54,6 +55,16 @@ if (localStorage.getItem('especieSeleccionado')) {
         window.location.href = 'P43-mantenimiento-especies';
     });
 }
+
+INPUTSREQUERIDOS.forEach(input => {
+    input.addEventListener('blur', () => {
+        if (input.value == '') {
+            input.classList.add('error');
+        } else {
+            input.classList.remove('error');
+        }
+    });
+});
 
 //const ACCIONUSUARIO = (pNombreAccion) => {
 //  let nombre = pNombreAccion;
