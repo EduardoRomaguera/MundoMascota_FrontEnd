@@ -333,8 +333,8 @@ const registrar = () => {
     let provincia = inputProvinciaPr.value;
     let canton = inputCantonPr.value;
     let distrito = inputDistritoPr.value;
-    let otrasSenas = inputSennasPr.vaue;
-    let horario =  inputHorarioPr.value;
+    let otrasSenas = inputSennasPr.value;
+    let horario = inputHorarioPr.value;
     let enlaceFacebook = inputEnlaceFacebook.value;
     let enlaceInstagram = inputEnlaceInstagram.value;
     let enlaceTiktok = inputEnlaceTiktok.value;
