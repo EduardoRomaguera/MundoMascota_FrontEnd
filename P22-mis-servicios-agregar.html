@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P59-agregar-tarjeta.css">
+    <link rel="stylesheet" href="styles/P94-servicios-modificar.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Agregar Pago</title>
+    <title>Agregar servicios</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href=P01-homepage.html>
+                <a class="nav-A" href="P49-principal-administrador.html">
                     <img src="images/logo2-nav.png" id="logo">
                 </a>
                 <div class="nav-B">
@@ -28,54 +28,56 @@
                     </form>
                 </div>
                 <div class="nav-C">
-                    <a class="btn" id="btn-perfil" href="P10-perfil-cliente.html">Mi Perfil</a>
                     <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
                     <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
                 <section>
                     <div class="contenedor1">
-                        <div class="contenedor3">
-                            <h1>Agrega un método de pago</h1>
-                            <img src="images/tarjetas-credito.jpg">
+                        <div class="contenedor2">
+                            <form class="formulario-servicios">
+                                <section class="titulo">
+                                    <h1>Agregar un servicio</h1>
+                                </section>
+                                <div class="items">
+                                    <label class="label" for="txt-nombre-sv">Nombre del servicio</label>
+                                    <input class="input-formularios" id="txt-nombre-sv" type="text" placeholder="Nombre" required>
+                                </div>
+                                <div class="items">
+                                    <label class="label" for="txt-descripcion-sv">Descripcion del servicio</label>
+                                    <input class="input-formularios" id="txt-descripcion-sv" type="text" placeholder="Descripción" required>
+                                </div>
+                                <div class="items">
+                                    <label class="label" for="num-costo-sv">Costo en colones</label>
+                                    <input class="input-formularios" id="num-costo-sv" type="number" placeholder="Costo" required>
+                                </div>
+                                <div class="items">
+                                    <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
+                                    <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
+                                </div>
+                            </form>
 
                         </div>
 
-
-                        <div class="contenedor2" class="h1">
-
-                            <input class="input-formularios" id="txt-nombre-tarjeta" type="text" placeholder="Nombre como aparece en la tarjeta">
-                            <input class="input-formularios" id="txt-numero-tarjeta" type="number" placeholder="Número de Tarjeta">
-                            <label for="txt-nacimiento-cl" id="texto-gris">Fecha de Expiración:</label>
-                            <input class="input-formularios" id="txt-mes-expira" type="number" placeholder="Mes (MM)">
-                            <input class="input-formularios" id="txt-anno-expira" type="number" placeholder="Año (YYYY)">
-                            <input class="input-formularios" id="txt-cvv" type="number" placeholder="codigo de seguridad / CVV">
-                            <button class="btn2" id="btn-completar-registro">Agregar Tarjeta</button>
-                            <a href="P56-Gestion-Pago.html"> <button class="btn2">Cancelar</button></a>
-                        </div>
                     </div>
-
-
                 </section>
             </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
-
-
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
                 <h5>Una empresa 100% nacional</h5>
                 <img src="images/cr.png" id="cr">
             </div>
+
             <div class="foot-B">
                 <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
@@ -86,6 +88,7 @@
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
+
             <div class="foot-C">
                 <h5>Síguenos</h5>
                 <div>
@@ -94,18 +97,15 @@
                 </div>
             </div>
         </div>
+
         <section class="divisor2">
             <a class="btn-sochi" href="P00-landing-sochi.html">
                 Desarrollado por Sochi Software 2021. Derechos Reservados.
             </a>
         </section>
     </footer>
-
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="scripts/navegacion.js"></script>
-    <script src="scripts/servicios.js"></script>
-    <script src="scripts/P59-agregar-tarjeta.js"></script>
-
+    <script src="scripts/P22-mis-servicios-agregar.js"></script>
 </body>
 
 </html>

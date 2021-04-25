@@ -20,6 +20,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding: 60px;
     font-weight: 700;
 }
 
