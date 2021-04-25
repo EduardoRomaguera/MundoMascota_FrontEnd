@@ -28,8 +28,6 @@
     margin: 3%;
 }
 
-
-
 .contenedor2 button {
     background-color: #8EE5D8;
     margin: 10px;
@@ -91,7 +89,7 @@ input[type="date"] {
     font-weight: 300;
     font-family: Montserrat;
     font-size: 18px;
-    background:#ffffff;
+    background: #ffffff;
     display: inline-block;
     visibility: visible;
 }
@@ -103,21 +101,19 @@ select {
     font-weight: 300;
     font-family: Montserrat;
     font-size: 18px;
-    background:#ffffff;
+    background: #ffffff;
     display: inline-block;
     visibility: visible;
     color: #00000090;
 }
 
-select option{
-
+select option {
     color: #000000;
     font-weight: 500;
 }
 
-
 .barra-busqueda {
-    display:none;
+    display: none;
 }
 
 .error {
