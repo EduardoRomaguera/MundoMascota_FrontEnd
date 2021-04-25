@@ -20,10 +20,12 @@ const AGREGARVACUNA = () => {
 //Funcion que llena las especies
 
 const ESPECIESDESPLEGABLE = async() => {
+
     lista = await LISTARESPECIES();
     AGREGAROPCION();
 }
 const AGREGAROPCION = async() => {
+
     lista.forEach(especie => {
         let opcion = document.createElement('option');
         opcion.innerText = especie.nombre;
@@ -69,7 +71,7 @@ INPUTSREQUERIDOS.forEach(input => {
         }
     });
 });
-INPUTESPECIE.addEventListener('click', ESPECIESDESPLEGABLE)
+INPUTESPECIE.addEventListener(window.onload = function() { ESPECIESDESPLEGABLE() })
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P42-vacunas-mantenimiento.html';
