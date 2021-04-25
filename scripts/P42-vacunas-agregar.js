@@ -8,7 +8,7 @@ const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 const INPUTESPECIE = document.getElementById('slt-especie-vc');
 let lista = [];
 
-//Funcion que registra la especie 
+//Funcion que registra la vacuna 
 const AGREGARVACUNA = () => {
     let nombre = INPUTNOMBRE.value;
     let especie = INPUTESPECIE.value;

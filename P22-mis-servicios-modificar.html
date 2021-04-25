@@ -47,15 +47,15 @@
                                 </section>
                                 <div class="items">
                                     <label class="label" for="txt-nombre-sv">Nombre del servicio</label>
-                                    <input class="input-formularios" id="txt-nombre-sv" type="text" placeholder="Nombre">
+                                    <input class="input-formularios" id="txt-nombre-sv" type="text" placeholder="Nombre" rel>
                                 </div>
                                 <div class="items">
                                     <label class="label" for="txt-descripcion-sv">Descripcion del servicio</label>
-                                    <input class="input-formularios" id="txt-descripcion-sv" type="text" placeholder="Descripción">
+                                    <input class="input-formularios" id="txt-descripcion-sv" type="text" placeholder="Descripción" required>
                                 </div>
                                 <div class="items">
                                     <label class="label" for="num-costo-sv">Costo en colones</label>
-                                    <input class="input-formularios" id="num-costo-sv" type="number" placeholder="Costo">
+                                    <input class="input-formularios" id="num-costo-sv" type="number" placeholder="Costo" required>
                                 </div>
                                 <div class="items">
                                     <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
@@ -104,10 +104,13 @@
             </a>
         </section>
     </footer>
+    <!--Script de terceros-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="scripts/navegacion.js"></script>
-    <script src="scripts/servicios.js"></script>
-    <script src="scripts/P94-servicios-modificar.js"></script>
+
+    <!--script src="scripts/navegacion.js"></script-->
+    <script src="scripts/P22-servicio-mis-servicios.js"></script>
+    <script src="scripts/P22-mis-servicios-modificar.js"></script>
 </body>
 
 </html>

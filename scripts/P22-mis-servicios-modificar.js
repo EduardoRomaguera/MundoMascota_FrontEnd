@@ -1,26 +1,15 @@
-'use strict';
-
+'use strict'
+let servicioSeleccionado;
+let _id;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-sv');
 const INPUTDESCRIPCION = document.querySelector('#txt-descripcion-sv');
 const INPUTCOSTO = document.querySelector('#num-costo-sv');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
-const INPUTESPECIE = document.getElementById('slt-especie-vc');
+
 let lista = [];
-
-//Funcion que registra el servicio 
-const AGREGARSERVICIO = () => {
-    let nombre = INPUTNOMBRE.value;
-    let descripcion = INPUTDESCRIPCION.value;
-    let costo = INPUTCOSTO.value;
-    REGISTRARSERVICIO(nombre, descripcion, costo);
-
-};
-
-//Valida que los inputs no esten vacios.
 const VALIDAR = () => {
-
     let error = false;
     let inputRequeridos = INPUTSREQUERIDOS;
     inputRequeridos.forEach(input => {
@@ -32,18 +21,43 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        AGREGARSERVICIO();
-
+        CAMBIARSERVICIO();
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo agregar el servicio',
+            'title': 'No se pudo modificar el servicio',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
 
     }
 };
+
+//Funcion que obtiene los datos del formulario
+const CAMBIARSERVICIO = () => {
+    let nombre = INPUTNOMBRE.value;
+    let descripcion = INPUTDESCRIPCION.value;
+    let costo = INPUTCOSTO.value;
+    MODIFICARSERVICIO(_id, nombre, descripcion, costo);
+    console.log(servicioSeleccionado);
+
+}
+
+if (localStorage.getItem('servicioSeleccionado')) {
+    servicioSeleccionado = JSON.parse(localStorage.getItem('servicioSeleccionado'));
+    INPUTNOMBRE.value = servicioSeleccionado.nombre;
+    INPUTDESCRIPCION.value = servicioSeleccionado.descripcion;
+    _id = servicioSeleccionado._id;
+
+} else {
+    Swal.fire({
+        'icon': 'warning',
+        'title': 'Atención',
+        'text': 'Debe seleccionar primero un servicio'
+    }).then(() => {
+        window.location.href = 'P22-mis-servicios.html';
+    });
+}
 INPUTSREQUERIDOS.forEach(input => {
     input.addEventListener('blur', () => {
         if (input.value == '') {

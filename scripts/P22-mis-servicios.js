@@ -1,22 +1,26 @@
 'use strict';
 
 const TABLASERVICIOS = document.querySelector('#tbl-servicios tbody');
-
 const FILTROSERVICIOS = document.querySelector('#txt-filtro-servicios');
-
 const BTNAGREGARSERVICIOS = document.querySelector('#btn-agregar-servicios');
+let listaMisServicios = [];
+
+const LLENARTABLASERVICIOS = async() => {
+    listaMisServicios = await LISTARSERVICIOS();
+    MOSTRARTABLASERVICIOS();
+};
 
 //Función que agrega las celdas de servicios a la tabla
 const MOSTRARTABLASERVICIOS = () => {
     let filtro = FILTROSERVICIOS.value.toLowerCase();
     TABLASERVICIOS.innerHTML = '';
-    listaMisServicios.forEach(servicios => {
-        if (servicios.nombre.toLowerCase().includes(filtro)) {
+    listaMisServicios.forEach(servicio => {
+        if (servicio.nombre.toLowerCase().includes(filtro)) {
 
             let fila = TABLASERVICIOS.insertRow();
-            fila.insertCell().innerHTML = servicios.nombre;
-            fila.insertCell().innerHTML = servicios.descripcion;
-            fila.insertCell().innerHTML = servicios.costo;
+            fila.insertCell().innerHTML = servicio.nombre;
+            fila.insertCell().innerHTML = servicio.descripcion;
+            fila.insertCell().innerHTML = servicio.costo;
 
 
             let celdaAcciones = fila.insertCell();
@@ -25,14 +29,9 @@ const MOSTRARTABLASERVICIOS = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                Swal.fire({
-                    imageUrl: "images/cute-pets.jpg",
-                    title: "Nuestro equipo aún está trabajando en eso",
-                    text: "Mientras tanto puedes ver esos lindos cachorros",
-                    confirmButtonText: "Regresar"
-                });
+                localStorage.setItem('servicioSeleccionado', JSON.stringify(servicio));
+                window.location.href = 'P22-mis-servicios-modificar.html';
             });
-
 
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
@@ -48,11 +47,7 @@ const MOSTRARTABLASERVICIOS = () => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'El servicio ha sido eliminada',
-                            'success'
-                        )
+                        ELIMINARSERVICIO(servicio._id)
                     }
                 })
             });
@@ -64,9 +59,8 @@ const MOSTRARTABLASERVICIOS = () => {
     });
 };
 
-
-MOSTRARTABLASERVICIOS();
+LLENARTABLASERVICIOS();
 FILTROSERVICIOS.addEventListener('keyup', MOSTRARTABLASERVICIOS);
 BTNAGREGARSERVICIOS.addEventListener('click', () => {
-    window.location.href = 'P94-servicios-modificar.html';
+    window.location.href = 'P22-mis-servicios-agregar.html';
 })
