@@ -71,7 +71,8 @@ INPUTSREQUERIDOS.forEach(input => {
         }
     });
 });
-INPUTESPECIE.addEventListener(window.onload = function() { ESPECIESDESPLEGABLE() })
+
+INPUTESPECIE.addEventListener('click', ESPECIESDESPLEGABLE)
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P42-vacunas-mantenimiento.html';

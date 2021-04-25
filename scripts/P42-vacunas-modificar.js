@@ -2,11 +2,12 @@
 let vacunaSeleccionado;
 let _id;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-vc');
-const INPUTESPECIE = document.querySelector('#slt-especie-vc');
+const INPUTESPECIE = document.getElementById('slt-especie-vc');
 const INPUTESTADO = document.querySelector('#slt-estado-vc');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
+let lista = [];
 
 const VALIDAR = () => {
     let error = false;
@@ -30,6 +31,23 @@ const VALIDAR = () => {
         });
 
     }
+};
+
+
+const ESPECIESDESPLEGABLE = async() => {
+
+    lista = await LISTARESPECIES();
+    AGREGAROPCION();
+}
+const AGREGAROPCION = async() => {
+
+    lista.forEach(especie => {
+        let opcion = document.createElement('option');
+        opcion.innerText = especie.nombre;
+        opcion.id = especie.id;
+        INPUTESPECIE.add(opcion)
+
+    });
 };
 
 //Funcion que obtiene los datos del formulario
@@ -67,7 +85,7 @@ INPUTSREQUERIDOS.forEach(input => {
         }
     });
 });
-
+INPUTESPECIE.addEventListener(window.onload = function() { ESPECIESDESPLEGABLE() })
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P42-vacunas-mantenimiento.html';
