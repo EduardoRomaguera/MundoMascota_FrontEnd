@@ -45,7 +45,7 @@ const validarInicioSesion = () => {
         Swal.fire({
             imageUrl: "images/error.png",
             title: "¡OOPS! Algo pasó aqui",
-            text: "Se dejó un espacio vacio",
+            text: "Se dejó un espacio vacío",
             confirmButtonText: "Intentar de nuevo"
         });
     } else {
