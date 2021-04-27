@@ -1,4 +1,4 @@
-const REGISTRARSERVICIO = async(pnombre, pdescricion, pcosto) => {
+const REGISTRARMISSERVICIO = async(pnombre, pdescricion, pcosto) => {
 
     await axios({
             method: 'post',
@@ -29,7 +29,7 @@ const REGISTRARSERVICIO = async(pnombre, pdescricion, pcosto) => {
         })
 };
 
-const LISTARSERVICIOS = async() => {
+const LISTARMISSERVICIOS = async() => {
     let listaServicios = [];
 
     await axios({
@@ -46,7 +46,7 @@ const LISTARSERVICIOS = async() => {
 };
 
 
-const MODIFICARSERVICIO = async(pid, pnombre, pdescricion, pcosto) => {
+const MODIFICARMISERVICIO = async(pid, pnombre, pdescricion, pcosto) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-servicio',
@@ -75,7 +75,7 @@ const MODIFICARSERVICIO = async(pid, pnombre, pdescricion, pcosto) => {
 
 };
 
-const ELIMINARSERVICIO = async(pid) => {
+const ELIMINARMISERVICIO = async(pid) => {
     await axios({
             method: 'delete',
             url: 'http://localhost:3000/api/eliminar-servicio',

@@ -5,8 +5,8 @@ const FILTROSERVICIOS = document.querySelector('#txt-filtro-servicios');
 const BTNAGREGARSERVICIOS = document.querySelector('#btn-agregar-servicios');
 let listaMisServicios = [];
 
-const LLENARTABLASERVICIOS = async() => {
-    listaMisServicios = await LISTARSERVICIOS();
+const LLENARTABLAMISSERVICIOS = async() => {
+    listaMisServicios = await LISTARMISSERVICIOS();
     MOSTRARTABLASERVICIOS();
 };
 
@@ -47,7 +47,7 @@ const MOSTRARTABLASERVICIOS = () => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        ELIMINARSERVICIO(servicio._id)
+                        ELIMINARMISERVICIO(servicio._id)
                     }
                 })
             });
@@ -59,7 +59,7 @@ const MOSTRARTABLASERVICIOS = () => {
     });
 };
 
-LLENARTABLASERVICIOS();
+LLENARTABLAMISSERVICIOS();
 FILTROSERVICIOS.addEventListener('keyup', MOSTRARTABLASERVICIOS);
 BTNAGREGARSERVICIOS.addEventListener('click', () => {
     window.location.href = 'P22-mis-servicios-agregar.html';

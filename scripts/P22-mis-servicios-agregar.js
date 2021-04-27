@@ -1,22 +1,39 @@
 'use strict';
 
-const INPUTNOMBRE = document.querySelector('#txt-nombre-sv');
+const INPUTNOMBRE = document.getElementById('slt-nombre-sv');
 const INPUTDESCRIPCION = document.querySelector('#txt-descripcion-sv');
 const INPUTCOSTO = document.querySelector('#num-costo-sv');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
-const INPUTESPECIE = document.getElementById('slt-especie-vc');
 let lista = [];
 
 //Funcion que registra el servicio 
-const AGREGARSERVICIO = () => {
+const AGREGARMISERVICIO = () => {
     let nombre = INPUTNOMBRE.value;
     let descripcion = INPUTDESCRIPCION.value;
     let costo = INPUTCOSTO.value;
-    REGISTRARSERVICIO(nombre, descripcion, costo);
+    REGISTRARMISSERVICIO(nombre, descripcion, costo);
 
 };
+
+//Funcion que llena los servicios
+
+const SERVICIODESPLEGABLE = async() => {
+
+    lista = await LISTARSERVICIOS();
+    AGREGAROPCION();
+}
+const AGREGAROPCION = async() => {
+
+    lista.forEach(servicioCatalogo => {
+        let opcion = document.createElement('option');
+        opcion.innerText = servicioCatalogo.nombre;
+        opcion.id = servicioCatalogo.id;
+        INPUTNOMBRE.add(opcion)
+    });
+};
+
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
@@ -32,7 +49,7 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        AGREGARSERVICIO();
+        AGREGARMISERVICIO();
 
     } else {
         Swal.fire({
@@ -54,6 +71,7 @@ INPUTSREQUERIDOS.forEach(input => {
     });
 });
 
+window.onload = function() { SERVICIODESPLEGABLE() }
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P22-mis-servicios.html';

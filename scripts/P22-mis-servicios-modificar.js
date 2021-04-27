@@ -1,7 +1,7 @@
 'use strict'
 let servicioSeleccionado;
 let _id;
-const INPUTNOMBRE = document.querySelector('#txt-nombre-sv');
+const INPUTNOMBRE = document.querySelector('#slt-nombre-sv');
 const INPUTDESCRIPCION = document.querySelector('#txt-descripcion-sv');
 const INPUTCOSTO = document.querySelector('#num-costo-sv');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
