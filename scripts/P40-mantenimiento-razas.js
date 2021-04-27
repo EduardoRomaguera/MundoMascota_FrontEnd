@@ -4,12 +4,12 @@ const TABLARAZAS = document.querySelector('#tbl-razas tbody');
 const FILTRORAZAS = document.querySelector('#txt-filtro-razas');
 const BTNAGREGARRAZA = document.querySelector('#btn-agregar-raza');
 const MENSAJE = document.querySelector('#No-encontrado');
-let listaEspecies = [];
+let listaRazas = [];
 
 
 
 const LLENARTABLARAZAS = async() => {
-    listaEspecies = await LISTARRAZAS();
+    listaRazas = await LISTARRAZAS();
     MOSTRARTABLARAZAS();
 };
 
@@ -18,8 +18,7 @@ const MOSTRARTABLARAZAS = async() => {
     let filtro = FILTRORAZAS.value.toLowerCase();
     TABLARAZAS.innerHTML = '';
     listaRazas.forEach(raza => {
-        if (raza.nombre.toLowerCase().includes(filtro) || raza.especie.toLowerCase().includes(filtro)) {
-
+        if (raza.nombre.toLowerCase().includes(filtro)) {
             let fila = TABLARAZAS.insertRow();
             fila.insertCell().innerHTML = raza.nombre;
             fila.insertCell().innerHTML = raza.especie;
@@ -58,8 +57,6 @@ const MOSTRARTABLARAZAS = async() => {
             });
             celdaAcciones.appendChild(botonEliminar);
             celdaAcciones.appendChild(botonModificar);
-        } else if (!raza.nombre.toLowerCase().includes(filtro) || !raza.especie.toLowerCase().includes(filtro)) {
-            MENSAJE.style.display = 'block';
         }
 
     });

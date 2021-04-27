@@ -48,7 +48,7 @@ const LISTARRAZAS = async() => {
 };
 
 
-const MODIFICARVACUNA = async(_id, nombre, tipo, estado) => {
+const MODIFICARRAZA = async(_id, nombre, tipo, estado) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-raza',

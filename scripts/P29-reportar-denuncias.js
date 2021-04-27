@@ -1,34 +1,36 @@
 'use strict'
-const INPUTCLIETE = document.querySelector('#txt-cliente-denunciar');
-const INPUTESLT = document.querySelector('#slt-motivo-denuncia');
-const INPUTTEXTAREA = document.querySelector('#txt-descripcion-denuncia');
+const DENUNCIADO = document.querySelector('#txt-cliente-denunciar');
+const RAZON = document.querySelector('#slt-motivo-denuncia');
+const EXPLICACION = document.querySelector('#txt-descripcion-denuncia');
 const BTNENVIAR = document.querySelector('#btn-enviar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 
 const VALIDAR = () => {
     let error = false;
-    if (INPUTCLIETE.value == '') {
+    if (DENUNCIADO.value == '') {
         error = true;
-        INPUTCLIETE.classList.add('error');
+        DENUNCIADO.classList.add('error');
     } else {
-        INPUTCLIETE.classList.remove('error');
+        DENUNCIADO.classList.remove('error');
     }
 
-    if (INPUTESLT.value == '') {
+    if (RAZON.value == '') {
         error = true;
-        INPUTESLT.classList.add('error');
+        RAZON.classList.add('error');
     } else {
-        INPUTESLT.classList.remove('error');
+        RAZON.classList.remove('error');
     }
 
-    if (INPUTTEXTAREA.value == '') {
+    if (EXPLICACION.value == '') {
         error = true;
-        INPUTTEXTAREA.classList.add('error');
+        EXPLICACION.classList.add('error');
     } else {
-        INPUTTEXTAREA.classList.remove('error');
+        EXPLICACION.classList.remove('error');
     }
 
     if (error == false) {
+        registrar();
+        console.log("Se envió el registro al backend");
         Swal.fire({
             'icon': 'success',
             'title': 'El reporte ha sido enviado',
@@ -45,6 +47,12 @@ const VALIDAR = () => {
         });
 
     };
+};
+const registrar = () => {
+    let denunciado = DENUNCIADO.value;
+    let razon = RAZON.value;
+    let explicacion = EXPLICACION.value;
+    registrarDenuncia(denunciado, razon, explicacion);
 };
 BTNENVIAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
