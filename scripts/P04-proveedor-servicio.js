@@ -22,9 +22,9 @@ const registrarUsuario = async(pnombreNegocio, pnombre, papellido1, papellido2, 
                 distrito: pdistrito,
                 otrasSenas: potrasSenas,
                 horario: phorario,
-                enlaceFacebook : penlaceFacebook,
-                enlaceInstagram : penlaceInstagram,
-                enlaceTiktok : penlaceTiktok,
+                enlaceFacebook: penlaceFacebook,
+                enlaceInstagram: penlaceInstagram,
+                enlaceTiktok: penlaceTiktok,
             }
         })
         .then((response) => {

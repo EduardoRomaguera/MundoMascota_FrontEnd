@@ -1,14 +1,33 @@
 'use strict'
 let servicioSeleccionado;
 let _id;
-const INPUTNOMBRE = document.querySelector('#slt-nombre-sv');
+const INPUTNOMBRE = document.getElementById('slt-nombre-sv');
 const INPUTDESCRIPCION = document.querySelector('#txt-descripcion-sv');
 const INPUTCOSTO = document.querySelector('#num-costo-sv');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
-
 let lista = [];
+
+
+
+//Funcion que llena los servicios
+
+const SERVICIODESPLEGABLE = async() => {
+
+    lista = await LISTARSERVICIOS();
+    AGREGAROPCION();
+}
+const AGREGAROPCION = async() => {
+
+    lista.forEach(servicioCatalogo => {
+        let opcion = document.createElement('option');
+        opcion.innerText = servicioCatalogo.nombre;
+        opcion.id = servicioCatalogo.id;
+        INPUTNOMBRE.add(opcion)
+    });
+};
+
 const VALIDAR = () => {
     let error = false;
     let inputRequeridos = INPUTSREQUERIDOS;
@@ -68,6 +87,7 @@ INPUTSREQUERIDOS.forEach(input => {
     });
 });
 
+window.onload = function() { SERVICIODESPLEGABLE() }
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P22-mis-servicios.html';

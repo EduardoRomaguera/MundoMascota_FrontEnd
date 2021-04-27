@@ -18,7 +18,6 @@ const validar = () => {
     //Validación de formato de correo electrónico
 
 
-
     //   Algo pasa con el Regex: /^[0-9]{9}$/
     //Validación de formato de cédula
     let regexIdentificacion = /^$/;
