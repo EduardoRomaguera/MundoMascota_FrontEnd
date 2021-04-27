@@ -25,11 +25,21 @@ const iniciarSesion = async(pcorreo, pcontrasenna) => {
                     'text': 'Ha iniciado sesión correctamente',
                     'confirmButtonText': 'Entendido'
                 }).then(() => {
-                    if (response.data.usuario.estado == 'Cambio contraseña') {
-                        window.location.href = 'modificar-contrasenna.html';
+                    sessionStorage.setItem('usuarioConectado', JSON.stringify(response.data.usuario));
+                    if (response.data.usuario.estado == 'Preactivo') {
+                        window.location.href = 'P05b-nueva-contrasenna.html';
                     } else {
-                        sessionStorage.setItem('usuarioConectado', JSON.stringify(response.data.usuario));
-                        window.location.href = 'dashboard.html';
+                        switch (response.data.usuario.tipo) {
+                            case 'Administrador':
+                                window.location.href = 'P49-principal-administrador.html';
+                                break;
+                            case 'Cliente':
+                                window.location.href = 'P09-principal-cliente.html';
+                                break;
+                            case 'Proveedor':
+                                window.location.href = 'P19-principal-proveedor.html';
+                                break;
+                        }
                     }
                 });
             }

@@ -7,85 +7,60 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P09-principal-cliente.css">
+    <link rel="stylesheet" href="styles/P05-inicio-sesion.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Principal cliente</title>
+    <title>Inicio sesión</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href="P09-principal-cliente.html">
+                <a class="nav-A" href=P01-homepage.html>
                     <img src="images/logo2-nav.png" id="logo">
-                    <!--<a class="logo" href=P01-homepage.html></a>-->
                 </a>
-
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
-                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                            <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
                         </input>
                     </form>
                 </div>
-
                 <div class="nav-C">
-                    <a class="btn" id="btn-perfil" href="P10-perfil-cliente.html">Mi Perfil</a>
-                    <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
-                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                    <a class="btn" id="btn-cerrar-sesion">Cerrar Sesión</a>
+                    <a class="btn" id= "btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
-                <section class="titulo">
-                    <h1>Página principal cliente</h1>
-                </section>
-
                 <section>
-                    <a class="tienda" href="P54-tienda.html">
-                        <h2>Tienda</h2>
-                    </a>
+                    <div class="contenedor1">
+                        <div class="contenedor2">
+                            <h3>Cambiar contraseña</h3>
+                            <h4>Mundo Mascota</h4>
+                            <p class="h6">Introduzca su nueva contraseña</p>
+                            <p class="h6">Debe tener entre 6 y 12 caracteres, una máyuscula, una minúscula, alguno de estos cáracteres especiales (! @ # $ % ^ & * - _ +) y al menos un número.</p>
+                            <input class="input-formularios" type="password" id="txt-contrasenna" placeholder="Contraseña">
+                            <input class="input-formularios" type="password" id="txt-contrasenna" placeholder="Contraseña">
+                            <div id="contenedor3">
+                                <div id="fix1">
+                                    <input type="checkbox" onclick="showPassword()">Mostrar contraseña</input>
+                                </div>
+                                <a href="P06-olvide-datos.html">Olvidé mi contraseña</a>
+                            </div>
+                            <button class="btn2" id="btn-siguiente">Siguiente </button>
+
+
+                        </div>
+
+                    </div>
                 </section>
-
-                <section class="divisor">
-                </section>
-
-                <section>
-                    <a class="mis-mascotas" href="P47-mis-mascotas0.html">
-                        <h2>Mis mascotas</h2>
-                    </a>
-                </section>
-
-                <section class="divisor">
-                </section>
-
-                <section>
-                    <a class="mis-ordenes" href="P16-mis-ordenes.html">
-                        <h2>Mis órdenes</h2>
-                    </a>
-                </section>
-
-                <section class="divisor">
-                </section>
-
-                <section>
-                    <a class="gestion-pago" href="P56-Gestion-Pago.html">
-                        <h2>Gestionar métodos de pago</h2>
-                    </a>
-                </section>
-
-
-                <section class="divisor">
-                    <h2 class="btn-divisor"> </h2>
-                </section>
-
-
-
             </div>
             <div id="espaciador-der"></div>
         </div>
@@ -96,7 +71,6 @@
                 <h5>Una empresa 100% nacional</h5>
                 <img src="images/cr.png" id="cr">
             </div>
-
             <div class="foot-B">
                 <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
                 <ul class="lista">
@@ -107,7 +81,6 @@
                     <li class="italica">hola@mundomascota.com</li>
                 </ul>
             </div>
-
             <div class="foot-C">
                 <h5>Síguenos</h5>
                 <div>
@@ -116,7 +89,6 @@
                 </div>
             </div>
         </div>
-
         <section class="divisor2">
             <a class="btn-sochi" href="P00-landing-sochi.html">
                 Desarrollado por Sochi Software 2021. Derechos Reservados.
@@ -124,8 +96,11 @@
         </section>
     </footer>
 
-    <script src="scripts/navegacion.js"></script>
-    //<script src="scripts/servicios.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- <script src="scripts/servicios.js"></script> -->
+    <script src="scripts/P05-inicio-sesion-servicio.js"></script>
+    <script src="scripts/P05-inicio-sesion.js"></script>
 </body>
 
 </html>
