@@ -71,7 +71,6 @@ const MODIFICARESPECIE = async(pid, pnombre, pestado) => {
             'text': response.err
         })
     });
-
 };
 
 const ELIMINARESPECIE = async(pid) => {
