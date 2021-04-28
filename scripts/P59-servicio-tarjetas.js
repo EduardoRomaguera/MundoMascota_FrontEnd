@@ -1,21 +1,24 @@
 'use strict';
 
-const REGISTRARTARJETA = async(pnombre, pespecie, pestado) => {
+const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiracion, pannoExpiracion, pcodigoSeguridad) => {
 
     await axios({
             method: 'post',
-            url: 'http://localhost:3000/api/registrar-vacuna',
+            url: 'http://localhost:3000/api/registrar-tarjeta',
             responType: 'json',
             data: {
-                nombre: pnombre,
-                especie: pespecie,
-                estado: pestado
+                idUsuario: pidUsuario,
+                nombreTarjeta: pnombreTarjeta,
+                numero: pnumero,
+                mesExpiracion: pmesExpiracion,
+                annoExpiracion: pannoExpiracion,
+                codigoSeguridad: pcodigoSeguridad
             }
         })
         .then((response) => {
             Swal.fire({
                 'icon': 'success',
-                'title': 'La vacuna ha sido registrada correctamente',
+                'title': 'La tarjeta ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
                 window.location.href = 'P42-vacunas-mantenimiento.html';
@@ -32,40 +35,42 @@ const REGISTRARTARJETA = async(pnombre, pespecie, pestado) => {
 };
 
 const LISTARTARJETAS = async() => {
-    let listaVacunas = [];
-
+    let listaTarjetas = [];
     await axios({
         method: 'get',
-        url: 'http://localhost:3000/api/listar-vacunas',
+        url: 'http://localhost:3000/api/listar-tarjetas',
         responseType: 'json'
     }).then((response) => {
-        listaVacunas = response.data.vacunas;
+        listaTarjetas = response.data.tarjetas;
     }).catch((error) => {
         console.log(error)
     });
 
-    return listaVacunas;
+    return listaTarjetas;
 };
 
 
-const MODIFICARTARJETA = async(pid, pnombre, pespecie, pestado) => {
+const MODIFICARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiracion, pannoExpiracion, pcodigoSeguridad) => {
     await axios({
         method: 'put',
-        url: 'http://localhost:3000/api/modificar-vacuna',
+        url: 'http://localhost:3000/api/modificar-tarjeta',
         responseType: 'json',
         data: {
-            _id: pid,
-            nombre: pnombre,
-            especie: pespecie,
-            estado: pestado
+            idUsuario: pidUsuario,
+            nombreTarjeta: pnombreTarjeta,
+            numero: pnumero,
+            mesExpiracion: pmesExpiracion,
+            annoExpiracion: pannoExpiracion,
+            codigoSeguridad: pcodigoSeguridad
+
         }
     }).then((response) => {
         Swal.fire({
             'icon': 'success',
-            'title': 'La vacuna se modificó correctamente',
+            'title': 'La tarjeta se modificó correctamente',
             'text': response.msj
         }).then(() => {
-            window.location.href = 'P42-vacunas-mantenimiento.html';
+            window.location.href = 'P56-gestion-pago.html';
         });
     }).catch((error) => {
         Swal.fire({
@@ -80,7 +85,7 @@ const MODIFICARTARJETA = async(pid, pnombre, pespecie, pestado) => {
 const ELIMINARTARJETA = async(pid) => {
     await axios({
             method: 'delete',
-            url: 'http://localhost:3000/api/eliminar-vacuna',
+            url: 'http://localhost:3000/api/eliminar-tarjeta',
             responseType: 'json',
             data: {
                 _id: pid
@@ -94,7 +99,7 @@ const ELIMINARTARJETA = async(pid) => {
                 }
 
             ).then(() => {
-                window.location.href = 'P42-vacunas-mantenimiento.html';
+                window.location.href = 'P56-gestion-pago.html';
             });
         })
         .catch((error) => {

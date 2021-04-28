@@ -51,14 +51,14 @@
 
                         <div class="contenedor2" class="h1">
 
-                            <input class="input-formularios" id="txt-nombre-tarjeta" type="text" placeholder="Nombre como aparece en la tarjeta">
-                            <input class="input-formularios" id="txt-numero-tarjeta" type="number" placeholder="Número de Tarjeta">
-                            <label for="txt-nacimiento-cl" id="texto-gris">Fecha de Expiración:</label>
-                            <input class="input-formularios" id="txt-mes-expira" type="number" placeholder="Mes (MM)">
-                            <input class="input-formularios" id="txt-anno-expira" type="number" placeholder="Año (YYYY)">
-                            <input class="input-formularios" id="txt-cvv" type="number" placeholder="codigo de seguridad / CVV">
-                            <button class="btn2" id="btn-completar-registro">Agregar Tarjeta</button>
-                            <a href="P56-Gestion-Pago.html"> <button class="btn2">Cancelar</button></a>
+                            <input class="input-formularios" id="txt-nombre-tarjeta" type="text" placeholder="Nombre como aparece en la tarjeta" required>
+                            <input class="input-formularios" id="txt-numero-tarjeta" type="number" placeholder="Número de Tarjeta" required>
+                            <H5 id="texto-gris">Fecha Expiración</H5>
+                            <input class="input-formularios" id="txt-mes-expira" type="number" placeholder="Mes (MM)" required>
+                            <input class="input-formularios" id="txt-anno-expira" type="number" placeholder="Año (YYYY)" required>
+                            <input class="input-formularios" id="txt-cvv" type="number" placeholder="codigo de seguridad / CVV" required>
+                            <button class="btn2" type="button" id="btn-agregar-tarjeta" class="btn">Agregar Tarjeta</button>
+                            <button class="btn2" type="button" id="btn-cancelar" class="btn">Cancelar</button>
                         </div>
                     </div>
 
@@ -101,9 +101,13 @@
         </section>
     </footer>
 
+    <!--Script de terceros-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="scripts/navegacion.js"></script>
-    <script src="scripts/servicios.js"></script>
+
+    <!--script src="scripts/navegacion.js"></script-->
+
+    <script src="scripts/P59-servicio-tarjetas.js"></script>
     <script src="scripts/P59-agregar-tarjeta.js"></script>
 
 </body>
