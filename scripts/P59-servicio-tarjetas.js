@@ -1,63 +1,103 @@
 'use strict';
 
+const REGISTRARTARJETA = async(pnombre, pespecie, pestado) => {
 
-const TABLATARJETAS = document.querySelector('#tbl-vacunas tbody');
-const FILTROTARJETAS = document.querySelector('#txt-filtro-vacunas');
-const BTNAGRETARJETA = document.querySelector('#btn-agregar-vacuna');
-let listaTarjetas = [];
+    await axios({
+            method: 'post',
+            url: 'http://localhost:3000/api/registrar-vacuna',
+            responType: 'json',
+            data: {
+                nombre: pnombre,
+                especie: pespecie,
+                estado: pestado
+            }
+        })
+        .then((response) => {
+            Swal.fire({
+                'icon': 'success',
+                'title': 'La vacuna ha sido registrada correctamente',
+                'text': response.msj
+            }).then(() => {
+                window.location.href = 'P42-vacunas-mantenimiento.html';
 
-const LLENARTABLATARJETAS = async() => {
-    listaTarjetas = await LISTARTARJETAS();
-    MOSTRARTABLATARJETAS();
+            });
+
+        }).catch((response) => {
+            Swal.fire({
+                'title': response.msj,
+                'icon': 'error',
+                'text': response.err
+            })
+        })
 };
 
-//Función que agrega las celdas de vacunas a la tabla
-const MOSTRARTABLATARJETAS = async => {
-    let filtro = FILTROVACUNAS.value.toLowerCase();
-    TABLAVACUNAS.innerHTML = '';
-    listaTarjetas.forEach(tarjeta => {
-        if (tarjeta.nombre.toLowerCase().includes(filtro)) {
+const LISTARTARJETAS = async() => {
+    let listaVacunas = [];
 
-            let fila = TABLAVACUNAS.insertRow();
-            fila.insertCell().innerHTML = tarjeta.nombre;
-            fila.insertCell().innerHTML = vacuna.especie;
-            fila.insertCell().innerHTML = vacuna.estado;
-
-            let celdaAcciones = fila.insertCell();
-
-            let botonModificar = document.createElement('button');
-            botonModificar.innerText = 'Editar';
-
-            botonModificar.addEventListener('click', () => {
-                localStorage.setItem('vacunaSeleccionado', JSON.stringify(vacuna));
-                window.location.href = 'P42-vacunas-modificar.html';
-            });
-            let botonEliminar = document.createElement('button');
-            botonEliminar.innerText = 'Eliminar';
-
-            botonEliminar.addEventListener('click', () => {
-                Swal.fire({
-                    'icon': 'warning',
-                    'text': '¿Está seguro que desea borrar la vacuna?',
-                    'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
-                    'cancelButtonColor': '#d33',
-                    'cancelButtonText': 'Cancelar',
-                    'reverseButtons': true
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        ELIMINARVACUNA(vacuna._id);
-                    }
-                })
-            });
-            celdaAcciones.appendChild(botonEliminar);
-            celdaAcciones.appendChild(botonModificar);
-        }
+    await axios({
+        method: 'get',
+        url: 'http://localhost:3000/api/listar-vacunas',
+        responseType: 'json'
+    }).then((response) => {
+        listaVacunas = response.data.vacunas;
+    }).catch((error) => {
+        console.log(error)
     });
+
+    return listaVacunas;
 };
 
-LLENARTABLATARJETAS();
-FILTROTARJETAS.addEventListener('keyup', MOSTRARTABLATARJETAS)
-BTNAGRETARJETA.addEventListener('click', () => {
-    window.location.href = 'P59-agregar-tarjeta.html';
-})
+
+const MODIFICARTARJETA = async(pid, pnombre, pespecie, pestado) => {
+    await axios({
+        method: 'put',
+        url: 'http://localhost:3000/api/modificar-vacuna',
+        responseType: 'json',
+        data: {
+            _id: pid,
+            nombre: pnombre,
+            especie: pespecie,
+            estado: pestado
+        }
+    }).then((response) => {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'La vacuna se modificó correctamente',
+            'text': response.msj
+        }).then(() => {
+            window.location.href = 'P42-vacunas-mantenimiento.html';
+        });
+    }).catch((error) => {
+        Swal.fire({
+            'title': response.msj,
+            'icon': 'error',
+            'text': error
+        })
+    });
+
+};
+
+const ELIMINARTARJETA = async(pid) => {
+    await axios({
+            method: 'delete',
+            url: 'http://localhost:3000/api/eliminar-vacuna',
+            responseType: 'json',
+            data: {
+                _id: pid
+            }
+        })
+        .then((response) => {
+            Swal.fire({
+                    'title': 'La vacuna ha sido eliminada',
+                    'icon': 'success',
+                    'text': response.msj
+                }
+
+            ).then(() => {
+                window.location.href = 'P42-vacunas-mantenimiento.html';
+            });
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+};
