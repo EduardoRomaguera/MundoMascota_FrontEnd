@@ -20,6 +20,7 @@ const MOSTRARTABLASERVICIOS = () => {
             let fila = TABLASERVICIOS.insertRow();
             fila.insertCell().innerHTML = servicioCatalogo.nombre;
             fila.insertCell().innerHTML = servicioCatalogo.descripcion;
+            fila.insertCell().innerHTML = servicioCatalogo.estado;
 
             let celdaAcciones = fila.insertCell();
 

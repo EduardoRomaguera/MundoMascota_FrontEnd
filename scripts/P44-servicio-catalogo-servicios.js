@@ -45,7 +45,7 @@ const LISTARSERVICIOS = async() => {
 };
 
 
-const MODIFICARSERVICIO = async(pid, pnombre, pdescricion) => {
+const MODIFICARSERVICIO = async(pid, pnombre, pdescricion, pestado) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-servicioCatalogo',
@@ -54,6 +54,7 @@ const MODIFICARSERVICIO = async(pid, pnombre, pdescricion) => {
             _id: pid,
             nombre: pnombre,
             descripcion: pdescricion,
+            estado: pestado
         }
     }).then((response) => {
         Swal.fire({

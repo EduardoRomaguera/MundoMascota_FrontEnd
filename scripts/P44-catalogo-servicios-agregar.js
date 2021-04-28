@@ -2,18 +2,19 @@
 
 const INPUTNOMBRE = document.querySelector('#txt-nombre-sv');
 const INPUTDESCRIPCION = document.querySelector('#txt-descripcion-sv');
-const INPUTCOSTO = document.querySelector('#num-costo-sv');
+const INPUTESTADO = document.querySelector('#slt-estado-sv');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
-const INPUTESPECIE = document.getElementById('slt-especie-vc');
+
 let lista = [];
 
 //Funcion que registra el servicio 
 const AGREGARSERVICIO = () => {
     let nombre = INPUTNOMBRE.value;
     let descripcion = INPUTDESCRIPCION.value;
-    REGISTRARSERVICIO(nombre, descripcion);
+    let estado = INPUTESTADO.value;
+    REGISTRARSERVICIO(nombre, descripcion, estado);
 
 };
 

@@ -3,6 +3,7 @@ let servicioSeleccionado;
 let _id;
 const INPUTNOMBRE = document.querySelector('#txt-nombre-sv');
 const INPUTDESCRIPCION = document.querySelector('#txt-descripcion-sv');
+const INPUTESTADO = document.querySelector('#slt-estado-sv');
 const BTNGUARDAR = document.querySelector('#btn-guardar');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
@@ -36,7 +37,8 @@ const VALIDAR = () => {
 const CAMBIARSERVICIO = () => {
     let nombre = INPUTNOMBRE.value;
     let descripcion = INPUTDESCRIPCION.value;
-    MODIFICARSERVICIO(_id, nombre, descripcion);
+    let estado = INPUTESTADO.value;
+    MODIFICARSERVICIO(_id, nombre, descripcion, estado);
     console.log(servicioSeleccionado);
 
 }
@@ -45,6 +47,7 @@ if (localStorage.getItem('servicioSeleccionado')) {
     servicioSeleccionado = JSON.parse(localStorage.getItem('servicioSeleccionado'));
     INPUTNOMBRE.value = servicioSeleccionado.nombre;
     INPUTDESCRIPCION.value = servicioSeleccionado.descripcion;
+    INPUTESTADO.value = servicioSeleccionado.estado;
     _id = servicioSeleccionado._id;
 
 } else {
