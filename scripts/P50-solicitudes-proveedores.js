@@ -18,14 +18,15 @@ const listarProveedoresPendientes = async() => {
     return listaProveedores;
 };
 
-const aprobarProveedoresPendientes = async(pcorreo) => {
+const aprobarProveedoresPendientes = async(pcorreo, pnombreNegocio) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/aceptar-proveedores-pendientes',
         responseType: 'json',
         data: {
             correo: pcorreo,
-            estado: "activo"
+            nombreNegocio: pnombreNegocio,
+            estado: "preactivo2"
         }
     }).then((response) => {
         Swal.fire({
@@ -44,7 +45,7 @@ const aprobarProveedoresPendientes = async(pcorreo) => {
     });
 };
 
-const rechazarProveedoresPendientes = async(pcorreo) => {
+const rechazarProveedoresPendientes = async(pcorreo, pnombreNegocio) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/rechazar-proveedores-pendientes',
@@ -90,7 +91,7 @@ const mostrarTablaProveedoresPendientes = async => {
     let filtro = filtroProveedoresPendientes.value.toLowerCase();
     tablaProveedoresPendientes.innerHTML = '';
     listaProveedores.forEach(proveedor => {
-        if (proveedor.nombre.toLowerCase().includes(filtro) && (proveedor.estado == "pendiente")) {
+        if (proveedor.nombreNegocio.toLowerCase().includes(filtro) && (proveedor.estado == "pendiente")) {
 
             let fila = tablaProveedoresPendientes.insertRow();
             fila.insertCell().innerHTML = proveedor.nombreNegocio;
@@ -113,7 +114,8 @@ const mostrarTablaProveedoresPendientes = async => {
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        aprobarProveedoresPendientes(proveedor.correo);
+                        aprobarProveedoresPendientes(proveedor.correo, proveedor.nombreNegocio);
+
                     }
                 })
             });
@@ -131,7 +133,7 @@ const mostrarTablaProveedoresPendientes = async => {
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        rechazarProveedoresPendientes(proveedor.correo);
+                        rechazarProveedoresPendientes(proveedor.correo, proveedor.nombreNegocio);
                     }
                 })
             });
