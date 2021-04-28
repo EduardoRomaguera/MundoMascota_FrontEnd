@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P05-inicio-sesion.css">
+    <link rel="stylesheet" href="styles/P05b-nueva-contrasenna.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
     <title>Inicio sesión</title>
@@ -45,14 +45,14 @@
                             <h3>Cambiar contraseña</h3>
                             <h4>Mundo Mascota</h4>
                             <p class="h6">Introduzca su nueva contraseña</p>
-                            <p class="h6">Debe tener entre 6 y 12 caracteres, una máyuscula, una minúscula, alguno de estos cáracteres especiales (! @ # $ % ^ & * - _ +) y al menos un número.</p>
-                            <input class="input-formularios" type="password" id="txt-contrasenna" placeholder="Contraseña">
-                            <input class="input-formularios" type="password" id="txt-contrasenna" placeholder="Contraseña">
+                            <p class="h6" id="instrucciones">Debe tener entre 6 y 12 caracteres, una máyuscula, una minúscula, alguno de estos cáracteres especiales (! @ # $ % ^ & * _ +) y un número.</p>
+                            <input class="input-formularios" type="password" id="txt-contrasenna1" placeholder="Nueva contraseña">
+                            <input class="input-formularios inhabilitar" type="password" id="txt-contrasenna2" placeholder="Verificar contraseña">
                             <div id="contenedor3">
                                 <div id="fix1">
                                     <input type="checkbox" onclick="showPassword()">Mostrar contraseña</input>
                                 </div>
-                                <a href="P06-olvide-datos.html">Olvidé mi contraseña</a>
+
                             </div>
                             <button class="btn2" id="btn-siguiente">Siguiente </button>
 
@@ -100,7 +100,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <!-- <script src="scripts/servicios.js"></script> -->
     <script src="scripts/P05-inicio-sesion-servicio.js"></script>
-    <script src="scripts/P05-inicio-sesion.js"></script>
+    <script src="scripts/P05b-nueva-contrasenna.js"></script>
 </body>
 
 </html>
