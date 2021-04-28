@@ -18,54 +18,56 @@ const listarProveedoresPendientes = async() => {
     return listaProveedores;
 };
 
-const aprobarProveedoresPendientes = async(pid, pnombre, pestado) => {
+const aprobarProveedoresPendientes = async(pcorreo) => {
     await axios({
         method: 'put',
-        url: 'http://localhost:3000/api/modificar-especie',
+        url: 'http://localhost:3000/api/aceptar-proveedores-pendientes',
         responseType: 'json',
         data: {
-            _id: pid,
-            nombre: pnombre,
-            estado: pestado
+            correo: pcorreo,
+            estado: "activo"
         }
     }).then((response) => {
         Swal.fire({
             'icon': 'success',
-            'title': 'La especie se modificó correctamente',
+            'title': 'El proveedor se aprobó correctamente',
             'text': response.msj
         }).then(() => {
-            window.location.href = 'P43-especies-mantenimiento.html';
+            window.location.href = 'P50-solicitudes-proveedores.html';
         });
     }).catch((error) => {
         Swal.fire({
-            'title': response.msj,
+            'title': 'Error',
             'icon': 'error',
-            'text': response.err
+            'text': "Hubo un error en el servidor"
         })
     });
 };
 
-const RechazarProveedoresPendientes = async(pid) => {
+const rechazarProveedoresPendientes = async(pcorreo) => {
     await axios({
-            method: 'delete',
-            url: 'http://localhost:3000/api/eliminar-especie',
-            responseType: 'json',
-            data: {
-                _id: pid
-            }
-        })
-        .then((response) => {
-            Swal.fire({
-                'title': 'La especie ha sido eliminada',
-                'icon': 'success',
-                'text': response.msj
-            }).then(() => {
-                window.location.href = 'P43-especies-mantenimiento.html';
-            });
-        })
-        .catch((error) => {
-            console.log(error)
+        method: 'put',
+        url: 'http://localhost:3000/api/rechazar-proveedores-pendientes',
+        responseType: 'json',
+        data: {
+            correo: pcorreo,
+            estado: "rechazado"
+        }
+    }).then((response) => {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'El proveedor se rechazó correctamente',
+            'text': response.msj
+        }).then(() => {
+            window.location.href = 'P50-solicitudes-proveedores.html';
         });
+    }).catch((error) => {
+        Swal.fire({
+            'title': 'Error',
+            'icon': 'error',
+            'text': "Hubo un error en el servidor"
+        })
+    });
 };
 
 // Fin de funciones de conexión al back end /////////////////////////////////////////////////////////////////////
@@ -106,12 +108,12 @@ const mostrarTablaProveedoresPendientes = async => {
                     'icon': 'warning',
                     'text': '¿Está seguro que desea aceptar al proveedor?',
                     'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'confirmButtonText': 'Sí estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        aceptarProveedoresPendientes();
+                        aprobarProveedoresPendientes(proveedor.correo);
                     }
                 })
             });
@@ -124,17 +126,17 @@ const mostrarTablaProveedoresPendientes = async => {
                     'icon': 'warning',
                     'text': '¿Está seguro que desea rechazar al proveedor?',
                     'showCancelButton': true,
-                    'confirmButtonText': '¡Sí!, estoy seguro',
+                    'confirmButtonText': 'Sí estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        rechazarProveedoresPendientes();
+                        rechazarProveedoresPendientes(proveedor.correo);
                     }
                 })
             });
-            celdaAcciones.appendChild(botonEliminar);
             celdaAcciones.appendChild(btnAceptar);
+            celdaAcciones.appendChild(botonEliminar);
         }
     });
 };
