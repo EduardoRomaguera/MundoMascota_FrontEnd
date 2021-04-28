@@ -52,6 +52,7 @@ const rechazarProveedoresPendientes = async(pcorreo, pnombreNegocio) => {
         responseType: 'json',
         data: {
             correo: pcorreo,
+            nombreNegocio: pnombreNegocio,
             estado: "rechazado"
         }
     }).then((response) => {

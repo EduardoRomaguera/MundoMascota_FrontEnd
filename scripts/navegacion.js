@@ -1,4 +1,5 @@
 'use strict';
+window.onload = function() {OcultarInicioSesionBoton()};
 
 let usuario;
 const btnIniciarSesion = document.querySelector('#btn-iniciar-sesion');
@@ -9,7 +10,8 @@ const cerrarSesion = () => {
     window.location.href = 'P01-homepage.html';
 };
 
-const OcultarIncioSesionBoton = () => {
+const OcultarInicioSesionBoton = () => {
+    console.log("hello");
     if (sessionStorage.getItem('usuarioConectado')) {
         usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
         btnIniciarSesion.classList.add('ocultar');

@@ -7,22 +7,19 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P09-principal-cliente.css">
+    <link rel="stylesheet" href="styles/P47-mis-mascotas.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Principal cliente</title>
+    <title>Mis mascotas</title>
 </head>
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href="P09.1-principal-cliente.html">
-
+                <a class="nav-A" href=P01-homepage.html>
                     <img src="images/logo2-nav.png" id="logo">
-                    <!--<a class="logo" href=P01-homepage.html></a>-->
                 </a>
-
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
@@ -30,8 +27,8 @@
                         </input>
                     </form>
                 </div>
-
                 <div class="nav-C">
+                    <a class="btn" href="P13-registro-mascota.html">Registrar Mascota</a>
                     <a class="btn" id="btn-perfil" href="P10-perfil-cliente.html">Mi Perfil</a>
                     <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
                     <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
@@ -39,61 +36,35 @@
             </div>
         </nav>
     </header>
+
     <main>
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
+                <!-- pendiente habilitar ingreso de datos-->
                 <section class="titulo">
-                    <h1>Página principal cliente</h1>
+                    <h2>Mis mascotas</h2>
                 </section>
 
-                <section>
-                    <a class="tienda" href="P54-tienda.html">
-                        <h2>Tienda</h2>
-                    </a>
+                <section class="perfil-mascota">
+                    <div class="imagen-mascota">
+                        <i class="fas fa-paw" id="icono-pata"></i>
+                    </div>
+                    <div class="info-mascota">
+                        <div class="info0">
+                            <div>
+                                <h4>No hay ninguna mascota registrada</h4>
+                            </div>
+                            <a href="P13-registro-mascota.html"><button class="btn2">Registrar mascota</button></a>
+                        </div>
+                    </div>
                 </section>
-
-                <section class="divisor">
-                </section>
-
-                <section>
-                    <a class="mis-mascotas" href="P47-mis-mascotas1.html">
-                        <h2>Mis mascotas</h2>
-                    </a>
-                </section>
-
-                <section class="divisor">
-                </section>
-
-                <section>
-                    <a class="mis-ordenes" href="P16-mis-ordenes.html">
-                        <!-- pendiente corregir href -->
-                        <h2>Mis órdenes</h2>
-                    </a>
-                </section>
-
-                <section class="divisor">
-                </section>
-
-                <section>
-                    <a class="gestion-pago" href="P56-Gestion-Pago.html">
-                        <h2>Gestionar métodos de pago</h2>
-                    </a>
-                </section>
-
-                <section class="divisor">
-                    <h2 class="btn-divisor"> </h2>
-                </section>
-
-
-
-
-
 
             </div>
             <div id="espaciador-der"></div>
         </div>
     </main>
+
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
@@ -128,8 +99,10 @@
         </section>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
+    <script src="scripts/P10-perfil-cliente.js"></script>
 </body>
 
 </html>
