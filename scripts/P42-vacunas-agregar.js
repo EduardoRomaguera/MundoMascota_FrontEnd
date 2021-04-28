@@ -20,12 +20,11 @@ const AGREGARVACUNA = () => {
 //Funcion que llena las especies
 
 const ESPECIESDESPLEGABLE = async() => {
-
     lista = await LISTARESPECIES();
     AGREGAROPCION();
 }
-const AGREGAROPCION = async() => {
 
+const AGREGAROPCION = async() => {
     lista.forEach(especie => {
         let opcion = document.createElement('option');
         opcion.innerText = especie.nombre;
@@ -62,6 +61,7 @@ const VALIDAR = () => {
 
     }
 };
+
 INPUTSREQUERIDOS.forEach(input => {
     input.addEventListener('blur', () => {
         if (input.value == '') {

@@ -18,7 +18,7 @@ const REGISTRARRAZA = async(pnombre, pespecie, pestado) => {
                 'title': 'La raza ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
-                //
+                window.location.href = 'P40-mantenimiento-razas.html';
 
             });
 
@@ -32,7 +32,7 @@ const REGISTRARRAZA = async(pnombre, pespecie, pestado) => {
 };
 
 const LISTARRAZAS = async() => {
-    let listaRazas = [];
+    let listaRazas;
 
     await axios({
         method: 'get',
@@ -40,21 +40,21 @@ const LISTARRAZAS = async() => {
         responseType: 'json'
     }).then((response) => {
         listaRazas = response.data.razas;
-    }).catch((response) => {
-
+    }).catch((error) => {
+        console.log(error)
     });
 
     return listaRazas;
 };
 
 
-const MODIFICARRAZA = async(_id, nombre, tipo, estado) => {
+const MODIFICARRAZA = async(pid, nombre, tipo, estado) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-raza',
         responseType: 'json',
         data: {
-            _id: _id,
+            _id: pid,
             nombre: nombre,
             tipo: tipo,
             estado: estado
@@ -65,7 +65,7 @@ const MODIFICARRAZA = async(_id, nombre, tipo, estado) => {
             'icon': 'success',
             'text': response.msj
         }).then(() => {
-            mostrar_razas();
+            window.location.href = 'P40-mantenimiento-razas.html';
         });
     }).catch((response) => {
         Swal.fire({
@@ -75,4 +75,29 @@ const MODIFICARRAZA = async(_id, nombre, tipo, estado) => {
         })
     });
 
+};
+
+const ELIMINARRAZA = async(pid) => {
+    await axios({
+            method: 'delete',
+            url: 'http://localhost:3000/api/eliminar-raza',
+            responseType: 'json',
+            data: {
+                _id: pid
+            }
+        })
+        .then((response) => {
+            Swal.fire({
+                    'title': 'La raza ha sido eliminada',
+                    'icon': 'success',
+                    'text': response.msj
+                }
+
+            ).then(() => {
+                window.location.href = 'P40-mantenimiento-razas.html';
+            });
+        })
+        .catch((error) => {
+            console.log(error)
+        });
 };

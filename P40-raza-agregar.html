@@ -41,18 +41,17 @@
                 <section>
                     <div class="contenedor1">
                         <form class="contenedor2">
+
                             <h2>Raza</h2>
                             <div class="items">
                                 <label class="label" for="txt-nombre-rz">Nombre</label>
-                                <input class="input-formularios" id="txt-nombre-rz" type="text" placeholder="Nombre">
+                                <input class="input-formularios" id="txt-nombre-rz" type="text" placeholder="Nombre" required>
                             </div>
                             <div class="items">
                                 <label class="label" for="slt-especie-rz">Especie</label>
-                                <select id="slt-especie-rz">
-                                    <option value="">--Seleccione una opción--</option>
-                                    <option value="Perro">Perro</option>
-                                    <option value="Gato">Gato</option>
-                                    </select>
+                                <select id="slt-especie-rz" required>
+                                    
+                                </select>
                             </div>
                             <div class="items">
                                 <label class="label" for="slt-estado-rz">Estado</label>
@@ -106,7 +105,13 @@
             </a>
         </section>
     </footer>
+    <!--Script de terceros-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Scripts de propios -->
+    <!--script src="scripts/navegacion.js"></script-->
+    <script src="scripts/P43-servicio-especies.js"></script>
     <script src="scripts/P40-servicio-razas.js"></script>
     <script src="scripts/P40-raza-agregar.js"></script>
 </body>

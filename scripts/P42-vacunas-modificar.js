@@ -9,6 +9,7 @@ const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 let lista = [];
 
+//Valida que los inputs no esten vacios.
 const VALIDAR = () => {
     let error = false;
     let inputRequeridos = INPUTSREQUERIDOS;

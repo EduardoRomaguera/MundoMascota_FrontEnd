@@ -47,11 +47,7 @@ const MOSTRARTABLARAZAS = async() => {
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'La raza ha sido eliminada',
-                            'success'
-                        )
+                        ELIMINARRAZA(raza._id);
                     }
                 })
             });
@@ -61,8 +57,9 @@ const MOSTRARTABLARAZAS = async() => {
 
     });
 };
+
 LLENARTABLARAZAS();
 FILTRORAZAS.addEventListener('keyup', MOSTRARTABLARAZAS);
 BTNAGREGARRAZA.addEventListener('click', () => {
-    window.location.href = 'P40-raza-modificar.html';
+    window.location.href = 'P40-raza-agregar.html';
 })
