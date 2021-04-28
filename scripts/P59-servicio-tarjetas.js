@@ -21,7 +21,7 @@ const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiraci
                 'title': 'La tarjeta ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
-                window.location.href = 'P42-vacunas-mantenimiento.html';
+                window.location.href = 'P56-gestion-pago';
 
             });
 

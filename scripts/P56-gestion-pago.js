@@ -1,9 +1,8 @@
 'use strict';
 
-const TABLATARJETAS = document.querySelector('#tbl-vacunas tbody');
-const FILTROTARJETAS = document.querySelector('#txt-filtro-vacunas');
-const BTNAGRETARJETA = document.querySelector('#btn-agregar-vacuna');
-let usuario;
+const TABLATARJETAS = document.querySelector('#tbl-tarjetas');
+const BTNAGRETARJETA = document.querySelector('#btn-agregar-tarjeta');
+let correo;
 let listaTarjetas = [];
 
 const LLENARTABLATARJETAS = async() => {
@@ -14,9 +13,9 @@ const LLENARTABLATARJETAS = async() => {
 //Función que agrega las celdas de vacunas a la tabla
 const MOSTRARTABLATARJETAS = async => {
 
-    TABLAVACUNAS.innerHTML = '';
+    TABLATARJETAS.innerHTML = '';
     listaTarjetas.forEach(tarjeta => {
-        if (tarjeta.idUsuario == usuario) {
+        if (tarjeta.idUsuario == correo) {
 
             let fila = TABLATARJETAS.insertRow();
             fila.insertCell().innerHTML = tarjeta.nombreTarjeta;
@@ -59,12 +58,10 @@ const MOSTRARTABLATARJETAS = async => {
 
 if (sessionStorage.getItem('usuarioConectado')) {
     correo = JSON.parse(sessionStorage.getItem('correo'));
-    usuario = usuarioConectado.correo;
 } else {
     window.location.href = 'index.html';
 };
 LLENARTABLATARJETAS();
-FILTROTARJETAS.addEventListener('keyup', MOSTRARTABLATARJETAS)
 BTNAGRETARJETA.addEventListener('click', () => {
     window.location.href = 'P59-agregar-tarjeta.html';
 })

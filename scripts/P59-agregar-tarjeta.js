@@ -8,7 +8,9 @@ const INPUTCVV = document.querySelector('#txt-cvv');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 const BTNAGRETARJETA = document.querySelector('#btn-agregar-tarjeta');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
-let usuarioConectado
+let usuarioConectado;
+let tarjetaSeleccionada;
+let correoUsuario;
 
 //Funcion que registra la vacuna 
 const AGREGARTARJETA = () => {
@@ -55,6 +57,15 @@ INPUTSREQUERIDOS.forEach(input => {
         }
     });
 });
+
+
+if (sessionStorage.getItem('usuarioConectado')) {
+    usuarioConectado = JSON.parse(sessionStorage.getItem('usuarioConectado'));
+    correoUsuario = usuarioConectado.correo;
+    console.log(usuarioConectado);
+
+}
+
 BTNAGRETARJETA.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P56-gestion-pago.html';
