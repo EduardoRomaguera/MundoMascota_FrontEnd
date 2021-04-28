@@ -14,7 +14,7 @@ const AGREGARSERVICIO = () => {
     let nombre = INPUTNOMBRE.value;
     let descripcion = INPUTDESCRIPCION.value;
     let estado = INPUTESTADO.value;
-    REGISTRARSERVICIO(nombre, descripcion, estado);
+    REGISTRARMISSERVICIO(nombre, descripcion, estado);
 
 };
 

@@ -40,7 +40,7 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        CAMBIARSERVICIO();
+        CAMBIARMISERVICIO();
     } else {
         Swal.fire({
             'icon': 'warning',
@@ -53,11 +53,11 @@ const VALIDAR = () => {
 };
 
 //Funcion que obtiene los datos del formulario
-const CAMBIARSERVICIO = () => {
+const CAMBIARMISERVICIO = () => {
     let nombre = INPUTNOMBRE.value;
     let descripcion = INPUTDESCRIPCION.value;
     let costo = INPUTCOSTO.value;
-    MODIFICARSERVICIO(_id, nombre, descripcion, costo);
+    MODIFICARMISERVICIO(_id, nombre, descripcion, costo);
     console.log(servicioSeleccionado);
 
 }
