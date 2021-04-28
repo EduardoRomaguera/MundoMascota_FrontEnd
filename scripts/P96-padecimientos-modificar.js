@@ -17,7 +17,7 @@ const VALIDAR = () => {
     if (INPUTNOMBRE.value == '') {
         error = true;
         INPUTNOMBRE.classList.add('error');
-        
+
 
     } else {
         INPUTNOMBRE.classList.remove('error');
@@ -37,6 +37,7 @@ const VALIDAR = () => {
         INPUTESTADO.classList.remove('error');
     }
     if (error == false) {
+        registrar();
         Swal.fire({
             'icon': 'success',
             'title': 'Padecimiento agregado',
@@ -55,6 +56,14 @@ const VALIDAR = () => {
 
     };
 };
+
+const registrar = () => {
+    let nombre = INPUTNOMBRE.value;
+    let especie = INPUTESPECIE.value;
+    let estado = INPUTESTADO
+    registrarPadecimiento(nombre, especie, estado);
+};
+
 BTNGUARDAR.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P39-mantenimiento-catalogos.html';

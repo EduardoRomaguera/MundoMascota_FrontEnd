@@ -3,18 +3,27 @@
 const TABLAENFERMEDADES = document.querySelector('#tbl-enfermedades tbody');
 const FILTROENFERMEDADES = document.querySelector('#txt-filtro-enfermedades');
 const BTNAGREGARENFERMEDAD = document.querySelector('#btn-agregar-enfermedad');
+let listaPadecimientos = [];
+
+
+
+
+
+const LLENARTABLAPADE = async() => {
+    listaPadecimientos = await LISTARPADECIMIENTOS();
+    MOSTRARTABLAPADE();
+};
 
 //Función que agrega las celdas de enfermedades a la tabla
-const MOSTRARTABLAENFERMEDADES = () => {
+const MOSTRARTABLAPADE = () => {
     let filtro = FILTROENFERMEDADES.value.toLowerCase();
     TABLAENFERMEDADES.innerHTML = '';
-    listaEnfermedades.forEach(enfermedad => {
-        if (enfermedad.nombre.toLowerCase().includes(filtro) || enfermedad.especie.toLowerCase().includes(filtro)) {
-
+    listaPadecimientos.forEach(padecimiento => {
+        if (padecimiento.nombre.toLowerCase().includes(filtro)) {
             let fila = TABLAENFERMEDADES.insertRow();
-            fila.insertCell().innerHTML = enfermedad.nombre;
-            fila.insertCell().innerHTML = enfermedad.especie;
-            fila.insertCell().innerHTML = enfermedad.estado;
+            fila.insertCell().innerHTML = padecimiento.nombre;
+            fila.insertCell().innerHTML = padecimiento.especie;
+            fila.insertCell().innerHTML = padecimiento.estado;
 
             let celdaAcciones = fila.insertCell();
 
@@ -22,14 +31,10 @@ const MOSTRARTABLAENFERMEDADES = () => {
             botonModificar.innerText = 'Editar';
 
             botonModificar.addEventListener('click', () => {
-                Swal.fire({
-                    imageUrl: "images/cute-pets.jpg",
-                    title: "Nuestro equipo aún está trabajando en eso",
-                    text: "Mientras tanto puedes ver esos lindos cachorros",
-                    confirmButtonText: "Regresar"
-                });
-
+                localStorage.setItem('padecimientoSeleccionado', JSON.stringify(padecimiento));
+                window.location.href = 'P96-padecimiento-modificar.html';
             });
+
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
 
@@ -44,26 +49,18 @@ const MOSTRARTABLAENFERMEDADES = () => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'La enfermedad ha sido eliminada',
-                            'success'
-                        )
+                        ELIMINARPADECIMIENTO(padecimiento._id);
                     }
                 })
             });
 
             celdaAcciones.appendChild(botonEliminar);
             celdaAcciones.appendChild(botonModificar);
-        } else {
-
-            let mensaje = TABLAENFERMEDADES.textContent = 'No se encontro resultado';
-
         }
     });
 };
-MOSTRARTABLAENFERMEDADES();
-FILTROENFERMEDADES.addEventListener('keyup', MOSTRARTABLAENFERMEDADES)
+LLENARTABLAPADE();
+FILTROENFERMEDADES.addEventListener('keyup', MOSTRARTABLAPADE)
 BTNAGREGARENFERMEDAD.addEventListener('click', () => {
     window.location.href = 'P96-padecimientos-modificar.html';
 })

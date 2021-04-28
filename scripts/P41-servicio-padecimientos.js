@@ -32,7 +32,7 @@ const REGISTRARPADECIMIENTO = async(pnombre, pespecie, pestado) => {
 };
 
 const LISTARPADECIMIENTOS = async() => {
-    let listaPadecimientos = [];
+    let listaPadecimientos;
 
     await axios({
         method: 'get',
@@ -40,8 +40,8 @@ const LISTARPADECIMIENTOS = async() => {
         responseType: 'json'
     }).then((response) => {
         listaPadecimientos = response.data.padecimientos;
-    }).catch((response) => {
-
+    }).catch((error) => {
+        console.log(error)
     });
 
     return listaPadecimientos;
