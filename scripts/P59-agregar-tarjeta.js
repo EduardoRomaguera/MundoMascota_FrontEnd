@@ -2,25 +2,23 @@
 
 const INPUTNOMBRETARJETA = document.querySelector('#txt-nombre-tarjeta');
 const INPUTNUMEROTARJETA = document.querySelector('#txt-numero-tarjeta');
-const INPUTMESEXPIRA = document.querySelector('#txt-mes-expira');
-const INPUTANNOEXPIRA = document.querySelector('#txt-anno-expira');
+const INPUTEXPIRA = document.querySelector('#txt-expira');
 const INPUTCVV = document.querySelector('#txt-cvv');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 const BTNAGRETARJETA = document.querySelector('#btn-agregar-tarjeta');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 let usuarioConectado;
-let tarjetaSeleccionada;
-let correoUsuario;
+let idUsuario;
 
-//Funcion que registra la vacuna 
+
+
 const AGREGARTARJETA = () => {
-    let idUsuario = usuarioConectado.value;
     let nombreTarjeta = INPUTNOMBRETARJETA.value;
     let numero = INPUTNUMEROTARJETA.value;
-    let mesExpiracion = INPUTMESEXPIRA.value;
-    let annoExpiracion = INPUTANNOEXPIRA.value;
+    let expiracion = INPUTEXPIRA.value;
     let codigoSeguridad = INPUTCVV.value;
-    REGISTRARTARJETA(idUsuario, nombreTarjeta, numero, mesExpiracion, annoExpiracion, codigoSeguridad);
+    console.log(idUsuario);
+    REGISTRARTARJETA(idUsuario, nombreTarjeta, numero, expiracion, codigoSeguridad);
 
 };
 
@@ -61,10 +59,18 @@ INPUTSREQUERIDOS.forEach(input => {
 
 if (sessionStorage.getItem('usuarioConectado')) {
     usuarioConectado = JSON.parse(sessionStorage.getItem('usuarioConectado'));
-    correoUsuario = usuarioConectado.correo;
-    console.log(usuarioConectado);
+    idUsuario = usuarioConectado.correo;
+    console.log(idUsuario);
 
+} else {
+    Swal.fire({
+        'icon': 'warning',
+        'title': 'Atención',
+        'text': 'Debe seleccionar un usuario'
+
+    });
 }
+
 
 BTNAGRETARJETA.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {

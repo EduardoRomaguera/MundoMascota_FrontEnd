@@ -18,8 +18,7 @@ const MOSTRARTABLATARJETAS = async => {
         let fila = TABLATARJETAS.insertRow();
         fila.insertCell().innerHTML = tarjeta.nombreTarjeta;
         fila.insertCell().innerHTML = tarjeta.numero;
-        fila.insertCell().innerHTML = tarjeta.mesEspiracion;
-        fila.insertCell().innerHTML = tarjeta.annoExpiracion;
+        fila.insertCell().innerHTML = tarjeta.expiracion;
 
         let celdaAcciones = fila.insertCell();
 
