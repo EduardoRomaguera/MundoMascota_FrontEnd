@@ -30,7 +30,7 @@ const MOSTRARTABLAPATROCINADOR = async => {
 
             botonModificar.addEventListener('click', () => {
                 localStorage.setItem('patrocinadorSeleccionado', JSON.stringify(patrocinador));
-                window.location.href = 'P43-especies-modificar.html';
+                window.location.href = '';
             });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
@@ -46,7 +46,7 @@ const MOSTRARTABLAPATROCINADOR = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        ELIMINARESPECIE(patrocinador._id);
+                        ELIMINARPATROCIANDOR(patrocinador._id);
                     }
                 })
             });
