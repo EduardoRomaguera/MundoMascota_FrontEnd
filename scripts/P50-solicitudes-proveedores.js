@@ -10,6 +10,7 @@ const listarProveedoresPendientes = async() => {
     }).then((response) => {
         console.log("hubo respuesta")
         listaProveedores = response.data.usuarios;
+        console.log(listaProveedores)
     }).catch((error) => {
         console.log("retorno error")
         console.log(error)

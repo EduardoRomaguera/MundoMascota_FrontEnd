@@ -105,7 +105,8 @@
 .info2 {
     display: flex;
     padding: 4px;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 10px, 0, 10px, 0;
 }
 
 .imagen-grooming {
@@ -166,7 +167,8 @@
 }
 
 #insta2,
-#fb2 {
+#fb2,
+#tiktok2 {
     color: black;
     font-size: 150%;
 }

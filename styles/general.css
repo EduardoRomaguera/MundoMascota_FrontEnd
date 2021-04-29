@@ -449,3 +449,7 @@ button:hover {
 .ocultar {
     display: none;
 }
+
+.dato {
+    margin-left: 20px;
+}
