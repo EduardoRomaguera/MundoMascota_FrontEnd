@@ -1,5 +1,5 @@
 'use strict';
-window.onload = function() {OcultarInicioSesionBoton()};
+window.onload = function() { OcultarInicioSesionBoton() };
 
 let usuario;
 const btnIniciarSesion = document.querySelector('#btn-iniciar-sesion');
