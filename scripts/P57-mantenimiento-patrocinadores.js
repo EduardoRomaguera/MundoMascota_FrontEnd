@@ -4,55 +4,60 @@ const TABLAPATROCINADORES = document.querySelector('#tbl-patrocinadores tbody');
 const btnAgregarPatrocinador = document.querySelector('#btn-agregar-patrocinador');
 const FILTROPATROCINADORES = document.querySelector('#txt-filtro-patro');
 
-//Función que agrega las celdas de ordenes a la tabla
-const MOSTRARTABLAORDENES = () => {
+let listaPatrocinador = [];
+
+
+const LLENARTABLAPATROCINADOR = async() => {
+    listaPatrocinador = await LISTARPATROCINADOR();
+    MOSTRARTABLAPATROCINADOR();
+};
+
+//Función que agrega las celdas de especies a la tabla
+const MOSTRARTABLAPATROCINADOR = async => {
     let filtro = FILTROPATROCINADORES.value.toLowerCase();
     TABLAPATROCINADORES.innerHTML = '';
-    listaPatrocinadores.forEach(patrocinador => {
+    listaPatrocinador.forEach(patrocinador => {
         if (patrocinador.nombre.toLowerCase().includes(filtro)) {
 
             let fila = TABLAPATROCINADORES.insertRow();
             fila.insertCell().innerHTML = patrocinador.nombre;
             fila.insertCell().innerHTML = patrocinador.frase;
-            fila.insertCell().innerHTML = patrocinador.fotografia;
 
             let celdaAcciones = fila.insertCell();
 
-            //let botonSubir = document.createElement('input');
-            //botonSubir.type="file";
+            let botonModificar = document.createElement('button');
+            botonModificar.innerText = 'Editar';
 
-            let botonRechazar = document.createElement('button');
-            botonRechazar.innerText = 'Eliminar';
+            botonModificar.addEventListener('click', () => {
+                localStorage.setItem('patrocinadorSeleccionado', JSON.stringify(patrocinador));
+                window.location.href = 'P43-especies-modificar.html';
+            });
+            let botonEliminar = document.createElement('button');
+            botonEliminar.innerText = 'Eliminar';
 
-            botonRechazar.addEventListener('click', () => {
+            botonEliminar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Eliminar al patrocinador?',
+                    'text': '¿Está seguro que desea borrar el patrocinador?',
                     'showCancelButton': true,
-                    'confirmButtonText': 'Sí',
+                    'confirmButtonText': '¡Sí!, estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
+                    'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire(
-                            '',
-                            'Patrocinador eliminado',
-                            'success'
-                        )
+                        ELIMINARESPECIE(patrocinador._id);
                     }
                 })
             });
-            //celdaAcciones.appendChild(botonSubir);
-            celdaAcciones.appendChild(botonRechazar);
-
+            celdaAcciones.appendChild(botonEliminar);
+            celdaAcciones.appendChild(botonModificar);
         }
     });
 };
 
-
-MOSTRARTABLAORDENES();
-FILTROPATROCINADORES.addEventListener('keyup', MOSTRARTABLAORDENES);
-
+LLENARTABLAPATROCINADOR();
+FILTROPATROCINADORES.addEventListener('keyup', MOSTRARTABLAPATROCINADOR)
 btnAgregarPatrocinador.addEventListener('click', () => {
-    window.location.href = 'P80-agregar-patrocinador.html';
+    window.location.href = 'P80-agrega-patrocinador.html';
 })

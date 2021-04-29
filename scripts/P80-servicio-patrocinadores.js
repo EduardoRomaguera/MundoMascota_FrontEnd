@@ -16,7 +16,7 @@ const registrarPatrocinador = async(pnombre, pfrase, pimagen) => {
             'icon': 'success',
             'text': response.msj
         }).then(() => {
-            window.location.href = 'P57-mantenimiento-patrocinadores';
+            window.location.href = 'P57-mantenimiento-patrocinadores.html';
         });
     }).catch((response) => {
         Swal.fire({
@@ -28,19 +28,20 @@ const registrarPatrocinador = async(pnombre, pfrase, pimagen) => {
 
 };
 
-const listarPatrocinador = async() => {
-    let lista_patrocinadores = [];
+const LISTARPATROCINADOR = async() => {
+    let listaPatrocinador;
+
     await axios({
         method: 'get',
         url: 'http://localhost:3000/api/listar-patrocinadores',
         responseType: 'json'
     }).then((response) => {
-        lista_patrocinadores = response.data.patrocinadores;
-    }).catch((response) => {
-
+        listaPatrocinador = response.data.patrocinador;
+    }).catch((error) => {
+        console.log(error)
     });
 
-    return lista_patrocinadores;
+    return listaPatrocinador;
 };
 
 const modificar_ejercicio = async(_id, nombre, zona) => {
