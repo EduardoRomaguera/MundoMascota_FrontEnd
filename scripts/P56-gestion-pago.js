@@ -52,11 +52,6 @@ const MOSTRARTABLATARJETAS = async => {
     });
 };
 
-if (sessionStorage.getItem('usuarioConectado')) {
-    correo = JSON.parse(sessionStorage.getItem('correo'));
-} else {
-    window.location.href = 'index.html';
-};
 LLENARTABLATARJETAS();
 BTNAGRETARJETA.addEventListener('click', () => {
     window.location.href = 'P59-agregar-tarjeta.html';

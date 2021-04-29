@@ -8,7 +8,7 @@ const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 const BTNAGRETARJETA = document.querySelector('#btn-agregar-tarjeta');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 let usuarioConectado;
-let idUsuario;
+let correoUsuario;
 
 
 
@@ -17,8 +17,8 @@ const AGREGARTARJETA = () => {
     let numero = INPUTNUMEROTARJETA.value;
     let expiracion = INPUTEXPIRA.value;
     let codigoSeguridad = INPUTCVV.value;
-    console.log(idUsuario);
-    REGISTRARTARJETA(idUsuario, nombreTarjeta, numero, expiracion, codigoSeguridad);
+    console.log(correoUsuario);
+    REGISTRARTARJETA(correoUsuario, nombreTarjeta, numero, expiracion, codigoSeguridad);
 
 };
 
@@ -59,8 +59,8 @@ INPUTSREQUERIDOS.forEach(input => {
 
 if (sessionStorage.getItem('usuarioConectado')) {
     usuarioConectado = JSON.parse(sessionStorage.getItem('usuarioConectado'));
-    idUsuario = usuarioConectado.correo;
-    console.log(idUsuario);
+    correoUsuario = usuarioConectado.correo;
+    console.log(correoUsuario);
 
 } else {
     Swal.fire({
