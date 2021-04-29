@@ -5,6 +5,14 @@
     min-height: 670px;
 }
 
+.foto-oculta {
+    max-width: 15px;
+    max-height: 10px;
+    min-height: 10px;
+    justify-content: center;
+    display: none;
+}
+
 .contenedor2 {
     border: solid 2px #f08700;
     border-radius: 7px;
@@ -74,7 +82,7 @@
 }
 
 .instrucciones {
-    display:flex;
+    display: flex;
     width: 580px;
     margin-top: 5%;
     font-size: 18px;

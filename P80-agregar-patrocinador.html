@@ -48,17 +48,20 @@
                             </div>
                             <div class="items">
                                 <label class="label" for="txt-nombre-rz">Frase</label>
-                                <input class="input-formularios" id="txt-descripcion" type="text" placeholder="Nombre">
+                                <input class="input-formularios" id="txt-frase" type="text" placeholder="Nombre">
                             </div>
                             <div class="items">
                                 <label class="label" for="a">Imagen</label>
-                                <input id="file" name="uploadedfile" type="file"/>
+                                <div>
+                                    <img src="" id="foto-patrocinador" class="foto-oculta">
+                                </div>
+                                <button class="btn" type="button" id="btn-foto" class="btn">Agregar Imagen</button>
                             </div>
                             <div class="instrucciones">
                                 <p>La imágen de patrocinador debe medir (925 x 401) px.</p>
                                 <p>El archivo debe ser un jpg con nombre: "patrocinador#".</p>
                             </div>
-                                <div class="items">
+                            <div class="items">
                                 <button class="btn" type="button" id="btn-guardar" class="btn">Guardar</button>
                                 <button class="btn" type="button" id="btn-cancelar" class="btn">Cancelar</button>
                             </div>
@@ -102,9 +105,13 @@
             </a>
         </section>
     </footer>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="scripts/navegacion.js"></script>
-    <script src="scripts/servicios.js"></script>
+
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10 "></script>
+
+    <script src="scripts/P80-servicio-patrocinadores.js"></script>
+    <script src="scripts/servicio-imagen.js"></script>
     <script src="scripts/P80-agregar-patrocinador.js"></script>
 </body>
 

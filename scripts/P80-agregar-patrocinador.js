@@ -1,16 +1,19 @@
 'use strict'
-let razaSeleccionado;
 const inputNombre = document.querySelector('#txt-nombre');
-const inputDescripcion = document.querySelector('#txt-descripcion');
-const inputFile = document.querySelector('#file');
+const inputDescripcion = document.querySelector('#txt-frase');
+const inputImagen = document.querySelector('#foto-patrocinador');
 const btnGuardar = document.querySelector('#btn-guardar');
 const btnCancelar = document.querySelector('#btn-cancelar');
 
-//const LLENARFORMULARIO = () => {
-//    inputNombre.value = razaSeleccionado.nombre;
-//    inputDescripcion.value = razaSeleccionado.especie;
-//    inputFile.value = razaSeleccionado.estado;
-//};
+//Funcion que registra Patrocinador 
+const AGREGARPATROCINADOR = () => {
+    let nombre = inputNombre.value;
+    let frase = inputDescripcion.value;
+    let imagen = inputImagen.src;
+
+    registrarPatrocinador(nombre, frase, imagen);
+
+};
 
 const VALIDAR = () => {
     let error = false;
@@ -28,13 +31,14 @@ const VALIDAR = () => {
         inputDescripcion.classList.remove('error');
     }
 
-    if (inputFile.value == '') {
+    if (inputImagen.value == '') {
         error = true;
-        inputFile.classList.add('error');
+        inputImagen.classList.add('error');
     } else {
-        inputFile.classList.remove('error');
+        inputImagen.classList.remove('error');
     }
     if (error == false) {
+        AGREGARPATROCINADOR();
         Swal.fire({
             'icon': 'success',
             'title': 'Patrocinador agregado',
