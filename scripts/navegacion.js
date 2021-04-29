@@ -1,4 +1,5 @@
 'use strict';
+window.onload = function() { OcultarInicioSesionBoton() };
 
 let usuario;
 const btnIniciarSesion = document.querySelector('#btn-iniciar-sesion');
@@ -9,8 +10,10 @@ const cerrarSesion = () => {
     window.location.href = 'P01-homepage.html';
 };
 
-const OcultarIncioSesionBoton = () => {
+const OcultarInicioSesionBoton = () => {
+
     if (sessionStorage.getItem('usuarioConectado')) {
+        console.log("hello! Hay un usuario conectado");
         usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
         btnIniciarSesion.classList.add('ocultar');
     } else {
@@ -38,3 +41,10 @@ const MOSTRARPAGINA = () => {
 btnCerrarSesion.addEventListener('click', () => {
     cerrarSesion();
 });
+
+//Codigo para guardar datos en Session storage
+// sessionStorage.setItem('datosProveedor', JSON.stringify(datos));
+
+//Codigo para sacar datos del Session storage
+// usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
+// usuario.tipo

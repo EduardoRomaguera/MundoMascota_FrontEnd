@@ -1,6 +1,6 @@
 'use strict';
 
-const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiracion, pannoExpiracion, pcodigoSeguridad) => {
+const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pExpiracion, pcodigoSeguridad) => {
 
     await axios({
             method: 'post',
@@ -10,8 +10,7 @@ const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiraci
                 idUsuario: pidUsuario,
                 nombreTarjeta: pnombreTarjeta,
                 numero: pnumero,
-                mesExpiracion: pmesExpiracion,
-                annoExpiracion: pannoExpiracion,
+                expiracion: pExpiracion,
                 codigoSeguridad: pcodigoSeguridad
             }
         })
@@ -21,7 +20,7 @@ const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiraci
                 'title': 'La tarjeta ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
-                window.location.href = 'P56-gestion-pago';
+                window.location.href = 'P56-gestion-pago.html';
 
             });
 
@@ -50,17 +49,16 @@ const LISTARTARJETAS = async() => {
 };
 
 
-const MODIFICARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pmesExpiracion, pannoExpiracion, pcodigoSeguridad) => {
+const MODIFICARTARJETA = async(pcorreoUsuario, pnombreTarjeta, pnumero, pExpiracion, pcodigoSeguridad) => {
     await axios({
         method: 'put',
         url: 'http://localhost:3000/api/modificar-tarjeta',
         responseType: 'json',
         data: {
-            idUsuario: pidUsuario,
+            correoUsuario: pcorreoUsuario,
             nombreTarjeta: pnombreTarjeta,
             numero: pnumero,
-            mesExpiracion: pmesExpiracion,
-            annoExpiracion: pannoExpiracion,
+            expiracion: pExpiracion,
             codigoSeguridad: pcodigoSeguridad
 
         }
@@ -93,7 +91,7 @@ const ELIMINARTARJETA = async(pid) => {
         })
         .then((response) => {
             Swal.fire({
-                    'title': 'La vacuna ha sido eliminada',
+                    'title': 'La tarjeta ha sido eliminada',
                     'icon': 'success',
                     'text': response.msj
                 }

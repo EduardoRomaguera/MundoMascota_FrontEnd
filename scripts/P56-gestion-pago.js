@@ -18,8 +18,7 @@ const MOSTRARTABLATARJETAS = async => {
         let fila = TABLATARJETAS.insertRow();
         fila.insertCell().innerHTML = tarjeta.nombreTarjeta;
         fila.insertCell().innerHTML = tarjeta.numero;
-        fila.insertCell().innerHTML = tarjeta.mesEspiracion;
-        fila.insertCell().innerHTML = tarjeta.annoExpiracion;
+        fila.insertCell().innerHTML = tarjeta.expiracion;
 
         let celdaAcciones = fila.insertCell();
 
@@ -53,11 +52,6 @@ const MOSTRARTABLATARJETAS = async => {
     });
 };
 
-if (sessionStorage.getItem('usuarioConectado')) {
-    correo = JSON.parse(sessionStorage.getItem('correo'));
-} else {
-    window.location.href = 'index.html';
-};
 LLENARTABLATARJETAS();
 BTNAGRETARJETA.addEventListener('click', () => {
     window.location.href = 'P59-agregar-tarjeta.html';

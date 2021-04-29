@@ -99,9 +99,28 @@ const validarInicioSesion = () => {
                     confirmButtonText: "Intentar de nuevo"
                 });
             } else {
+                //Funcion para sacar el correo del URL ejemplo:
+                //http://127.0.0.1:5500/P05b-nueva-contrasenna.html?correo=sochia2705@bylup.com
+                function sacarCorreo() {
+                let url = window.location.href;
+                console.log(url);
+
+                let urlSplit = url.split("=")
+                let correo = urlSplit[1];
+                return correo
+                }
+                let correo = sacarCorreo();
+                console.log(correo);
+
                 sessionStorage.getItem('usuarioConectado')
                 let correoConectado = JSON.parse(sessionStorage.getItem('usuarioConectado'));
-                correoConectado = (correoConectado.correo)
+                console.log(correoConectado);
+                if (correoConectado == null) {
+                    correoConectado = correo;
+                } else {
+                    correoConectado = (correoConectado.correo)
+                }
+                console.log(correoConectado);
                 cambiarContrasenna(correoConectado, inputContrasenna2.value, "activo");
                 console.log("Se envió la información al backend");
                 //console.log(correoConectado);

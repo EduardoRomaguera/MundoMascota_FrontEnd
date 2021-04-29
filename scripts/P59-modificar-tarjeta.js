@@ -2,8 +2,7 @@
 
 const INPUTNOMBRETARJETA = document.querySelector('#txt-nombre-tarjeta');
 const INPUTNUMEROTARJETA = document.querySelector('#txt-numero-tarjeta');
-const INPUTMESEXPIRA = document.querySelector('#txt-mes-expira');
-const INPUTANNOEXPIRA = document.querySelector('#txt-anno-expira');
+const INPUTEXPIRA = document.querySelector('#txt-expira');
 const INPUTCVV = document.querySelector('#txt-cvv');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 const BTNAGRETARJETA = document.querySelector('#btn-agregar-tarjeta');
@@ -41,10 +40,9 @@ const CAMBIARTARJETA = () => {
     let idUsuario = usuarioConectado.value;
     let nombreTarjeta = INPUTNOMBRETARJETA.value;
     let numero = INPUTNUMEROTARJETA.value;
-    let mesExpiracion = INPUTMESEXPIRA.value;
-    let annoExpiracion = INPUTANNOEXPIRA.value;
+    let expiracion = INPUTEXPIRA.value;
     let codigoSeguridad = INPUTCVV.value;
-    MODIFICARTARJETA(id, idUsuario, nombreTarjeta, numero, mesExpiracion, annoExpiracion, codigoSeguridad);
+    MODIFICARTARJETA(id, idUsuario, nombreTarjeta, numero, expiracion, codigoSeguridad);
     console.log(tarjetaSeleccionada);
 
 }
@@ -54,8 +52,6 @@ if (localStorage.getItem('tarjetaSeleccionada')) {
     id = tarjetaSeleccionada.idUsuario;
     INPUTNOMBRETARJETA.value = tarjetaSeleccionada.nombreTarjeta;
     INPUTNUMEROTARJETA.value = tarjetaSeleccionada.numero;
-    INPUTMESEXPIRA.value = tarjetaSeleccionada.mesExpiracion;
-    INPUTANNOEXPIRA.value = tarjetaSeleccionada.annoExpiracion;
     id = tarjetaSeleccionada._id;
 
 

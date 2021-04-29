@@ -17,7 +17,7 @@
     <header>
         <nav>
             <div class="nav-madre">
-                <a class="nav-A" href="P19-principal-proveedor.html">
+                <a class="nav-A" href=P01-homepage.html>
 
                     <img src="images/logo2-nav.png" id="logo">
                     <!--<a class="logo" href=P01-homepage.html></a>-->
@@ -45,7 +45,7 @@
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
                 <section class="titulo">
-                    <h1>Mi perfil proveedor</h1>
+                    <h1 id="txt-nombreNegocio2">Mi perfil</h1>
                 </section>
                 <!-- sección 1-->
                 <section class="contenedor1">
@@ -55,36 +55,46 @@
                     <div class="datos-proveedor">
                         <div class="info1">
                             <div class="info0">
-                                <h4 class="nombre-negocio">Peluqueria Canina y Spa Steph's</h4>
+                                <h4 class="nombre-negocio" id="txt-nombreNegocio"></h4>
                             </div>
                             <div><button id="btn-editar" class="btn2">Editar perfil</button></div>
                         </div>
                         <div class="info2" id="nombre">
-                            <h5>Nombre: Stephanie</h5>
+                            <h5>Nombre:</h5>
+                            <h5 class= "dato" id="txt-nombre"> </h5>
+
                         </div>
                         <div class="info2" id="apellidos">
-                            <h5>Apellido(s): Marín Brenes</h5>
+                            <h5>Apellido(s):</h5>
+                            <h5 class= "dato" id="txt-apellido1"> </h5>
                         </div>
                         <div class="info2" id="tipo-identificacion">
-                            <h5>Tipo de identificación: Física</h5>
+                            <h5>Tipo de identificación:</h5>
+                            <h5 class= "dato" id="txt-tipoId"> </h5>
                         </div>
                         <div class="info2" id="numero-identificacion">
-                            <h5>Número de identificación: 1-1436-0124</h5>
+                            <h5>Número de identificación:</h5>
+                            <h5 class= "dato" id="txt-identificacion"> </h5>
                         </div>
                         <div class="info2" id="correo electronico">
-                            <h5>Correo electrónico: stephaniemarin@gmail.com</h5>
+                            <h5>Correo electrónico:</h5>
+                            <h5 class= "dato" id="txt-correo"> </h5>
                         </div>
                         <div class="info2" id="provincia">
-                            <h5>Provincia: Heredia</h5>
+                            <h5>Provincia:</h5>
+                            <h5 class= "dato" id="txt-provincia"> </h5>
                         </div>
                         <div class="info2" id="canton">
-                            <h5>Cantón: Heredia</h5>
+                            <h5>Cantón:</h5>
+                            <h5 class= "dato" id="txt-canton"> </h5>
                         </div>
                         <div class="info2" id="distrito">
-                            <h5>Distrito: San Franciso</h5>
+                            <h5>Distrito:</h5>
+                            <h5 class= "dato" id="txt-distrito"> </h5>
                         </div>
                         <div class="info2" id="otras-senas">
-                            <h5>Otras señas: Del restaurante Don Cicharron, 200m norte. Calle 38.</h5>
+                            <h5>Otras señas:</h5>
+                            <h5 class= "dato" id="txt-otrasSennas"> </h5>
                         </div>
                     </div>
                 </section>
@@ -92,13 +102,17 @@
                 <!-- sección 2-->
                 <section class="contenedor2">
                     <div class="datos-proveedor2">
-                        <div class="info2">Teléfono: 6001-5318</div>
-                        <div> </div>
-                        <div>
-                            <div class="info2">Horario de atención</div>
-                            <div class="info2">Lunes: CERRADO</div>
-                            <div class="info2">Martes - Sábado: 9:00 a.m. a 6:00 p.m.</div>
-                            <div class="info2">Domingos: 12:00 m.d. a 9:00 p.m.</div>
+                        <div class="info2">
+                            <div>Fecha de nacimiento</div>
+                            <h5 class= "dato" id="txt-nacimiento"> </h5>
+                        </div>
+                        <div class="info2">
+                            <div>Teléfono</div>
+                            <h5 class= "dato" id="txt-telefono"> </h5>
+                        </div>
+                        <div class="info2">
+                            <div>Horario</div>
+                            <h5 class= "dato" id="txt-horario"> </h5>
                         </div>
                         <div> </div>
                         <div>URL Google Maps: https://www.google.co.cr/maps/place/Peluqueria+Canina+Y+Spa+Steph</div>
@@ -152,12 +166,19 @@
                     </div>
                     <div class=redes-sociales>
                         <div>
-                            <a id="fb2" href="https://www.facebook.com/Peluqueria-Canina-Y-Spa-Stephs"><i class="fab fa-facebook"></i></a>
-                            <p> URL: https://www.facebook.com/Peluqueria-Canina-Y-Spa-Stephs</p>
+                            <a id="fb2" href=""><i class="fab fa-facebook"></i></a>
+                            <h5 class= "dato" id="txt-enlaceFacebook"> </h5>
+                            <p> </p>
                         </div>
                         <div>
-                            <a id="insta2" href="https://www.instagram.com/Peluqueria-Canina-Y-Spa-Stephs"><i class="fab fa-instagram"></i></a>
-                            <p> URL: https://www.instagram.com/Peluqueria-Canina-Y-Spa-Stephs</p>
+                            <a id="insta2" href=""><i class="fab fa-instagram"></i></a>
+                            <h5 class= "dato" id="txt-enlaceInstagram"> </h5>
+                            <p> </p>
+                        </div>
+                        <div>
+                            <a id="tiktok2" href=""><i class="fab fa-tiktok"></i></a>
+                            <h5 class= "dato" id="txt-enlaceTikTok"> </h5>
+                            <p> </p>
                         </div>
                     </div>
 
@@ -201,10 +222,11 @@
         </section>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P20-perfil-proveedor"></script>
+    <script src="scripts/P20-perfil-proveedor.js"></script>
 </body>
 
 </html>
