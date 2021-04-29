@@ -1,6 +1,6 @@
 'use strict';
 
-const registrarUsuario = async(pnombreNegocio, pnombre, papellido1, papellido2, ptipoId, pidentificacion, pnacimiento, pedad, pcorreo, ptelefono, pprovincia, pcanton, pdistrito, potrasSenas, phorario, penlaceFacebook, penlaceInstagram, penlaceTiktok) => {
+const registrarUsuario = async(pnombreNegocio, pnombre, papellido1, papellido2, ptipoId, pidentificacion, pnacimiento, pedad, pcorreo, ptelefono, pprovincia, pcanton, pdistrito, potrasSenas, phorario, penlaceFacebook, penlaceInstagram, penlaceTiktok, pnombreR, papellido1R, papellido2R, pcorreoR, pubicacion) => {
 
     await axios({
             method: 'post',
@@ -25,6 +25,11 @@ const registrarUsuario = async(pnombreNegocio, pnombre, papellido1, papellido2, 
                 enlaceFacebook: penlaceFacebook,
                 enlaceInstagram: penlaceInstagram,
                 enlaceTiktok: penlaceTiktok,
+                nombreR: pnombreR,
+                apellido1R: papellido1R,
+                apellido2R: papellido2R,
+                correoR: pcorreoR,
+                ubicacion: pubicacion
             }
         })
         .then((response) => {

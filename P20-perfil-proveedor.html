@@ -60,40 +60,40 @@
                             <div><button id="btn-editar" class="btn2">Editar perfil</button></div>
                         </div>
                         <div class="info2" id="nombre">
-                            <h5>Nombre:</h5>
+                            <h5 class= "dato0">Nombre:</h5>
                             <h5 class= "dato" id="txt-nombre"> </h5>
 
                         </div>
                         <div class="info2" id="apellidos">
-                            <h5>Apellido(s):</h5>
+                            <h5 class= "dato0">Apellido(s):</h5>
                             <h5 class= "dato" id="txt-apellido1"> </h5>
                         </div>
                         <div class="info2" id="tipo-identificacion">
-                            <h5>Tipo de identificación:</h5>
+                            <h5 class= "dato0">Tipo de identificación:</h5>
                             <h5 class= "dato" id="txt-tipoId"> </h5>
                         </div>
                         <div class="info2" id="numero-identificacion">
-                            <h5>Número de identificación:</h5>
+                            <h5 class= "dato0">Número de identificación:</h5>
                             <h5 class= "dato" id="txt-identificacion"> </h5>
                         </div>
                         <div class="info2" id="correo electronico">
-                            <h5>Correo electrónico:</h5>
+                            <h5 class= "dato0">Correo electrónico:</h5>
                             <h5 class= "dato" id="txt-correo"> </h5>
                         </div>
                         <div class="info2" id="provincia">
-                            <h5>Provincia:</h5>
+                            <h5 class= "dato0">Provincia:</h5>
                             <h5 class= "dato" id="txt-provincia"> </h5>
                         </div>
                         <div class="info2" id="canton">
-                            <h5>Cantón:</h5>
+                            <h5 class= "dato0">Cantón:</h5>
                             <h5 class= "dato" id="txt-canton"> </h5>
                         </div>
                         <div class="info2" id="distrito">
-                            <h5>Distrito:</h5>
+                            <h5 class= "dato0">Distrito:</h5>
                             <h5 class= "dato" id="txt-distrito"> </h5>
                         </div>
                         <div class="info2" id="otras-senas">
-                            <h5>Otras señas:</h5>
+                            <h5 class= "dato0">Otras señas:</h5>
                             <h5 class= "dato" id="txt-otrasSennas"> </h5>
                         </div>
                     </div>
@@ -103,25 +103,27 @@
                 <section class="contenedor2">
                     <div class="datos-proveedor2">
                         <div class="info2">
-                            <div>Fecha de nacimiento</div>
+                            <div class= "dato0">Fecha de nacimiento: </div>
                             <h5 class= "dato" id="txt-nacimiento"> </h5>
                         </div>
                         <div class="info2">
-                            <div>Teléfono</div>
+                            <div class= "dato0">Teléfono: </div>
                             <h5 class= "dato" id="txt-telefono"> </h5>
                         </div>
                         <div class="info2">
-                            <div>Horario</div>
+                            <div class= "dato0">Horario: </div>
                             <h5 class= "dato" id="txt-horario"> </h5>
                         </div>
                         <div> </div>
-                        <div>URL Google Maps: https://www.google.co.cr/maps/place/Peluqueria+Canina+Y+Spa+Steph</div>
+                        <div class="ubicacion">
+                        <div class= "dato0">Enlace Google Maps:</div>
+                        <h5 class= "dato" id="txt-enlaceMaps-pr"> </h5>
+                        </div>
                         <div> </div>
                     </div>
 
-                    <div class="ubicación">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.388036094392!2d-84.13446588489164!3d9.98477019286158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fae2a6040285%3A0x83c0d584a2f843b7!2sPeluqueria%20Canina%20Y%20Spa%20Steph&#39;s!5e0!3m2!1ses!2scr!4v1616288915753!5m2!1ses!2scr"
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="ubicacionX">
+                        <div id="txt-enlaceMaps2-pr" src=""></div>
                     </div>
                 </section>
 
@@ -129,16 +131,19 @@
                 <section class="contenedor3">
                     <div class="datos-proveedor2">
                         <div>
-                            <h4>Datos del represente legal</h4>
+                            <h4 class= "dato0">Datos del represente legal</h4>
                         </div>
                         <div class="info2" id="nombre">
-                            <h5>Nombre: No aplica</h5>
+                            <h5 class= "dato0">Nombre:</h5>
+                            <h5 class= "dato" id="txt-nombre-rep-pr"> </h5>
                         </div>
                         <div class="info2" id="apellidos">
-                            <h5>Apellido(s): No aplica</h5>
+                            <h5 class= "dato0">Apellido(s):</h5>
+                            <h5 class= "dato" id="txt-apellido1-rep-pr"> </h5>
                         </div>
                         <div class="info2" id="correo electronico">
-                            <h5>Correo electrónico: No aplica</h5>
+                            <h5 class= "dato0">Correo electrónico:</h5>
+                            <h5 class= "dato" id="txt-correo-rep-pr"> </h5>
                         </div>
                     </div>
                 </section>
@@ -147,7 +152,7 @@
                 <section class="contenedor4">
 
                     <div class="datos-proveedor3">
-                        <h4>Fotografias</h4>
+                        <h4 class= "dato0">Fotografias</h4>
                     </div>
                     <div class="imagen-grooming">
                         <div class="imagen-grooming2"><img src="images/grooming1.jpg" id="imagen"></div>
@@ -162,7 +167,7 @@
                 <section class="contenedor3">
                     <div class="datos-proveedor3">
 
-                        <h4>Redes sociales</h4>
+                        <h4 class= "dato0">Redes sociales</h4>
                     </div>
                     <div class=redes-sociales>
                         <div>

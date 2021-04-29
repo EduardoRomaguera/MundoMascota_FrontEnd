@@ -26,6 +26,13 @@
     const inputenlaceInstagram2 = document.querySelector('#insta2');
     const inputenlaceTikTok = document.querySelector('#txt-enlaceTikTok');
     const inputenlaceTikTok2 = document.querySelector('#tiktok2');
+    const inputUbicacion = document.querySelector('#txt-enlaceMaps-pr');
+    const inputUbicacion2 = document.querySelector('#txt-enlaceMaps2-pr');
+
+    //Representante legal
+    const inputNombreRepPr = document.querySelector('#txt-nombre-rep-pr');
+    const inputApellido1RepPr = document.querySelector('#txt-apellido1-rep-pr');
+    const inputCorreoRepPr = document.querySelector('#txt-correo-rep-pr');
 
     datos = JSON.parse(sessionStorage.getItem('datosProveedor'));
     inputnombreNegocio.innerHTML = datos.nombreNegocio;
@@ -54,6 +61,7 @@
     nacimiento = nacimientoSplit[0];
 
     inputnacimiento.innerHTML = nacimiento;
+    inputcorreo.innerHTML  = datos.correo;
     inputtelefono.innerHTML = datos.telefono;
     inputhorario.innerHTML = datos.horario;
     let provincia = datos.provincia;
@@ -174,9 +182,17 @@
     inputenlaceFacebook.innerHTML = datos.enlaceFacebook;
     inputenlaceFacebook2.href = datos.enlaceFacebook;
     inputenlaceInstagram.innerHTML = datos.enlaceInstagram;
-    inputenlaceInstagram.href = datos.enlaceInstagram;
+    inputenlaceInstagram2.href = datos.enlaceInstagram;
     inputenlaceTikTok.innerHTML = datos.enlaceTiktok;
-    inputenlaceTikTok.href = datos.enlaceTiktok;
+    inputenlaceTikTok2.href = datos.enlaceTiktok;
+    inputUbicacion.innerHTML = datos.ubicacions;
+    inputUbicacion2.innerHTML = datos.ubicacion;
+    inputNombreRepPr.innerHTML = datos.nombreR;
+    let apellidoR = datos.apellido1R;
+    apellidoR = apellidoR.concat(" ");
+    apellidoR = apellidoR.concat(datos.apellido2R);
+    inputApellido1RepPr.innerHTML = apellidoR;
+    inputCorreoRepPr.innerHTML = datos.correoR;
   }
 
 // INICIA Funciones para conexión al backend /////////////////////////////////////////////////////////////////////

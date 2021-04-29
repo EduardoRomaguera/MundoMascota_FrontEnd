@@ -62,6 +62,7 @@ const inputTelefonoPr = document.querySelector('#txt-teléfono-pr');
 const inputEnlaceFacebook = document.querySelector('#txt-enlaceFacebook-pr');
 const inputEnlaceInstagram = document.querySelector('#txt-enlaceInstagram-pr');
 const inputEnlaceTiktok = document.querySelector('#txt-enlaceTiktok-pr');
+const inputUbicacionPr = document.querySelector('#txt-enlaceMaps-pr');
 const btnCompletarRegistro = document.querySelector('#btn-completar-registro');
 //Representante legal
 const inputNombreRepPr = document.querySelector('#txt-nombre-rep-pr');
@@ -310,7 +311,12 @@ const registrar = () => {
     let enlaceFacebook = inputEnlaceFacebook.value;
     let enlaceInstagram = inputEnlaceInstagram.value;
     let enlaceTiktok = inputEnlaceTiktok.value;
-    registrarUsuario(nombreNegocio, nombre, apellido1, apellido2, tipoId, identificacion, nacimiento, edad, correo, telefono, provincia, canton, distrito, otrasSenas, horario, enlaceFacebook, enlaceInstagram, enlaceTiktok);
+    let nombreR = inputNombreRepPr.value;
+    let apellido1R = inputApellido1RepPr.value;
+    let apellido2R = inputApellido2RepPr.value;
+    let correoR = inputCorreoRepPr.value;
+    let ubicacion = inputUbicacionPr.value;
+    registrarUsuario(nombreNegocio, nombre, apellido1, apellido2, tipoId, identificacion, nacimiento, edad, correo, telefono, provincia, canton, distrito, otrasSenas, horario, enlaceFacebook, enlaceInstagram, enlaceTiktok, nombreR, apellido1R, apellido2R, correoR, ubicacion);
 };
 
 btnCompletarRegistro.addEventListener('click', function() { validar() });
