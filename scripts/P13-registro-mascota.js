@@ -10,6 +10,9 @@ const INPUTPADECIMIENTO = document.getElementById('slt-padecimiento-ms');
 const BTNREGISTRO = document.querySelector('#btn-registro');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
+const DIVFOTO = document.querySelector('#foto');
+let usuarioConectado;
+let correoUsuario;
 
 
 let listaVacunasMs = [];
@@ -84,7 +87,7 @@ const AGREGARMASCOTA = () => {
     let raza = INPUTRAZA.value;
     let telefono = INPUTTELEFONO.value;
 
-    REGISTRARMASCOTA(nombre, especie, estado);
+    REGISTRARMASCOTA(correoUsuario, nombre, telefono, especie, raza, 'Activo');
     // ACCIONUSUARIO('Agregar especie');
 };
 
@@ -125,6 +128,17 @@ INPUTSREQUERIDOS.forEach(input => {
         }
     });
 });
+
+
+if (sessionStorage.getItem('usuarioConectado')) {
+    usuarioConectado = JSON.parse(sessionStorage.getItem('usuarioConectado'));
+    correoUsuario = usuarioConectado.correo;
+    console.log(correoUsuario);
+
+} else {
+    //
+}
+
 
 
 window.onload = function() { DESPLEGABLES() }
