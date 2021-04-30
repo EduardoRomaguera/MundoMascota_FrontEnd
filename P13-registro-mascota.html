@@ -43,65 +43,50 @@
     <main>
         <section>
             <div class="contenedor1">
-                <div class="contenedor2">
+                <form class="contenedor2">
                     <div class="titulo-registro">
                         <h2>Registrar nueva mascota</h2>
                     </div>
-                    <input class="input-formularios" type="text" id="txt-nombre" placeholder="Nombre">
-                    <input class="input-formularios" type="number" id="num-telefono" placeholder="Teléfono de contacto">
-
-                    <div class="info1">
-                        <h5>Especie</h5>
-                        <select class="input-formularios" id="slt-especie">
-                                <option value="">--Seleccione una opción--</option>
-                                <option value="Perro">Perro</option>
-                                <option value="Gato">Gato</option>
+                    <div class="items">
+                        <input class="input-formularios" type="text" id="txt-nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="items">
+                        <input class="input-formularios" type="number" id="num-telefono" placeholder="Teléfono de contacto" required>
+                    </div>
+                    <div class="items">
+                        <label class="label" for="slt-especie-ms">Especie</label>
+                        <select id="slt-especie-vc" required>
+                        
+                         </select>
+                    </div>
+                    <div>
+                        <label class="label" for="slt-raza-ms">Raza</label>
+                        <select id="slt-raza-ms" required>
+                                
                             </select>
                     </div>
-
-                    <div class="info1">
-                        <h5>Raza</h5>
-                        <select class="input-formularios" id="slt-raza">
-                                <option value="">--Seleccione una opción--</option>
-                                <option value="Angora">Angora</option>
-                                <option value="Bengala">Bengala</option>
-                                <option value="Criollo">Criollo</option>
-                                <option value="Maime Coon">Maime Coon</option>
-                                <option value="Persa">Persa</option>
-                                <option value="Siamés">Siamés</option>
-                            </select>
-                    </div>
-
 
                     <div class="info1">
                         <h5>Vacunas</h5>
                         <form action="#" method="get">
-                            <div id="div-vacuna">
-                                <select class="input-formularios" id="slt-vacuna">
-                                <option value="">--Seleccione una opción--</option>
-                                <option value="Ninguno">Ninguno</option>
-                                <option value="Trifelina">Trifelina</option>
-                                <option value="Leucemia">Leucemia</option>
-                        </select>
+                            <div class="items">
+                                <label class="label" for="slt-vacunas-ms">Especie</label>
+                                <select id="slt-vacunas-ms" required>
+                                    
+                                </select>
                             </div>
+
                         </form>
                         <button type="button" onclick="add_vacunas()">Agregar vacuna</button>
                     </div>
-
-
                     <div class="info1">
                         <h5>Padecimiento</h5>
                         <form action="#" method="get">
-                            <div id="div-padecimiento">
-                                <select class="input-formularios" id="slt-padecimiento">
-                                <option value="">--Seleccione una opción--</option>
-                                <option value="Ninguno">Ninguno</option>
-                                <option value="Leucemia viral felina">Leucemia viral felina</option>
-                                <option value="Asma felina">Asma felina</option>
-                                <option value="Otitis externa">Otitis externa</option>
-                                <option value="Insuficiencia renal">Insuficiencia renal</option>
-                                <option value="Toxoplasmosis">Toxoplasmosis</option>          
-                         </select>
+                            <div class="items">
+                                <label class="label" for="slt-padecimiento-ms">Padecimientos</label>
+                                <select id="slt-padecimiento-ms" required>
+                                    
+                                </select>
                             </div>
                         </form>
                         <button type="button" onclick="add_padecimientos()">Agregar padecimiento</button>
@@ -124,11 +109,11 @@
 
 
                     <div class="botones">
-                        <button class="btn2" id="btn-registro">Completar registro</button>
-                        <a href="P09.1-principal-cliente.html"><button class="btn2">Cancelar</button></a>
+                        <button class="btn2" type="button" id="btn-registro"> Registrar</button>
+                        <button class="btn2" type="button" id="btn-cancelar">Cancelar</button>
                     </div>
 
-                </div>
+                </form>
             </div>
             </div>
         </section>
@@ -168,9 +153,17 @@
         </section>
     </footer>
 
+    <!--Script de terceros-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <!-- Scripts de propios -->
     <script src="scripts/navegacion.js"></script>
-    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P43-servicio-especies.js"></script>
+    <script src="scripts/P41-servicio-padecimientos.js"></script>
+    <script src="scripts/P40-servicio-razas.js"></script>
+    <script src="scripts/P42-servicio-vacunas.js"></script>
+    <script src="scripts/P13-servicio-registro-mascota.js"></script>
     <script src="scripts/P13-registro-mascota.js"></script>
 </body>
 
