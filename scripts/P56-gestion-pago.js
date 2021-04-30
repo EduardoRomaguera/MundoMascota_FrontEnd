@@ -19,11 +19,6 @@ const MOSTRARTABLATARJETAS = async => {
     let filtro = FILTROTARJETAS.value.toLowerCase();
     TABLATARJETAS.innerHTML = '';
     listaTarjetas.forEach(tarjeta => {
-        console.log(tarjeta.numero);
-        console.log(filtro);
-        console.log(tarjeta.correoUsuario);
-        console.log(correoUsuario);
-        // tarjeta.numero.includes(filtro) && 
         if (tarjeta.numero.includes(filtro) && (tarjeta.correoUsuario == correoUsuario)) {
             let fila = TABLATARJETAS.insertRow();
             fila.insertCell().innerHTML = tarjeta.nombreTarjeta;
