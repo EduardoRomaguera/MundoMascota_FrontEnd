@@ -65,7 +65,7 @@ const modificarUsuario = async(pnombre, papellido1, papellido2, pcorreo, ptipoID
                 icon: 'success',
                 title: 'Guardando información'
             }).then(() => {
-                window.location.href = 'P20-perfil-proveedor.html';
+                window.location.href = 'P10-perfil-cliente.html';
             });
         });
     })
@@ -269,7 +269,7 @@ const registrar = () => {
     let canton = inputCantonCl.value;
     let distrito = inputDistritoCl.value;
     let sennas = inputSennasCl.value;
-    registrarCliente(nombre, apellido1, apellido2, correo, tipoId, identificacion, nacimiento, provincia, canton, distrito, sennas);
+    modificarUsuario(nombre, apellido1, apellido2, correo, tipoId, identificacion, nacimiento, provincia, canton, distrito, sennas);
 };
 btnCompletarRegistro.addEventListener('click', function() { validar() });
 
@@ -1060,20 +1060,22 @@ const sustituirDatos = () => {
 
 
   const inputnombre = document.querySelector('#txt-nombre-cl');
-  const inputnombre2 = document.querySelector('#txt-nombre2');
-  const inputapellido1 = document.querySelector('#txt-apellido1');
-  const inputtipoId = document.querySelector('#txt-tipoId');
-  const inputidentificacion = document.querySelector('#txt-identificacion');
-  const inputnacimiento = document.querySelector('#txt-nacimiento');
-  const inputedad = document.querySelector('#txt-edad');
-  const inputcorreo = document.querySelector('#txt-correo');
-  const inputtelefono = document.querySelector('#txt-telefono');
-  const inputprovincia = document.querySelector('#txt-provincia');
-  const inputcanton = document.querySelector('#txt-canton');
-  const inputdistrito = document.querySelector('#txt-distrito');
-  const inputotrasSennas = document.querySelector('#txt-otrasSennas');
+
+  const inputapellido1 = document.querySelector('#txt-apellido1-cl');
+  const inputapellido2 = document.querySelector('#txt-apellido2-cl');
+  const inputtipoId = document.querySelector('#txt-tipo-id-cl');
+  const inputidentificacion = document.querySelector('#txt-identificacion-cl');
+  const inputnacimiento = document.querySelector('#txt-nacimiento-cl');
+  const inputedad = document.querySelector('#txt-edad-cl');
+  const inputcorreo = document.querySelector('#txt-correo-cl');
+  const inputtelefono = document.querySelector('#txt-telefono-cl');
+  const inputprovincia = document.querySelector('#txt-provincia-cl');
+  const inputcanton = document.querySelector('#txt-canton-cl');
+  const inputdistrito = document.querySelector('#txt-distrito-cl');
+  const inputotrasSennas = document.querySelector('#txt-sennas-cl');
   
-  
+  const inputcanton2 = document.querySelector('#txt-canton-pr2');
+  const inputdistrito2 = document.querySelector('#txt-distrito-pr2');
   
   
   
@@ -1093,10 +1095,11 @@ const sustituirDatos = () => {
   let apellidos = datos.apellido1;
   apellidos = apellidos.concat(" ");
   apellidos = apellidos.concat(datos.apellido2);
-  inputapellido1.value = apellidos;
+  inputapellido1.value = datos.apellido1;
+  inputapellido2.value = datos.apellido2;
   let nombreCompleto = datos.nombre.concat(" ");
   nombreCompleto = nombreCompleto.concat(apellidos);
-  inputnombre2.value = nombreCompleto;
+
   let tipoId = datos.tipoID;
   switch (tipoId) {
     case 'fisica':
@@ -1109,7 +1112,7 @@ const sustituirDatos = () => {
       tipoId = "DIMEX";
         break;
   }
-  inputtipoId.value = tipoId;
+  inputtipoId.value = datos.tipoID;
   inputidentificacion.value = datos.identificacion;
   let nacimiento = datos.nacimiento;
   let nacimientoSplit = nacimiento.split("T")
@@ -1119,7 +1122,7 @@ const sustituirDatos = () => {
     var datePart = input.match(/\d+/g),
     anno = datePart[0].substring(0), // get only two digits
     mes = datePart[1], day = datePart[2];
-    return day+'/'+mes+'/'+anno;
+    return anno+'-'+mes+'-'+day;
   }
   
   nacimiento = cambiarFecha (nacimiento);
@@ -1151,7 +1154,7 @@ const sustituirDatos = () => {
       provincia = "Limón";
         break;
   }
-  inputprovincia.value = provincia;
+  inputprovincia.value = datos.provincia;
   let canton = datos.canton;
   switch (canton) {
     case "sanJose2": canton = "San José"; break;
@@ -1239,8 +1242,12 @@ const sustituirDatos = () => {
     case "matina2": canton = "Matina"; break;
     case "guácimo2": canton = "Guácimo"; break;
   }
-  inputcanton.value = canton;
-  inputdistrito.value = datos.distrito;
+
+  inputcanton2.value = datos.canton;
+  inputcanton2.innerHTML = canton;
+
+  inputdistrito2.value = datos.distrito;
+  inputdistrito2.innerHTML = datos.distrito;
   inputotrasSennas.value = datos.sennas;
 
 }
