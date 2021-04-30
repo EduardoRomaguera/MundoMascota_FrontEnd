@@ -1,75 +1,200 @@
 .contenedor1 {
     display: flex;
-    flex-flow: column;
-    border: solid 2px #f08700;
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
     min-height: 700px;
 }
 
-.formMs {
+.contenedor2 {
     margin: 50px;
-    border: solid 2px #f08700;
+    border: solid 2px #f0870020;
     border-radius: 10px;
-    display: flex;
-    flex-flow: nowrap;
-    align-items: center;
-    padding: 60px;
-}
-
-.titulo-registro {
-    margin-bottom: 10%;
-}
-
-.contenedor2 input {
-    margin: 10px;
-}
-
-.botones {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 30px 0px 0 0;
+    padding: 60px;
+    font-weight: 700;
 }
 
-.botones button {
+.contenedor3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.contenedor2 input {
+    height: 200%;
+    margin: 3%;
+}
+
+.contenedor2 button {
     background-color: #8EE5D8;
     margin: 10px;
-    padding: 10px;
+    padding: auto;
+}
+
+.contenedor2 h1 {
+    margin: 0px 0px 2% 0px;
+}
+
+.contenedor2 h3 {
+    margin: 0px 0px 0px 0px;
 }
 
 .info1 {
+    height: 200%;
     margin: 10px;
     border: solid 2px black;
     border-radius: 10px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 35px;
-    width: 330px;
-    justify-content: center;
+    padding: 60px;
+    font-weight: 700;
 }
 
-h5 {
-    margin-bottom: 10%;
+.input-formularios {
+    width: 303px;
 }
 
-
-/* OCULTADOS*/
-
-.barra-busqueda {
-    display: none;
+#txt-provincia-cl,
+#txt-canton-cl,
+#txt-distrito-cl {
+    margin-left: 25px;
 }
 
-.input-formularios2 {
+#txt-tipo-id-cl,
+#txt-nacimiento-cl {
+    margin-left: 10px;
+}
+
+.contenedor2 select {
+    height: 200%;
+    margin: 3%;
+    width: 325px;
+}
+
+#texto-gris {
+    color: #000000;
+    margin-top: 2%;
+}
+
+.input-direccion {
     text-align: center;
     border: solid #00000060 1px;
     border-radius: 7px;
     padding: 10px;
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 15px;
-    justify-content: center;
+    width: 303px;
+    height: 146px;
+    resize: none;
+    text-align: justify;
+    font-family: Montserrat;
+    margin-left: 06px;
+}
+
+input[type="date"] {
+    text-align: center;
+    border-radius: 7px;
+    background: #ffffff;
+    display: inline-block;
+    visibility: visible;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+
+select {
+    border-radius: 7px;
+    background: #ffffff;
+    color: #00000090;
+    margin: 0px;
+}
+
+select option {
+    color: #000000;
+    font-weight: 500;
+}
+
+.contenedor7 {
+    margin-left: 15px;
+}
+
+#btn-cerrar-sesion {
+    display: none;
+}
+
+.barra-busqueda {
+    display: none;
+}
+
+.error {
+    border: solid red 2px;
+    border-radius: 7px;
+}
+
+.label {
+    width: 200px;
+    border-radius: 7px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin-left: 10px;
+    position: relative;
+    bottom: -20px;
+    font-size: 18px;
+}
+
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6,
+.contenedor7,
+.contenedor8 {
+    display: flex;
     align-items: center;
+    justify-content: left;
+    width: 90%;
+}
+
+.contenedor9 {
+    margin-top: 50px;
+}
+
+#txt-identificacion-cl {
+    margin-left: -7px;
+}
+
+.invisible {
+    user-select: none;
+    color: #00000000;
+}
+
+#posicion-correo {
+    margin-left: -191px;
+}
+
+#posicion-correo .label {
+    margin-left: 16px;
+}
+
+#txt-correo-cl {
+    height: 26px;
+}
+
+#imagen-perro {
+    height: 450px;
+    overflow: show;
+    padding-left: -900px;
+    margin-top: 40px;
+    justify-content: flex-start;
+}
+
+#imagen-perro1 {
+    height: 100px;
+    overflow: show;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-start;
 }

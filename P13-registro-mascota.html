@@ -42,73 +42,66 @@
 
     <main>
         <section>
-            <div class="titulo-registro">
-                <h2>Registrar nueva mascota</h2>
-            </div>
             <div class="contenedor1">
-                <form class="formMs">
-                    <div class="items">
-                        <input class="input-formularios" type="text" id="txt-nombre" placeholder="Nombre" required>
+                <div class="contenedor2">
+                    <div class="contenedor3">
+                        <h2>Registrar nueva mascota</h2>
                     </div>
-                    <div class="items">
-                        <input class="input-formularios" type="number" id="num-telefono" placeholder="Teléfono de contacto" required>
-                    </div>
-                    <div class="items">
-                        <label class="label" for="slt-especie-ms">Especie</label>
-                        <select id="slt-especie-ms" required>
+                    <div class="contenedor4">
+                        <form class="formMs">
+                            <div class="items">
+                                <input class="input-formularios" type="text" id="txt-nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="items">
+                                <input class="input-formularios" type="number" id="num-telefono" placeholder="Teléfono de contacto" required>
+                            </div>
+                            <div class="items">
+                                <label class="label" for="slt-especie-ms">Especie</label>
+                                <select id="slt-especie-ms" required>
                                 
                                  </select>
-                    </div>
-                    <div>
-                        <label class="label" for="slt-raza-ms">Raza</label>
-                        <select id="slt-raza-ms" required>
-                                        
-                                    </select>
-                    </div>
-                    <div class="formMs">
-                        <h5>Vacunas</h5>
-                        <form action="#" method="get">
-                            <div class="items">
-                                <select id="slt-vacunas-ms" required>
+                            </div>
+                            <div>
+                                <label class="label" for="slt-raza-ms">Raza</label>
+                                <select id="slt-raza-ms" required>
                                         
                                     </select>
                             </div>
-
-                        </form>
-                        <button type="button" onclick="add_vacunas()">Agregar vacuna</button>
-                    </div>
-                    <div class="formMs" ">
-                        <h5>Padecimiento</h5>
-                        <form action="# " method="get ">
-                            <div class="items ">
-                                <select id="slt-padecimiento-ms " required>
+                            <div class="contenedor5">
+                                <h5>Vacunas</h5>
+                                <form action="#" method="get">
+                                    <div class="items">
+                                        <select id="slt-vacunas-ms" required>
                                         
                                     </select>
+                                    </div>
+
+                                </form>
+
                             </div>
-                        </form>
-                        <button type="button " onclick="add_padecimientos() ">Agregar padecimiento</button>
-                    </div>
-                </form>
+                            <div class="contenedor6">
+                                <h5>Padecimiento</h5>
+                                <form action="# " method="get ">
+                                    <div class="items ">
+                                        <select id="slt-padecimiento-ms " required>
+                                        
+                                    </select>
+                                    </div>
+                                </form>
 
+                            </div>
 
-
-                <div class="info1 ">
-                    <div>
-                        <h5>Fotografías</h5>
-                    </div>
-
-                    <div class=solicitud-imagenes id="div-fotografia ">
-                        <form><input type="file " id="subir-foto " name="img " accept="image/* ">
-                        </form>
 
                     </div>
-                    <button type="button " onclick="add_fotografia() ">Agregar fotografia</button>
+                    </form>
 
-                </div>
+                    <div class="contenedor9 ">
 
-                <div class="botones ">
-                    <button class="btn2 " type="button " id="btn-registro "> Registrar</button>
-                    <button class="btn2 " type="button " id="btn-cancelar ">Cancelar</button>
+                        <button class="btn2 " type="button " id="btn-registro "> Registrar</button>
+                        <button class="btn2 " type="button " id="btn-cancelar ">Cancelar</button>
+
+
+                    </div>
                 </div>
 
             </div>
