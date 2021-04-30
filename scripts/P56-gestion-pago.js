@@ -24,7 +24,7 @@ const MOSTRARTABLATARJETAS = async => {
         console.log(tarjeta.correoUsuario);
         console.log(correoUsuario);
         // tarjeta.numero.includes(filtro) && 
-        if ((tarjeta.correoUsuario == correoUsuario)) {
+        if (tarjeta.numero.includes(filtro) && (tarjeta.correoUsuario == correoUsuario)) {
             let fila = TABLATARJETAS.insertRow();
             fila.insertCell().innerHTML = tarjeta.nombreTarjeta;
             fila.insertCell().innerHTML = tarjeta.numero;

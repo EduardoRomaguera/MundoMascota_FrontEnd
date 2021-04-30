@@ -8,6 +8,7 @@
 
 
     const inputnombre = document.querySelector('#txt-nombre');
+    const inputnombre2 = document.querySelector('#txt-nombre2');
     const inputapellido1 = document.querySelector('#txt-apellido1');
     const inputtipoId = document.querySelector('#txt-tipoId');
     const inputidentificacion = document.querySelector('#txt-identificacion');
@@ -41,6 +42,9 @@
     apellidos = apellidos.concat(" ");
     apellidos = apellidos.concat(datos.apellido2);
     inputapellido1.innerHTML = apellidos;
+    let nombreCompleto = datos.nombre.concat(" ");
+    nombreCompleto = nombreCompleto.concat(apellidos);
+    inputnombre2.innerHTML = nombreCompleto;
     let tipoId = datos.tipoID;
     switch (tipoId) {
       case 'fisica':
@@ -69,8 +73,8 @@
     nacimiento = cambiarFecha (nacimiento);
     inputnacimiento.innerHTML = nacimiento;
     inputcorreo.innerHTML  = datos.correo;
-    inputtelefono.innerHTML = datos.telefono;
-    inputhorario.innerHTML = datos.horario;
+
+
     let provincia = datos.provincia;
     switch (provincia) {
       case 'sanjose':
@@ -185,7 +189,7 @@
     }
     inputcanton.innerHTML = canton;
     inputdistrito.innerHTML = datos.distrito;
-    inputotrasSennas.innerHTML = datos.otrasSenas;
+    inputotrasSennas.innerHTML = datos.sennas;
     inputenlaceFacebook.innerHTML = datos.enlaceFacebook;
     inputenlaceFacebook2.href = datos.enlaceFacebook;
     inputenlaceInstagram.innerHTML = datos.enlaceInstagram;
