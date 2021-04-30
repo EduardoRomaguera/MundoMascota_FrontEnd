@@ -176,6 +176,7 @@
 /* OCULTADOS*/
 
 .ubicacion,
+.btn-iniciar-sesion,
 .barra-busqueda {
     display:none;
 }

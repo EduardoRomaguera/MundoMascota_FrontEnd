@@ -193,6 +193,14 @@
 
   }
 
+
+  const BtnEditar = document.querySelector('#btn-editar');
+
+  BtnEditar.addEventListener('click', () => {
+    window.location.href = 'P10b-modificar-perfil-cliente';
+});
+
+
 // INICIA Funciones para conexión al backend /////////////////////////////////////////////////////////////////////
 
 const cargarDatos = async(pcorreo) => {

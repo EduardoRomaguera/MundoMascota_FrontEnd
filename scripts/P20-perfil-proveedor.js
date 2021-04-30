@@ -1,10 +1,37 @@
 'use strict';
+// INICIA Funciones para conexión al backend /////////////////////////////////////////////////////////////////////
+
+const cargarDatos = async(pcorreo) => {
+  console.log("Informacion del proveedor logueado solicitada al backend")
+  let datos;
+  await axios({
+      method: 'post',
+      url: 'http://localhost:3000/api/cargar-datos-proveedor',
+      responseType: 'json',
+      data: {
+        correo: pcorreo
+      }
+  }).then((response) => {
+      console.log("hubo respuesta")
+      datos = response.data.usuario;
+      sessionStorage.setItem('datosProveedor', JSON.stringify(datos));
+      console.log(datos.nombreNegocio)
+  }).catch((error) => {
+      console.log("retorno error")
+      console.log(error)
+  });
+  return datos;
+  }
+
+// FIN DE Funciones para conexión al backend /////////////////////////////////////////////////////////////////////
+
   const correoConectado = (JSON.parse(sessionStorage.getItem('usuarioConectado'))).correo;
-  let datos
 
   window.onload = function() {cargarDatos(correoConectado), sustituirDatos()};
 
   const sustituirDatos = () => {
+    let datos = cargarDatos(correoConectado);
+    datos = JSON.parse(sessionStorage.getItem('datosProveedor'));
     const inputnombreNegocio = document.querySelector('#txt-nombreNegocio');
     const inputnombreNegocio2 = document.querySelector('#txt-nombreNegocio2');
     const inputnombre = document.querySelector('#txt-nombre');
@@ -34,7 +61,6 @@
     const inputApellido1RepPr = document.querySelector('#txt-apellido1-rep-pr');
     const inputCorreoRepPr = document.querySelector('#txt-correo-rep-pr');
 
-    datos = JSON.parse(sessionStorage.getItem('datosProveedor'));
     inputnombreNegocio.innerHTML = datos.nombreNegocio;
     inputnombreNegocio2.innerHTML = datos.nombreNegocio;
     inputnombre.innerHTML = datos.nombre;
@@ -203,28 +229,8 @@
     inputCorreoRepPr.innerHTML = datos.correoR;
   }
 
-// INICIA Funciones para conexión al backend /////////////////////////////////////////////////////////////////////
+  const BtnEditar = document.querySelector('#btn-editar');
 
-const cargarDatos = async(pcorreo) => {
-  console.log("Informacion del proveedor logueado solicitada al backend")
-  let datos;
-  await axios({
-      method: 'post',
-      url: 'http://localhost:3000/api/cargar-datos-proveedor',
-      responseType: 'json',
-      data: {
-        correo: pcorreo
-      }
-  }).then((response) => {
-      console.log("hubo respuesta")
-      datos = response.data.usuario;
-      sessionStorage.setItem('datosProveedor', JSON.stringify(datos));
-      console.log(datos.nombreNegocio)
-  }).catch((error) => {
-      console.log("retorno error")
-      console.log(error)
-  });
-  return datos;
-  }
-
-// FIN DE Funciones para conexión al backend /////////////////////////////////////////////////////////////////////
+  BtnEditar.addEventListener('click', () => {
+    window.location.href = 'P20b-modificar-perfil-proveedor.html';
+});
