@@ -19,37 +19,10 @@ const listarProveedoresPendientes = async() => {
     return listaProveedores;
 };
 
-const aprobarProveedoresPendientes = async(pcorreo, pnombreNegocio) => {
-    await axios({
-        method: 'put',
-        url: 'http://localhost:3000/api/aceptar-proveedores-pendientes',
-        responseType: 'json',
-        data: {
-            correo: pcorreo,
-            nombreNegocio: pnombreNegocio,
-            estado: "preactivo2"
-        }
-    }).then((response) => {
-        Swal.fire({
-            'icon': 'success',
-            'title': 'El proveedor se aprobó correctamente',
-            'text': response.msj
-        }).then(() => {
-            window.location.href = 'P50-solicitudes-proveedores.html';
-        });
-    }).catch((error) => {
-        Swal.fire({
-            'title': 'Error',
-            'icon': 'error',
-            'text': "Hubo un error en el servidor"
-        })
-    });
-};
-
 const rechazarProveedoresPendientes = async(pcorreo, pnombreNegocio) => {
     await axios({
         method: 'put',
-        url: 'http://localhost:3000/api/rechazar-proveedores-pendientes',
+        url: 'http://localhost:3000/api/cambiar-proveedores',
         responseType: 'json',
         data: {
             correo: pcorreo,
@@ -60,6 +33,31 @@ const rechazarProveedoresPendientes = async(pcorreo, pnombreNegocio) => {
         Swal.fire({
             'icon': 'success',
             'title': 'El proveedor se bloqueó correctamente',
+            'text': response.msj
+        }).then(() => {
+            window.location.href = 'P51-proveedores-aprobados.html';
+        });
+    }).catch((error) => {
+        Swal.fire({
+            'title': 'Error',
+            'icon': 'error',
+            'text': "Hubo un error en el servidor"
+        })
+    });
+};
+
+const borrar = async(pcorreo) => {
+    await axios({
+        method: 'delete',
+        url: 'http://localhost:3000/api/borrar-proveedor',
+        responseType: 'json',
+        data: {
+            correo: pcorreo,
+        }
+    }).then((response) => {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'El proveedor se borró correctamente',
             'text': response.msj
         }).then(() => {
             window.location.href = 'P51-proveedores-aprobados.html';
@@ -96,28 +94,35 @@ const mostrarTablaProveedoresPendientes = async => {
     listaProveedores.forEach(proveedor => {
         if (proveedor.nombreNegocio.toLowerCase().includes(filtro) && ((proveedor.estado == "preactivo2") || (proveedor.estado == "activo"))) {
 
+            let nombreCompleto = proveedor.nombre;
+            nombreCompleto = nombreCompleto.concat(" ");
+            nombreCompleto = nombreCompleto.concat(proveedor.apellido1);
+            nombreCompleto = nombreCompleto.concat(" ");
+            nombreCompleto = nombreCompleto.concat(proveedor.apellido2);
+            console.log(nombreCompleto);
+
             let fila = tablaProveedoresPendientes.insertRow();
             fila.insertCell().innerHTML = proveedor.nombreNegocio;
-            fila.insertCell().innerHTML = proveedor.nombre;
+            fila.insertCell().innerHTML = nombreCompleto;
             fila.insertCell().innerHTML = proveedor.correo;
             fila.insertCell().innerHTML = proveedor.telefono;
 
             let celdaAcciones = fila.insertCell();
 
             let btnAceptar = document.createElement('button');
-            btnAceptar.innerText = 'Aceptar';
+            btnAceptar.innerText = 'Eliminar';
 
             btnAceptar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea aceptar al proveedor?',
+                    'text': '¿Está seguro que desea eliminar al proveedor, esta acción es irreversible?',
                     'showCancelButton': true,
                     'confirmButtonText': 'Sí estoy seguro',
                     'cancelButtonColor': '#d33',
                     'cancelButtonText': 'Cancelar',
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        aprobarProveedoresPendientes(proveedor.correo, proveedor.nombreNegocio);
+                        borrar(proveedor.correo);
 
                     }
                 })
@@ -129,7 +134,7 @@ const mostrarTablaProveedoresPendientes = async => {
             botonEliminar.addEventListener('click', () => {
                 Swal.fire({
                     'icon': 'warning',
-                    'text': '¿Está seguro que desea rechazar al proveedor?',
+                    'text': '¿Está seguro que desea bloquear al proveedor?',
                     'showCancelButton': true,
                     'confirmButtonText': 'Sí estoy seguro',
                     'cancelButtonColor': '#d33',
@@ -142,6 +147,7 @@ const mostrarTablaProveedoresPendientes = async => {
             });
             
             celdaAcciones.appendChild(botonEliminar);
+            celdaAcciones.appendChild(btnAceptar);
         }
     });
 };

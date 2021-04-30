@@ -96,9 +96,16 @@ const mostrarTablaProveedoresPendientes = async => {
     listaProveedores.forEach(proveedor => {
         if (proveedor.nombreNegocio.toLowerCase().includes(filtro) && (proveedor.estado == "pendiente")) {
 
+            let nombreCompleto = proveedor.nombre;
+            nombreCompleto = nombreCompleto.concat(" ");
+            nombreCompleto = nombreCompleto.concat(proveedor.apellido1);
+            nombreCompleto = nombreCompleto.concat(" ");
+            nombreCompleto = nombreCompleto.concat(proveedor.apellido2);
+            console.log(nombreCompleto);
+
             let fila = tablaProveedoresPendientes.insertRow();
             fila.insertCell().innerHTML = proveedor.nombreNegocio;
-            fila.insertCell().innerHTML = proveedor.nombre;
+            fila.insertCell().innerHTML = nombreCompleto;
             fila.insertCell().innerHTML = proveedor.correo;
             fila.insertCell().innerHTML = proveedor.telefono;
 

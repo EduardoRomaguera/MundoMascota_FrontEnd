@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/P52-proveedores-rechazados.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Proveedores Rechazados</title>
+    <title>Proveedores rechazados y bloqueados</title>
 </head>
 
 <body>
@@ -39,13 +39,13 @@
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
                 <section class="titulo">
-                    <h1>Proveedores rechazados</h1>
+                    <h1>Proveedores rechazados y bloqueados</h1>
                 </section>
                 <section class="catalogos">
                     <section>
 
                         <div class='filtro'>
-                            <label for='txt-filtro-ordenes'>Filtrar nombre</label>
+                            <label for='txt-filtro-ordenes'>Filtrar nombre negocio</label>
                             <input type="text" id='txt-filtro-ordenes'>
 
                         </div>
@@ -54,12 +54,13 @@
 
                             <table id="tbl-ordenes" class="tabla">
                                 <thead>
-                                    <tr>
+                                    <tr id="fix02">
+                                        <th>Nombre negocio</th>
                                         <th>Nombre</th>
                                         <th>Correo</th>
-                                        <th>Nacimiento</th>
-                                        <th>Motivo</th>
-
+                                        <th>Teléfono</th>
+                                        <th>Estado</th>
+                                        <th id="fix01" ></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -107,10 +108,10 @@
             </a>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
-    <script src="scripts/P52-Proveedores Rechazados.js"></script>
+    <script src="scripts/P52-proveedores-rechazados.js"></script>
 </body>
-
 </html>

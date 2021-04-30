@@ -186,9 +186,8 @@
 }
 
 
-.fix9 {
-    display: flex;
-    align-items: center;
+#fix9 {
+text-align: center;
 }
 
 
