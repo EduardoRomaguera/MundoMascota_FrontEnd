@@ -27,13 +27,6 @@ const MOSTRARTABLAPATROCINADOR = async => {
 
             let celdaAcciones = fila.insertCell();
 
-            let botonModificar = document.createElement('button');
-            botonModificar.innerText = 'Editar';
-
-            botonModificar.addEventListener('click', () => {
-                localStorage.setItem('patrocinadorSeleccionado', JSON.stringify(patrocinador));
-                window.location.href = '';
-            });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
 
