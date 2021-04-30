@@ -66,7 +66,7 @@ if (sessionStorage.getItem('usuarioConectado')) {
     Swal.fire({
         'icon': 'warning',
         'title': 'Atención',
-        'text': 'Debe seleccionar un usuario'
+        'text': 'Error del sistema'
 
     });
 }

@@ -1,13 +1,13 @@
 'use strict';
 
-const REGISTRARTARJETA = async(pidUsuario, pnombreTarjeta, pnumero, pExpiracion, pcodigoSeguridad) => {
-
+const REGISTRARTARJETA = async(pcorreoUsuario, pnombreTarjeta, pnumero, pExpiracion, pcodigoSeguridad) => {
+    console.log(correoUsuario);
     await axios({
             method: 'post',
             url: 'http://localhost:3000/api/registrar-tarjeta',
             responType: 'json',
             data: {
-                idUsuario: pidUsuario,
+                correoUsuario: pcorreoUsuario,
                 nombreTarjeta: pnombreTarjeta,
                 numero: pnumero,
                 expiracion: pExpiracion,
