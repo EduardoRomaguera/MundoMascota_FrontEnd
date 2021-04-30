@@ -36,7 +36,7 @@
     const inputCorreoRepPr = document.querySelector('#txt-correo-rep-pr');
 
     datos = JSON.parse(sessionStorage.getItem('datosCliente'));
-
+    
     inputnombre.innerHTML = datos.nombre;
     let apellidos = datos.apellido1;
     apellidos = apellidos.concat(" ");
@@ -190,20 +190,7 @@
     inputcanton.innerHTML = canton;
     inputdistrito.innerHTML = datos.distrito;
     inputotrasSennas.innerHTML = datos.sennas;
-    inputenlaceFacebook.innerHTML = datos.enlaceFacebook;
-    inputenlaceFacebook2.href = datos.enlaceFacebook;
-    inputenlaceInstagram.innerHTML = datos.enlaceInstagram;
-    inputenlaceInstagram2.href = datos.enlaceInstagram;
-    inputenlaceTikTok.innerHTML = datos.enlaceTiktok;
-    inputenlaceTikTok2.href = datos.enlaceTiktok;
-    inputUbicacion.innerHTML = datos.ubicacions;
-    inputUbicacion2.innerHTML = datos.ubicacion;
-    inputNombreRepPr.innerHTML = datos.nombreR;
-    let apellidoR = datos.apellido1R;
-    apellidoR = apellidoR.concat(" ");
-    apellidoR = apellidoR.concat(datos.apellido2R);
-    inputApellido1RepPr.innerHTML = apellidoR;
-    inputCorreoRepPr.innerHTML = datos.correoR;
+
   }
 
 // INICIA Funciones para conexión al backend /////////////////////////////////////////////////////////////////////
