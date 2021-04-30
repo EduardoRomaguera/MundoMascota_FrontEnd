@@ -1,8 +1,5 @@
 .contenedor1 {
     display: flex;
-    flex-flow: column;
-    border: solid 2px #f08700;
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
     min-height: 700px;
@@ -13,9 +10,18 @@
     border: solid 2px #f08700;
     border-radius: 10px;
     display: flex;
-    flex-flow: nowrap;
+    flex-flow: column;
     align-items: center;
     padding: 60px;
+    font-weight: 700;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
 }
 
 .titulo-registro {
