@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/P10b-modificar-perfil-cliente.css">
+    <link rel="icon" href="images/icono.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Registro cliente</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <a class="nav-A" href=P01-homepage.html>
+                    <img src="images/logo2-nav.png" id="logo">
+                </a>
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
+                    </form>
+                </div>
+                <div class="nav-C">
+                    <a class="btn" id="btn-perfil" href="P10-perfil-cliente.html">Mi Perfil</a>
+                    <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="madre-espaciadores">
+            <div id="espaciador-izq"></div>
+            <div id="contenedor-main">
+                <section>
+                    <div class="contenedor1">
+                        <div class="contenedor2" class="h1">
+                            <div class="contenedor3">
+                                <h1>Modificar mis datos registrados </h1>
+                                <h4></h4>
+                            </div>
+                            <div class="contenedor4">
+                                <div>
+                                    <label for=txt-nombre-cl class="label">Nombre</label>
+                                    <input class="input-formularios" id="txt-nombre-cl" type="text" placeholder="Nombre">
+                                </div>
+                                <div>
+                                    <label for=txt-apellido1-cl class="label invisible">Apellido 1</label>
+                                    <input class="input-formularios" id="txt-apellido1-cl" type="text" placeholder="Primer apellido">
+                                </div>
+                                <div>
+                                    <label for=txt-apellido2-cl class="label invisible">Apellido 2</label>
+                                    <input class="input-formularios" id="txt-apellido2-cl" type="text" placeholder="Segundo apellido (opcional)">
+                                </div>
+                            </div>
+                            <div class="contenedor5">
+                                <div>
+                                    <label for=txt-tipo-id-cl class="label">Identificación</label>
+                                    <select class="input-formularios select" id="txt-tipo-id-cl">
+                                        <option value="">Tipo de identificación</option>
+                                        <option value="dimex">DIMEX</option>
+                                        <option value="fisica">Física</option>
+                                        <option value="juridica">Jurídica</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for=txt-identificacion-cl class="label invisible">Número de identificación</label>
+                                    <input class="input-formularios" id="txt-identificacion-cl" type="number" placeholder="Número de identificación">
+                                </div>
+                                <div id="imagen-perro1">
+                                    <img src="images/perro-registro.jpg" alt="imagen perro" id="imagen-perro">
+                                </div>
+                            </div>
+                            <div class="contenedor6">
+                                <div>
+                                    <label for="txt-nacimiento-cl" id="texto-gris" class="label">Fecha de nacimiento</label>
+                                    <input class="input-formularios" id="txt-nacimiento-cl" type="date" placeholder="Fecha de nacimiento">
+                                </div>
+                                <div id="posicion-correo">
+                                    <label for="txt-correo-cl" id="texto-gris" class="label">Correo electrónico</label>
+                                    <input class="input-formularios" id="txt-correo-cl" type="text" placeholder="Correo electrónico">
+                                </div>
+                            </div>
+                            <div class="contenedor7">
+                                <div>
+                                    <label for="txt-provincia-cl" id="texto-gris" class="label">Ubicación</label>
+                                    <form class="contenedor3" class="h1" name="form1" method="post" action="">
+                                        <select class="input-formularios" id="txt-provincia-cl" name="provincias" onchange="seleccionar(this,this.form.cantones)">
+                                            <option value="">Provincia</option>
+                                            <option value="sanjose">San José
+                                            <option value="heredia">Heredia
+                                            <option value="alajuela">Alajuela
+                                            <option value="cartago">Cartago
+                                            <option value="guanacaste">Guanacaste
+                                            <option value="puntarenas">Puntarenas
+                                            <option value="limon">Limón
+                                        </select>
+                                        <select class="input-formularios" id="txt-canton-cl" name="cantones" onchange="seleccionar(this,this.form.distritos)">
+                                            <option value="">Cantón</option>
+                                        </select>
+                                        <select class="input-formularios" id="txt-distrito-cl" name="distritos">
+                                            <option value="">Distrito</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div>
+                                    <label for="txt-sennas-cl" class="label invisible">Ubiascación</label>
+                                    <div>
+                                        <textarea class="input-direccion" id="txt-sennas-cl" placeholder="Otras señas"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contenedor9">
+                                <button class="btn2" id="btn-completar-registro">Guardar cambios </button>
+                                <a href="P10-perfil-cliente.html"> <button class="btn2">Cancelar </button> </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <div id="espaciador-der"></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Una empresa 100% nacional</h5>
+                <img src="images/cr.png" id="cr">
+            </div>
+            <div class="foot-B">
+                <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8849-0592</li>
+                    <li>Teléfono</li>
+                    <li class="italica">800-MASCOTA</li>
+                    <li class="italica">hola@mundomascota.com</li>
+                </ul>
+            </div>
+            <div class="foot-C">
+                <h5>Síguenos</h5>
+                <div>
+                    <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a id="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="divisor2">
+            <a class="btn-sochi" href="P00-landing-sochi.html">
+                Desarrollado por Sochi Software 2021. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+
+    <!--Script de terceros-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="scripts/navegacion.js"></script>
+    <!-- <script src="scripts/P03-registro-cliente-servicio.js"></script> -->
+    <script src="scripts/P10b-modificar-perfil-cliente.js"></script>
+    <script src="scripts/servicios.js"></script>
+
+</body>
+
+</html>

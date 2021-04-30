@@ -127,9 +127,7 @@ select option{
     font-weight: 500;
 }
 
-#btn-cerrar-sesion {
-    display:none;
-}
+
 
 .barra-busqueda {
     display:none;
