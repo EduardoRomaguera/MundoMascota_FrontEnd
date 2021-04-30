@@ -3,12 +3,12 @@
 const TABLAPATROCINADORES = document.querySelector('#tbl-patrocinadores tbody');
 const btnAgregarPatrocinador = document.querySelector('#btn-agregar-patrocinador');
 const FILTROPATROCINADORES = document.querySelector('#txt-filtro-patro');
-
 let listaPatrocinador = [];
 
 
 const LLENARTABLAPATROCINADOR = async() => {
     listaPatrocinador = await LISTARPATROCINADOR();
+    console.log(listaPatrocinador);
     MOSTRARTABLAPATROCINADOR();
 };
 
@@ -16,12 +16,13 @@ const LLENARTABLAPATROCINADOR = async() => {
 const MOSTRARTABLAPATROCINADOR = async => {
     let filtro = FILTROPATROCINADORES.value.toLowerCase();
     TABLAPATROCINADORES.innerHTML = '';
-    listaPatrocinador.forEach(patrocinador => {
-        if (patrocinador.nombre.toLowerCase().includes(filtro)) {
+    console.log(listaPatrocinador);
+    listaPatrocinador.forEach(patrocinadores => {
+        if (patrocinadores.nombre.toLowerCase().includes(filtro)) {
 
             let fila = TABLAPATROCINADORES.insertRow();
-            fila.insertCell().innerHTML = patrocinador.nombre;
-            fila.insertCell().innerHTML = patrocinador.frase;
+            fila.insertCell().innerHTML = patrocinadores.nombre;
+            fila.insertCell().innerHTML = patrocinadores.frase;
 
             let celdaAcciones = fila.insertCell();
 
