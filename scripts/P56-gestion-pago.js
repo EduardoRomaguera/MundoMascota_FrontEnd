@@ -19,8 +19,12 @@ const MOSTRARTABLATARJETAS = async => {
     let filtro = FILTROTARJETAS.value.toLowerCase();
     TABLATARJETAS.innerHTML = '';
     listaTarjetas.forEach(tarjeta => {
-        console.log(tarjeta);
-        if (tarjeta.numero.includes(filtro) && (tarjeta.correo == correoUsuario)) {
+        console.log(tarjeta.numero);
+        console.log(filtro);
+        console.log(tarjeta.correoUsuario);
+        console.log(correoUsuario);
+        // tarjeta.numero.includes(filtro) && 
+        if ((tarjeta.correoUsuario == correoUsuario)) {
             let fila = TABLATARJETAS.insertRow();
             fila.insertCell().innerHTML = tarjeta.nombreTarjeta;
             fila.insertCell().innerHTML = tarjeta.numero;
@@ -76,6 +80,7 @@ if (sessionStorage.getItem('usuarioConectado')) {
 
 
 LLENARTABLATARJETAS();
+FILTROTARJETAS.addEventListener('keyup', MOSTRARTABLATARJETAS)
 BTNAGRETARJETA.addEventListener('click', () => {
     window.location.href = 'P59-agregar-tarjeta.html';
 })
