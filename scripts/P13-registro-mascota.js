@@ -5,7 +5,7 @@ const INPUTNOMBRE = document.querySelector('#txt-nombre');
 const INPUTESPECIE = document.getElementById('slt-especie-ms');
 const INPUTRAZA = document.getElementById('slt-raza-ms');
 const INPUTTELEFONO = document.querySelector('#num-telefono');
-const INPUTVACUNA = document.getElementById('slt-raza-ms');
+const INPUTVACUNA = document.getElementById('slt-vacunas-ms');
 const INPUTPADECIMIENTO = document.getElementById('slt-padecimiento-ms');
 const BTNREGISTRO = document.querySelector('#btn-registro');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
@@ -41,8 +41,6 @@ const AGREGAROPCIONESPECIE = async() => {
     listaEspeciesMs.forEach(especie => {
         let opcion = document.createElement('option');
         opcion.innerText = especie.nombre;
-        opcion.id = especie.id;
-        console.log(opcion);
         INPUTESPECIE.add(opcion)
     });
 };

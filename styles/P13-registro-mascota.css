@@ -1,16 +1,19 @@
 .contenedor1 {
     display: flex;
+    flex-flow: column;
+    border: solid 2px #f08700;
+    border-radius: 10px;
     justify-content: center;
     align-items: center;
     min-height: 700px;
 }
 
-.contenedor2 {
+.formMs {
     margin: 50px;
     border: solid 2px #f08700;
     border-radius: 10px;
     display: flex;
-    flex-flow: column;
+    flex-flow: nowrap;
     align-items: center;
     padding: 60px;
 }
@@ -50,11 +53,6 @@
 
 h5 {
     margin-bottom: 10%;
-}
-
-#slt-vacuna,
-#slt-padecimiento {
-    margin-bottom: 5%;
 }
 
 
