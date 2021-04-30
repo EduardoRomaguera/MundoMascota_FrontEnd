@@ -92,6 +92,7 @@ const LLENARtablaProveedoresPendientes = async() => {
 const mostrarTablaProveedoresPendientes = async => {
     let filtro = filtroProveedoresPendientes.value.toLowerCase();
     tablaProveedoresPendientes.innerHTML = '';
+    console.log(listaProveedores);
     listaProveedores.forEach(proveedor => {
         if (proveedor.nombreNegocio.toLowerCase().includes(filtro) && (proveedor.estado == "pendiente")) {
 

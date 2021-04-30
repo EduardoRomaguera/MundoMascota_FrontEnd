@@ -8,6 +8,7 @@ let listaPatrocinador = [];
 
 const LLENARTABLAPATROCINADOR = async() => {
     listaPatrocinador = await LISTARPATROCINADOR();
+    listaPatrocinador = listaPatrocinador.patrocinadores;
     console.log(listaPatrocinador);
     MOSTRARTABLAPATROCINADOR();
 };
@@ -16,7 +17,7 @@ const LLENARTABLAPATROCINADOR = async() => {
 const MOSTRARTABLAPATROCINADOR = async => {
     let filtro = FILTROPATROCINADORES.value.toLowerCase();
     TABLAPATROCINADORES.innerHTML = '';
-    console.log(listaPatrocinador);
+    console.log(listaPatrocinador.patrocinadores);
     listaPatrocinador.forEach(patrocinadores => {
         if (patrocinadores.nombre.toLowerCase().includes(filtro)) {
 

@@ -60,6 +60,14 @@
     let nacimientoSplit = nacimiento.split("T")
     nacimiento = nacimientoSplit[0];
 
+    function cambiarFecha (input) {
+      var datePart = input.match(/\d+/g),
+      anno = datePart[0].substring(0), // get only two digits
+      mes = datePart[1], day = datePart[2];
+      return day+'/'+mes+'/'+anno;
+    }
+    
+    nacimiento = cambiarFecha (nacimiento);
     inputnacimiento.innerHTML = nacimiento;
     inputcorreo.innerHTML  = datos.correo;
     inputtelefono.innerHTML = datos.telefono;

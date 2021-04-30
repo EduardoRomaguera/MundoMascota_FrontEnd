@@ -2,7 +2,7 @@ const LISTARPATROCINADOR = async() => {
     let listaPatrocinador;
 
     await axios({
-        method: 'post',
+        method: 'get',
         url: 'http://localhost:3000/api/listar-patrocinadores',
         responseType: 'json'
     }).then((response) => {
