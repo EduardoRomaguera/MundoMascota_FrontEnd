@@ -13,15 +13,21 @@ const cerrarSesion = () => {
 const OcultarInicioSesionBoton = () => {
 
     if (sessionStorage.getItem('usuarioConectado')) {
+        btnIniciarSesion.classList.add('ocultar');
         console.log("hello! Hay un usuario conectado");
         usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
-        btnIniciarSesion.classList.add('ocultar');
-    } else {
+
+        if (usuario.estado == "bloqueado" || usuario.estado == "rechazado" ) {
+            window.location.href = 'P01-homepage.html';
+        }
+    } 
+else {
         window.location.href = 'P01-homepage.html';
     }
 };
 
 const MOSTRARPAGINA = () => {
+
     switch (usuario.tipo) {
         case 'Administrador':
             window.location.href = 'P49-principal-administrador.html';

@@ -23,6 +23,8 @@ if (sessionStorage.getItem('usuarioConectado')) {
     let usuario;
     usuario = JSON.parse(sessionStorage.getItem('usuarioConectado'));
     sessionStorage.getItem('usuarioConectado')
+    if (usuario.estado == "bloqueado" || usuario.estado == "rechazado" ) {
+    } else {
     switch (usuario.tipo) {
         case 'Administrador':
             window.location.href = 'P49-principal-administrador.html';
@@ -33,5 +35,6 @@ if (sessionStorage.getItem('usuarioConectado')) {
         case 'Proveedor':
             window.location.href = 'P19-principal-proveedor.html';
             break;
-    }
+    };
+};
 };
