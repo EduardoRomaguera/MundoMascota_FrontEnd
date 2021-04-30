@@ -186,6 +186,12 @@
 }
 
 
+.fix9 {
+    display: flex;
+    align-items: center;
+}
+
+
 /* OCULTADOS*/
 
 .barra-busqueda {

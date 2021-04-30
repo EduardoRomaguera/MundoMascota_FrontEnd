@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P50-solicitudes-proveedores.css">
+    <link rel="stylesheet" href="styles/P51-proveedores-aprobados.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Proveedores aprobados</title>
+    <title>Proveedores Aprobados</title>
 </head>
 
 <body>
@@ -58,8 +58,9 @@
                                         <th>Nombre negocio</th>
                                         <th>Nombre</th>
                                         <th>Correo</th>
-                                        <th>Teléfono</th>
-                                        <th></th>
+                                        <th>Nacimiento</th>
+
+
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -107,10 +108,10 @@
             </a>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
     <script src="scripts/P51-proveedores-aprobados.js"></script>
 </body>
+
 </html>
