@@ -61,5 +61,5 @@ const MOSTRARTABLAPATROCINADOR = async => {
 LLENARTABLAPATROCINADOR();
 FILTROPATROCINADORES.addEventListener('keyup', MOSTRARTABLAPATROCINADOR)
 btnAgregarPatrocinador.addEventListener('click', () => {
-    window.location.href = 'P80-agrega-patrocinador.html';
+    window.location.href = 'P80-agregar-patrocinador.html';
 })

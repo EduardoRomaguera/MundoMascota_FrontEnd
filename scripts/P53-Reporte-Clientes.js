@@ -31,7 +31,7 @@ const aprobarProveedoresPendientes = async(pcorreo) => {
     }).then((response) => {
         Swal.fire({
             'icon': 'success',
-            'title': 'El proveedor se aprobó correctamente',
+            'title': 'El cliente se bloqueó correctamente',
             'text': response.msj
         }).then(() => {
             window.location.href = 'P53-reporte-clientes.html';

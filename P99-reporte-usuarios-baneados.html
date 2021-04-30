@@ -3,28 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/P39-mantenimiento-catalogos.css">
+    <link rel="stylesheet" href="styles/P99-reporte-usuarios-baneados.css">
     <link rel="icon" href="images/icono.png">
     <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
-    <title>Reporte usuarios Bloqueados</title>
+    <title>Reporte de clientes bloqueados</title>
 </head>
-
 
 <body>
     <header>
         <nav>
             <div class="nav-madre">
                 <a class="nav-A" href=P01-homepage.html>
-
                     <img src="images/logo2-nav.png" id="logo">
-                    <!--<a class="logo" href=P01-homepage.html></a>-->
                 </a>
-
                 <div class="nav-B">
                     <form class="barra-busqueda">
                         <input class="placeholder" type="text" placeholder="Buscar">
@@ -32,7 +27,6 @@
                         </input>
                     </form>
                 </div>
-
                 <div class="nav-C">
                     <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
                     <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
@@ -44,40 +38,45 @@
         <div id="madre-espaciadores">
             <div id="espaciador-izq"></div>
             <div id="contenedor-main">
+                <section class="titulo">
+                    <h1>Clientes bloqueados</h1>
+                </section>
                 <section class="catalogos">
                     <section>
-                        <section class="divisor">
-                            <h1 class="btn-divisor">Usuarios Bloqueados</h1>
-                        </section>
 
-                        <div>
-                            <label for='txt-filtro-usuarios-baneados'>Filtrar por nombre</label>
-                            <input type="text" id='txt-filtro-usuarios-baneados'>
+                        <div class='filtro'>
+                            <label for='txt-filtro-ordenes'>Filtrar nombre</label>
+                            <input type="text" id='txt-filtro-ordenes'>
 
-                            <div class="contenedor1">
-                                <div class="contenedor-tabla">
-                                    <table id="tbl-usurios-ban" class="tabla">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Correo</th>
-                                                <th>Tipo</th>
-                                                <th>Razón</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
+                        </div>
 
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                        <div class="contenedor1">
+
+                            <table id="tbl-ordenes" class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre completo</th>
+                                        <th>Correo</th>
+                                        <th>Provincia</th>
+                                        <th>Estado</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
                     </section>
+
+
                 </section>
-                </section>
-                </div>
-                <div id="espaciador-der"></div>
             </div>
+            <div id="espaciador-der"></div>
+        </div>
     </main>
+
     <footer>
         <div class="foot-madre">
             <div class="foot-A">
@@ -108,10 +107,10 @@
             </a>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="scripts/navegacion.js"></script>
     <script src="scripts/servicios.js"></script>
     <script src="scripts/P99-reporte-baneados.js"></script>
 </body>
-
 </html>

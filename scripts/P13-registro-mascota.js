@@ -3,13 +3,15 @@
 //Validación de espacios de inicio de sesión
 const INPUTNOMBRE = document.querySelector('#txt-nombre');
 const INPUTESPECIE = document.getElementById('slt-especie-ms');
-const INPUTRAZA = document.getElementById('slt-raza-MS');
+const INPUTRAZA = document.getElementById('slt-raza-ms');
 const INPUTTELEFONO = document.querySelector('#num-telefono');
-const INPUTVACUNA = document.getElementById('slt-vacuna-MS');
-const INPUTPADECIMIENTO = document.getElementById('slt-padecimiento');
+const INPUTVACUNA = document.getElementById('slt-raza-ms');
+const INPUTPADECIMIENTO = document.getElementById('slt-padecimiento-ms');
 const BTNREGISTRO = document.querySelector('#btn-registro');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
+
+
 let listaVacunasMs = [];
 let listaPadecimientoMs = [];
 let listaEspeciesMs = [];
@@ -40,10 +42,11 @@ const AGREGAROPCIONESPECIE = async() => {
         let opcion = document.createElement('option');
         opcion.innerText = especie.nombre;
         opcion.id = especie.id;
+        console.log(opcion);
         INPUTESPECIE.add(opcion)
-
     });
 };
+
 
 const AGREGAROPCIONVACUNAS = async() => {
     listaVacunasMs.forEach(vacuna => {

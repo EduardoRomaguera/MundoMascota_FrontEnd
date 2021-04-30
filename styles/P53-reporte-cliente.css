@@ -38,3 +38,7 @@ button {
 #btn-iniciar-sesion {
     display: none;
 }
+
+.catalogos {
+    min-height: 500px;
+}
