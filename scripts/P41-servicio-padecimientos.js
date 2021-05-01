@@ -109,7 +109,7 @@ const ELIMINARPADECIMIENTO = async(pid) => {
             'icon': 'success',
             'text': response.msj
         }).then(() => {
-            mostrar_padecimientos();
+            window.location.href = 'P41-mantenimiento-padecimientos.html';
         });
     }).catch((response) => {
         Swal.fire({
