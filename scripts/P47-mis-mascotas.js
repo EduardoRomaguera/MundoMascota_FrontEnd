@@ -3,6 +3,9 @@
 const TABLAMASCOTAS = document.querySelector('#tbl-mascotas tbody');
 const FILTROMASCOTAS = document.querySelector('#txt-filtro-mascotas');
 let listaMascotas = [];
+let foto = document.createElement('image');
+let mascotaSeleccionada;
+
 
 const LLENARTABLAMASCOTAS = async() => {
     listaMascotas = await LISTARMASCOTAS();
@@ -15,10 +18,10 @@ const MOSTRARTABLAMASCOTAS = async => {
     TABLAMASCOTAS.innerHTML = '';
     listaMascotas.forEach(mascota => {
         console.log(mascota);
+
         if (mascota.nombre.toLowerCase().includes(filtro)) {
 
             let fila = TABLAMASCOTAS.insertRow();
-            fila.insertCell().innerHTML = mascota.imagen;
             fila.insertCell().innerHTML = mascota.nombre;
             fila.insertCell().innerHTML = mascota.telefono;
             fila.insertCell().innerHTML = mascota.especie;
@@ -30,8 +33,9 @@ const MOSTRARTABLAMASCOTAS = async => {
             let botonModificar = document.createElement('button');
             botonModificar.innerText = 'Editar';
 
+
             botonModificar.addEventListener('click', () => {
-                localStorage.setItem('vacunaSeleccionado', JSON.stringify(vacuna));
+                localStorage.setItem('mascotaSeleccionada', JSON.stringify(mascota));
                 window.location.href = 'P42-vacunas-modificar.html';
             });
             let botonEliminar = document.createElement('button');
@@ -48,12 +52,13 @@ const MOSTRARTABLAMASCOTAS = async => {
                     'reverseButtons': true
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        ELIMINARVACUNA(vacuna._id);
+                        ELIMINARMASCOTA(mascota._id);
                     }
                 })
             });
             celdaAcciones.appendChild(botonEliminar);
             celdaAcciones.appendChild(botonModificar);
+            celdaAcciones.appendChild(foto);
         }
     });
 };

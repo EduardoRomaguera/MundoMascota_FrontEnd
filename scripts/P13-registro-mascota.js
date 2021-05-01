@@ -83,7 +83,6 @@ const AGREGARMASCOTA = () => {
     let especie = INPUTESPECIE.value;
     let raza = INPUTRAZA.value;
     let telefono = INPUTTELEFONO.value;
-
     REGISTRARMASCOTA(correoUsuario, nombre, telefono, especie, raza, DIVFOTO.scr);
     // ACCIONUSUARIO('Agregar especie');
 };

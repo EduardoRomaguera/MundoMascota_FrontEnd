@@ -51,3 +51,28 @@ const LISTARMASCOTAS = async() => {
 
     return listaMascotas;
 };
+
+const ELIMINARMASCOTA = async(pid) => {
+    await axios({
+            method: 'delete',
+            url: 'http://localhost:3000/api/eliminar-mascota',
+            responseType: 'json',
+            data: {
+                _id: pid
+            }
+        })
+        .then((response) => {
+            Swal.fire({
+                    'title': 'La mascota ha sido eliminada',
+                    'icon': 'success',
+                    'text': response.msj
+                }
+
+            ).then(() => {
+                window.location.href = 'P47-mis-mascotas.html';
+            });
+        })
+        .catch((error) => {
+            console.log(error)
+        });
+};

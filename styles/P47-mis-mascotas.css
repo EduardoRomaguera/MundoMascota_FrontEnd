@@ -20,16 +20,6 @@
     margin-bottom: 120px;
 }
 
-.imagen-mascota {
-    background-color: #f0870040;
-    display: flex;
-    padding: 2px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 25%;
-}
-
 #icono-pata {
     font-size: 90px;
 }
@@ -68,16 +58,21 @@
     max-width: 100%;
 }
 
-.info1 button {
-    background-color: #f08700;
+button {
+    background-color: #8EE5D8;
+    padding: auto;
+    color: black;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 1px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
 }
 
-.btn2 {
-    background-color: #f08700;
-}
 
 /* OCULTADOS*/
 
 .barra-busqueda {
-    display:none;
+    display: none;
 }
