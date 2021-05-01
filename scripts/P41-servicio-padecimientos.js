@@ -95,13 +95,13 @@ const BUSCARPADECIMIENTO = async() => {
     return padecimiento;
 };
 
-const ELIMINARPADECIMIENTO = async(_id) => {
+const ELIMINARPADECIMIENTO = async(pid) => {
     await axios({
         method: 'delete',
         url: 'http://localhost:3000/api/eliminar-padecimiento',
         responseType: 'json',
         data: {
-            _id: _id
+            _id: pid
         }
     }).then((response) => {
         Swal.fire({
