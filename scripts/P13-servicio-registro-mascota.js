@@ -1,7 +1,7 @@
 'use strict';
 
 
-const REGISTRARMASCOTA = async(pcorreoUsuario, pnombre, ptelefono, pespecie, praza, pestado, pimagen) => {
+const REGISTRARMASCOTA = async(pcorreoUsuario, pnombre, ptelefono, pespecie, praza, pimagen) => {
 
     await axios({
             method: 'post',
@@ -13,7 +13,7 @@ const REGISTRARMASCOTA = async(pcorreoUsuario, pnombre, ptelefono, pespecie, pra
                 telefono: ptelefono,
                 especie: pespecie,
                 raza: praza,
-                estado: pestado
+                imagen: pimagen
             }
         })
         .then((response) => {

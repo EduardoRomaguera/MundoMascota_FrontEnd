@@ -1,6 +1,5 @@
 'use strict';
 
-//Validación de espacios de inicio de sesión
 const INPUTNOMBRE = document.querySelector('#txt-nombre');
 const INPUTESPECIE = document.getElementById('slt-especie-ms');
 const INPUTRAZA = document.getElementById('slt-raza-ms');
@@ -13,8 +12,6 @@ const INPUTSREQUERIDOS = document.querySelectorAll(':required');
 const DIVFOTO = document.querySelector('#foto');
 let usuarioConectado;
 let correoUsuario;
-
-
 let listaVacunasMs = [];
 let listaPadecimientoMs = [];
 let listaEspeciesMs = [];
@@ -87,14 +84,13 @@ const AGREGARMASCOTA = () => {
     let raza = INPUTRAZA.value;
     let telefono = INPUTTELEFONO.value;
 
-    REGISTRARMASCOTA(correoUsuario, nombre, telefono, especie, raza, 'Activo');
+    REGISTRARMASCOTA(correoUsuario, nombre, telefono, especie, raza, DIVFOTO.scr);
     // ACCIONUSUARIO('Agregar especie');
 };
 
 
 //Valida que los inputs no esten vacios.
 const VALIDAR = () => {
-
     let error = false;
     let inputRequeridos = INPUTSREQUERIDOS;
     inputRequeridos.forEach(input => {
@@ -142,7 +138,7 @@ if (sessionStorage.getItem('usuarioConectado')) {
 
 
 window.onload = function() { DESPLEGABLES() }
-BTNREGISTRO.addEventListener('click', VALIDAR);
+BTNREGISTRO.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
     window.location.href = 'P42-vacunas-mantenimiento.html';
 })
