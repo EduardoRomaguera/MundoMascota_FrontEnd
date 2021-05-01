@@ -197,7 +197,7 @@
   const BtnEditar = document.querySelector('#btn-editar');
 
   BtnEditar.addEventListener('click', () => {
-    window.location.href = 'P10b-modificar-perfil-cliente';
+    window.location.href = 'P10b-modificar-perfil-cliente.html';
 });
 
 

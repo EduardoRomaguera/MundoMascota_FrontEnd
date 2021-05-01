@@ -151,6 +151,10 @@ button {
     color: white;
 }
 
+.catalogos {
+    min-height: 500px;
+}
+
 
 /* OCULTADOS*/
 
