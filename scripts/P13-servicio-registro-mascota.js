@@ -52,6 +52,40 @@ const LISTARMASCOTAS = async() => {
     return listaMascotas;
 };
 
+
+const MODIFICARMASCOTA = async(pid, pcorreoUsuario, pnombre, ptelefono, pespecie, praza, pestado, pimagen) => {
+    await axios({
+        method: 'put',
+        url: 'http://localhost:3000/api/modificar-mascota',
+        responseType: 'json',
+        data: {
+            _id: pid,
+            correoUsuario: pcorreoUsuario,
+            nombre: pnombre,
+            telefono: ptelefono,
+            especie: pespecie,
+            raza: praza,
+            estado: pestado,
+            imagen: pimagen
+        }
+    }).then((response) => {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'La vacuna se modificó correctamente',
+            'text': response.msj
+        }).then(() => {
+            window.location.href = 'P42-vacunas-mantenimiento.html';
+        });
+    }).catch((error) => {
+        Swal.fire({
+            'title': response.msj,
+            'icon': 'error',
+            'text': error
+        })
+    });
+
+};
+
 const ELIMINARMASCOTA = async(pid) => {
     await axios({
             method: 'delete',

@@ -9,6 +9,7 @@ const INPUTPADECIMIENTO = document.getElementById('slt-padecimiento-ms');
 const BTNREGISTRO = document.querySelector('#btn-registro');
 const BTNCANCELAR = document.querySelector('#btn-cancelar');
 const INPUTSREQUERIDOS = document.querySelectorAll(':required');
+const INPUTESTADO = document.getElementById('slt-estado-ms');
 const DIVFOTO = document.querySelector('#foto');
 let usuarioConectado;
 let correoUsuario;
@@ -79,13 +80,14 @@ const AGREGAROPCIONRAZAS = async() => {
 };
 
 
-//Funcion que registra la vacuna 
-const AGREGARMASCOTA = () => {
+//Funcion que modifica la mascota
+const CAMBIARMASCOTA = () => {
     let nombre = INPUTNOMBRE.value;
     let especie = INPUTESPECIE.value;
     let raza = INPUTRAZA.value;
     let telefono = INPUTTELEFONO.value;
-    REGISTRARMASCOTA(correoUsuario, nombre, telefono, especie, raza, DIVFOTO.scr);
+    let estado = INPUTESTADO.value;
+    MODIFICARMASCOTA(correoUsuario, nombre, telefono, especie, raza, estado, DIVFOTO.scr);
     // ACCIONUSUARIO('Agregar especie');
 };
 
@@ -103,12 +105,12 @@ const VALIDAR = () => {
         }
     });
     if (error == false) {
-        AGREGARMASCOTA();
+        CAMBIARMASCOTA();
 
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'No se pudo guardar la vacuna',
+            'title': 'No se pudo modificar la mascota',
             'text': 'Por favor revise los campos resaltados',
             'confirmButtonText': 'Entendido'
         });
