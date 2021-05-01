@@ -140,5 +140,5 @@ if (sessionStorage.getItem('usuarioConectado')) {
 window.onload = function() { DESPLEGABLES() }
 BTNREGISTRO.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P42-vacunas-mantenimiento.html';
+    window.location.href = 'P47-mis-mascotas.html';
 })

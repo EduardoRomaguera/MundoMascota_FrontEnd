@@ -22,7 +22,7 @@ const REGISTRARMASCOTA = async(pcorreoUsuario, pnombre, ptelefono, pespecie, pra
                 'title': 'La mascota ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
-                window.location.href = 'P42-vacunas-mantenimiento.html';
+                window.location.href = 'P47-mis-mascotas.html';
 
             });
 
@@ -33,4 +33,21 @@ const REGISTRARMASCOTA = async(pcorreoUsuario, pnombre, ptelefono, pespecie, pra
                 'text': response.err
             })
         })
+};
+
+
+const LISTARMASCOTAS = async() => {
+    let listaMascotas = [];
+
+    await axios({
+        method: 'get',
+        url: 'http://localhost:3000/api/listar-mascotas',
+        responseType: 'json'
+    }).then((response) => {
+        listaMascotas = response.data.mascotas;
+    }).catch((error) => {
+        console.log(error)
+    });
+
+    return listaMascotas;
 };
