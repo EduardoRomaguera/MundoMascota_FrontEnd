@@ -49,7 +49,86 @@
     flex-direction: column;
     justify-content: space-around;
 }
-
+.imagen-1 {
+    background-image: url('../images/imagen-1.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imagen-2 {
+    background-image: url('../images/imagen-2.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imagen-3 {
+    background-image: url('../images/imagen-3.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imagen-4 {
+    background-image: url('../images/imagen-4.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.imagen-5 {
+    background-image: url('../images/imagen-5.jpg');
+    /*Imagen de AmandaCullingford en Pixabay*/
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    height: 250px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .imagen-centro {
     background-image: url('../images/pendiente-cent.jpg');
     /*Imagen de Светлана Бердник en Pixabay */
@@ -64,7 +143,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content:center
 }
 
 .imagen-derecha {
