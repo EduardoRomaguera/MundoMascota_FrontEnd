@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/P13-registro-mascota.css">
+    <link rel="icon" href="images/icono.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Modificar mascotas</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <a class="nav-A" href=P01-homepage.html>
+                    <img src="images/logo2-nav.png" id="logo">
+                </a>
+
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
+                    </form>
+                </div>
+                <div class="nav-C">
+                    <a class="btn" id="btn-perfil" href="P10-perfil-cliente.html">Mi Perfil</a>
+                    <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
+                    <!-- <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="contenedor1">
+                <div class="contenedor2">
+                    <div class="contenedor3">
+                        <h2>Modificar mascota</h2>
+                    </div>
+                    <div class="contenedor4">
+
+                        <div class="items">
+                            <label class="label" for="txt-nombre">Nombre</label>
+                            <input class="input-formularios" type="text" id="txt-nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="items">
+                            <label class="label" for="num-telefono">Teléfono</label>
+                            <input class="input-formularios" type="number" id="num-telefono" placeholder="Teléfono de contacto" required>
+                        </div>
+                        <div class="items">
+                            <label class="label" for="slt-especie-ms">Especie</label>
+                            <select class="input-formularios select" id="slt-especie-ms" required>
+                                
+                                </select>
+                        </div>
+                        <div class="items">
+                            <label class="label" for="slt-raza-ms">Raza</label>
+                            <select class="input-formularios select" id="slt-raza-ms" required>
+                                
+                                </select>
+                        </div>
+                        <div class="contenedor5">
+                            <form action="#" method="get">
+                                <div class="items">
+                                    <label class="label" for="slt-vacunas-ms">Vacunas</label>
+                                    <select class="input-formularios select" id="slt-vacunas-ms" required>
+                                        
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contenedor6">
+                            <form action="# " method="get ">
+                                <div class="items ">
+                                    <label class="label" for="slt-padecimiento-ms">Padecimientos</label>
+                                    <select class="input-formularios select" id="slt-padecimiento-ms" required>
+                                        
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div>
+                            <img src="" alt="" id='foto'>
+                        </div>
+
+
+
+                    </div>
+                    </form>
+
+                    <div class="contenedor9 ">
+                        <button class="btn2 " type="button" id="btn-foto">Agregar foto</button>
+                        <button class="btn2 " type="button " id="btn-registro"> Registrar</button>
+                        <button class="btn2 " type="button " id="btn-cancelar">Cancelar</button>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+            </div>
+            <div id="espaciador-der"></div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Una empresa 100% nacional</h5>
+                <img src="images/cr.png" id="cr">
+            </div>
+            <div class="foot-B">
+                <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8849-0592</li>
+                    <li>Teléfono</li>
+                    <li class="italica">800-MASCOTA</li>
+                    <li class="italica">hola@mundomascota.com</li>
+                </ul>
+            </div>
+            <div class="foot-C">
+                <h5>Síguenos</h5>
+                <div>
+                    <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a id="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="divisor2">
+            <a class="btn-sochi" href="P00-landing-sochi.html">
+                Desarrollado por Sochi Software 2021. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+
+    <!--Script de terceros-->
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10 "></script>
+
+    <!-- Scripts de propios -->
+    <script src="scripts/navegacion.js"></script>
+    <script src="scripts/servicio-imagen.js"></script>
+    <script src="scripts/P43-servicio-especies.js"></script>
+    <script src="scripts/P41-servicio-padecimientos.js"></script>
+    <script src="scripts/P40-servicio-razas.js"></script>
+    <script src="scripts/P42-servicio-vacunas.js"></script>
+    <script src="scripts/P47-modificar-mascota.js "></script>
+
+</body>
+
+</html>

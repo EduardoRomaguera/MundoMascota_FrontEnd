@@ -36,7 +36,7 @@ const MOSTRARTABLAMASCOTAS = async => {
 
             botonModificar.addEventListener('click', () => {
                 localStorage.setItem('mascotaSeleccionada', JSON.stringify(mascota));
-                window.location.href = 'P42-vacunas-modificar.html';
+                window.location.href = 'P47-modificar-mascota.html';
             });
             let botonEliminar = document.createElement('button');
             botonEliminar.innerText = 'Eliminar';
