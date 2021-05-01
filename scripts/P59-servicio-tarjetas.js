@@ -20,7 +20,7 @@ const REGISTRARTARJETA = async(pcorreoUsuario, pnombreTarjeta, pnumero, pExpirac
                 'title': 'La tarjeta ha sido registrada correctamente',
                 'text': response.msj
             }).then(() => {
-                window.location.href = 'P56-gestion-pago.html';
+                window.history.back();
 
             });
 
@@ -68,7 +68,7 @@ const MODIFICARTARJETA = async(pcorreoUsuario, pnombreTarjeta, pnumero, pExpirac
             'title': 'La tarjeta se modificó correctamente',
             'text': response.msj
         }).then(() => {
-            window.location.href = 'P56-gestion-pago.html';
+            window.history.back();
         });
     }).catch((error) => {
         Swal.fire({
@@ -97,7 +97,7 @@ const ELIMINARTARJETA = async(pid) => {
                 }
 
             ).then(() => {
-                window.location.href = 'P56-gestion-pago.html';
+                window.history.back();
             });
         })
         .catch((error) => {

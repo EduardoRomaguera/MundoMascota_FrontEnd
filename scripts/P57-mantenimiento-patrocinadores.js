@@ -46,7 +46,7 @@ const MOSTRARTABLAPATROCINADOR = async => {
                 })
             });
             celdaAcciones.appendChild(botonEliminar);
-            celdaAcciones.appendChild(botonModificar);
+
         }
     });
 };

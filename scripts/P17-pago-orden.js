@@ -2,17 +2,18 @@
 
 const btnPagar = document.querySelector('#btn-pagar');
 const inputCvv = document.querySelector('#txt-cvv');
-let regexCvv = "^[0-9]{3, 4}$";
+
 
 
 const validar = () => {
     let error = false;
-    if (regexCvv.test(inputCvv.value) == false) {
-        error = true;
-        inputCvv.classList.add('error');
-    } else {
-        inputCvv.classList.remove('error');
-    }
+    let regexCvv = /^[0-9]{3, 4}$/;
+    // if (regexCvv.test(inputCvv.value) == false) {
+    //     error = true;
+    //     inputCvv.classList.add('error');
+    // } else {
+    //     inputCvv.classList.remove('error');
+    // }
 
     if (inputCvv.value == '') {
         error = true;
@@ -20,12 +21,12 @@ const validar = () => {
     } else {
         inputCvv.classList.remove('error');
     }
-    if (validar == false) {
-        error = true;
-        inputCvv.classList.add('error');
-    } else {
-        inputCvv.classList.remove('error');
-    }
+    // if (validar == false) {
+    //     error = true;
+    //     inputCvv.classList.add('error');
+    // } else {
+    //     inputCvv.classList.remove('error');
+    // }
     if (error == true) {
         Swal.fire({
             imageUrl: "images/error.png",

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/P54-tienda2.css">
+    <link rel="icon" href="images/icono.png">
+    <script src="https://kit.fontawesome.com/731900e7f6.js" crossorigin="anonymous"></script>
+    <title>Tienda de servicios</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-madre">
+                <a class="nav-A" href=P01-homepage.html>
+                    <img src="images/logo2-nav.png" id="logo">
+                </a>
+                <div class="nav-B">
+                    <form class="barra-busqueda">
+                        <input class="placeholder" type="text" placeholder="Buscar">
+                        <button type="submit" id="btn-buscar"><i class="fas fa-search"></i></button>
+                        </input>
+                    </form>
+                </div>
+                <div class="nav-C">
+                    <a class="btn" id="btn-cerrar-sesion" href="#">Cerrar Sesión</a>
+                    <a class="btn" id="btn-iniciar-sesion" href="P05-inicio-sesion.html">Iniciar Sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="madre-espaciadores">
+            <div id="espaciador-izq"></div>
+            <div id="contenedor-main">
+                <section class="divisor">
+                    <h1 class="btn-divisor">Tienda de servicios</h1>
+                </section>
+
+                <!-- Inicio de proveedores destacados-->
+
+                <section class="divisor">
+                    <h2 class="btn-divisor">Proveedores Destacados</h2>
+                </section>
+                <section class="proveedores-destacados">
+                    <div class=prov>
+                        <div class="foto-calif">
+                            <img src="images/destacado1.jpg" class="imagen-proveedor">
+                            <div class="calificacion">
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                            </div>
+                        </div>
+                        <div class="info-proveedor">
+                            <p class="nombre-servicio">Paseos Paco</p>
+                            <p>Brindo mis servicos en:</p>
+                            <p class="ubicacion-servicio">Heredia - San Pablo</p>
+                            <p>Horario</p>
+                            <p>Lunes - Sabado</p>
+                            <p>6:00am - 8:00pm</p>
+                        </div>
+                        <div class="info-servicios">
+                            <h4>Servicios</h4>
+                            <ul class="lista">
+                                <li>● Paseos de mascotas.</li>
+                                <li>● Visita y cuidado de mascotas solas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=prov>
+                        <div class="foto-calif">
+                            <img src="images/destacado2.jpg" class="imagen-proveedor">
+                            <div class="calificacion">
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                            </div>
+                        </div>
+                        <div class="info-proveedor">
+                            <p class="nombre-servicio">Fotografías Laura</p>
+                            <p>Brindo mis servicos en:</p>
+                            <p class="ubicacion-servicio">San José - Tibás</p>
+                            <p>Horario</p>
+                            <p>Lunes - Sabado</p>
+                            <p>12:00pm - 9:00pm</p>
+                        </div>
+                        <div class="info-servicios">
+                            <h4>Servicios</h4>
+                            <ul class="lista">
+                                <li>● Sesion fotográfica de mascota.</li>
+                                <li>● Sesion fotográfica mascota y dueño.</li>
+                                <li>● Videografías de mascota.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=prov>
+                        <div class="foto-calif">
+                            <img src="images/destacado3.jpg" class="imagen-proveedor">
+                            <div class="calificacion">
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                                <span class="dot"><i class="fas fa-paw"></i></span>
+                            </div>
+                        </div>
+                        <div class="info-proveedor">
+                            <p class="nombre-servicio">Veterinaria Express El Pitufo</p>
+                            <p>Brindo mis servicos en:</p>
+                            <p class="ubicacion-servicio">Heredia - Mercedes Norte</p>
+                            <p>Horario</p>
+                            <p>Lunes - Domingo</p>
+                            <p>6:00am - 11:00pm</p>
+                        </div>
+                        <div class="info-servicios">
+                            <h4>Servicios</h4>
+                            <ul class>
+                                <li>● Atención de emergencias.</li>
+                                <li>● Castración.</li>
+                                <li>● Atención de enfermedades crónicas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="fix99" class="titulo">
+                    <h1>Servicios disponibles</h1>
+                </section>
+                <section class="catalogos">
+                    <section>
+                        <section>
+                            <div class="pagar">
+                                <a href="P17-pago-orden.html"><button class="btn-agregar" id="btn-pagar">Realizar Pago</button></a>
+                            </div>
+                        </section>
+                        <div class='filtro'>
+                            <label for='txt-filtro-ordenes'>Filtrar nombre negocio</label>
+                            <input type="text" id='txt-filtro-ordenes'>
+
+                        </div>
+
+                        <div class="contenedor1">
+
+                            <table id="tbl-ordenes" class="tabla">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre negocio</th>
+                                        <th>Nombre</th>
+                                        <th>Correo</th>
+                                        <th>Teléfono</th>
+                                        <th>Servicios</th>
+                                        <th>        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </section>
+
+
+                </section>
+            </div>
+            <div id="espaciador-der"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot-madre">
+            <div class="foot-A">
+                <h5>Una empresa 100% nacional</h5>
+                <img src="images/cr.png" id="cr">
+            </div>
+            <div class="foot-B">
+                <a class="btn-sochi" href="P07-contacto.html">Contacto</a>
+                <ul class="lista">
+                    <li>WhatsApp</li>
+                    <li class="italica">8849-0592</li>
+                    <li>Teléfono</li>
+                    <li class="italica">800-MASCOTA</li>
+                    <li class="italica">hola@mundomascota.com</li>
+                </ul>
+            </div>
+            <div class="foot-C">
+                <h5>Síguenos</h5>
+                <div>
+                    <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a id="insta" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="divisor2">
+            <a class="btn-sochi" href="P00-landing-sochi.html">
+                Desarrollado por Sochi Software 2021. Derechos Reservados.
+            </a>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/navegacion.js"></script>
+    <script src="scripts/servicios.js"></script>
+    <script src="scripts/P54-tienda2.js"></script>
+</body>
+</html>

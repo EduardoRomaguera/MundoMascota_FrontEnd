@@ -1,0 +1,494 @@
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300 px;
+    margin-bottom: 30px;
+}
+
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.catalogos {
+    min-height: 500px;
+}
+
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display: none;
+}
+
+#btn-iniciar-sesion {
+    display: none;
+}
+
+button {
+    background-color: #8EE5D8;
+    padding: auto;
+    color: black;
+    border-radius: 7px;
+    border: solid rgb(0, 0, 0) 1px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 15px;
+    margin-left: 20px;
+    width: 110px;
+}
+
+/* ///////////////// CODIGO DE TIENDA ORIGINAL */
+
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    background-color: #424D4B;
+    ;
+    /*border: solid red;*/
+}
+
+.proveedores-destacados {
+    display: flex;
+    padding: 2px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-prove {
+    height: 130px;
+    border-radius: 50%;
+    width: -250px;
+}
+
+.imagen-prove1 {
+    height: 130px;
+    border-radius: 50%;
+    width: -250px;
+}
+
+.imagen-prove2 {
+    height: 130px;
+    border-radius: 50%;
+    width: -250px;
+}
+
+a:hover {
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#imagen {
+    height: 70%;
+    max-width: 100%;
+}
+
+
+/* OCULTADOS*/
+
+.barra-busqueda {
+    display: none;
+}
+
+#btn-iniciar-sesion {
+    display: none;
+}
+
+
+/* Código nuevo*/
+
+.serviciosEnVenta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-servicio {
+    display: flex;
+    width: 100%;
+    border-top: rgb(177, 177, 177) solid 1px;
+    border-bottom: rgb(177, 177, 177) solid 1px;
+    min-height: 300px;
+    padding: 10px 0 0 0;
+    margin: 30px 0 0 0;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.contenedor-foto-proveedor {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 260px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-proveedor {
+    height: 170px;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+.contenedor-informacion {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 270px;
+    padding: 20px;
+    align-items: center;
+}
+
+.nombre-proveedor {
+    width: 100%;
+    text-align: left;
+    height: 15%;
+}
+
+.nombre-proveedor h4 {
+    font-weight: 600;
+}
+
+.contenedor-informacion2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+}
+
+.contenedor-informacion3 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 230px;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 10px;
+}
+
+.calificacion {
+    font-size: 5px;
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+
+.contenedor-ubicacion {
+    font-size: 15px;
+    margin: 10% 0 3% 0;
+    height: 40%;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-horario {
+    font-size: 15px;
+    height: 40%;
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios-precios {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 230px;
+    padding: 20px 0 0 0;
+    align-items: center;
+    justify-content: left;
+    overflow: scroll;
+}
+
+
+/* Codigo para tabla de servicios, copiado de P22-Mis servicios*/
+
+.contenedor1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300 px;
+    margin-bottom: 30px;
+}
+
+.contenedor2 {
+    border: solid 2px #f08700;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60px;
+    font-weight: 700;
+}
+
+.catalogos {
+    min-height: 500px;
+}
+
+.tabla-tienda {
+    margin: 2px;
+    font-size: 15px;
+    line-height: 130%;
+}
+
+.tabla-tienda tr th {
+    font-weight: 900;
+}
+
+.tabla {
+    margin-top: 30px;
+}
+
+.tabla-tienda thead tr {
+    width: max-content;
+    text-align: center;
+    color: green;
+}
+
+.tabla-tienda thead tr th {
+    text-align: center;
+}
+
+.tabla-tienda tbody tr {
+    border-bottom: 1px solid #a5a5a5;
+    height: 40px;
+}
+
+.tabla-tienda tbody tr td {
+    padding: 10px 10px 10px 0;
+}
+
+.columna-costo {
+    width: 10%;
+}
+
+.btn-comprar {
+    font-family: 'FontAwesome', 'Second Font name';
+    font-size: 18px;
+    text-align-last: center;
+    border: #000000;
+    border-radius: 99px;
+    color: #F08700;
+    text-align: center;
+    text-justify: center;
+    padding-left: 22px;
+    background-color: #FFFFFF;
+}
+
+
+/*Código para sección de proveedores destacados*/
+
+.proveedores-destacados {
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    background-color: #f0870010;
+    border-radius: 7px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-calif {
+    border-radius: 7px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-proveedor {
+    height: 70%;
+    border-radius: 50%;
+    margin: 10% 0 0 0;
+}
+
+.dot {
+    padding: 7px;
+    font-size: 14px;
+    background-color: #424D4B;
+    color: #8EE5D8;
+    border-radius: 90%;
+    display: inline;
+}
+
+.calificacion {
+    margin: 5% 0 0 0;
+    height: 20%;
+}
+
+.info-proveedor {
+    width: fit-content;
+    height: 30%;
+    padding: 6%;
+    text-align: center;
+    margin-top: 6%;
+    line-height: 120%;
+}
+
+.info-servicios ul li {
+    line-height: 100%;
+}
+
+.nombre-servicio {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.ubicacion-servicio {
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.info-servicios {
+    width: fit-content;
+    height: 30%;
+    padding: 6%;
+    text-align: center;
+}
+
+.info-servicios h4 {
+    margin-bottom: 4%;
+}
+
+.info-servicios ul li {
+    color: #000000;
+    margin-bottom: 4%;
+    line-height: 70%;
+    text-align: left;
+}
+
+
+/*Termina código para sección de proveedores destacados*/
+
+
+/*Código para sección de proveedores destacados*/
+
+.proveedores-destacados {
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 600px;
+}
+
+.prov {
+    background-color: #f0870010;
+    border-radius: 7px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-calif {
+    border-radius: 7px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-proveedor {
+    height: 70%;
+    border-radius: 50%;
+    margin: 10% 0 0 0;
+}
+
+.dot {
+    padding: 8px;
+    font-size: 16px;
+    background-color: #424D4B;
+    color: #8EE5D8;
+    border-radius: 50%;
+    display: inline;
+}
+
+.calificacion {
+    margin: 5% 0 0 0;
+    height: 20%;
+}
+
+.info-proveedor {
+    width: fit-content;
+    height: 30%;
+    padding: 6%;
+    text-align: center;
+    margin-top: 6%;
+    line-height: 120%;
+}
+
+.info-servicios ul li {
+    line-height: 100%;
+}
+
+.nombre-servicio {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.ubicacion-servicio {
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.info-servicios {
+    width: fit-content;
+    height: 30%;
+    padding: 6%;
+    text-align: center;
+}
+
+.info-servicios h4 {
+    margin-bottom: 4%;
+}
+
+.info-servicios ul li {
+    color: #000000;
+    margin-bottom: 4%;
+    line-height: 70%;
+    text-align: left;
+}
+
+
+/*Termina código para sección de proveedores destacados*/
+
+/* ////////////// TERMINA CODIGO DE TIENDA ORIGINAL ///////// */
+
+#fix99 {
+    margin-top: 60px;
+}
+
+#btn-pagar {
+    position: relative;
+    right: -1170px;
+}
