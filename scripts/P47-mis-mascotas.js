@@ -15,7 +15,7 @@ const MOSTRARTABLAMASCOTAS = async => {
     TABLAMASCOTAS.innerHTML = '';
     listaMascotas.forEach(mascota => {
         console.log(mascota);
-        if (vacuna.nombre.toLowerCase().includes(filtro)) {
+        if (mascota.nombre.toLowerCase().includes(filtro)) {
 
             let fila = TABLAMASCOTAS.insertRow();
             fila.insertCell().innerHTML = mascota.imagen;
@@ -59,7 +59,4 @@ const MOSTRARTABLAMASCOTAS = async => {
 };
 
 LLENARTABLAMASCOTAS();
-FILTROVACUNAS.addEventListener('keyup', MOSTRARTABLAMASCOTAS)
-BTNAGREGARVACUNA.addEventListener('click', () => {
-    window.location.href = 'P42-vacunas-agregar.html';
-})
+FILTROMASCOTAS.addEventListener('keyup', MOSTRARTABLAMASCOTAS)
