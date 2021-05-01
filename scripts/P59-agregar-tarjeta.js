@@ -74,5 +74,5 @@ if (sessionStorage.getItem('usuarioConectado')) {
 
 BTNAGRETARJETA.addEventListener('click', VALIDAR)
 BTNCANCELAR.addEventListener('click', () => {
-    window.location.href = 'P56-gestion-pago.html';
+    window.history.back();
 })
